@@ -1,0 +1,102 @@
+---
+import '../styles/global.css';
+import { languages, langs, useTranslations, path, switchLangPath, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+  title?: string;
+  description?: string;
+}
+
+const { lang, title, description } = Astro.props;
+const t = useTranslations(lang);
+const dir = languages[lang].dir;
+const pageTitle = title ? `${title} · ${t('site.name')}` : `${t('site.name')} · ${t('site.tagline')}`;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const rest = Astro.url.pathname.slice(base.length).replace(/^\/(en|ar)(?=\/|$)/, '') || '/';
+const current = Astro.url.pathname;
+
+const nav = [
+  { href: path(lang, '/study/'), label: t('nav.study') },
+  { href: path(lang, '/living/'), label: t('nav.living') },
+  { href: path(lang, '/engpro/'), label: t('nav.engpro') },
+  { href: path(lang, '/opportunities/'), label: t('nav.opportunities') },
+  { href: path(lang, '/about/'), label: t('nav.about') },
+];
+---
+
+<!doctype html>
+<html lang={lang} dir={dir}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description ?? t('site.description')} />
+    {langs.map((l) => <link rel="alternate" hreflang={l} href={new URL(path(l, rest), Astro.site)} />)}
+    <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+Arabic:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a class="skip" href="#main">{t('common.skip')}</a>
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href={path(lang)}>
+          <span class="brand-mark" aria-hidden="true"></span>
+          {t('site.name')}
+        </a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+          {t('nav.menu')}
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label={t('nav.menu')}>
+          <ul>
+            {nav.map((item) => (
+              <li>
+                <a href={item.href} aria-current={current.startsWith(item.href) ? 'page' : undefined}>
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+        <a
+          class="lang-switch"
+          href={switchLangPath(Astro.url.pathname, lang)}
+          hreflang={lang === 'en' ? 'ar' : 'en'}
+          aria-label={t('lang.switchLabel')}
+        >
+          {t('lang.switch')}
+        </a>
+      </div>
+    </header>
+
+    <main id="main">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>{t('footer.free')} {t('common.disclaimer')}</p>
+        <ul class="footer-links">
+          <li><a href={path(lang, '/faq/')}>{t('footer.faq')}</a></li>
+          <li><a href={path(lang, '/contact/')}>{t('footer.contact')}</a></li>
+          <li><a href={path(lang, '/disclaimer/')}>{t('footer.disclaimer')}</a></li>
+          <li><a href={path(lang, '/privacy/')}>{t('footer.privacy')}</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script>
+      const button = document.querySelector<HTMLButtonElement>('.menu-button');
+      const nav = document.getElementById('site-nav');
+      button?.addEventListener('click', () => {
+        const open = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!open));
+        nav?.classList.toggle('open', !open);
+      });
+    </script>
+  </body>
+</html>

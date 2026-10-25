@@ -1,0 +1,22 @@
+---
+import { path, useTranslations, type Lang } from '../i18n';
+import { splitId, type Guide } from '../lib/content';
+
+interface Props {
+  lang: Lang;
+  guides: Guide[];
+}
+
+const { lang, guides } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<div class="grid">
+  {guides.map((g) => (
+    <a class="card" href={path(lang, `/${g.data.section}/${splitId(g.id).slug}/`)}>
+      {g.data.draft && <span class="badge">{t('common.comingSoon')}</span>}
+      <h3>{g.data.title}</h3>
+      <p>{g.data.description}</p>
+    </a>
+  ))}
+</div>

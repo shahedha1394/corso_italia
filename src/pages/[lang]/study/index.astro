@@ -1,0 +1,32 @@
+---
+import Base from '../../../layouts/Base.astro';
+import GuideCards from '../../../components/GuideCards.astro';
+import { getStaticLangPaths, useTranslations, type Lang } from '../../../i18n';
+import { getGuides } from '../../../lib/content';
+
+export const getStaticPaths = getStaticLangPaths;
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+const guides = await getGuides(lang, 'study');
+---
+
+<Base lang={lang} title={t('study.title')} description={t('study.intro')}>
+  <header class="container page-header">
+    <h1>{t('study.title')}</h1>
+    <p>{t('study.intro')}</p>
+  </header>
+
+  <section class="container section">
+    <div class="card">
+      <span class="badge">{t('common.comingSoon')}</span>
+      <h2>{t('study.directory.title')}</h2>
+      <p>{t('study.directory.text')}</p>
+    </div>
+  </section>
+
+  <section class="container section">
+    <h2>{t('study.guides')}</h2>
+    <GuideCards lang={lang} guides={guides} />
+  </section>
+</Base>

@@ -1,0 +1,20 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { getStaticLangPaths, useTranslations, type Lang } from '../../../i18n';
+
+export const getStaticPaths = getStaticLangPaths;
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+---
+
+<Base lang={lang} title={t('opportunities.title')} description={t('opportunities.intro')}>
+  <header class="container page-header">
+    <h1>{t('opportunities.title')}</h1>
+    <p>{t('opportunities.intro')}</p>
+  </header>
+
+  <section class="container section">
+    <p class="card">{t('opportunities.empty')}</p>
+  </section>
+</Base>
