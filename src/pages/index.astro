@@ -1,0 +1,74 @@
+---
+// Language chooser at the site root. Visitors pick Arabic or English;
+// every other page lives under /en/ or /ar/.
+import '../styles/global.css';
+import { path } from '../i18n';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Corso Italia</title>
+    <meta name="description" content="Study and live in Italy, step by step. الدراسة والحياة في إيطاليا، خطوة بخطوة." />
+    <link rel="alternate" hreflang="en" href={path('en')} />
+    <link rel="alternate" hreflang="ar" href={path('ar')} />
+    <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+Arabic:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container chooser">
+      <span class="brand-mark big" aria-hidden="true"></span>
+      <h1>Corso Italia</h1>
+      <p lang="ar" dir="rtl" class="ar">الدراسة والحياة في إيطاليا، خطوة بخطوة</p>
+      <p>Study and live in Italy, step by step</p>
+      <div class="choices">
+        <a class="button ar" href={path('ar')} hreflang="ar" lang="ar">العربية</a>
+        <a class="button" href={path('en')} hreflang="en">English</a>
+      </div>
+    </main>
+    <style>
+      .chooser {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 0.25rem;
+      }
+      .chooser h1 {
+        margin: 1rem 0 0.5rem;
+        font-size: 2.5rem;
+      }
+      .chooser p {
+        margin: 0;
+        color: var(--color-muted);
+      }
+      .ar {
+        font-family: var(--font-arabic);
+      }
+      .choices {
+        display: flex;
+        gap: 1rem;
+        margin-block-start: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .big {
+        display: block;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 8px;
+        background: linear-gradient(90deg, #0b6e4f 33%, #f4f4f0 33% 66%, #b3261e 66%);
+      }
+    </style>
+  </body>
+</html>

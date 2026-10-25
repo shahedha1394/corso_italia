@@ -1,0 +1,26 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { splitId } from '../../lib/content';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('pages');
+  return pages.map((page) => {
+    const { lang, slug } = splitId(page.id);
+    return { params: { lang, page: slug }, props: { page } };
+  });
+}
+
+const { page } = Astro.props;
+const { lang } = splitId(page.id);
+const { Content } = await render(page);
+---
+
+<Base lang={lang} title={page.data.title} description={page.data.description}>
+  <article class="container prose">
+    <header class="page-header">
+      <h1>{page.data.title}</h1>
+    </header>
+    <Content />
+  </article>
+</Base>

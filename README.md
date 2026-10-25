@@ -8,3 +8,26 @@ A free, bilingual (English / العربية) website helping Arab students study
 - **Opportunities**: workshops and teaching sessions
 
 See [docs/ROADMAP.md](docs/ROADMAP.md) for the plan and [CLAUDE.md](CLAUDE.md) for contribution rules.
+
+## Running locally
+
+Requires Node.js 22.23.4 or newer (24 recommended, see `.nvmrc`).
+
+```sh
+npm install
+npm run dev      # http://localhost:4321/corso_italia/
+npm run check    # English and Arabic are in sync
+npm run build    # static site in dist/
+```
+
+The site is deployed to GitHub Pages from `main` by `.github/workflows/deploy.yml`.
+
+## Where things live
+
+| What | Where |
+|---|---|
+| Interface text (menus, buttons) | `src/i18n/en.json`, `src/i18n/ar.json` |
+| Guides (Study, Living) | `src/content/guides/<en\|ar>/<slug>.md` |
+| Simple pages (About, FAQ...) | `src/content/pages/<en\|ar>/<slug>.md` |
+| Page templates | `src/pages/[lang]/...` |
+| Layout and styles | `src/layouts/Base.astro`, `src/styles/global.css` |

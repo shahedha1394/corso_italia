@@ -1,0 +1,55 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import { path, useTranslations, type Lang } from '../../../i18n';
+import { splitId } from '../../../lib/content';
+
+export async function getStaticPaths() {
+  const guides = await getCollection('guides');
+  return guides.map((guide) => {
+    const { lang, slug } = splitId(guide.id);
+    return { params: { lang, section: guide.data.section, slug }, props: { guide } };
+  });
+}
+
+const { guide } = Astro.props;
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+const { Content } = await render(guide);
+const sectionTitle = guide.data.section === 'study' ? t('nav.study') : t('nav.living');
+const lastChecked = guide.data.lastChecked?.toLocaleDateString(lang === 'ar' ? 'ar' : 'en-GB', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+
+<Base lang={lang} title={guide.data.title} description={guide.data.description}>
+  <article class="container prose">
+    <header class="page-header">
+      <p class="meta"><a href={path(lang, `/${guide.data.section}/`)}>{sectionTitle}</a></p>
+      <h1>{guide.data.title}</h1>
+      <p>{guide.data.description}</p>
+      <p class="meta">
+        {t('common.lastChecked')}: {lastChecked ?? t('common.notVerified')}
+      </p>
+    </header>
+
+    {guide.data.draft && <p class="notice">{t('common.draftNotice')}</p>}
+
+    <Content />
+
+    {guide.data.sources.length > 0 && (
+      <section class="sources">
+        <h2>{t('common.sources')}</h2>
+        <ul>
+          {guide.data.sources.map((s) => (
+            <li><a href={s.url} rel="noopener" target="_blank">{s.label}</a></li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    <p class="notice">{t('common.disclaimer')}</p>
+  </article>
+</Base>

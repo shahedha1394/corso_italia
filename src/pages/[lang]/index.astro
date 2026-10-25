@@ -1,0 +1,51 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getStaticLangPaths, path, useTranslations, type Lang } from '../../i18n';
+
+export const getStaticPaths = getStaticLangPaths;
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+
+const journey = [
+  t('home.journey.choose'),
+  t('home.journey.apply'),
+  t('home.journey.visa'),
+  t('home.journey.arrive'),
+  t('home.journey.settle'),
+];
+
+const sections = [
+  { href: path(lang, '/study/'), title: t('nav.study'), text: t('home.sections.study') },
+  { href: path(lang, '/living/'), title: t('nav.living'), text: t('home.sections.living') },
+  { href: path(lang, '/engpro/'), title: t('nav.engpro'), text: t('home.sections.engpro') },
+  { href: path(lang, '/opportunities/'), title: t('nav.opportunities'), text: t('home.sections.opportunities') },
+];
+---
+
+<Base lang={lang}>
+  <section class="container hero">
+    <h1>{t('home.hero.title')}</h1>
+    <p>{t('home.hero.text')}</p>
+    <a class="button" href={path(lang, '/study/')}>{t('home.hero.cta')}</a>
+  </section>
+
+  <section class="container section">
+    <h2>{t('home.journey.title')}</h2>
+    <ol class="journey">
+      {journey.map((step) => <li>{step}</li>)}
+    </ol>
+  </section>
+
+  <section class="container section">
+    <h2>{t('home.sections.title')}</h2>
+    <div class="grid">
+      {sections.map((s) => (
+        <a class="card" href={s.href}>
+          <h3>{s.title}</h3>
+          <p>{s.text}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,60 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { getStaticLangPaths, useTranslations, type Lang } from '../../../i18n';
+
+export const getStaticPaths = getStaticLangPaths;
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+---
+
+<Base lang={lang} title={t('engpro.title')} description={t('engpro.tagline')}>
+  <header class="engpro-hero">
+    <div class="container">
+      <h1>{t('engpro.title')}</h1>
+      <p class="tagline">{t('engpro.tagline')}</p>
+      <p>{t('engpro.intro')}</p>
+    </div>
+  </header>
+
+  <section class="container section">
+    <div class="grid">
+      <div class="card">
+        <span class="badge">{t('common.comingSoon')}</span>
+        <h2>{t('engpro.learners.title')}</h2>
+        <p>{t('engpro.learners.text')}</p>
+      </div>
+      <div class="card">
+        <span class="badge">{t('common.comingSoon')}</span>
+        <h2>{t('engpro.teachers.title')}</h2>
+        <p>{t('engpro.teachers.text')}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container section">
+    <h2>{t('engpro.sessions.title')}</h2>
+    <p class="meta">{t('engpro.sessions.empty')}</p>
+  </section>
+</Base>
+
+<style>
+  /* EngPro has its own look, separate from the study section */
+  .engpro-hero {
+    background: linear-gradient(135deg, #1f3a93, #3b5bdb);
+    color: #fff;
+    padding-block: 3rem;
+  }
+  .engpro-hero h1 {
+    margin: 0;
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
+  .engpro-hero .tagline {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0.25rem 0 1rem;
+  }
+  .engpro-hero p {
+    max-inline-size: 45rem;
+  }
+</style>
