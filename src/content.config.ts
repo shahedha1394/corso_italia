@@ -1,7 +1,19 @@
 import { defineCollection, reference } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
-import { cities, fields, fundingTypes, keysOf, levels, regions, teachingLanguages } from './lib/taxonomy';
+import {
+  cefrLevels,
+  cities,
+  fields,
+  fundingTypes,
+  keysOf,
+  levels,
+  modes,
+  opportunityTypes,
+  regions,
+  skills,
+  teachingLanguages,
+} from './lib/taxonomy';
 
 // Guides live in src/content/guides/<lang>/<slug>.md.
 // The same slug must exist in every language (checked by `npm run check`).
@@ -81,4 +93,57 @@ const funding = defineCollection({
   }),
 });
 
-export const collections = { guides, pages, universities, programs, funding };
+// Announcements. Entries disappear from the site after `expires_at`
+// (or after `end`/`start` when no expiry is given); the site is rebuilt daily.
+const opportunities = defineCollection({
+  loader: glob({ pattern: '*.yaml', base: './src/content/opportunities' }),
+  schema: z.object({
+    title: bilingual,
+    type: z.enum(keysOf(opportunityTypes)),
+    organiser: z.string(),
+    mode: z.enum(keysOf(modes)),
+    city: z.enum(keysOf(cities)).optional(),
+    start: z.coerce.date(),
+    end: z.coerce.date().optional(),
+    apply_deadline: z.coerce.date().optional(),
+    expires_at: z.coerce.date().optional(),
+    description: bilingual,
+    link: z.string().url(),
+  }),
+});
+
+const engproSessions = defineCollection({
+  loader: glob({ pattern: '*.yaml', base: './src/content/engpro-sessions' }),
+  schema: z.object({
+    title: bilingual,
+    levels: z.array(z.enum(cefrLevels)).min(1),
+    // ISO date-time with a time zone, e.g. 2026-11-05T18:00:00+01:00
+    start: z.coerce.date(),
+    duration_minutes: z.number().int().positive(),
+    teacher: z.string().optional(),
+    description: bilingual,
+    link: z.string().url(),
+  }),
+});
+
+const engproResources = defineCollection({
+  loader: glob({ pattern: '*.yaml', base: './src/content/engpro-resources' }),
+  schema: z.object({
+    title: z.string(),
+    description: bilingual,
+    levels: z.array(z.enum(cefrLevels)).min(1),
+    skill: z.enum(keysOf(skills)),
+    url: z.string().url(),
+  }),
+});
+
+export const collections = {
+  guides,
+  pages,
+  universities,
+  programs,
+  funding,
+  opportunities,
+  'engpro-sessions': engproSessions,
+  'engpro-resources': engproResources,
+};

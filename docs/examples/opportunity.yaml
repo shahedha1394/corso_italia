@@ -1,0 +1,16 @@
+# Copy to src/content/opportunities/<short-name>.yaml and edit.
+title:
+  en: "Workshop: writing a motivation letter"
+  ar: "ورشة عمل: كتابة خطاب الدافع"
+type: workshop            # workshop | teaching_session | scholarship_call | other
+organiser: "Corso Italia volunteers"
+mode: online              # online | in_person
+# city: milano            # only for in_person, must be a key in src/lib/taxonomy.ts
+start: 2026-11-20T18:00:00+01:00
+end: 2026-11-20T19:30:00+01:00
+apply_deadline: 2026-11-18
+# expires_at: 2026-11-21  # optional; defaults to end, or start if there is no end
+description:
+  en: "How to structure a motivation letter for Italian universities, with examples."
+  ar: "كيفية كتابة خطاب الدافع للجامعات الإيطالية مع أمثلة."
+link: https://example.org/register

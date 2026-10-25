@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # Rebuild every morning so expired opportunities and past sessions disappear.
+  schedule:
+    - cron: '0 4 * * *'
 
 permissions:
   contents: read
