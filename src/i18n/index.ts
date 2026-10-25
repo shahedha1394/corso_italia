@@ -22,7 +22,7 @@ export function otherLang(lang: Lang): Lang {
   return lang === 'en' ? 'ar' : 'en';
 }
 
-/** Build a link that respects the site base path, e.g. path('ar', '/study/') → /corso_italia/ar/study/ */
+/** Build a link that respects the site base path, e.g. path('ar', '/study/') → /ar/study/ */
 export function path(lang: Lang | null, to = '/'): string {
   const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   const clean = to.startsWith('/') ? to : `/${to}`;
