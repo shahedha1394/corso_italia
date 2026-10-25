@@ -21,6 +21,8 @@ A free, bilingual (English + Arabic) website helping Arab students study and liv
 - Numbers, dates and Italian proper names (Questura, Universitaly, codice fiscale) stay readable in both directions. In Arabic text, wrap a Latin term that ends right before `)` in Unicode isolates (U+2066 … U+2069) so the brackets render correctly.
 - Adding a guide: create the same file name in `src/content/guides/en/` and `src/content/guides/ar/`. `npm run check` fails if one is missing.
 - Adding a program or university: add one YAML file to `src/content/programs/` or `src/content/universities/` (copy an existing one). Only add facts you checked on the official page, put that page in `url`, and set `last_checked` to the day you checked.
+- Announcing an opportunity or EngPro session: copy `docs/examples/opportunity.yaml` or `docs/examples/engpro-session.yaml` into `src/content/opportunities/` or `src/content/engpro-sessions/`. Past entries hide themselves; the site rebuilds every morning.
+- Sign-up form links live in `src/config/forms.ts`. Answers stay in Google Forms/Sheets and are never copied into the repo.
 - Links inside templates use `path(lang, '/study/')` from `src/i18n` so the GitHub Pages base path is respected.
 
 ## Content rules

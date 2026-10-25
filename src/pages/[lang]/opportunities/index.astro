@@ -1,11 +1,17 @@
 ---
 import Base from '../../../layouts/Base.astro';
+import LocalTime from '../../../components/LocalTime.astro';
+import SignupButton from '../../../components/SignupButton.astro';
 import { getStaticLangPaths, useTranslations, type Lang } from '../../../i18n';
+import { forms } from '../../../config/forms';
+import { getActiveOpportunities } from '../../../lib/content';
+import { cities, modes, opportunityTypes } from '../../../lib/taxonomy';
 
 export const getStaticPaths = getStaticLangPaths;
 
 const lang = Astro.params.lang as Lang;
 const t = useTranslations(lang);
+const items = await getActiveOpportunities();
 ---
 
 <Base lang={lang} title={t('opportunities.title')} description={t('opportunities.intro')}>
@@ -15,6 +21,41 @@ const t = useTranslations(lang);
   </header>
 
   <section class="container section">
-    <p class="card">{t('opportunities.empty')}</p>
+    {items.length === 0 ? (
+      <p class="card">{t('opportunities.empty')}</p>
+    ) : (
+      <div class="grid">
+        {items.map((o) => (
+          <article class="card">
+            <span class="badge">{opportunityTypes[o.data.type][lang]}</span>
+            <h2>{o.data.title[lang]}</h2>
+            <p>{o.data.description[lang]}</p>
+            <dl class="facts small">
+              <dt>{t('opportunities.when')}</dt>
+              <dd><LocalTime date={o.data.start} lang={lang} /></dd>
+              <dt>{t('opportunities.where')}</dt>
+              <dd>{modes[o.data.mode][lang]}{o.data.city && ` · ${cities[o.data.city][lang]}`}</dd>
+              {o.data.apply_deadline && (
+                <>
+                  <dt>{t('opportunities.deadline')}</dt>
+                  <dd><LocalTime date={o.data.apply_deadline} lang={lang} dateOnly /></dd>
+                </>
+              )}
+              <dt>{t('opportunities.organiser')}</dt>
+              <dd>{o.data.organiser}</dd>
+            </dl>
+            <p><a href={o.data.link} rel="noopener" target="_blank">{t('opportunities.details')}</a></p>
+          </article>
+        ))}
+      </div>
+    )}
+  </section>
+
+  <section class="container section">
+    <div class="card">
+      <h2>{t('opportunities.submit')}</h2>
+      <p>{t('opportunities.submitText')}</p>
+      <p><SignupButton lang={lang} href={forms.submitOpportunity} label={t('opportunities.submit')} /></p>
+    </div>
   </section>
 </Base>

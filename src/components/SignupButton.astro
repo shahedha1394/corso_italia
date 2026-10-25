@@ -1,0 +1,18 @@
+---
+import { useTranslations, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+  href: string;
+  label: string;
+}
+
+const { lang, href, label } = Astro.props;
+const t = useTranslations(lang);
+---
+
+{href ? (
+  <a class="button" href={href} rel="noopener" target="_blank">{label}</a>
+) : (
+  <span class="badge">{t('common.comingSoon')}</span>
+)}

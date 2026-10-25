@@ -26,3 +26,19 @@ export async function getPrograms(lang: Lang) {
 }
 
 export type ProgramWithUni = Awaited<ReturnType<typeof getPrograms>>[number];
+
+/** Upcoming opportunities: hidden once `expires_at` (or `end`, or `start`) has passed. Soonest first. */
+export async function getActiveOpportunities(now = new Date()) {
+  const all = await getCollection('opportunities');
+  return all
+    .filter((o) => (o.data.expires_at ?? o.data.end ?? o.data.start) >= now)
+    .sort((a, b) => a.data.start.getTime() - b.data.start.getTime());
+}
+
+/** EngPro sessions that have not finished yet. Soonest first. */
+export async function getUpcomingSessions(now = new Date()) {
+  const all = await getCollection('engpro-sessions');
+  return all
+    .filter((s) => s.data.start.getTime() + s.data.duration_minutes * 60_000 >= now.getTime())
+    .sort((a, b) => a.data.start.getTime() - b.data.start.getTime());
+}

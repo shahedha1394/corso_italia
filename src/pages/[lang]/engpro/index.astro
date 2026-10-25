@@ -1,11 +1,20 @@
 ---
+import { getCollection } from 'astro:content';
 import Base from '../../../layouts/Base.astro';
-import { getStaticLangPaths, useTranslations, type Lang } from '../../../i18n';
+import LocalTime from '../../../components/LocalTime.astro';
+import SignupButton from '../../../components/SignupButton.astro';
+import { fill, getStaticLangPaths, path, useTranslations, type Lang } from '../../../i18n';
+import { forms } from '../../../config/forms';
+import { getUpcomingSessions } from '../../../lib/content';
+import { skills } from '../../../lib/taxonomy';
 
 export const getStaticPaths = getStaticLangPaths;
 
 const lang = Astro.params.lang as Lang;
 const t = useTranslations(lang);
+const sessions = await getUpcomingSessions();
+const resources = (await getCollection('engpro-resources')).sort((a, b) => a.data.title.localeCompare(b.data.title));
+const levelRange = (levels: string[]) => (levels.length > 1 ? `${levels[0]}–${levels[levels.length - 1]}` : levels[0]);
 ---
 
 <Base lang={lang} title={t('engpro.title')} description={t('engpro.tagline')}>
@@ -14,27 +23,60 @@ const t = useTranslations(lang);
       <h1>{t('engpro.title')}</h1>
       <p class="tagline">{t('engpro.tagline')}</p>
       <p>{t('engpro.intro')}</p>
+      <p><a class="hero-link" href={path(lang, '/engpro-code-of-conduct/')}>{t('engpro.conduct')}</a></p>
     </div>
   </header>
 
   <section class="container section">
     <div class="grid">
       <div class="card">
-        <span class="badge">{t('common.comingSoon')}</span>
         <h2>{t('engpro.learners.title')}</h2>
         <p>{t('engpro.learners.text')}</p>
+        <p><SignupButton lang={lang} href={forms.engproLearner} label={t('engpro.learners.cta')} /></p>
       </div>
       <div class="card">
-        <span class="badge">{t('common.comingSoon')}</span>
         <h2>{t('engpro.teachers.title')}</h2>
         <p>{t('engpro.teachers.text')}</p>
+        <p><SignupButton lang={lang} href={forms.engproTeacher} label={t('engpro.teachers.cta')} /></p>
       </div>
     </div>
   </section>
 
   <section class="container section">
     <h2>{t('engpro.sessions.title')}</h2>
-    <p class="meta">{t('engpro.sessions.empty')}</p>
+    {sessions.length === 0 ? (
+      <p class="meta">{t('engpro.sessions.empty')}</p>
+    ) : (
+      <>
+        <p class="meta">{t('engpro.timezone')}</p>
+        <div class="grid">
+          {sessions.map((s) => (
+            <div class="card">
+              <span class="badge ltr-inline">{s.data.levels.join(' · ')}</span>
+              <h3>{s.data.title[lang]}</h3>
+              <p><LocalTime date={s.data.start} lang={lang} /> · {fill(t('engpro.minutes'), { n: s.data.duration_minutes })}</p>
+              {s.data.teacher && <p class="meta">{t('engpro.with')} {s.data.teacher}</p>}
+              <p>{s.data.description[lang]}</p>
+              <p><a href={s.data.link} rel="noopener" target="_blank">{t('engpro.join')}</a></p>
+            </div>
+          ))}
+        </div>
+      </>
+    )}
+  </section>
+
+  <section class="container section">
+    <h2>{t('engpro.resources.title')}</h2>
+    <p class="meta">{t('engpro.resources.intro')}</p>
+    <div class="grid">
+      {resources.map((r) => (
+        <a class="card" href={r.data.url} rel="noopener" target="_blank">
+          <span class="badge">{skills[r.data.skill][lang]} · <span class="ltr-inline">{levelRange(r.data.levels)}</span></span>
+          <h3 class="ltr-inline">{r.data.title}</h3>
+          <p>{r.data.description[lang]}</p>
+        </a>
+      ))}
+    </div>
   </section>
 </Base>
 
@@ -56,5 +98,8 @@ const t = useTranslations(lang);
   }
   .engpro-hero p {
     max-inline-size: 45rem;
+  }
+  .hero-link {
+    color: #fff;
   }
 </style>

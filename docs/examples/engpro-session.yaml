@@ -1,0 +1,12 @@
+# Copy to src/content/engpro-sessions/<short-name>.yaml and edit.
+title:
+  en: "Conversation practice: talking about your studies"
+  ar: "تدريب على المحادثة: الحديث عن دراستك"
+levels: [B1, B2]
+start: 2026-11-12T19:00:00+01:00   # always include the time zone
+duration_minutes: 60
+teacher: "Volunteer teacher's first name"
+description:
+  en: "A relaxed group session to practise speaking."
+  ar: "جلسة جماعية مريحة للتدرب على المحادثة."
+link: https://example.org/join

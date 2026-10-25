@@ -49,6 +49,31 @@ export const fundingTypes = {
   external: { en: 'Other organisations', ar: 'جهات أخرى' },
 } satisfies Labels;
 
+export const opportunityTypes = {
+  workshop: { en: 'Workshop', ar: 'ورشة عمل' },
+  teaching_session: { en: 'Teaching session', ar: 'جلسة تعليمية' },
+  scholarship_call: { en: 'Scholarship call', ar: 'إعلان منحة' },
+  other: { en: 'Other', ar: 'أخرى' },
+} satisfies Labels;
+
+export const modes = {
+  online: { en: 'Online', ar: 'عبر الإنترنت' },
+  in_person: { en: 'In person', ar: 'حضوري' },
+} satisfies Labels;
+
+export const cefrLevels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'] as const;
+
+export const skills = {
+  speaking: { en: 'Speaking', ar: 'المحادثة' },
+  listening: { en: 'Listening', ar: 'الاستماع' },
+  reading: { en: 'Reading', ar: 'القراءة' },
+  writing: { en: 'Writing', ar: 'الكتابة' },
+  grammar: { en: 'Grammar', ar: 'القواعد' },
+  vocabulary: { en: 'Vocabulary', ar: 'المفردات' },
+  exam: { en: 'Exam preparation', ar: 'التحضير للاختبارات' },
+  general: { en: 'All skills', ar: 'جميع المهارات' },
+} satisfies Labels;
+
 export function keysOf<T extends object>(obj: T) {
   return Object.keys(obj) as [keyof T & string, ...(keyof T & string)[]];
 }
