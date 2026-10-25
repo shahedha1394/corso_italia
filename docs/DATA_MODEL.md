@@ -1,6 +1,9 @@
 # Data model
 
 All structured content lives in the repo as YAML/Markdown files, so both collaborators (and their agents) can edit through pull requests.
+The schema that the build enforces is in `src/content.config.ts`; allowed cities, regions, levels, fields and funding types are in `src/lib/taxonomy.ts` (add a new city or field there first, with both labels).
+
+**Implemented now (step 3):** universities, programs (name, university, level, single_cycle, field, language, duration_years, admission_test, keywords, description, url, last_checked) and funding. Fields marked *later* below are planned but not yet in the schema.
 Bilingual text fields are objects with `en` and `ar` keys.
 
 ## University (`src/content/universities/<slug>.yaml`)
@@ -13,8 +16,8 @@ Bilingual text fields are objects with `en` and `ar` keys.
 | region | string | e.g. `lombardia` (used for DSU scholarships) |
 | type | `public` \| `private` | |
 | website | url | |
-| international_office | url / email | |
-| tuition_range_eur | {min, max} | per year |
+| international_office | url / email | | *later*
+| tuition_range_eur | {min, max} | per year | *later*
 | description | {en, ar} | short |
 | last_checked | date | |
 
@@ -29,12 +32,12 @@ Bilingual text fields are objects with `en` and `ar` keys.
 | field | string | e.g. `engineering`, `medicine`, `economics` |
 | language | `en` \| `it` \| `en-it` | teaching language |
 | duration_years | number | |
-| tuition_eur | {min, max} | |
+| tuition_eur | {min, max} | | *later*
 | admission_test | string \| null | `IMAT`, `TOLC-I`, `SAT`, `GRE`, `internal`, ... |
 | language_requirement | string | e.g. `IELTS 6.0` |
-| required_documents | list of {en, ar} | added to the general list |
-| deadlines | list of {label {en, ar}, date} | non-EU deadlines |
-| application_url | url | |
+| required_documents | list of {en, ar} | added to the general list | *later*
+| deadlines | list of {label {en, ar}, date} | non-EU deadlines | *later*
+| application_url | url | | *later*
 | keywords | list of string | extra search terms in both languages |
 | description | {en, ar} | |
 | last_checked | date | |

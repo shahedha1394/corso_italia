@@ -1,7 +1,7 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import GuideCards from '../../../components/GuideCards.astro';
-import { getStaticLangPaths, useTranslations, type Lang } from '../../../i18n';
+import { getStaticLangPaths, path, useTranslations, type Lang } from '../../../i18n';
 import { getGuides } from '../../../lib/content';
 
 export const getStaticPaths = getStaticLangPaths;
@@ -18,10 +18,20 @@ const guides = await getGuides(lang, 'study');
   </header>
 
   <section class="container section">
-    <div class="card">
-      <span class="badge">{t('common.comingSoon')}</span>
-      <h2>{t('study.directory.title')}</h2>
-      <p>{t('study.directory.text')}</p>
+    <h2>{t('study.directory.title')}</h2>
+    <div class="grid">
+      <a class="card" href={path(lang, '/study/programs/')}>
+        <h3>{t('dir.programs.title')}</h3>
+        <p>{t('study.directory.programs')}</p>
+      </a>
+      <a class="card" href={path(lang, '/study/universities/')}>
+        <h3>{t('dir.universities.title')}</h3>
+        <p>{t('study.directory.universities')}</p>
+      </a>
+      <a class="card" href={path(lang, '/study/scholarships/')}>
+        <h3>{t('dir.funding.title')}</h3>
+        <p>{t('study.directory.funding')}</p>
+      </a>
     </div>
   </section>
 

@@ -1,0 +1,14 @@
+name:
+  en: "DSU Toscana scholarship"
+  ar: "منحة DSU في توسكانا"
+provider: "DSU Toscana"
+type: regional_dsu
+region: toscana
+description:
+  en: "Regional right-to-study (DSU) scholarship. It is means-tested and can include money, a place in a residence and meals. International students usually need an ISEE parificato. Check the yearly call for amounts and deadlines."
+  ar: "منحة إقليمية لحق الدراسة (DSU). تُمنح حسب الوضع المادي وقد تشمل مبلغًا ماليًا وسكنًا في السكن الجامعي ووجبات. يحتاج الطلاب الدوليون عادةً إلى شهادة ISEE parificato. راجع الإعلان السنوي لمعرفة المبالغ والمواعيد."
+eligibility:
+  en: "Students enrolled at a university in the region who meet the income and merit requirements of the call."
+  ar: "الطلاب المسجلون في جامعة داخل الإقليم ممن يستوفون شروط الدخل والتحصيل الدراسي في الإعلان."
+url: https://www.unipi.it/didattica/iscrizioni/immatricolazioni-e-iscrizioni/iscrizioni-per-studenti-internazionali/borsa-di-studio-del-dsu/
+last_checked: 2026-10-25

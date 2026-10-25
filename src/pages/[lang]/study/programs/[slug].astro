@@ -1,0 +1,61 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../../../layouts/Base.astro';
+import { arrow, fill, langs, path, useTranslations, type Lang } from '../../../../i18n';
+import { getPrograms } from '../../../../lib/content';
+import { cities, fields, levels, teachingLanguages } from '../../../../lib/taxonomy';
+
+export async function getStaticPaths() {
+  const programs = await getCollection('programs');
+  return langs.flatMap((lang) => programs.map((p) => ({ params: { lang, slug: p.id } })));
+}
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+const program = (await getPrograms(lang)).find((p) => p.id === Astro.params.slug)!;
+const p = program.data;
+const u = program.uni.data;
+const checked = p.last_checked.toLocaleDateString(lang === 'ar' ? 'ar' : 'en-GB', { dateStyle: 'long' });
+---
+
+<Base lang={lang} title={p.name[lang]} description={`${p.name[lang]} · ${u.name[lang]}`}>
+  <article class="container prose">
+    <header class="page-header">
+      <p class="meta"><a href={path(lang, '/study/programs/')}>{t('dir.programs.title')}</a></p>
+      <span class="badge">{levels[p.level][lang]}</span>
+      <h1>{p.name[lang]}</h1>
+      <p>
+        <a href={path(lang, `/study/universities/${program.uni.id}/`)}>{u.name[lang]}</a> · {cities[u.city][lang]}
+      </p>
+    </header>
+
+    {p.description && <p>{p.description[lang]}</p>}
+
+    <h2>{t('dir.program.details')}</h2>
+    <dl class="facts">
+      <dt>{t('dir.filter.level')}</dt>
+      <dd>{levels[p.level][lang]}{p.single_cycle && <><br /><span class="meta">{t('dir.program.singleCycle')}</span></>}</dd>
+      <dt>{t('dir.filter.field')}</dt>
+      <dd>{fields[p.field][lang]}</dd>
+      <dt>{t('dir.filter.language')}</dt>
+      <dd>{teachingLanguages[p.language][lang]}</dd>
+      <dt>{t('dir.program.duration')}</dt>
+      <dd>{fill(t('dir.program.years'), { n: p.duration_years })}</dd>
+      {p.admission_test && (
+        <>
+          <dt>{t('dir.program.test')}</dt>
+          <dd class="ltr-inline">{p.admission_test}</dd>
+        </>
+      )}
+    </dl>
+
+    <p><a class="button" href={p.url} rel="noopener" target="_blank">{t('dir.program.official')}</a></p>
+
+    <h2>{t('dir.program.howToApply')}</h2>
+    <p>{t('dir.program.howToApplyText')}</p>
+    <p><a href={path(lang, '/study/how-to-apply/')}>{t('dir.program.howToApply')} {arrow(lang)}</a></p>
+
+    <p class="meta">{t('common.lastChecked')}: {checked}</p>
+    <p class="notice">{t('common.disclaimer')}</p>
+  </article>
+</Base>

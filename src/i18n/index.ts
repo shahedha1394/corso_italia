@@ -40,3 +40,13 @@ export function switchLangPath(pathname: string, lang: Lang): string {
 export function getStaticLangPaths() {
   return langs.map((lang) => ({ params: { lang } }));
 }
+
+/** Fill "{name}" placeholders in a translated string. */
+export function fill(text: string, values: Record<string, string | number>): string {
+  return text.replace(/\{(\w+)\}/g, (_, k) => String(values[k] ?? ''));
+}
+
+/** Arrow pointing "forward" in the reading direction. */
+export function arrow(lang: Lang): string {
+  return languages[lang].dir === 'rtl' ? '←' : '→';
+}
