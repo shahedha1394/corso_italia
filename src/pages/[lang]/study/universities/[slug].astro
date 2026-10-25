@@ -1,0 +1,42 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../../../layouts/Base.astro';
+import ProgramCard from '../../../../components/ProgramCard.astro';
+import { langs, path, useTranslations, type Lang } from '../../../../i18n';
+import { getPrograms } from '../../../../lib/content';
+import { cities, regions } from '../../../../lib/taxonomy';
+
+export async function getStaticPaths() {
+  const universities = await getCollection('universities');
+  return langs.flatMap((lang) => universities.map((u) => ({ params: { lang, slug: u.id }, props: { uni: u } })));
+}
+
+const { uni } = Astro.props;
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+const u = uni.data;
+const programs = (await getPrograms(lang)).filter((p) => p.uni.id === uni.id);
+---
+
+<Base lang={lang} title={u.name[lang]}>
+  <article class="container">
+    <header class="page-header">
+      <p class="meta"><a href={path(lang, '/study/universities/')}>{t('dir.universities.title')}</a></p>
+      <h1>{u.name[lang]}</h1>
+      <p class="ltr-inline">{u.name_it}</p>
+      <p class="meta">
+        {cities[u.city][lang]}, {regions[u.region][lang]} · {t(u.type === 'public' ? 'dir.type.public' : 'dir.type.private')}
+      </p>
+    </header>
+
+    {u.description && <p class="prose">{u.description[lang]}</p>}
+    <p><a class="button" href={u.website} rel="noopener" target="_blank">{t('dir.universities.website')}</a></p>
+
+    <section class="section">
+      <h2>{t('dir.universities.programs')}</h2>
+      <div class="grid">
+        {programs.map((p) => <ProgramCard lang={lang} program={p} />)}
+      </div>
+    </section>
+  </article>
+</Base>

@@ -1,0 +1,14 @@
+name:
+  en: "EDISU Piemonte scholarship"
+  ar: "منحة EDISU في بيدمونت"
+provider: "EDISU Piemonte"
+type: regional_dsu
+region: piemonte
+description:
+  en: "Regional right-to-study (DSU) scholarship. It is means-tested and can include money, a place in a residence and meals. International students usually need an ISEE parificato. Check the yearly call for amounts and deadlines."
+  ar: "منحة إقليمية لحق الدراسة (DSU). تُمنح حسب الوضع المادي وقد تشمل مبلغًا ماليًا وسكنًا في السكن الجامعي ووجبات. يحتاج الطلاب الدوليون عادةً إلى شهادة ISEE parificato. راجع الإعلان السنوي لمعرفة المبالغ والمواعيد."
+eligibility:
+  en: "Students enrolled at a university in the region who meet the income and merit requirements of the call."
+  ar: "الطلاب المسجلون في جامعة داخل الإقليم ممن يستوفون شروط الدخل والتحصيل الدراسي في الإعلان."
+url: https://www.edisu.piemonte.it/en/scholarships-and-grants/financial-benefits/scholarship-and-grants
+last_checked: 2026-10-25

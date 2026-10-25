@@ -1,0 +1,52 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../../../layouts/Base.astro';
+import { arrow, getStaticLangPaths, path, useTranslations, type Lang } from '../../../../i18n';
+import { fundingTypes, regions } from '../../../../lib/taxonomy';
+
+export const getStaticPaths = getStaticLangPaths;
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+const funding = await getCollection('funding');
+const groups = (Object.keys(fundingTypes) as (keyof typeof fundingTypes)[])
+  .map((type) => ({
+    type,
+    items: funding
+      .filter((f) => f.data.type === type)
+      .sort((a, b) => a.data.name[lang].localeCompare(b.data.name[lang], lang)),
+  }))
+  .filter((g) => g.items.length > 0);
+---
+
+<Base lang={lang} title={t('dir.funding.title')} description={t('dir.funding.intro')}>
+  <header class="container page-header">
+    <h1>{t('dir.funding.title')}</h1>
+    <p>{t('dir.funding.intro')}</p>
+    <p><a href={path(lang, '/study/funding/')}>{t('dir.funding.guide')} {arrow(lang)}</a></p>
+  </header>
+
+  {groups.map((g) => (
+    <section class="container section">
+      <h2>{fundingTypes[g.type][lang]}</h2>
+      <div class="grid">
+        {g.items.map((f) => (
+          <div class="card">
+            {f.data.region && <span class="badge">{regions[f.data.region][lang]}</span>}
+            <h3>{f.data.name[lang]}</h3>
+            <p>{f.data.description[lang]}</p>
+            <p><strong>{t('dir.funding.eligibility')}:</strong> {f.data.eligibility[lang]}</p>
+            <p><a href={f.data.url} rel="noopener" target="_blank">{t('dir.funding.official')}</a></p>
+            {f.data.sources.map((s) => (
+              <p class="meta"><a href={s.url} rel="noopener" target="_blank">{s.label}</a></p>
+            ))}
+          </div>
+        ))}
+      </div>
+    </section>
+  ))}
+
+  <section class="container">
+    <p class="notice">{t('common.disclaimer')}</p>
+  </section>
+</Base>

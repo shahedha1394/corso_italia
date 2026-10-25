@@ -1,0 +1,24 @@
+---
+import { path, fill, useTranslations, type Lang } from '../i18n';
+import { cities, levels, teachingLanguages } from '../lib/taxonomy';
+import type { ProgramWithUni } from '../lib/content';
+
+interface Props {
+  lang: Lang;
+  program: ProgramWithUni;
+}
+
+const { lang, program } = Astro.props;
+const t = useTranslations(lang);
+const p = program.data;
+const u = program.uni.data;
+---
+
+<a class="card program-card" href={path(lang, `/study/programs/${program.id}/`)}>
+  <span class="badge">{levels[p.level][lang]}</span>
+  <h3>{p.name[lang]}</h3>
+  <p>{u.name[lang]} · {cities[u.city][lang]}</p>
+  <p class="meta">
+    {teachingLanguages[p.language][lang]} · {fill(t('dir.program.years'), { n: p.duration_years })}
+  </p>
+</a>

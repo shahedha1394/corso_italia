@@ -1,0 +1,36 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../../../layouts/Base.astro';
+import { getStaticLangPaths, path, useTranslations, type Lang } from '../../../../i18n';
+import { cities } from '../../../../lib/taxonomy';
+
+export const getStaticPaths = getStaticLangPaths;
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+const [universities, programs] = await Promise.all([getCollection('universities'), getCollection('programs')]);
+const countFor = (id: string) => programs.filter((p) => p.data.university.id === id).length;
+universities.sort((a, b) => a.data.name[lang].localeCompare(b.data.name[lang], lang));
+---
+
+<Base lang={lang} title={t('dir.universities.title')} description={t('dir.universities.intro')}>
+  <header class="container page-header">
+    <h1>{t('dir.universities.title')}</h1>
+    <p>{t('dir.universities.intro')}</p>
+  </header>
+
+  <section class="container section">
+    <div class="grid">
+      {universities.map((u) => (
+        <a class="card" href={path(lang, `/study/universities/${u.id}/`)}>
+          <span class="badge">{cities[u.data.city][lang]}</span>
+          <h2>{u.data.name[lang]}</h2>
+          <p class="ltr-inline">{u.data.name_it}</p>
+          <p class="meta">
+            {t(u.data.type === 'public' ? 'dir.type.public' : 'dir.type.private')} · {t('dir.universities.programs')}: {countFor(u.id)}
+          </p>
+        </a>
+      ))}
+    </div>
+  </section>
+</Base>
