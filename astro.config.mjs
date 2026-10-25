@@ -1,10 +1,10 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 
-// GitHub Pages serves the site from /corso_italia/. With a custom domain,
-// set SITE_URL to the domain and BASE_PATH to "/".
+// Served from the custom domain https://corsoitaly.com (GitHub Pages, see public/CNAME).
+// To build for a sub-path instead, set SITE_URL and BASE_PATH, e.g. BASE_PATH=/corso_italia.
 export default defineConfig({
-  site: process.env.SITE_URL ?? 'https://zoxerus.github.io',
-  base: process.env.BASE_PATH ?? '/corso_italia',
+  site: process.env.SITE_URL ?? 'https://corsoitaly.com',
+  base: process.env.BASE_PATH ?? '/',
   trailingSlash: 'always',
 });

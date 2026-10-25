@@ -15,12 +15,12 @@ Requires Node.js 22.23.4 or newer (24 recommended, see `.nvmrc`).
 
 ```sh
 npm install
-npm run dev      # http://localhost:4321/corso_italia/
+npm run dev      # http://localhost:4321/
 npm run check    # English and Arabic are in sync
 npm run build    # static site in dist/
 ```
 
-The site is deployed to GitHub Pages from `main` by `.github/workflows/deploy.yml`.
+The site is deployed to GitHub Pages at https://corsoitaly.com from `main` by `.github/workflows/deploy.yml`.
 
 ## Where things live
 
