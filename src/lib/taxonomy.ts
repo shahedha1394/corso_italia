@@ -74,6 +74,7 @@ export const regions = {
   toscana: { en: 'Tuscany', ar: 'توسكانا' },
   'trentino-alto-adige': { en: 'Trentino-Alto Adige', ar: 'ترينتينو ألتو أديجي' },
   umbria: { en: 'Umbria', ar: 'أومبريا' },
+  'valle-d-aosta': { en: "Aosta Valley", ar: 'وادي أوستا' },
   veneto: { en: 'Veneto', ar: 'فينيتو' },
 } satisfies Labels;
 
