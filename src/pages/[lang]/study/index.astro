@@ -9,6 +9,24 @@ export const getStaticPaths = getStaticLangPaths;
 const lang = Astro.params.lang as Lang;
 const t = useTranslations(lang);
 const guides = await getGuides(lang, 'study');
+
+// The path a student follows, in order. Each step links to the page that explains it.
+const steps = [
+  { href: '/study/programs/', title: t('study.steps.choose'), text: t('study.steps.choose.text') },
+  { href: '/study/language-requirements/', title: t('study.steps.language'), text: t('study.steps.language.text') },
+  { href: '/study/costs/', title: t('study.steps.costs'), text: t('study.steps.costs.text') },
+  { href: '/study/how-to-apply/', title: t('study.steps.apply'), text: t('study.steps.apply.text') },
+  { href: '/study/how-to-apply/', title: t('study.steps.preenrol'), text: t('study.steps.preenrol.text') },
+  { href: '/study/visa/', title: t('study.steps.visa'), text: t('study.steps.visa.text') },
+];
+
+const tools = [
+  { href: '/study/programs/', title: t('dir.programs.title'), text: t('study.directory.programs') },
+  { href: '/study/universities/', title: t('dir.universities.title'), text: t('study.directory.universities') },
+  { href: '/study/cities/', title: t('cities.title'), text: t('study.directory.cities') },
+  { href: '/study/calendar/', title: t('calendar.title'), text: t('study.directory.calendar') },
+  { href: '/study/scholarships/', title: t('dir.funding.title'), text: t('study.directory.funding') },
+];
 ---
 
 <Base lang={lang} title={t('study.title')} description={t('study.intro')}>
@@ -18,20 +36,29 @@ const guides = await getGuides(lang, 'study');
   </header>
 
   <section class="container section">
-    <h2>{t('study.directory.title')}</h2>
+    <h2>{t('study.steps.title')}</h2>
+    <p class="meta">{t('study.steps.intro')}</p>
+    <ol class="study-steps">
+      {steps.map((s) => (
+        <li>
+          <a class="card" href={path(lang, s.href)}>
+            <h3>{s.title}</h3>
+            <p>{s.text}</p>
+          </a>
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="container section">
+    <h2>{t('study.tools.title')}</h2>
     <div class="grid">
-      <a class="card" href={path(lang, '/study/programs/')}>
-        <h3>{t('dir.programs.title')}</h3>
-        <p>{t('study.directory.programs')}</p>
-      </a>
-      <a class="card" href={path(lang, '/study/universities/')}>
-        <h3>{t('dir.universities.title')}</h3>
-        <p>{t('study.directory.universities')}</p>
-      </a>
-      <a class="card" href={path(lang, '/study/scholarships/')}>
-        <h3>{t('dir.funding.title')}</h3>
-        <p>{t('study.directory.funding')}</p>
-      </a>
+      {tools.map((c) => (
+        <a class="card" href={path(lang, c.href)}>
+          <h3>{c.title}</h3>
+          <p>{c.text}</p>
+        </a>
+      ))}
     </div>
   </section>
 
@@ -40,3 +67,37 @@ const guides = await getGuides(lang, 'study');
     <GuideCards lang={lang} guides={guides} />
   </section>
 </Base>
+
+<style>
+  .study-steps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr));
+    counter-reset: step;
+  }
+  .study-steps li {
+    counter-increment: step;
+  }
+  .study-steps .card {
+    block-size: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 0.75rem;
+    align-items: start;
+  }
+  .study-steps .card::before {
+    content: counter(step);
+    grid-row: span 2;
+    display: grid;
+    place-items: center;
+    inline-size: 2rem;
+    block-size: 2rem;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: var(--color-primary-contrast);
+    font-weight: 700;
+  }
+</style>

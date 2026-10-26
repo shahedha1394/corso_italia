@@ -22,6 +22,7 @@ A free, bilingual (English + Arabic) website helping Arab students study and liv
 - Adding a guide: create the same file name in `src/content/guides/en/` and `src/content/guides/ar/`. `npm run check` fails if one is missing.
 - Adding a program or university: add one YAML file to `src/content/programs/` or `src/content/universities/` (copy an existing one). Only add facts you checked on the official page, put that page in `url`, and set `last_checked` to the day you checked.
 - Announcing an opportunity or EngPro session: copy `docs/examples/opportunity.yaml` or `docs/examples/engpro-session.yaml` into `src/content/opportunities/` or `src/content/engpro-sessions/`. Past entries hide themselves; the site rebuilds every morning.
+- Adding a deadline to the calendar: copy `docs/examples/deadline.yaml` into `src/content/deadlines/`. Only dates checked on the official page; past deadlines hide themselves.
 - Sign-up form links live in `src/config/forms.ts`. Answers stay in Google Forms/Sheets and are never copied into the repo.
 - Links inside templates use `path(lang, '/study/')` from `src/i18n` so the GitHub Pages base path is respected.
 

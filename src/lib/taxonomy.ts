@@ -56,6 +56,15 @@ export const opportunityTypes = {
   other: { en: 'Other', ar: 'أخرى' },
 } satisfies Labels;
 
+export const deadlineTypes = {
+  application: { en: 'University application', ar: 'التقديم للجامعة' },
+  pre_enrolment: { en: 'Universitaly pre-enrolment', ar: 'التسجيل المسبق على Universitaly' },
+  test: { en: 'Admission test', ar: 'اختبار القبول' },
+  scholarship: { en: 'Scholarship', ar: 'منحة' },
+  visa: { en: 'Visa', ar: 'التأشيرة' },
+  other: { en: 'Other', ar: 'أخرى' },
+} satisfies Labels;
+
 export const modes = {
   online: { en: 'Online', ar: 'عبر الإنترنت' },
   in_person: { en: 'In person', ar: 'حضوري' },

@@ -1,0 +1,68 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../../../layouts/Base.astro';
+import { arrow, fill, getStaticLangPaths, path, useTranslations, type Lang } from '../../../../i18n';
+import { cities, regions } from '../../../../lib/taxonomy';
+
+export const getStaticPaths = getStaticLangPaths;
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+const [universities, programs] = await Promise.all([getCollection('universities'), getCollection('programs')]);
+
+type CityKey = keyof typeof cities;
+const cityKeys = [...new Set(universities.map((u) => u.data.city))] as CityKey[];
+const cityList = cityKeys
+  .map((city) => {
+    const unis = universities
+      .filter((u) => u.data.city === city)
+      .sort((a, b) => a.data.name[lang].localeCompare(b.data.name[lang], lang));
+    const ids = new Set(unis.map((u) => u.id));
+    return {
+      city,
+      region: unis[0].data.region,
+      unis,
+      programCount: programs.filter((p) => ids.has(p.data.university.id)).length,
+    };
+  })
+  .sort((a, b) => cities[a.city][lang].localeCompare(cities[b.city][lang], lang));
+---
+
+<Base lang={lang} title={t('cities.title')} description={t('cities.intro')}>
+  <header class="container page-header">
+    <p class="meta"><a href={path(lang, '/study/')}>{t('nav.study')}</a></p>
+    <h1>{t('cities.title')}</h1>
+    <p>{t('cities.intro')}</p>
+  </header>
+
+  <section class="container section">
+    <div class="grid">
+      {cityList.map((c) => (
+        <div class="card">
+          <span class="badge">{regions[c.region][lang]}</span>
+          <h2>{cities[c.city][lang]}</h2>
+          <p class="meta">{t('cities.universities')}:</p>
+          <ul class="city-unis">
+            {c.unis.map((u) => (
+              <li><a href={path(lang, `/study/universities/${u.id}/`)}>{u.data.name[lang]}</a></li>
+            ))}
+          </ul>
+          {c.programCount > 0 && (
+            <p>
+              <a href={`${path(lang, '/study/programs/')}?city=${c.city}`}>
+                {fill(t('cities.programs'), { n: c.programCount })} {arrow(lang)}
+              </a>
+            </p>
+          )}
+        </div>
+      ))}
+    </div>
+  </section>
+</Base>
+
+<style>
+  .city-unis {
+    margin: 0.25rem 0 0.75rem;
+    padding-inline-start: 1.25rem;
+  }
+</style>

@@ -1,0 +1,14 @@
+# Copy to src/content/deadlines/<short-name>.yaml and edit.
+# Only add dates you checked on the official page. Past deadlines hide themselves.
+title:
+  en: "University of Example: applications for 2027/28"
+  ar: "جامعة المثال: التقديم للعام 2027/28"
+type: application         # application | pre_enrolment | test | scholarship | visa | other
+# university: unipd       # optional, must match a file name in src/content/universities/
+# opens: 2026-09-15       # optional, when the window opens
+date: 2026-11-15          # the deadline itself
+# note:                   # optional
+#   en: "..."
+#   ar: "..."
+url: https://example.org/official-page
+last_checked: 2026-10-26
