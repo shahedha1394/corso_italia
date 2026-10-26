@@ -1,0 +1,15 @@
+name:
+  en: "University of Siena"
+  ar: "جامعة سيينا"
+name_it: "Università degli Studi di Siena"
+city: siena
+region: toscana
+type: public
+website: https://www.unisi.it
+international_page: https://en.unisi.it/node/1318
+programs_page: https://en.unisi.it/teaching/degree-courses-2026-2027
+areas: [engineering, sciences, medicine-health, economics-business, law, politics-social, humanities]
+description:
+  en: "The first document recording its existence dates from 1240. A public university with 15 departments, also teaching in Arezzo and Grosseto."
+  ar: "أقدم وثيقة تذكر وجودها تعود إلى عام 1240. جامعة حكومية فيها 15 قسماً، وتدرّس أيضاً في أريتسو وغروسيتو."
+last_checked: 2026-10-26

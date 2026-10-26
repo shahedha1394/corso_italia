@@ -1,0 +1,15 @@
+name:
+  en: "University of Genoa"
+  ar: "جامعة جنوة"
+name_it: "Università degli Studi di Genova"
+city: genova
+region: liguria
+type: public
+website: https://unige.it/en
+international_page: https://unige.it/en/international-enrolment
+programs_page: https://corsi.unige.it/en/corsidilaurea
+areas: [engineering, architecture-design, sciences, medicine-health, economics-business, law, politics-social, humanities]
+description:
+  en: "Founded in 1481. A public university with programs in Genoa and in Savona, Imperia, La Spezia and Chiavari."
+  ar: "تأسست عام 1481. جامعة حكومية لديها برامج في جنوة وفي سافونا وإمبيريا ولا سبيتسيا وكيافاري."
+last_checked: 2026-10-26
