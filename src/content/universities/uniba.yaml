@@ -1,0 +1,15 @@
+name:
+  en: "University of Bari Aldo Moro"
+  ar: "جامعة باري ألدو مورو"
+name_it: "Università degli Studi di Bari Aldo Moro"
+city: bari
+region: puglia
+type: public
+website: https://www.uniba.it
+international_page: https://www.uniba.it/it/studenti/segreterie-studenti/studenti-stranieri/studenti-extracomunitari-residenti-allestero
+programs_page: https://www.uniba.it/en/courses/courses
+areas: [computer-science, sciences, medicine-health, economics-business, law, politics-social, humanities, agriculture-veterinary]
+description:
+  en: "Founded in 1925. A public university with 19 departments, also teaching in Brindisi and Taranto."
+  ar: "تأسست عام 1925. جامعة حكومية فيها 19 قسماً، وتدرّس أيضاً في برينديزي وتارانتو."
+last_checked: 2026-10-26
