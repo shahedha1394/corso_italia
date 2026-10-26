@@ -21,7 +21,9 @@ const levelRange = (levels: string[]) => (levels.length > 1 ? `${levels[0]}–${
 <Base lang={lang} title={t('engpro.title')} description={t('engpro.tagline')}>
   <header class="engpro-hero">
     <div class="container">
-      <img class="engpro-logo" src={`${base}/engpro-logo.png`} alt={t('engpro.logoAlt')} width="250" height="217" />
+      <span class="engpro-logo">
+        <img src={`${base}/engpro-logo.png`} alt={t('engpro.logoAlt')} width="250" height="217" />
+      </span>
       <h1>{t('engpro.title')}</h1>
       <p class="tagline">{t('engpro.tagline')}</p>
       <p>{t('engpro.intro')}</p>
@@ -90,17 +92,21 @@ const levelRange = (levels: string[]) => (levels.length > 1 ? `${levels[0]}–${
     color: #fff;
     padding-block: 3rem;
   }
+  /* The circle is on the wrapper; the logo is smaller than the circle so its corners are not cut */
   .engpro-logo {
-    display: block;
+    display: grid;
+    place-items: center;
     inline-size: 8rem;
     block-size: 8rem;
-    object-fit: contain;
-    padding: 1rem;
     margin-block-end: 1.25rem;
     background: rgba(255, 255, 255, 0.92);
     border: 3px solid #00b39a;
     border-radius: 50%;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+  }
+  .engpro-logo img {
+    inline-size: 62%;
+    block-size: auto;
   }
   .engpro-hero h1 {
     margin: 0;
