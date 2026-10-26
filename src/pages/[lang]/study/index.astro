@@ -12,7 +12,7 @@ const guides = await getGuides(lang, 'study');
 
 // The path a student follows, in order. Each step links to the page that explains it.
 const steps = [
-  { href: '/study/programs/', title: t('study.steps.choose'), text: t('study.steps.choose.text') },
+  { href: '/study/universities/', title: t('study.steps.choose'), text: t('study.steps.choose.text') },
   { href: '/study/language-requirements/', title: t('study.steps.language'), text: t('study.steps.language.text') },
   { href: '/study/costs/', title: t('study.steps.costs'), text: t('study.steps.costs.text') },
   { href: '/study/how-to-apply/', title: t('study.steps.apply'), text: t('study.steps.apply.text') },
@@ -21,7 +21,6 @@ const steps = [
 ];
 
 const tools = [
-  { href: '/study/programs/', title: t('dir.programs.title'), text: t('study.directory.programs') },
   { href: '/study/universities/', title: t('dir.universities.title'), text: t('study.directory.universities') },
   { href: '/study/cities/', title: t('cities.title'), text: t('study.directory.cities') },
   { href: '/study/calendar/', title: t('calendar.title'), text: t('study.directory.calendar') },

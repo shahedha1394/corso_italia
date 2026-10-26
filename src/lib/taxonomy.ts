@@ -1,4 +1,4 @@
-// Fixed lists used by the directory filters. Each key has an English and an Arabic label.
+// Fixed lists used across the site. Each key has an English and an Arabic label.
 // To add a city or field, add it here; the content schema only accepts keys listed here.
 
 type Labels = Record<string, { en: string; ar: string }>;
@@ -21,18 +21,6 @@ export const regions = {
   toscana: { en: 'Tuscany', ar: 'توسكانا' },
   'trentino-alto-adige': { en: 'Trentino-Alto Adige', ar: 'ترينتينو ألتو أديجي' },
   veneto: { en: 'Veneto', ar: 'فينيتو' },
-} satisfies Labels;
-
-export const levels = {
-  bachelor: { en: "Bachelor's", ar: 'بكالوريوس' },
-  master: { en: "Master's", ar: 'ماجستير' },
-  phd: { en: 'PhD', ar: 'دكتوراه' },
-} satisfies Labels;
-
-export const teachingLanguages = {
-  en: { en: 'English', ar: 'الإنجليزية' },
-  it: { en: 'Italian', ar: 'الإيطالية' },
-  'en-it': { en: 'English and Italian', ar: 'الإنجليزية والإيطالية' },
 } satisfies Labels;
 
 export const fields = {

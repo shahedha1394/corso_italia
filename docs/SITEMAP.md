@@ -13,14 +13,12 @@ Arabic pages use `dir="rtl"`. The language switcher keeps the user on the same p
 ## 2. Study in Italy (`/study`)
 
 ### 2.1 University directory (`/study/universities`)
-- List of universities with city, type (public/private), website, and number of programs
-- University detail page (`/study/universities/[slug]`): overview, city, contacts, international office, tuition range, programs list
+- List of universities with city, type (public/private) and website
+- University detail page (`/study/universities/[slug]`): short description, main fields, city, website, international office, link to the official program list
 
-### 2.2 Program search (`/study/programs`)
-- Keyword search over program name and description
-- Filters: city, university, level (Bachelor / Master's / PhD), teaching language, admission test, tuition range
-- Program detail page (`/study/programs/[slug]`): see "How to apply" below
-- Data model: see [DATA_MODEL.md](DATA_MODEL.md)
+### 2.2 Study by city (`/study/cities`)
+- One card per city: region, short description, universities in that city
+- Individual study programs are not listed on this site; each university page links to the university's official program list, and Universitaly's official search covers all programs
 
 ### 2.3 How to apply (`/study/apply`)
 - General guide that applies to all programs:
@@ -31,7 +29,6 @@ Arabic pages use `dir="rtl"`. The language switcher keeps the user on the same p
   5. Apply to the university (own portal, deadlines)
   6. **Universitaly pre-enrollment** (mandatory for non-EU students)
   7. Acceptance letter → visa
-- Each program page adds its own: deadlines, required documents, test, application link, fees
 
 ### 2.4 Funding (`/study/funding`)
 - Regional **DSU** scholarships (per region: Lazio DiSCo, Lombardy, Piedmont EDISU, Tuscany DSU, ...)

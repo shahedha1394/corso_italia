@@ -8,8 +8,7 @@ export const getStaticPaths = getStaticLangPaths;
 
 const lang = Astro.params.lang as Lang;
 const t = useTranslations(lang);
-const [universities, programs] = await Promise.all([getCollection('universities'), getCollection('programs')]);
-const countFor = (id: string) => programs.filter((p) => p.data.university.id === id).length;
+const universities = await getCollection('universities');
 universities.sort((a, b) => a.data.name[lang].localeCompare(b.data.name[lang], lang));
 ---
 
@@ -27,7 +26,7 @@ universities.sort((a, b) => a.data.name[lang].localeCompare(b.data.name[lang], l
           <h2>{u.data.name[lang]}</h2>
           <p class="ltr-inline">{u.data.name_it}</p>
           <p class="meta">
-            {t(u.data.type === 'public' ? 'dir.type.public' : 'dir.type.private')} · {t('dir.universities.programs')}: {countFor(u.id)}
+            {t(u.data.type === 'public' ? 'dir.type.public' : 'dir.type.private')}
           </p>
         </a>
       ))}

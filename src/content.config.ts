@@ -5,15 +5,12 @@ import {
   cefrLevels,
   cities,
   deadlineTypes,
-  fields,
   fundingTypes,
   keysOf,
-  levels,
   modes,
   opportunityTypes,
   regions,
   skills,
-  teachingLanguages,
 } from './lib/taxonomy';
 
 // Guides live in src/content/guides/<lang>/<slug>.md.
@@ -57,30 +54,6 @@ const universities = defineCollection({
     website: z.string().url(),
     international_page: z.string().url().optional(),
     description: bilingual.optional(),
-    last_checked: z.coerce.date(),
-  }),
-});
-
-const programs = defineCollection({
-  loader: glob({ pattern: '*.yaml', base: './src/content/programs' }),
-  schema: z.object({
-    name: bilingual,
-    university: reference('universities'),
-    level: z.enum(keysOf(levels)),
-    single_cycle: z.boolean().default(false),
-    field: z.enum(keysOf(fields)),
-    language: z.enum(keysOf(teachingLanguages)),
-    duration_years: z.number(),
-    admission_test: z.string().optional(),
-    // Optional details. Only add what the official program page states.
-    language_requirement: z.string().optional(),
-    tuition_eur: z.object({ min: z.number().nonnegative(), max: z.number().nonnegative() }).optional(),
-    deadlines: z.array(z.object({ label: bilingual, date: z.coerce.date() })).default([]),
-    required_documents: z.array(bilingual).default([]),
-    application_url: z.string().url().optional(),
-    keywords: z.array(z.string()).default([]),
-    description: bilingual.optional(),
-    url: z.string().url(),
     last_checked: z.coerce.date(),
   }),
 });
@@ -164,7 +137,6 @@ export const collections = {
   guides,
   pages,
   universities,
-  programs,
   funding,
   opportunities,
   deadlines,

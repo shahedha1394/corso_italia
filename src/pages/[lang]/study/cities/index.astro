@@ -1,14 +1,14 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../../../layouts/Base.astro';
-import { arrow, fill, getStaticLangPaths, path, useTranslations, type Lang } from '../../../../i18n';
+import { getStaticLangPaths, path, useTranslations, type Lang } from '../../../../i18n';
 import { cities, regions } from '../../../../lib/taxonomy';
 
 export const getStaticPaths = getStaticLangPaths;
 
 const lang = Astro.params.lang as Lang;
 const t = useTranslations(lang);
-const [universities, programs] = await Promise.all([getCollection('universities'), getCollection('programs')]);
+const universities = await getCollection('universities');
 
 type CityKey = keyof typeof cities;
 const cityKeys = [...new Set(universities.map((u) => u.data.city))] as CityKey[];
@@ -17,12 +17,10 @@ const cityList = cityKeys
     const unis = universities
       .filter((u) => u.data.city === city)
       .sort((a, b) => a.data.name[lang].localeCompare(b.data.name[lang], lang));
-    const ids = new Set(unis.map((u) => u.id));
     return {
       city,
       region: unis[0].data.region,
       unis,
-      programCount: programs.filter((p) => ids.has(p.data.university.id)).length,
     };
   })
   .sort((a, b) => cities[a.city][lang].localeCompare(cities[b.city][lang], lang));
@@ -47,13 +45,6 @@ const cityList = cityKeys
               <li><a href={path(lang, `/study/universities/${u.id}/`)}>{u.data.name[lang]}</a></li>
             ))}
           </ul>
-          {c.programCount > 0 && (
-            <p>
-              <a href={`${path(lang, '/study/programs/')}?city=${c.city}`}>
-                {fill(t('cities.programs'), { n: c.programCount })} {arrow(lang)}
-              </a>
-            </p>
-          )}
         </div>
       ))}
     </div>
