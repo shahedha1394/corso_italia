@@ -1,0 +1,14 @@
+name:
+  en: "University of Rome Tor Vergata"
+  ar: "جامعة روما تور فيرغاتا"
+name_it: "Università degli Studi di Roma \"Tor Vergata\""
+city: roma
+region: lazio
+type: public
+website: https://web.uniroma2.it
+international_page: https://web-2022.uniroma2.it/en/percorso/admissions/sezione/how_to_apply
+areas: [engineering, sciences, medicine-health, economics-business, law, humanities]
+description:
+  en: "Established in 1982. A public university in Rome organised in 6 schools."
+  ar: "تأسست عام 1982. جامعة حكومية في روما مقسّمة إلى 6 كليات."
+last_checked: 2026-10-26

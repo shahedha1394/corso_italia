@@ -1,0 +1,14 @@
+name:
+  en: "University of Trieste"
+  ar: "جامعة تريستي"
+name_it: "Università degli Studi di Trieste"
+city: trieste
+region: friuli-venezia-giulia
+type: public
+website: https://www.units.it
+international_page: https://portale.units.it/en/international/destination-units/degree-seekers
+areas: [engineering, architecture-design, sciences, medicine-health, economics-business, law, politics-social, humanities]
+description:
+  en: "A public university with 10 departments, based in Trieste with sites in Gorizia, Pordenone and Portogruaro."
+  ar: "جامعة حكومية فيها 10 أقسام، مقرها في تريستي ولها مواقع في غوريتسيا وبوردينوني وبورتوغروارو."
+last_checked: 2026-10-26

@@ -1,0 +1,15 @@
+name:
+  en: "Roma Tre University"
+  ar: "جامعة روما تري"
+name_it: "Università degli Studi Roma Tre"
+city: roma
+region: lazio
+type: public
+website: https://www.uniroma3.it
+international_page: https://orientamento.uniroma3.it/en/about-roma-tre/international-students-admissions/
+programs_page: https://www.uniroma3.it/en/study/course-catalogue/
+areas: [engineering, architecture-design, computer-science, sciences, economics-business, law, politics-social, humanities]
+description:
+  en: "Founded in 1992. A public university in Rome with 13 departments."
+  ar: "تأسست عام 1992. جامعة حكومية في روما فيها 13 قسماً."
+last_checked: 2026-10-26

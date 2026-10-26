@@ -1,0 +1,15 @@
+name:
+  en: "University of Milano-Bicocca"
+  ar: "جامعة ميلانو بيكوكا"
+name_it: "Università degli Studi di Milano-Bicocca"
+city: milano
+region: lombardia
+type: public
+website: https://www.unimib.it
+international_page: https://en.unimib.it/international/international-students/information-international-students/access-students-international-qualification
+programs_page: https://en.unimib.it/study/bachelors-and-masters-degrees
+areas: [computer-science, sciences, medicine-health, economics-business, law, politics-social]
+description:
+  en: "Established in 1998. A public university with 14 departments in Milan and Monza, including psychology and education."
+  ar: "تأسست عام 1998. جامعة حكومية فيها 14 قسماً في ميلانو ومونتسا، منها علم النفس والتربية."
+last_checked: 2026-10-26

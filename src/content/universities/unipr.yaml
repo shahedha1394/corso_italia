@@ -1,0 +1,16 @@
+name:
+  en: "University of Parma"
+  ar: "جامعة بارما"
+name_it: "Università degli Studi di Parma"
+city: parma
+region: emilia-romagna
+type: public
+website: https://www.unipr.it
+international_page: https://www.unipr.it/en/node/100498
+programs_page: https://www.unipr.it/en/first-cycle-single-cycle-degree-courses
+masters_page: https://www.unipr.it/en/second-cycle-degree-courses
+areas: [engineering, architecture-design, computer-science, sciences, medicine-health, economics-business, law, politics-social, humanities, agriculture-veterinary]
+description:
+  en: "A public university with 10 departments covering almost every field, with a hub in Piacenza where Medicine is taught in English."
+  ar: "جامعة حكومية فيها 10 أقسام تغطي معظم المجالات، ولها فرع في بياتشنزا يُدرَّس فيه الطب بالإنجليزية."
+last_checked: 2026-10-26

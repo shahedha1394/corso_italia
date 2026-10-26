@@ -1,0 +1,15 @@
+name:
+  en: "University of Pavia"
+  ar: "جامعة بافيا"
+name_it: "Università degli Studi di Pavia"
+city: pavia
+region: lombardia
+type: public
+website: https://web.unipv.it
+international_page: https://web-en.unipv.it/?p=18008
+programs_page: https://en.unipv.it/en/education/bachelors-and-master-degree-programs/degree-programs
+areas: [engineering, architecture-design, sciences, medicine-health, economics-business, law, politics-social, humanities]
+description:
+  en: "Founded as a Studium Generale in 1361. A public university with 18 departments, also teaching in Cremona."
+  ar: "تأسست عام 1361. جامعة حكومية فيها 18 قسماً، وتدرّس أيضاً في كريمونا."
+last_checked: 2026-10-26
