@@ -1,0 +1,14 @@
+name:
+  en: "University of Perugia"
+  ar: "جامعة بيروجيا"
+name_it: "Università degli Studi di Perugia"
+city: perugia
+region: umbria
+type: public
+website: https://www.unipg.it
+international_page: https://www.unipg.it/en/international-students/becoming-a-unipg-student/enrollment-procedures
+areas: [engineering, computer-science, sciences, medicine-health, economics-business, law, politics-social, humanities, agriculture-veterinary]
+description:
+  en: "Founded in 1308. A public university with 14 departments, also teaching in Terni, Narni, Foligno and Assisi."
+  ar: "تأسست عام 1308. جامعة حكومية فيها 14 قسماً، وتدرّس أيضاً في تيرني ونارني وفولينيو وأسيزي."
+last_checked: 2026-10-26

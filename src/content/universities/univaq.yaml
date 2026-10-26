@@ -1,0 +1,13 @@
+name:
+  en: "University of L'Aquila"
+  ar: "جامعة لاكويلا"
+name_it: "Università degli Studi dell'Aquila"
+city: laquila
+region: abruzzo
+type: public
+website: https://www.univaq.it
+areas: [engineering, architecture-design, computer-science, sciences, medicine-health, economics-business, humanities]
+description:
+  en: "Established in 1964. A public university with 7 departments."
+  ar: "تأسست عام 1964. جامعة حكومية فيها 7 أقسام."
+last_checked: 2026-10-26

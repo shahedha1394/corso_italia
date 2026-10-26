@@ -16,7 +16,7 @@ Bilingual text fields are objects with `en` and `ar` keys.
 | name_it | string | |
 | city | string | city slug, e.g. `milano` |
 | region | string | e.g. `lombardia` (used for DSU scholarships) |
-| type | `public` \| `private` | |
+| type | `public` \| `private` | public = on the Ministry's list of state universities: https://www.mur.gov.it/it/aree-tematiche/universita/le-universita/universita-statali |
 | website | url | |
 | international_page | url | official page for international applicants |
 | programs_page | url | official list of degree programs (bachelor's list if separate) |

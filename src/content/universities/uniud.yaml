@@ -1,0 +1,15 @@
+name:
+  en: "University of Udine"
+  ar: "جامعة أوديني"
+name_it: "Università degli Studi di Udine"
+city: udine
+region: friuli-venezia-giulia
+type: public
+website: https://www.uniud.it
+international_page: https://uniud.it/en/education/segreteria-studenti/how-to-apply
+programs_page: https://www.uniud.it/en/education/offer/courses
+areas: [engineering, architecture-design, computer-science, sciences, medicine-health, economics-business, law, humanities, agriculture-veterinary]
+description:
+  en: "Established in 1978. A public university covering almost every field."
+  ar: "تأسست عام 1978. جامعة حكومية تغطي معظم المجالات."
+last_checked: 2026-10-26

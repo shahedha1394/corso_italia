@@ -1,0 +1,16 @@
+name:
+  en: "Marche Polytechnic University"
+  ar: "جامعة ماركي البوليتكنيك"
+name_it: "Università Politecnica delle Marche"
+city: ancona
+region: marche
+type: public
+website: https://www.univpm.it
+international_page: https://www.international.univpm.it/faq/
+programs_page: https://www.univpm.it/Entra/Offerta_formativa_1?combo4=0
+masters_page: https://www.univpm.it/Entra/Offerta_formativa_1?combo4=1
+areas: [engineering, computer-science, sciences, medicine-health, economics-business, agriculture-veterinary]
+description:
+  en: "Established in 1969 and a state university since 1971. A public university with five faculties: engineering, medicine, sciences, economics and agriculture."
+  ar: "تأسست عام 1969 وأصبحت جامعة حكومية عام 1971. فيها خمس كليات: الهندسة والطب والعلوم والاقتصاد والزراعة."
+last_checked: 2026-10-26
