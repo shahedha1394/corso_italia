@@ -14,12 +14,14 @@ const lang = Astro.params.lang as Lang;
 const t = useTranslations(lang);
 const sessions = await getUpcomingSessions();
 const resources = (await getCollection('engpro-resources')).sort((a, b) => a.data.title.localeCompare(b.data.title));
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const levelRange = (levels: string[]) => (levels.length > 1 ? `${levels[0]}–${levels[levels.length - 1]}` : levels[0]);
 ---
 
 <Base lang={lang} title={t('engpro.title')} description={t('engpro.tagline')}>
   <header class="engpro-hero">
     <div class="container">
+      <img class="engpro-logo" src={`${base}/engpro-logo.png`} alt={t('engpro.logoAlt')} width="250" height="217" />
       <h1>{t('engpro.title')}</h1>
       <p class="tagline">{t('engpro.tagline')}</p>
       <p>{t('engpro.intro')}</p>
@@ -86,6 +88,15 @@ const levelRange = (levels: string[]) => (levels.length > 1 ? `${levels[0]}–${
     background: linear-gradient(135deg, #1f3a93, #3b5bdb);
     color: #fff;
     padding-block: 3rem;
+  }
+  .engpro-logo {
+    display: block;
+    inline-size: 7rem;
+    block-size: auto;
+    padding: 0.75rem;
+    margin-block-end: 1rem;
+    background: #fff;
+    border-radius: 1rem;
   }
   .engpro-hero h1 {
     margin: 0;
