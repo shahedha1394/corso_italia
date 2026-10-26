@@ -4,7 +4,7 @@ import ProgramCard from '../../../../components/ProgramCard.astro';
 import { getStaticLangPaths, useTranslations, type Lang } from '../../../../i18n';
 import { getPrograms } from '../../../../lib/content';
 import { normalize } from '../../../../lib/search';
-import { cities, fields, levels, teachingLanguages } from '../../../../lib/taxonomy';
+import { cities, fields, levels, regions, teachingLanguages } from '../../../../lib/taxonomy';
 
 export const getStaticPaths = getStaticLangPaths;
 
@@ -15,6 +15,9 @@ const programs = await getPrograms(lang);
 // Only offer filter values that at least one program uses.
 const used = <K extends string>(get: (p: (typeof programs)[number]) => K) => [...new Set(programs.map(get))];
 const cityOptions = used((p) => p.uni.data.city).sort((a, b) => cities[a][lang].localeCompare(cities[b][lang], lang));
+const regionOptions = used((p) => p.uni.data.region).sort((a, b) => regions[a][lang].localeCompare(regions[b][lang], lang));
+const hasTest = (p: (typeof programs)[number]) => (p.data.admission_test ? 'yes' : 'no');
+const testOptions = (['yes', 'no'] as const).filter((v) => programs.some((p) => hasTest(p) === v));
 const levelOptions = (Object.keys(levels) as (keyof typeof levels)[]).filter((l) => programs.some((p) => p.data.level === l));
 const langOptions = used((p) => p.data.language);
 const fieldOptions = used((p) => p.data.field);
@@ -39,11 +42,17 @@ const searchText = (p: (typeof programs)[number]) =>
   );
 
 const filters = [
+  { name: 'region', label: t('dir.filter.region'), options: regionOptions.map((r) => [r, regions[r][lang]]) },
   { name: 'city', label: t('dir.filter.city'), options: cityOptions.map((c) => [c, cities[c][lang]]) },
   { name: 'university', label: t('dir.filter.university'), options: uniOptions.map((u) => [u.id, u.data.name[lang]]) },
   { name: 'level', label: t('dir.filter.level'), options: levelOptions.map((l) => [l, levels[l][lang]]) },
   { name: 'language', label: t('dir.filter.language'), options: langOptions.map((l) => [l, teachingLanguages[l][lang]]) },
   { name: 'field', label: t('dir.filter.field'), options: fieldOptions.map((f) => [f, fields[f][lang]]) },
+  {
+    name: 'test',
+    label: t('dir.filter.test'),
+    options: testOptions.map((v) => [v, t(v === 'yes' ? 'dir.filter.test.yes' : 'dir.filter.test.no')]),
+  },
 ];
 ---
 
@@ -81,11 +90,13 @@ const filters = [
       {programs.map((p) => (
         <div
           class="program-item"
+          data-region={p.uni.data.region}
           data-city={p.uni.data.city}
           data-university={p.uni.id}
           data-level={p.data.level}
           data-language={p.data.language}
           data-field={p.data.field}
+          data-test={hasTest(p)}
           data-text={searchText(p)}
         >
           <ProgramCard lang={lang} program={p} />
@@ -103,7 +114,7 @@ const filters = [
   const items = [...document.querySelectorAll<HTMLElement>('.program-item')];
   const count = document.getElementById('result-count')!;
   const none = document.getElementById('no-results')!;
-  const selects = ['city', 'university', 'level', 'language', 'field'];
+  const selects = ['region', 'city', 'university', 'level', 'language', 'field', 'test'];
 
   // Restore filters from the URL so a search can be shared as a link.
   const params = new URLSearchParams(location.search);
