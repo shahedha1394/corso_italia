@@ -1,0 +1,16 @@
+name:
+  en: "Mediterranea University of Reggio Calabria"
+  ar: "جامعة ميديتيرانيا في ريدجو كالابريا"
+name_it: "Università degli Studi di Reggio Calabria \"Mediterranea\""
+city: reggio-calabria
+region: calabria
+type: public
+website: https://www.unirc.it
+international_page: https://www.international.unirc.it/en/international/international-student
+programs_page: https://www.international.unirc.it/en/courses/bachelors-degrees
+masters_page: https://www.international.unirc.it/en/courses/masters-degrees
+areas: [engineering, architecture-design, computer-science, economics-business, law, humanities, agriculture-veterinary]
+description:
+  en: "Established in 1968. A public university with 5 departments."
+  ar: "تأسست عام 1968. جامعة حكومية فيها 5 أقسام."
+last_checked: 2026-10-26

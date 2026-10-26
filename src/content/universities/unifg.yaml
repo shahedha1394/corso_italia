@@ -1,0 +1,16 @@
+name:
+  en: "University of Foggia"
+  ar: "جامعة فودجا"
+name_it: "Università degli Studi di Foggia"
+city: foggia
+region: puglia
+type: public
+website: https://www.unifg.it
+international_page: https://www.unifg.it/en/study/degree-courses/enrollments/enrolment-procedure
+programs_page: https://www.unifg.it/en/study/degree-courses/bachelors-degrees-and-single-cycle-degrees
+masters_page: https://www.unifg.it/en/study/degree-courses/masters-degrees
+areas: [engineering, sciences, medicine-health, economics-business, law, politics-social, humanities, agriculture-veterinary]
+description:
+  en: "Established in 1999. A public university with 7 departments."
+  ar: "تأسست عام 1999. جامعة حكومية فيها 7 أقسام."
+last_checked: 2026-10-26
