@@ -2,6 +2,7 @@ import { defineCollection, reference } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 import {
+  areas,
   cefrLevels,
   cities,
   deadlineTypes,
@@ -42,6 +43,14 @@ const pages = defineCollection({
 const bilingual = z.object({ en: z.string().min(1), ar: z.string().min(1) });
 const source = z.object({ label: z.string(), url: z.string().url() });
 
+// Short description of each city, one YAML file per city (file name = city key in taxonomy).
+const cityInfo = defineCollection({
+  loader: glob({ pattern: '*.yaml', base: './src/content/cities' }),
+  schema: z.object({
+    description: bilingual,
+  }),
+});
+
 // Directory data: one YAML file per entry. See docs/DATA_MODEL.md.
 const universities = defineCollection({
   loader: glob({ pattern: '*.yaml', base: './src/content/universities' }),
@@ -53,6 +62,9 @@ const universities = defineCollection({
     type: z.enum(['public', 'private']),
     website: z.string().url(),
     international_page: z.string().url().optional(),
+    // The university's own list of all its degree programs
+    programs_page: z.string().url().optional(),
+    areas: z.array(z.enum(keysOf(areas))).default([]),
     description: bilingual.optional(),
     last_checked: z.coerce.date(),
   }),
@@ -134,6 +146,7 @@ const engproResources = defineCollection({
 });
 
 export const collections = {
+  cities: cityInfo,
   guides,
   pages,
   universities,

@@ -436,10 +436,6 @@ a.card:hover {
   text-decoration: underline;
 }
 
-.program-item[hidden] {
-  display: none;
-}
-
 .program-item > .card {
   block-size: 100%;
 }

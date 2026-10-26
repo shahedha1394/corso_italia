@@ -1,5 +1,5 @@
 // Fixed lists used across the site. Each key has an English and an Arabic label.
-// To add a city or field, add it here; the content schema only accepts keys listed here.
+// To add a city or area, add it here; the content schema only accepts keys listed here.
 
 type Labels = Record<string, { en: string; ar: string }>;
 
@@ -23,13 +23,18 @@ export const regions = {
   veneto: { en: 'Veneto', ar: 'فينيتو' },
 } satisfies Labels;
 
-export const fields = {
-  'computer-science': { en: 'Computer science and engineering', ar: 'علوم وهندسة الحاسوب' },
-  'data-science': { en: 'Data science and AI', ar: 'علم البيانات والذكاء الاصطناعي' },
-  economics: { en: 'Economics and management', ar: 'الاقتصاد والإدارة' },
+// Broad study areas, used to describe what each university teaches.
+export const areas = {
   engineering: { en: 'Engineering', ar: 'الهندسة' },
-  politics: { en: 'Political science, international relations and human rights', ar: 'العلوم السياسية والعلاقات الدولية وحقوق الإنسان' },
-  medicine: { en: 'Medicine', ar: 'الطب' },
+  'architecture-design': { en: 'Architecture and design', ar: 'العمارة والتصميم' },
+  'computer-science': { en: 'Computer science and IT', ar: 'علوم الحاسوب وتقنية المعلومات' },
+  sciences: { en: 'Natural sciences and mathematics', ar: 'العلوم الطبيعية والرياضيات' },
+  'medicine-health': { en: 'Medicine and health', ar: 'الطب والصحة' },
+  'economics-business': { en: 'Economics and business', ar: 'الاقتصاد والأعمال' },
+  law: { en: 'Law', ar: 'القانون' },
+  'politics-social': { en: 'Political and social sciences', ar: 'العلوم السياسية والاجتماعية' },
+  humanities: { en: 'Humanities and languages', ar: 'العلوم الإنسانية واللغات' },
+  'agriculture-veterinary': { en: 'Agriculture and veterinary', ar: 'الزراعة والطب البيطري' },
 } satisfies Labels;
 
 export const fundingTypes = {
