@@ -4,18 +4,24 @@
 type Labels = Record<string, { en: string; ar: string }>;
 
 export const cities = {
+  bari: { en: 'Bari', ar: 'باري' },
   bologna: { en: 'Bologna', ar: 'بولونيا' },
+  catania: { en: 'Catania', ar: 'كاتانيا' },
   firenze: { en: 'Florence', ar: 'فلورنسا' },
   genova: { en: 'Genoa', ar: 'جنوة' },
   milano: { en: 'Milan', ar: 'ميلانو' },
   napoli: { en: 'Naples', ar: 'نابولي' },
   padova: { en: 'Padua', ar: 'بادوفا' },
+  palermo: { en: 'Palermo', ar: 'باليرمو' },
   perugia: { en: 'Perugia', ar: 'بيروجيا' },
   pisa: { en: 'Pisa', ar: 'بيزا' },
   roma: { en: 'Rome', ar: 'روما' },
   siena: { en: 'Siena', ar: 'سيينا' },
   torino: { en: 'Turin', ar: 'تورينو' },
   trento: { en: 'Trento', ar: 'ترينتو' },
+  venezia: { en: 'Venice', ar: 'البندقية' },
+  verona: { en: 'Verona', ar: 'فيرونا' },
+  viterbo: { en: 'Viterbo', ar: 'فيتربو' },
 } satisfies Labels;
 
 export const regions = {
@@ -25,6 +31,8 @@ export const regions = {
   liguria: { en: 'Liguria', ar: 'ليغوريا' },
   lombardia: { en: 'Lombardy', ar: 'لومبارديا' },
   piemonte: { en: 'Piedmont', ar: 'بيدمونت' },
+  puglia: { en: 'Apulia', ar: 'بوليا' },
+  sicilia: { en: 'Sicily', ar: 'صقلية' },
   toscana: { en: 'Tuscany', ar: 'توسكانا' },
   'trentino-alto-adige': { en: 'Trentino-Alto Adige', ar: 'ترينتينو ألتو أديجي' },
   umbria: { en: 'Umbria', ar: 'أومبريا' },

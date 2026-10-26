@@ -1,0 +1,15 @@
+name:
+  en: "University of Verona"
+  ar: "جامعة فيرونا"
+name_it: "Università degli Studi di Verona"
+city: verona
+region: veneto
+type: public
+website: https://www.univr.it
+international_page: https://www.univr.it/en/our-services/international-degree-seeking-students
+programs_page: https://www.univr.it/en/degree-programmes
+areas: [engineering, computer-science, sciences, medicine-health, economics-business, law, humanities]
+description:
+  en: "Became a state university in 1982. A public university with 13 departments and a School of Medicine, with some courses in Vicenza."
+  ar: "أصبحت جامعة حكومية عام 1982. فيها 13 قسماً وكلية للطب، ولها بعض البرامج في فيتشنزا."
+last_checked: 2026-10-26
