@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../../../../layouts/Base.astro';
 import { fill, getStaticLangPaths, path, useTranslations, type Lang } from '../../../../i18n';
+import { normalize } from '../../../../lib/search';
 import { areas, cities, regions } from '../../../../lib/taxonomy';
 
 export const getStaticPaths = getStaticLangPaths;
@@ -17,7 +18,6 @@ const byLabel = <K extends string>(keys: K[], labels: Record<K, { en: string; ar
 
 const filters = [
   { name: 'city', label: t('dir.universities.filter.city'), options: byLabel(universities.map((u) => u.data.city), cities) },
-  { name: 'region', label: t('dir.universities.filter.region'), options: byLabel(universities.map((u) => u.data.region), regions) },
   { name: 'area', label: t('dir.universities.filter.area'), options: byLabel(universities.flatMap((u) => u.data.areas), areas) },
   {
     name: 'type',
@@ -27,6 +27,18 @@ const filters = [
       .map((v) => [v, t(v === 'public' ? 'dir.type.public' : 'dir.type.private')]),
   },
 ];
+
+// Universities grouped by region, regions in alphabetical order.
+type RegionKey = keyof typeof regions;
+const groups = ([...new Set(universities.map((u) => u.data.region))] as RegionKey[])
+  .sort((a, b) => regions[a][lang].localeCompare(regions[b][lang], lang))
+  .map((region) => ({ region, items: universities.filter((u) => u.data.region === region) }));
+
+// Everything a student might type: names in all languages and the city in both languages.
+const searchText = (u: (typeof universities)[number]) =>
+  normalize(
+    [u.data.name.en, u.data.name.ar, u.data.name_it, u.id, cities[u.data.city].en, cities[u.data.city].ar, u.data.city].join(' '),
+  );
 ---
 
 <Base lang={lang} title={t('dir.universities.title')} description={t('dir.universities.intro')}>
@@ -37,44 +49,63 @@ const filters = [
   </header>
 
   <section class="container section">
-    <p class="notice">{t('dir.universities.growing')}</p>
-
-    <form class="filters" id="uni-filters" onsubmit="return false">
-      {filters.map((f) => (
-        <label>
-          <span>{f.label}</span>
-          <select name={f.name}>
-            <option value="">{t('dir.universities.filter.all')}</option>
-            {f.options.map(([value, label]) => <option value={value}>{label}</option>)}
-          </select>
-        </label>
-      ))}
-      <button type="reset" class="link-button">{t('dir.universities.filter.reset')}</button>
+    <form class="uni-tools" id="uni-filters" role="search" onsubmit="return false">
+      <label class="uni-search">
+        <span>{t('dir.universities.search')}</span>
+        <input type="search" name="q" placeholder={t('dir.universities.searchPlaceholder')} autocomplete="off" />
+      </label>
+      <details class="filter-panel">
+        <summary>{t('dir.universities.filters')}</summary>
+        <div class="filters">
+          {filters.map((f) => (
+            <label>
+              <span>{f.label}</span>
+              <select name={f.name}>
+                <option value="">{t('dir.universities.filter.all')}</option>
+                {f.options.map(([value, label]) => <option value={value}>{label}</option>)}
+              </select>
+            </label>
+          ))}
+          <button type="reset" class="link-button">{t('dir.universities.filter.reset')}</button>
+        </div>
+      </details>
     </form>
 
     <p class="meta" id="uni-count" aria-live="polite" data-template={t('dir.universities.count')}>
       {fill(t('dir.universities.count'), { n: universities.length })}
     </p>
 
-    <div class="grid">
-      {universities.map((u) => (
-        <a
-          class="card uni-item"
-          href={path(lang, `/study/universities/${u.id}/`)}
-          data-city={u.data.city}
-          data-region={u.data.region}
-          data-type={u.data.type}
-          data-area={` ${u.data.areas.join(' ')} `}
-        >
-          <span class="badge">{cities[u.data.city][lang]}</span>
-          <h2>{u.data.name[lang]}</h2>
-          <p class="ltr-inline">{u.data.name_it}</p>
-          {u.data.description && <p>{u.data.description[lang]}</p>}
-          <p class="meta">{t(u.data.type === 'public' ? 'dir.type.public' : 'dir.type.private')}</p>
-        </a>
+    <div class="region-groups">
+      {groups.map((g) => (
+        <details class="region-group">
+          <summary>
+            <span>{regions[g.region][lang]}</span>
+            <span class="region-count">{g.items.length}</span>
+          </summary>
+          <ul class="uni-list">
+            {g.items.map((u) => (
+              <li
+                class="uni-item"
+                data-city={u.data.city}
+                data-type={u.data.type}
+                data-area={` ${u.data.areas.join(' ')} `}
+                data-text={searchText(u)}
+              >
+                <a href={path(lang, `/study/universities/${u.id}/`)}>
+                  <span class="uni-name">{u.data.name[lang]}</span>
+                  <span class="meta">
+                    {cities[u.data.city][lang]} · {t(u.data.type === 'public' ? 'dir.type.public' : 'dir.type.private')}
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </details>
       ))}
     </div>
     <p class="card" id="uni-none" hidden>{t('dir.universities.none')}</p>
+
+    <p class="meta growing">{t('dir.universities.growing')}</p>
   </section>
 
   <section class="container section">
@@ -85,31 +116,132 @@ const filters = [
   </section>
 </Base>
 
+<style>
+  .uni-tools {
+    display: grid;
+    gap: 0.75rem;
+    margin-block-end: 0.75rem;
+  }
+  .uni-search {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-muted);
+  }
+  .uni-search input {
+    font: inherit;
+    font-weight: 400;
+    color: var(--color-text);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 0.6rem 0.75rem;
+  }
+  .filter-panel > summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--color-primary);
+    inline-size: fit-content;
+  }
+  .filter-panel .filters {
+    margin-block: 0.5rem 0;
+  }
+  .region-groups {
+    display: grid;
+    gap: 0.5rem;
+  }
+  .region-group {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+  }
+  .region-group > summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .region-count {
+    font-size: 0.8rem;
+    padding: 0.1rem 0.55rem;
+    border-radius: 999px;
+    background: var(--color-primary-soft);
+    color: var(--color-primary);
+  }
+  .uni-list {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0.5rem;
+  }
+  .uni-list a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.15rem 1rem;
+    padding: 0.55rem 1rem;
+    border-block-start: 1px solid var(--color-border);
+    color: inherit;
+    text-decoration: none;
+  }
+  .uni-list a:hover .uni-name {
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+  .uni-name {
+    font-weight: 600;
+  }
+  .growing {
+    margin-block-start: 1rem;
+  }
+</style>
+
 <script>
+  import { normalize } from '../../../../lib/search';
+
   const form = document.getElementById('uni-filters') as HTMLFormElement;
-  const items = [...document.querySelectorAll<HTMLElement>('.uni-item')];
+  const panel = form.querySelector('details')!;
+  const groups = [...document.querySelectorAll<HTMLDetailsElement>('.region-group')];
   const count = document.getElementById('uni-count')!;
   const none = document.getElementById('uni-none')!;
 
-  // Restore filters from the URL so a filtered list can be shared as a link.
+  // Restore search and filters from the URL so a result can be shared as a link.
   for (const [key, value] of new URLSearchParams(location.search)) {
-    const el = form.elements.namedItem(key) as HTMLSelectElement | null;
-    if (el) el.value = value;
+    const el = form.elements.namedItem(key) as HTMLInputElement | HTMLSelectElement | null;
+    if (el) {
+      el.value = value;
+      if (key !== 'q') panel.open = true;
+    }
   }
 
   function apply() {
     const data = new FormData(form);
     const get = (k: string) => String(data.get(k) ?? '');
+    const words = normalize(get('q')).split(/\s+/).filter(Boolean);
+    const active = words.length > 0 || ['city', 'area', 'type'].some((k) => get(k));
     let shown = 0;
-    for (const item of items) {
-      const d = item.dataset;
-      const matches =
-        (!get('city') || d.city === get('city')) &&
-        (!get('region') || d.region === get('region')) &&
-        (!get('type') || d.type === get('type')) &&
-        (!get('area') || d.area!.includes(` ${get('area')} `));
-      item.hidden = !matches;
-      if (matches) shown++;
+    for (const group of groups) {
+      let inGroup = 0;
+      for (const item of group.querySelectorAll<HTMLElement>('.uni-item')) {
+        const d = item.dataset;
+        const matches =
+          (!get('city') || d.city === get('city')) &&
+          (!get('type') || d.type === get('type')) &&
+          (!get('area') || d.area!.includes(` ${get('area')} `)) &&
+          words.every((w) => d.text!.includes(w));
+        item.hidden = !matches;
+        if (matches) inGroup++;
+      }
+      group.hidden = inGroup === 0;
+      group.querySelector('.region-count')!.textContent = String(inGroup);
+      // While searching or filtering, open the regions that have results; otherwise keep them closed.
+      group.open = active && inGroup > 0;
+      shown += inGroup;
     }
     count.textContent = count.dataset.template!.replace('{n}', String(shown));
     none.hidden = shown > 0;
