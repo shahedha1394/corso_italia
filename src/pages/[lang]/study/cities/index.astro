@@ -36,30 +36,74 @@ const cityList = cityKeys
   </header>
 
   <section class="container section">
-    <div class="grid">
+    <div class="city-groups">
       {cityList.map((c) => (
-        <div class="card" id={c.city}>
-          <span class="badge">{regions[c.region][lang]}</span>
-          <h2>{cities[c.city][lang]}</h2>
-          {c.description && <p class="city-desc">{c.description[lang]}</p>}
-          <p class="meta">{t('cities.universities')}:</p>
-          <ul class="city-unis">
-            {c.unis.map((u) => (
-              <li><a href={path(lang, `/study/universities/${u.id}/`)}>{u.data.name[lang]}</a></li>
-            ))}
-          </ul>
-        </div>
+        <details class="city-group" id={c.city}>
+          <summary>
+            <span class="city-name">{cities[c.city][lang]}</span>
+            <span class="meta">{regions[c.region][lang]}</span>
+            <span class="city-count">{c.unis.length}</span>
+          </summary>
+          <div class="city-body">
+            {c.description && <p>{c.description[lang]}</p>}
+            <ul class="city-unis">
+              {c.unis.map((u) => (
+                <li><a href={path(lang, `/study/universities/${u.id}/`)}>{u.data.name[lang]}</a></li>
+              ))}
+            </ul>
+          </div>
+        </details>
       ))}
     </div>
   </section>
 </Base>
 
 <style>
-  .city-desc {
-    margin-block-end: 0.75rem;
+  .city-groups {
+    display: grid;
+    gap: 0.5rem;
+  }
+  .city-group {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+  }
+  .city-group > summary {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+  }
+  .city-name {
+    font-weight: 600;
+  }
+  .city-count {
+    margin-inline-start: auto;
+    font-size: 0.8rem;
+    padding: 0.1rem 0.55rem;
+    border-radius: 999px;
+    background: var(--color-primary-soft);
+    color: var(--color-primary);
+  }
+  .city-body {
+    padding: 0 1rem 0.75rem;
+  }
+  .city-body p {
+    margin-block: 0 0.5rem;
+    color: var(--color-muted);
   }
   .city-unis {
-    margin: 0.25rem 0 0.75rem;
+    margin: 0;
     padding-inline-start: 1.25rem;
   }
 </style>
+
+<script>
+  // Links like /study/cities/#roma open that city.
+  const target = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+  if (target instanceof HTMLDetailsElement) {
+    target.open = true;
+    target.scrollIntoView();
+  }
+</script>
