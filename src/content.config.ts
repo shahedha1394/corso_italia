@@ -4,6 +4,7 @@ import { z } from 'astro/zod';
 import {
   cefrLevels,
   cities,
+  deadlineTypes,
   fields,
   fundingTypes,
   keysOf,
@@ -112,6 +113,22 @@ const opportunities = defineCollection({
   }),
 });
 
+// Deadlines calendar: one YAML file per deadline. Past deadlines hide themselves
+// (the site is rebuilt daily). Only add dates you checked on the official page.
+const deadlines = defineCollection({
+  loader: glob({ pattern: '*.yaml', base: './src/content/deadlines' }),
+  schema: z.object({
+    title: bilingual,
+    type: z.enum(keysOf(deadlineTypes)),
+    university: reference('universities').optional(),
+    opens: z.coerce.date().optional(),
+    date: z.coerce.date(),
+    note: bilingual.optional(),
+    url: z.string().url(),
+    last_checked: z.coerce.date(),
+  }),
+});
+
 const engproSessions = defineCollection({
   loader: glob({ pattern: '*.yaml', base: './src/content/engpro-sessions' }),
   schema: z.object({
@@ -144,6 +161,7 @@ export const collections = {
   programs,
   funding,
   opportunities,
+  deadlines,
   'engpro-sessions': engproSessions,
   'engpro-resources': engproResources,
 };

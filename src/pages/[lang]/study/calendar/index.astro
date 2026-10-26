@@ -1,0 +1,71 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../../../layouts/Base.astro';
+import { getStaticLangPaths, path, useTranslations, type Lang } from '../../../../i18n';
+import { getUpcomingDeadlines } from '../../../../lib/content';
+import { deadlineTypes } from '../../../../lib/taxonomy';
+
+export const getStaticPaths = getStaticLangPaths;
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+const [deadlines, universities] = await Promise.all([getUpcomingDeadlines(), getCollection('universities')]);
+const uniById = new Map(universities.map((u) => [u.id, u]));
+const locale = lang === 'ar' ? 'ar' : 'en-GB';
+const formatDate = (d: Date) => d.toLocaleDateString(locale, { dateStyle: 'long' });
+const monthKey = (d: Date) => `${d.getFullYear()}-${d.getMonth()}`;
+const months = [...new Map(deadlines.map((d) => [monthKey(d.data.date), d.data.date])).entries()].map(([key, date]) => ({
+  label: date.toLocaleDateString(locale, { month: 'long', year: 'numeric' }),
+  items: deadlines.filter((d) => monthKey(d.data.date) === key),
+}));
+---
+
+<Base lang={lang} title={t('calendar.title')} description={t('calendar.intro')}>
+  <header class="container page-header">
+    <p class="meta"><a href={path(lang, '/study/')}>{t('nav.study')}</a></p>
+    <h1>{t('calendar.title')}</h1>
+    <p>{t('calendar.intro')}</p>
+  </header>
+
+  {months.length === 0 ? (
+    <section class="container section">
+      <p class="card">{t('calendar.empty')}</p>
+    </section>
+  ) : (
+    months.map((m) => (
+      <section class="container section">
+        <h2>{m.label}</h2>
+        <div class="grid">
+          {m.items.map((d) => {
+            const uni = d.data.university ? uniById.get(d.data.university.id) : undefined;
+            return (
+              <div class="card">
+                <span class="badge">{deadlineTypes[d.data.type][lang]}</span>
+                <h3>{d.data.title[lang]}</h3>
+                {uni && (
+                  <p><a href={path(lang, `/study/universities/${uni.id}/`)}>{uni.data.name[lang]}</a></p>
+                )}
+                <dl class="facts">
+                  {d.data.opens && (
+                    <>
+                      <dt>{t('calendar.opens')}</dt>
+                      <dd>{formatDate(d.data.opens)}</dd>
+                    </>
+                  )}
+                  <dt>{t('calendar.deadline')}</dt>
+                  <dd><strong>{formatDate(d.data.date)}</strong></dd>
+                </dl>
+                {d.data.note && <p>{d.data.note[lang]}</p>}
+                <p><a href={d.data.url} rel="noopener" target="_blank">{t('calendar.official')}</a></p>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+    ))
+  )}
+
+  <section class="container">
+    <p class="notice">{t('common.disclaimer')}</p>
+  </section>
+</Base>

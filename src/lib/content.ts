@@ -42,3 +42,12 @@ export async function getUpcomingSessions(now = new Date()) {
     .filter((s) => s.data.start.getTime() + s.data.duration_minutes * 60_000 >= now.getTime())
     .sort((a, b) => a.data.start.getTime() - b.data.start.getTime());
 }
+
+/** Deadlines that have not passed yet (a deadline stays visible through its own day). Soonest first. */
+export async function getUpcomingDeadlines(now = new Date()) {
+  const startOfToday = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const all = await getCollection('deadlines');
+  return all
+    .filter((d) => d.data.date >= startOfToday)
+    .sort((a, b) => a.data.date.getTime() - b.data.date.getTime());
+}

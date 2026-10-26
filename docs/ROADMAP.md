@@ -5,4 +5,6 @@
 3. **University directory and funding** – done – program search with filters (city, university, level, keyword), seeded with English-taught programs; funding pages
 4. **EngPro and Opportunities** (in progress) – sign-up and submission forms, admin approval queue, Google Forms for sign-ups (chosen over a custom backend), optional Telegram/WhatsApp posting
 
-Later: deadlines calendar, visa country notes for more countries, Italian as a third language, newsletter.
+Study section, Universitaly-style: numbered steps on `/study`, browse by city (`/study/cities`), deadlines calendar (`/study/calendar`), costs guide (outline) – in progress
+
+Later: visa country notes for more countries, Italian as a third language, newsletter.
