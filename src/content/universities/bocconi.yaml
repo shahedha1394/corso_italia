@@ -6,4 +6,11 @@ city: milano
 region: lombardia
 type: private
 website: https://www.unibocconi.it
-last_checked: 2026-10-25
+international_page: https://www.unibocconi.it/en/admissions
+programs_page: https://www.unibocconi.it/en/programs/bachelor-science-programs
+masters_page: https://unibocconi.it/en/programs/master-science-programs
+areas: [economics-business, law, politics-social, computer-science]
+description:
+  en: "Founded in Milan in 1902. A private university focused on economics and management, with programs in law, political science and computer science."
+  ar: "تأسست في ميلانو عام 1902. جامعة خاصة تركّز على الاقتصاد والإدارة، ولديها برامج في القانون والعلوم السياسية وعلوم الحاسوب."
+last_checked: 2026-10-26

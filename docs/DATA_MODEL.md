@@ -18,10 +18,16 @@ Bilingual text fields are objects with `en` and `ar` keys.
 | region | string | e.g. `lombardia` (used for DSU scholarships) |
 | type | `public` \| `private` | |
 | website | url | |
-| international_office | url / email | | *later*
+| international_page | url | official page for international applicants |
+| programs_page | url | official list of degree programs (bachelor's list if separate) |
+| masters_page | url | official master's list, when separate |
+| areas | list | broad study areas from `areas` in `src/lib/taxonomy.ts`, only those seen on the official site |
 | tuition_range_eur | {min, max} | per year | *later*
-| description | {en, ar} | short |
+| description | {en, ar} | one or two sentences, only facts from the official site |
 | last_checked | date | |
+
+## City (`src/content/cities/<city-key>.yaml`)
+description {en, ar}: one short, stable sentence (where the city is). File name is the city key in `src/lib/taxonomy.ts`.
 
 ## Funding (`src/content/funding/<slug>.yaml`)
 provider, name {en, ar}, type (`regional_dsu` | `government` | `university` | `external`), region, eligibility {en, ar}, amount, deadline, url, last_checked.

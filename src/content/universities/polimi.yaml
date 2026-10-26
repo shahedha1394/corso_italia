@@ -6,4 +6,11 @@ city: milano
 region: lombardia
 type: public
 website: https://www.polimi.it
-last_checked: 2026-10-25
+international_page: https://www.polimi.it/en/prospective-students/how-to-apply/admission-to-laurea-programmes/students-with-a-foreign-degree
+programs_page: https://www.polimi.it/en/education/laurea-programmes
+masters_page: https://www.polimi.it/en/education/laurea-magistrale-programmes
+areas: [engineering, architecture-design]
+description:
+  en: "Founded in 1863. A technical university for engineering, architecture and design, with campuses in Milan and in Lecco, Cremona, Mantua and Piacenza."
+  ar: "تأسست عام 1863. جامعة تقنية متخصصة في الهندسة والعمارة والتصميم، ولها فروع في ميلانو وفي ليكو وكريمونا ومانتوفا وبياتشنزا."
+last_checked: 2026-10-26

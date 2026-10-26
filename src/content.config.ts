@@ -62,8 +62,10 @@ const universities = defineCollection({
     type: z.enum(['public', 'private']),
     website: z.string().url(),
     international_page: z.string().url().optional(),
-    // The university's own list of all its degree programs
+    // The university's own list of its degree programs. When it has separate lists,
+    // programs_page is the bachelor's list and masters_page the master's list.
     programs_page: z.string().url().optional(),
+    masters_page: z.string().url().optional(),
     areas: z.array(z.enum(keysOf(areas))).default([]),
     description: bilingual.optional(),
     last_checked: z.coerce.date(),

@@ -31,7 +31,12 @@ const checked = u.last_checked.toLocaleDateString(lang === 'ar' ? 'ar' : 'en-GB'
     <div class="uni-links">
       <a class="button" href={u.website} rel="noopener" target="_blank">{t('dir.universities.website')}</a>
       {u.programs_page && (
-        <a class="button button-secondary" href={u.programs_page} rel="noopener" target="_blank">{t('dir.universities.programsPage')}</a>
+        <a class="button button-secondary" href={u.programs_page} rel="noopener" target="_blank">
+          {t(u.masters_page ? 'dir.universities.bachelorsPage' : 'dir.universities.programsPage')}
+        </a>
+      )}
+      {u.masters_page && (
+        <a class="button button-secondary" href={u.masters_page} rel="noopener" target="_blank">{t('dir.universities.mastersPage')}</a>
       )}
       {u.international_page && (
         <a class="button button-secondary" href={u.international_page} rel="noopener" target="_blank">{t('dir.universities.international')}</a>

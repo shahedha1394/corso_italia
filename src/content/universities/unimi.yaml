@@ -6,4 +6,11 @@ city: milano
 region: lombardia
 type: public
 website: https://www.unimi.it
-last_checked: 2026-10-25
+international_page: https://www.unimi.it/en/international/coming-abroad/enrol-programme
+programs_page: https://www.unimi.it/en/education/undergraduate-programmes
+masters_page: https://www.unimi.it/en/node/13968
+areas: [medicine-health, sciences, computer-science, economics-business, law, politics-social, humanities, agriculture-veterinary]
+description:
+  en: "Founded in 1924. A public university in Milan with programs in medicine, sciences, law, humanities, social sciences, agriculture and veterinary medicine."
+  ar: "تأسست عام 1924. جامعة حكومية في ميلانو لديها برامج في الطب والعلوم والقانون والعلوم الإنسانية والاجتماعية والزراعة والطب البيطري."
+last_checked: 2026-10-26
