@@ -1,0 +1,15 @@
+name:
+  en: "University of Messina"
+  ar: "جامعة ميسينا"
+name_it: "Università degli Studi di Messina"
+city: messina
+region: sicilia
+type: public
+website: https://www.unime.it
+international_page: https://international.unime.it/study-us/application-and-admission
+programs_page: https://international.unime.it/node/14
+areas: [engineering, computer-science, sciences, medicine-health, economics-business, law, politics-social, humanities, agriculture-veterinary]
+description:
+  en: "Founded in 1548. A public university covering almost every field."
+  ar: "تأسست عام 1548. جامعة حكومية تغطي معظم المجالات."
+last_checked: 2026-10-26

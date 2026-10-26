@@ -4,13 +4,18 @@
 type Labels = Record<string, { en: string; ar: string }>;
 
 export const cities = {
+  ancona: { en: 'Ancona', ar: 'أنكونا' },
   bari: { en: 'Bari', ar: 'باري' },
+  bergamo: { en: 'Bergamo', ar: 'بيرغامو' },
   bologna: { en: 'Bologna', ar: 'بولونيا' },
+  brescia: { en: 'Brescia', ar: 'بريشا' },
   cagliari: { en: 'Cagliari', ar: 'كالياري' },
   catania: { en: 'Catania', ar: 'كاتانيا' },
   ferrara: { en: 'Ferrara', ar: 'فيرارا' },
   firenze: { en: 'Florence', ar: 'فلورنسا' },
   genova: { en: 'Genoa', ar: 'جنوة' },
+  laquila: { en: "L'Aquila", ar: 'لاكويلا' },
+  messina: { en: 'Messina', ar: 'ميسينا' },
   milano: { en: 'Milan', ar: 'ميلانو' },
   modena: { en: 'Modena', ar: 'مودينا' },
   napoli: { en: 'Naples', ar: 'نابولي' },
@@ -26,18 +31,21 @@ export const cities = {
   torino: { en: 'Turin', ar: 'تورينو' },
   trento: { en: 'Trento', ar: 'ترينتو' },
   trieste: { en: 'Trieste', ar: 'تريستي' },
+  udine: { en: 'Udine', ar: 'أوديني' },
   venezia: { en: 'Venice', ar: 'البندقية' },
   verona: { en: 'Verona', ar: 'فيرونا' },
   viterbo: { en: 'Viterbo', ar: 'فيتربو' },
 } satisfies Labels;
 
 export const regions = {
+  abruzzo: { en: 'Abruzzo', ar: 'أبروتسو' },
   campania: { en: 'Campania', ar: 'كامبانيا' },
   'emilia-romagna': { en: 'Emilia-Romagna', ar: 'إميليا رومانيا' },
   'friuli-venezia-giulia': { en: 'Friuli Venezia Giulia', ar: 'فريولي فينيتسيا جوليا' },
   lazio: { en: 'Lazio', ar: 'لاتسيو' },
   liguria: { en: 'Liguria', ar: 'ليغوريا' },
   lombardia: { en: 'Lombardy', ar: 'لومبارديا' },
+  marche: { en: 'Marche', ar: 'ماركي' },
   piemonte: { en: 'Piedmont', ar: 'بيدمونت' },
   puglia: { en: 'Apulia', ar: 'بوليا' },
   sardegna: { en: 'Sardinia', ar: 'سردينيا' },
