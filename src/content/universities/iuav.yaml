@@ -1,0 +1,15 @@
+name:
+  en: "Iuav University of Venice"
+  ar: "جامعة إيواف في البندقية"
+name_it: "Università Iuav di Venezia"
+city: venezia
+region: veneto
+type: public
+website: https://www.iuav.it
+international_page: https://www.iuav.it/en/node/375
+programs_page: https://www.iuav.it/informazioni-per/international-students
+areas: [architecture-design, engineering, humanities]
+description:
+  en: "Its origins go back to a school of architecture founded in 1926. A public university for architecture, design, planning and the arts, with a design program in Vicenza."
+  ar: "تعود أصولها إلى مدرسة للعمارة تأسست عام 1926. جامعة حكومية للعمارة والتصميم والتخطيط والفنون، ولها برنامج تصميم في فيتشنزا."
+last_checked: 2026-10-26

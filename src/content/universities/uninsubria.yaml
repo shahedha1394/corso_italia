@@ -1,0 +1,15 @@
+name:
+  en: "University of Insubria"
+  ar: "جامعة إنسوبريا"
+name_it: "Università degli Studi dell'Insubria"
+city: varese
+region: lombardia
+type: public
+website: https://www.uninsubria.eu
+international_page: https://www.uninsubria.eu/services/uninsubria-living/enrollment-and-applications/pre-enrollment-non-ue-students
+programs_page: https://www.uninsubria.eu/course-catalogue/course-list/degree-programs
+areas: [engineering, computer-science, sciences, medicine-health, economics-business, law, humanities]
+description:
+  en: "Founded in 1998. A public university with 8 departments, in Varese, Como and Busto Arsizio."
+  ar: "تأسست عام 1998. جامعة حكومية فيها 8 أقسام، في فاريزي وكومو وبوستو أرسيتسيو."
+last_checked: 2026-10-26
