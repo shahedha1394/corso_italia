@@ -1,0 +1,14 @@
+name:
+  en: "University of Rome Foro Italico"
+  ar: "جامعة روما فورو إيتاليكو"
+name_it: "Università degli Studi di Roma \"Foro Italico\""
+city: roma
+region: lazio
+type: public
+website: https://www.uniroma4.it
+programs_page: https://www.uniroma4.it/index.php/didactics/study-courses/?lang=en
+areas: [medicine-health, economics-business]
+description:
+  en: "Founded in 1928 as an academy of physical education. A public university specialising in sport and exercise sciences."
+  ar: "تأسست عام 1928 كأكاديمية للتربية البدنية. جامعة حكومية متخصصة في علوم الرياضة والتمارين."
+last_checked: 2026-10-26

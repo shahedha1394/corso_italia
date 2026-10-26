@@ -1,0 +1,14 @@
+name:
+  en: "University of Chieti-Pescara"
+  ar: "جامعة كييتي-بيسكارا"
+name_it: "Università degli Studi di Chieti-Pescara \"Gabriele D'Annunzio\""
+city: chieti
+region: abruzzo
+type: public
+website: https://www.unich.it
+programs_page: https://en.unich.it/teaching/academic-programs
+areas: [engineering, architecture-design, sciences, medicine-health, economics-business, law, politics-social, humanities]
+description:
+  en: "A public university with 3 schools and 7 further departments, in Chieti and Pescara."
+  ar: "جامعة حكومية فيها 3 كليات و7 أقسام أخرى، في كييتي وبيسكارا."
+last_checked: 2026-10-26

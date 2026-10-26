@@ -1,0 +1,14 @@
+name:
+  en: "University of Basilicata"
+  ar: "جامعة بازيليكاتا"
+name_it: "Università degli Studi della Basilicata"
+city: potenza
+region: basilicata
+type: public
+website: https://portale.unibas.it
+programs_page: https://portale.unibas.it/site/en/home/study-at-unibas/articolo3923.html
+areas: [engineering, architecture-design, computer-science, sciences, economics-business, humanities, agriculture-veterinary]
+description:
+  en: "A public university in Potenza, with architecture taught in Matera."
+  ar: "جامعة حكومية في بوتنزا، وتُدرَّس العمارة فيها في ماتيرا."
+last_checked: 2026-10-26
