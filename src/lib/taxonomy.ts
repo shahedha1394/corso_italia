@@ -5,21 +5,29 @@ type Labels = Record<string, { en: string; ar: string }>;
 
 export const cities = {
   bologna: { en: 'Bologna', ar: 'بولونيا' },
+  firenze: { en: 'Florence', ar: 'فلورنسا' },
+  genova: { en: 'Genoa', ar: 'جنوة' },
   milano: { en: 'Milan', ar: 'ميلانو' },
+  napoli: { en: 'Naples', ar: 'نابولي' },
   padova: { en: 'Padua', ar: 'بادوفا' },
+  perugia: { en: 'Perugia', ar: 'بيروجيا' },
   pisa: { en: 'Pisa', ar: 'بيزا' },
   roma: { en: 'Rome', ar: 'روما' },
+  siena: { en: 'Siena', ar: 'سيينا' },
   torino: { en: 'Turin', ar: 'تورينو' },
   trento: { en: 'Trento', ar: 'ترينتو' },
 } satisfies Labels;
 
 export const regions = {
+  campania: { en: 'Campania', ar: 'كامبانيا' },
   'emilia-romagna': { en: 'Emilia-Romagna', ar: 'إميليا رومانيا' },
   lazio: { en: 'Lazio', ar: 'لاتسيو' },
+  liguria: { en: 'Liguria', ar: 'ليغوريا' },
   lombardia: { en: 'Lombardy', ar: 'لومبارديا' },
   piemonte: { en: 'Piedmont', ar: 'بيدمونت' },
   toscana: { en: 'Tuscany', ar: 'توسكانا' },
   'trentino-alto-adige': { en: 'Trentino-Alto Adige', ar: 'ترينتينو ألتو أديجي' },
+  umbria: { en: 'Umbria', ar: 'أومبريا' },
   veneto: { en: 'Veneto', ar: 'فينيتو' },
 } satisfies Labels;
 
