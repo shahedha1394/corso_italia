@@ -72,6 +72,12 @@ const programs = defineCollection({
     language: z.enum(keysOf(teachingLanguages)),
     duration_years: z.number(),
     admission_test: z.string().optional(),
+    // Optional details. Only add what the official program page states.
+    language_requirement: z.string().optional(),
+    tuition_eur: z.object({ min: z.number().nonnegative(), max: z.number().nonnegative() }).optional(),
+    deadlines: z.array(z.object({ label: bilingual, date: z.coerce.date() })).default([]),
+    required_documents: z.array(bilingual).default([]),
+    application_url: z.string().url().optional(),
     keywords: z.array(z.string()).default([]),
     description: bilingual.optional(),
     url: z.string().url(),
