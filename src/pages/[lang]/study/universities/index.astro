@@ -1,36 +1,126 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../../../layouts/Base.astro';
-import { getStaticLangPaths, path, useTranslations, type Lang } from '../../../../i18n';
-import { cities } from '../../../../lib/taxonomy';
+import { fill, getStaticLangPaths, path, useTranslations, type Lang } from '../../../../i18n';
+import { areas, cities, regions } from '../../../../lib/taxonomy';
 
 export const getStaticPaths = getStaticLangPaths;
 
 const lang = Astro.params.lang as Lang;
 const t = useTranslations(lang);
-const [universities, programs] = await Promise.all([getCollection('universities'), getCollection('programs')]);
-const countFor = (id: string) => programs.filter((p) => p.data.university.id === id).length;
+const universities = await getCollection('universities');
 universities.sort((a, b) => a.data.name[lang].localeCompare(b.data.name[lang], lang));
+
+// Only offer filter values that at least one university uses.
+const byLabel = <K extends string>(keys: K[], labels: Record<K, { en: string; ar: string }>) =>
+  [...new Set(keys)].sort((a, b) => labels[a][lang].localeCompare(labels[b][lang], lang)).map((k) => [k, labels[k][lang]]);
+
+const filters = [
+  { name: 'city', label: t('dir.universities.filter.city'), options: byLabel(universities.map((u) => u.data.city), cities) },
+  { name: 'region', label: t('dir.universities.filter.region'), options: byLabel(universities.map((u) => u.data.region), regions) },
+  { name: 'area', label: t('dir.universities.filter.area'), options: byLabel(universities.flatMap((u) => u.data.areas), areas) },
+  {
+    name: 'type',
+    label: t('dir.universities.filter.type'),
+    options: (['public', 'private'] as const)
+      .filter((v) => universities.some((u) => u.data.type === v))
+      .map((v) => [v, t(v === 'public' ? 'dir.type.public' : 'dir.type.private')]),
+  },
+];
 ---
 
 <Base lang={lang} title={t('dir.universities.title')} description={t('dir.universities.intro')}>
   <header class="container page-header">
+    <p class="meta"><a href={path(lang, '/study/')}>{t('nav.study')}</a></p>
     <h1>{t('dir.universities.title')}</h1>
     <p>{t('dir.universities.intro')}</p>
   </header>
 
   <section class="container section">
+    <p class="notice">{t('dir.universities.growing')}</p>
+
+    <form class="filters" id="uni-filters" onsubmit="return false">
+      {filters.map((f) => (
+        <label>
+          <span>{f.label}</span>
+          <select name={f.name}>
+            <option value="">{t('dir.universities.filter.all')}</option>
+            {f.options.map(([value, label]) => <option value={value}>{label}</option>)}
+          </select>
+        </label>
+      ))}
+      <button type="reset" class="link-button">{t('dir.universities.filter.reset')}</button>
+    </form>
+
+    <p class="meta" id="uni-count" aria-live="polite" data-template={t('dir.universities.count')}>
+      {fill(t('dir.universities.count'), { n: universities.length })}
+    </p>
+
     <div class="grid">
       {universities.map((u) => (
-        <a class="card" href={path(lang, `/study/universities/${u.id}/`)}>
+        <a
+          class="card uni-item"
+          href={path(lang, `/study/universities/${u.id}/`)}
+          data-city={u.data.city}
+          data-region={u.data.region}
+          data-type={u.data.type}
+          data-area={` ${u.data.areas.join(' ')} `}
+        >
           <span class="badge">{cities[u.data.city][lang]}</span>
           <h2>{u.data.name[lang]}</h2>
           <p class="ltr-inline">{u.data.name_it}</p>
-          <p class="meta">
-            {t(u.data.type === 'public' ? 'dir.type.public' : 'dir.type.private')} · {t('dir.universities.programs')}: {countFor(u.id)}
-          </p>
+          {u.data.description && <p>{u.data.description[lang]}</p>}
+          <p class="meta">{t(u.data.type === 'public' ? 'dir.type.public' : 'dir.type.private')}</p>
         </a>
       ))}
     </div>
+    <p class="card" id="uni-none" hidden>{t('dir.universities.none')}</p>
+  </section>
+
+  <section class="container section">
+    <div class="card">
+      <p>{t('dir.universities.universitaly')}</p>
+      <p><a href="https://www.universitaly.it" rel="noopener" target="_blank">{t('dir.universities.universitalyLink')}</a></p>
+    </div>
   </section>
 </Base>
+
+<script>
+  const form = document.getElementById('uni-filters') as HTMLFormElement;
+  const items = [...document.querySelectorAll<HTMLElement>('.uni-item')];
+  const count = document.getElementById('uni-count')!;
+  const none = document.getElementById('uni-none')!;
+
+  // Restore filters from the URL so a filtered list can be shared as a link.
+  for (const [key, value] of new URLSearchParams(location.search)) {
+    const el = form.elements.namedItem(key) as HTMLSelectElement | null;
+    if (el) el.value = value;
+  }
+
+  function apply() {
+    const data = new FormData(form);
+    const get = (k: string) => String(data.get(k) ?? '');
+    let shown = 0;
+    for (const item of items) {
+      const d = item.dataset;
+      const matches =
+        (!get('city') || d.city === get('city')) &&
+        (!get('region') || d.region === get('region')) &&
+        (!get('type') || d.type === get('type')) &&
+        (!get('area') || d.area!.includes(` ${get('area')} `));
+      item.hidden = !matches;
+      if (matches) shown++;
+    }
+    count.textContent = count.dataset.template!.replace('{n}', String(shown));
+    none.hidden = shown > 0;
+
+    const next = new URLSearchParams();
+    for (const [k, v] of data) if (v) next.set(k, String(v));
+    const query = next.toString();
+    history.replaceState(null, '', query ? `?${query}` : location.pathname);
+  }
+
+  form.addEventListener('input', apply);
+  form.addEventListener('reset', () => setTimeout(apply));
+  apply();
+</script>

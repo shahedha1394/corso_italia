@@ -16,17 +16,6 @@ export async function getGuides(lang: Lang, section?: 'study' | 'living') {
 
 export type Guide = CollectionEntry<'guides'>;
 
-/** All programs with their university entry attached, sorted by name in the given language. */
-export async function getPrograms(lang: Lang) {
-  const [programs, universities] = await Promise.all([getCollection('programs'), getCollection('universities')]);
-  const byId = new Map(universities.map((u) => [u.id, u]));
-  return programs
-    .map((p) => ({ ...p, uni: byId.get(p.data.university.id)! }))
-    .sort((a, b) => a.data.name[lang].localeCompare(b.data.name[lang], lang));
-}
-
-export type ProgramWithUni = Awaited<ReturnType<typeof getPrograms>>[number];
-
 /** Upcoming opportunities: hidden once `expires_at` (or `end`, or `start`) has passed. Soonest first. */
 export async function getActiveOpportunities(now = new Date()) {
   const all = await getCollection('opportunities');

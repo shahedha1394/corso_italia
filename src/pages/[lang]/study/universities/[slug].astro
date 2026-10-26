@@ -1,10 +1,8 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, getEntry } from 'astro:content';
 import Base from '../../../../layouts/Base.astro';
-import ProgramCard from '../../../../components/ProgramCard.astro';
-import { langs, path, useTranslations, type Lang } from '../../../../i18n';
-import { getPrograms } from '../../../../lib/content';
-import { cities, regions } from '../../../../lib/taxonomy';
+import { arrow, langs, path, useTranslations, type Lang } from '../../../../i18n';
+import { areas, cities, regions } from '../../../../lib/taxonomy';
 
 export async function getStaticPaths() {
   const universities = await getCollection('universities');
@@ -15,28 +13,78 @@ const { uni } = Astro.props;
 const lang = Astro.params.lang as Lang;
 const t = useTranslations(lang);
 const u = uni.data;
-const programs = (await getPrograms(lang)).filter((p) => p.uni.id === uni.id);
+const city = await getEntry('cities', u.city);
+const checked = u.last_checked.toLocaleDateString(lang === 'ar' ? 'ar' : 'en-GB', { dateStyle: 'long' });
 ---
 
-<Base lang={lang} title={u.name[lang]}>
-  <article class="container">
+<Base lang={lang} title={u.name[lang]} description={u.description?.[lang]}>
+  <article class="container prose">
     <header class="page-header">
       <p class="meta"><a href={path(lang, '/study/universities/')}>{t('dir.universities.title')}</a></p>
+      <span class="badge">{t(u.type === 'public' ? 'dir.type.public' : 'dir.type.private')}</span>
       <h1>{u.name[lang]}</h1>
       <p class="ltr-inline">{u.name_it}</p>
-      <p class="meta">
-        {cities[u.city][lang]}, {regions[u.region][lang]} · {t(u.type === 'public' ? 'dir.type.public' : 'dir.type.private')}
-      </p>
     </header>
 
-    {u.description && <p class="prose">{u.description[lang]}</p>}
-    <p><a class="button" href={u.website} rel="noopener" target="_blank">{t('dir.universities.website')}</a></p>
+    {u.description && <p>{u.description[lang]}</p>}
 
-    <section class="section">
-      <h2>{t('dir.universities.programs')}</h2>
-      <div class="grid">
-        {programs.map((p) => <ProgramCard lang={lang} program={p} />)}
-      </div>
+    <div class="uni-links">
+      <a class="button" href={u.website} rel="noopener" target="_blank">{t('dir.universities.website')}</a>
+      {u.programs_page && (
+        <a class="button button-secondary" href={u.programs_page} rel="noopener" target="_blank">
+          {t(u.masters_page ? 'dir.universities.bachelorsPage' : 'dir.universities.programsPage')}
+        </a>
+      )}
+      {u.masters_page && (
+        <a class="button button-secondary" href={u.masters_page} rel="noopener" target="_blank">{t('dir.universities.mastersPage')}</a>
+      )}
+      {u.international_page && (
+        <a class="button button-secondary" href={u.international_page} rel="noopener" target="_blank">{t('dir.universities.international')}</a>
+      )}
+    </div>
+
+    {u.areas.length > 0 && (
+      <section>
+        <h2>{t('dir.universities.areas')}</h2>
+        <ul class="area-list">
+          {u.areas.map((a) => <li class="badge">{areas[a][lang]}</li>)}
+        </ul>
+      </section>
+    )}
+
+    <section>
+      <h2>{t('dir.universities.city')}: {cities[u.city][lang]}</h2>
+      <p class="meta">{regions[u.region][lang]}</p>
+      {city && <p>{city.data.description[lang]}</p>}
+      <p><a href={`${path(lang, '/study/cities/')}#${u.city}`}>{t('cities.title')} {arrow(lang)}</a></p>
     </section>
+
+    <p class="meta">{t('common.lastChecked')}: {checked}</p>
+    <p class="notice">{t('common.disclaimer')}</p>
   </article>
 </Base>
+
+<style>
+  .uni-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-block: 1rem 1.5rem;
+  }
+  .button-secondary {
+    background: var(--color-primary-soft);
+    color: var(--color-primary);
+  }
+  .area-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .area-list .badge {
+    margin: 0;
+    font-size: 0.85rem;
+  }
+</style>

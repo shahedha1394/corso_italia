@@ -6,4 +6,10 @@ city: roma
 region: lazio
 type: public
 website: https://www.uniroma1.it
-last_checked: 2026-10-25
+international_page: https://www.uniroma1.it/en/pagina/applying-sapienza-international-student
+programs_page: https://corsidilaurea.uniroma1.it/en
+areas: [engineering, architecture-design, medicine-health, sciences, computer-science, economics-business, law, politics-social, humanities, agriculture-veterinary]
+description:
+  en: "Founded in 1303. A public university in Rome covering almost every field, from medicine and engineering to humanities and law."
+  ar: "تأسست عام 1303. جامعة حكومية في روما تغطي معظم المجالات، من الطب والهندسة إلى العلوم الإنسانية والقانون."
+last_checked: 2026-10-26

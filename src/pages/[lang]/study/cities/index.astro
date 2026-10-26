@@ -1,14 +1,15 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../../../layouts/Base.astro';
-import { arrow, fill, getStaticLangPaths, path, useTranslations, type Lang } from '../../../../i18n';
+import { getStaticLangPaths, path, useTranslations, type Lang } from '../../../../i18n';
 import { cities, regions } from '../../../../lib/taxonomy';
 
 export const getStaticPaths = getStaticLangPaths;
 
 const lang = Astro.params.lang as Lang;
 const t = useTranslations(lang);
-const [universities, programs] = await Promise.all([getCollection('universities'), getCollection('programs')]);
+const [universities, cityInfo] = await Promise.all([getCollection('universities'), getCollection('cities')]);
+const descriptions = new Map(cityInfo.map((c) => [c.id, c.data.description]));
 
 type CityKey = keyof typeof cities;
 const cityKeys = [...new Set(universities.map((u) => u.data.city))] as CityKey[];
@@ -17,12 +18,11 @@ const cityList = cityKeys
     const unis = universities
       .filter((u) => u.data.city === city)
       .sort((a, b) => a.data.name[lang].localeCompare(b.data.name[lang], lang));
-    const ids = new Set(unis.map((u) => u.id));
     return {
       city,
       region: unis[0].data.region,
+      description: descriptions.get(city),
       unis,
-      programCount: programs.filter((p) => ids.has(p.data.university.id)).length,
     };
   })
   .sort((a, b) => cities[a.city][lang].localeCompare(cities[b.city][lang], lang));
@@ -38,22 +38,16 @@ const cityList = cityKeys
   <section class="container section">
     <div class="grid">
       {cityList.map((c) => (
-        <div class="card">
+        <div class="card" id={c.city}>
           <span class="badge">{regions[c.region][lang]}</span>
           <h2>{cities[c.city][lang]}</h2>
+          {c.description && <p class="city-desc">{c.description[lang]}</p>}
           <p class="meta">{t('cities.universities')}:</p>
           <ul class="city-unis">
             {c.unis.map((u) => (
               <li><a href={path(lang, `/study/universities/${u.id}/`)}>{u.data.name[lang]}</a></li>
             ))}
           </ul>
-          {c.programCount > 0 && (
-            <p>
-              <a href={`${path(lang, '/study/programs/')}?city=${c.city}`}>
-                {fill(t('cities.programs'), { n: c.programCount })} {arrow(lang)}
-              </a>
-            </p>
-          )}
         </div>
       ))}
     </div>
@@ -61,6 +55,9 @@ const cityList = cityKeys
 </Base>
 
 <style>
+  .city-desc {
+    margin-block-end: 0.75rem;
+  }
   .city-unis {
     margin: 0.25rem 0 0.75rem;
     padding-inline-start: 1.25rem;

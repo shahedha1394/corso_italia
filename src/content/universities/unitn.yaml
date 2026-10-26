@@ -6,4 +6,11 @@ city: trento
 region: trentino-alto-adige
 type: public
 website: https://www.unitn.it
-last_checked: 2026-10-25
+international_page: https://www.unitn.it/en/node/978
+programs_page: https://www.unitn.it/en/study/courses
+masters_page: https://www.unitn.it/en/study/courses/masters-degrees
+areas: [engineering, computer-science, sciences, medicine-health, economics-business, law, politics-social, humanities, agriculture-veterinary]
+description:
+  en: "Its origins date back to 1962. A public university in Trento, with one department in Rovereto."
+  ar: "تعود بداياتها إلى عام 1962. جامعة حكومية في ترينتو، ولها قسم في روفيريتو."
+last_checked: 2026-10-26

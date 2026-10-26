@@ -6,4 +6,11 @@ city: bologna
 region: emilia-romagna
 type: public
 website: https://www.unibo.it
-last_checked: 2026-10-25
+international_page: https://www.unibo.it/en/study/enrolment-fees-and-other-procedures/degree-programmes/enrolling-in-first-or-single-cycle-degree-programme-foreign-qualification
+programs_page: https://www.unibo.it/en/study/first-and-single-cycle-degree
+masters_page: https://www.unibo.it/en/study/second-cycle-degree
+areas: [engineering, architecture-design, medicine-health, sciences, economics-business, law, politics-social, humanities, agriculture-veterinary]
+description:
+  en: "Its foundation is traditionally dated to 1088. A public university covering almost every field, with campuses in Bologna and in Cesena, Forlì, Ravenna and Rimini."
+  ar: "يعود تأسيسها تقليدياً إلى عام 1088. جامعة حكومية تغطي معظم المجالات، ولها فروع في بولونيا وفي تشيزينا وفورلي ورافينا وريميني."
+last_checked: 2026-10-26

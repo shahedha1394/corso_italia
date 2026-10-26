@@ -6,4 +6,11 @@ city: torino
 region: piemonte
 type: public
 website: https://www.polito.it
-last_checked: 2026-10-25
+international_page: https://www.polito.it/en/education/applying-studying-graduating/admissions-and-enrolment/bachelor-s-degree-programmes/applicants-with-a-non-italian-qualification
+programs_page: https://www.polito.it/en/education/bachelor-s-degree-programmes
+masters_page: https://www.polito.it/en/education/master-s-degree-programmes
+areas: [engineering, architecture-design, computer-science]
+description:
+  en: "A technical university whose roots go back to 1859. It teaches engineering, architecture, design and planning, mainly in Turin."
+  ar: "جامعة تقنية تعود جذورها إلى عام 1859. تدرّس الهندسة والعمارة والتصميم والتخطيط، وأغلب دراستها في تورينو."
+last_checked: 2026-10-26

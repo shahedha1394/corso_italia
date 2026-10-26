@@ -2,18 +2,16 @@ import { defineCollection, reference } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 import {
+  areas,
   cefrLevels,
   cities,
   deadlineTypes,
-  fields,
   fundingTypes,
   keysOf,
-  levels,
   modes,
   opportunityTypes,
   regions,
   skills,
-  teachingLanguages,
 } from './lib/taxonomy';
 
 // Guides live in src/content/guides/<lang>/<slug>.md.
@@ -45,6 +43,14 @@ const pages = defineCollection({
 const bilingual = z.object({ en: z.string().min(1), ar: z.string().min(1) });
 const source = z.object({ label: z.string(), url: z.string().url() });
 
+// Short description of each city, one YAML file per city (file name = city key in taxonomy).
+const cityInfo = defineCollection({
+  loader: glob({ pattern: '*.yaml', base: './src/content/cities' }),
+  schema: z.object({
+    description: bilingual,
+  }),
+});
+
 // Directory data: one YAML file per entry. See docs/DATA_MODEL.md.
 const universities = defineCollection({
   loader: glob({ pattern: '*.yaml', base: './src/content/universities' }),
@@ -56,31 +62,12 @@ const universities = defineCollection({
     type: z.enum(['public', 'private']),
     website: z.string().url(),
     international_page: z.string().url().optional(),
+    // The university's own list of its degree programs. When it has separate lists,
+    // programs_page is the bachelor's list and masters_page the master's list.
+    programs_page: z.string().url().optional(),
+    masters_page: z.string().url().optional(),
+    areas: z.array(z.enum(keysOf(areas))).default([]),
     description: bilingual.optional(),
-    last_checked: z.coerce.date(),
-  }),
-});
-
-const programs = defineCollection({
-  loader: glob({ pattern: '*.yaml', base: './src/content/programs' }),
-  schema: z.object({
-    name: bilingual,
-    university: reference('universities'),
-    level: z.enum(keysOf(levels)),
-    single_cycle: z.boolean().default(false),
-    field: z.enum(keysOf(fields)),
-    language: z.enum(keysOf(teachingLanguages)),
-    duration_years: z.number(),
-    admission_test: z.string().optional(),
-    // Optional details. Only add what the official program page states.
-    language_requirement: z.string().optional(),
-    tuition_eur: z.object({ min: z.number().nonnegative(), max: z.number().nonnegative() }).optional(),
-    deadlines: z.array(z.object({ label: bilingual, date: z.coerce.date() })).default([]),
-    required_documents: z.array(bilingual).default([]),
-    application_url: z.string().url().optional(),
-    keywords: z.array(z.string()).default([]),
-    description: bilingual.optional(),
-    url: z.string().url(),
     last_checked: z.coerce.date(),
   }),
 });
@@ -161,10 +148,10 @@ const engproResources = defineCollection({
 });
 
 export const collections = {
+  cities: cityInfo,
   guides,
   pages,
   universities,
-  programs,
   funding,
   opportunities,
   deadlines,

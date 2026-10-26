@@ -6,4 +6,11 @@ city: pisa
 region: toscana
 type: public
 website: https://www.unipi.it
-last_checked: 2026-10-25
+international_page: https://www.unipi.it/en/education/registration/enrolment-and-registration/enrolment-for-international-students/
+programs_page: https://www.unipi.it/en/education/courses/bachelor-and-single-cycle-master-degree/
+masters_page: https://www.unipi.it/en/education/courses/master-degree/
+areas: [engineering, medicine-health, sciences, computer-science, economics-business, law, politics-social, humanities, agriculture-veterinary]
+description:
+  en: "Officially founded in 1343. A public university covering almost every field, from engineering and computer science to medicine and humanities."
+  ar: "تأسست رسمياً عام 1343. جامعة حكومية تغطي معظم المجالات، من الهندسة وعلوم الحاسوب إلى الطب والعلوم الإنسانية."
+last_checked: 2026-10-26
