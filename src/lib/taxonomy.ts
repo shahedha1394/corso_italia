@@ -39,6 +39,8 @@ export const cities = {
 
 export const regions = {
   abruzzo: { en: 'Abruzzo', ar: 'أبروتسو' },
+  basilicata: { en: 'Basilicata', ar: 'بازيليكاتا' },
+  calabria: { en: 'Calabria', ar: 'كالابريا' },
   campania: { en: 'Campania', ar: 'كامبانيا' },
   'emilia-romagna': { en: 'Emilia-Romagna', ar: 'إميليا رومانيا' },
   'friuli-venezia-giulia': { en: 'Friuli Venezia Giulia', ar: 'فريولي فينيتسيا جوليا' },
@@ -46,6 +48,7 @@ export const regions = {
   liguria: { en: 'Liguria', ar: 'ليغوريا' },
   lombardia: { en: 'Lombardy', ar: 'لومبارديا' },
   marche: { en: 'Marche', ar: 'ماركي' },
+  molise: { en: 'Molise', ar: 'موليزي' },
   piemonte: { en: 'Piedmont', ar: 'بيدمونت' },
   puglia: { en: 'Apulia', ar: 'بوليا' },
   sardegna: { en: 'Sardinia', ar: 'سردينيا' },
