@@ -39,6 +39,8 @@ export const fields = {
   'computer-science': { en: 'Computer science and engineering', ar: 'علوم وهندسة الحاسوب' },
   'data-science': { en: 'Data science and AI', ar: 'علم البيانات والذكاء الاصطناعي' },
   economics: { en: 'Economics and management', ar: 'الاقتصاد والإدارة' },
+  engineering: { en: 'Engineering', ar: 'الهندسة' },
+  politics: { en: 'Political science, international relations and human rights', ar: 'العلوم السياسية والعلاقات الدولية وحقوق الإنسان' },
   medicine: { en: 'Medicine', ar: 'الطب' },
 } satisfies Labels;
 
