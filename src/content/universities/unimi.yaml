@@ -1,6 +1,7 @@
 name:
   en: "University of Milan"
   ar: "جامعة ميلانو"
+  fr: "Université de Milan"
 name_it: "Università degli Studi di Milano"
 city: milano
 region: lombardia
@@ -13,4 +14,5 @@ areas: [medicine-health, sciences, computer-science, economics-business, law, po
 description:
   en: "Founded in 1924. A public university in Milan with programs in medicine, sciences, law, humanities, social sciences, agriculture and veterinary medicine."
   ar: "تأسست عام 1924. جامعة حكومية في ميلانو لديها برامج في الطب والعلوم والقانون والعلوم الإنسانية والاجتماعية والزراعة والطب البيطري."
+  fr: "Fondée en 1924. Une université publique à Milan avec des formations en médecine, sciences, droit, lettres, sciences sociales, agriculture et médecine vétérinaire."
 last_checked: 2026-10-26

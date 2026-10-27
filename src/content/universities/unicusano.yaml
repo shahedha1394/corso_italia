@@ -1,6 +1,7 @@
 name:
   en: "Niccolò Cusano University"
   ar: "جامعة نيكولو كوزانو"
+  fr: "Université Niccolò Cusano"
 name_it: "Università degli Studi Niccolò Cusano"
 city: roma
 region: lazio
@@ -12,4 +13,5 @@ areas: [engineering, computer-science, economics-business, law, politics-social,
 description:
   en: "Recognised in 2006. An online university based in Rome."
   ar: "اعتُرف بها عام 2006. جامعة عبر الإنترنت مقرها روما."
+  fr: "Reconnue en 2006. Une université en ligne basée à Rome."
 last_checked: 2026-10-27

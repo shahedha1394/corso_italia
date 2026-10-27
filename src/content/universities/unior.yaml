@@ -1,6 +1,7 @@
 name:
   en: "University of Naples L'Orientale"
   ar: "جامعة نابولي الشرقية (L'Orientale)"
+  fr: "Université de Naples L'Orientale"
 name_it: "Università degli Studi di Napoli \"L'Orientale\""
 city: napoli
 region: campania
@@ -11,4 +12,5 @@ areas: [humanities, politics-social]
 description:
   en: "Its origins go back to a college founded in Naples in 1732. A public university for languages, cultures and international studies."
   ar: "تعود أصولها إلى كلية تأسست في نابولي عام 1732. جامعة حكومية للغات والثقافات والدراسات الدولية."
+  fr: "Ses origines remontent à un collège fondé à Naples en 1732. Une université publique pour les langues, les cultures et les études internationales."
 last_checked: 2026-10-26

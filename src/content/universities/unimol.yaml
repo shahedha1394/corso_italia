@@ -1,6 +1,7 @@
 name:
   en: "University of Molise"
   ar: "جامعة موليزي"
+  fr: "Université du Molise"
 name_it: "Università degli Studi del Molise"
 city: campobasso
 region: molise
@@ -11,4 +12,5 @@ areas: [engineering, computer-science, sciences, medicine-health, economics-busi
 description:
   en: "Founded in 1982. A public university with 6 departments in Campobasso, Pesche and Termoli."
   ar: "تأسست عام 1982. جامعة حكومية فيها 6 أقسام في كامبوباسو وبيسكي وترمولي."
+  fr: "Fondée en 1982. Une université publique avec 6 départements à Campobasso, Pesche et Termoli."
 last_checked: 2026-10-26

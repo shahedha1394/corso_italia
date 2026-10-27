@@ -1,6 +1,7 @@
 name:
   en: "University of Teramo"
   ar: "جامعة تيرامو"
+  fr: "Université de Teramo"
 name_it: "Università degli Studi di Teramo"
 city: teramo
 region: abruzzo
@@ -11,4 +12,5 @@ areas: [sciences, medicine-health, economics-business, law, politics-social, hum
 description:
   en: "An independent university since 1993. A public university in Teramo, with programs including law, communication, and agriculture and veterinary medicine."
   ar: "جامعة مستقلة منذ عام 1993. جامعة حكومية في تيرامو، لديها برامج منها القانون والإعلام والزراعة والطب البيطري."
+  fr: "Université indépendante depuis 1993. Une université publique à Teramo, avec des formations notamment en droit, communication, ainsi qu'en agriculture et médecine vétérinaire."
 last_checked: 2026-10-26

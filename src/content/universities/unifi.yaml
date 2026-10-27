@@ -1,6 +1,7 @@
 name:
   en: "University of Florence"
   ar: "جامعة فلورنسا"
+  fr: "Université de Florence"
 name_it: "Università degli Studi di Firenze"
 city: firenze
 region: toscana
@@ -12,4 +13,5 @@ areas: [engineering, architecture-design, computer-science, sciences, medicine-h
 description:
   en: "Its origins go back to 1321. A public university with 10 schools covering almost every field, with sites in Florence, Sesto Fiorentino, Calenzano and Prato."
   ar: "تعود أصولها إلى عام 1321. جامعة حكومية فيها 10 كليات تغطي معظم المجالات، ولها مواقع في فلورنسا وسيستو فيورنتينو وكالينتسانو وبراتو."
+  fr: "Ses origines remontent à 1321. Une université publique avec 10 écoles qui couvre presque tous les domaines, avec des sites à Florence, Sesto Fiorentino, Calenzano et Prato."
 last_checked: 2026-10-26

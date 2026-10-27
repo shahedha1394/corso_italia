@@ -1,6 +1,7 @@
 name:
   en: "University of Basilicata"
   ar: "جامعة بازيليكاتا"
+  fr: "Université de la Basilicate"
 name_it: "Università degli Studi della Basilicata"
 city: potenza
 region: basilicata
@@ -11,4 +12,5 @@ areas: [engineering, architecture-design, computer-science, sciences, economics-
 description:
   en: "A public university in Potenza, with architecture taught in Matera."
   ar: "جامعة حكومية في بوتنزا، وتُدرَّس العمارة فيها في ماتيرا."
+  fr: "Une université publique à Potenza, où l'architecture est enseignée à Matera."
 last_checked: 2026-10-26

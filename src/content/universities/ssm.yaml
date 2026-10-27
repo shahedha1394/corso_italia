@@ -1,6 +1,7 @@
 name:
   en: "Scuola Superiore Meridionale"
   ar: "المدرسة العليا الجنوبية (SSM)"
+  fr: "Scuola Superiore Meridionale"
 name_it: "Scuola Superiore Meridionale"
 city: napoli
 region: campania
@@ -11,4 +12,5 @@ areas: [engineering, sciences, medicine-health, law, politics-social, humanities
 description:
   en: "Established in 2022. An advanced school in Naples: its ordinary courses run alongside a degree at the University of Naples Federico II, and it offers PhD programs."
   ar: "تأسست عام 2022. مدرسة عليا في نابولي: دوراتها الأساسية تكون بالتوازي مع دراسة في جامعة نابولي فيديريكو الثاني، وتقدّم برامج دكتوراه."
+  fr: "Créée en 2022. Une école supérieure à Naples : ses cours ordinaires se suivent en parallèle d'un diplôme à l'Université de Naples Frédéric-II, et elle propose des doctorats."
 last_checked: 2026-10-27

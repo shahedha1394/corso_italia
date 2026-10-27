@@ -1,6 +1,7 @@
 name:
   en: "San Raffaele Online University of Rome"
   ar: "جامعة سان رافاييلي روما عبر الإنترنت"
+  fr: "Université en ligne San Raffaele de Rome"
 name_it: "Università Telematica San Raffaele Roma"
 city: roma
 region: lazio
@@ -13,4 +14,5 @@ areas: [engineering, architecture-design, computer-science, sciences, medicine-h
 description:
   en: "Established in 2006. An online university based in Rome. It is a different institution from the Vita-Salute San Raffaele University in Milan."
   ar: "تأسست عام 2006. جامعة عبر الإنترنت مقرها روما، وهي مختلفة عن جامعة فيتا سالوتي سان رافاييلي في ميلانو."
+  fr: "Créée en 2006. Une université en ligne basée à Rome. C'est un établissement différent de l'Université Vita-Salute San Raffaele de Milan."
 last_checked: 2026-10-27

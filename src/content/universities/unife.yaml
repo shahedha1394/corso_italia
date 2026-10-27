@@ -1,6 +1,7 @@
 name:
   en: "University of Ferrara"
   ar: "جامعة فيرارا"
+  fr: "Université de Ferrare"
 name_it: "Università degli Studi di Ferrara"
 city: ferrara
 region: emilia-romagna
@@ -11,4 +12,5 @@ areas: [engineering, architecture-design, computer-science, sciences, medicine-h
 description:
   en: "Founded in 1391. A public university with 13 departments."
   ar: "تأسست عام 1391. جامعة حكومية فيها 13 قسماً."
+  fr: "Fondée en 1391. Une université publique avec 13 départements."
 last_checked: 2026-10-26

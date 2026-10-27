@@ -1,6 +1,7 @@
 name:
   en: "University of Padua"
   ar: "جامعة بادوفا"
+  fr: "Université de Padoue"
 name_it: "Università degli Studi di Padova"
 city: padova
 region: veneto
@@ -13,4 +14,5 @@ areas: [engineering, medicine-health, sciences, economics-business, law, politic
 description:
   en: "Founded in 1222. A public university covering almost every field, with its main campus in Padua and other sites mostly in the Veneto region."
   ar: "تأسست عام 1222. جامعة حكومية تغطي معظم المجالات، مقرها الرئيسي في بادوفا ولها مواقع أخرى أغلبها في منطقة فينيتو."
+  fr: "Fondée en 1222. Une université publique qui couvre presque tous les domaines, avec son campus principal à Padoue et d'autres sites surtout en Vénétie."
 last_checked: 2026-10-26

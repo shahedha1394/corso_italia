@@ -1,6 +1,7 @@
 name:
   en: "University of Turin"
   ar: "جامعة تورينو"
+  fr: "Université de Turin"
 name_it: "Università degli Studi di Torino"
 city: torino
 region: piemonte
@@ -12,4 +13,5 @@ areas: [computer-science, sciences, medicine-health, economics-business, law, po
 description:
   en: "Founded in 1404. A public university with 27 departments. Engineering and architecture in Turin are taught at the Politecnico di Torino."
   ar: "تأسست عام 1404. جامعة حكومية فيها 27 قسماً. أما الهندسة والعمارة في تورينو فتُدرَّس في جامعة البوليتكنيك في تورينو."
+  fr: "Fondée en 1404. Une université publique avec 27 départements. À Turin, l'ingénierie et l'architecture sont enseignées au Politecnico di Torino."
 last_checked: 2026-10-26

@@ -1,6 +1,7 @@
 name:
   en: "Polytechnic University of Milan"
   ar: "جامعة البوليتكنيك في ميلانو"
+  fr: "Politecnico de Milan"
 name_it: "Politecnico di Milano"
 city: milano
 region: lombardia
@@ -13,4 +14,5 @@ areas: [engineering, architecture-design]
 description:
   en: "Founded in 1863. A technical university for engineering, architecture and design, with campuses in Milan and in Lecco, Cremona, Mantua and Piacenza."
   ar: "تأسست عام 1863. جامعة تقنية متخصصة في الهندسة والعمارة والتصميم، ولها فروع في ميلانو وفي ليكو وكريمونا ومانتوفا وبياتشنزا."
+  fr: "Fondé en 1863. Une université technique pour l'ingénierie, l'architecture et le design, avec des campus à Milan et à Lecco, Crémone, Mantoue et Plaisance."
 last_checked: 2026-10-26

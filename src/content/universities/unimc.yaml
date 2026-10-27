@@ -1,6 +1,7 @@
 name:
   en: "University of Macerata"
   ar: "جامعة ماتشيراتا"
+  fr: "Université de Macerata"
 name_it: "Università degli Studi di Macerata"
 city: macerata
 region: marche
@@ -12,4 +13,5 @@ areas: [economics-business, law, politics-social, humanities]
 description:
   en: "A public university with 5 departments, focused on humanities, law, economics and social sciences."
   ar: "جامعة حكومية فيها 5 أقسام، تركّز على العلوم الإنسانية والقانون والاقتصاد والعلوم الاجتماعية."
+  fr: "Une université publique avec 5 départements, axée sur les lettres, le droit, l'économie et les sciences sociales."
 last_checked: 2026-10-26

@@ -1,6 +1,7 @@
 name:
   en: "University of Siena"
   ar: "جامعة سيينا"
+  fr: "Université de Sienne"
 name_it: "Università degli Studi di Siena"
 city: siena
 region: toscana
@@ -12,4 +13,5 @@ areas: [engineering, sciences, medicine-health, economics-business, law, politic
 description:
   en: "The first document recording its existence dates from 1240. A public university with 15 departments, also teaching in Arezzo and Grosseto."
   ar: "أقدم وثيقة تذكر وجودها تعود إلى عام 1240. جامعة حكومية فيها 15 قسماً، وتدرّس أيضاً في أريتسو وغروسيتو."
+  fr: "Le premier document attestant son existence date de 1240. Une université publique avec 15 départements, qui enseigne aussi à Arezzo et Grosseto."
 last_checked: 2026-10-26

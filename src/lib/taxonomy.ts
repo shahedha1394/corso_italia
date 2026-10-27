@@ -5,7 +5,7 @@ type Labels = Record<string, { en: string; ar: string; fr: string }>;
 
 export const cities = {
   ancona: { en: 'Ancona', ar: 'أنكونا', fr: 'Ancône' },
-  aosta: { en: 'Aosta', ar: 'أوستا', fr: 'Aosta' },
+  aosta: { en: 'Aosta', ar: 'أوستا', fr: 'Aoste' },
   bari: { en: 'Bari', ar: 'باري', fr: 'Bari' },
   benevento: { en: 'Benevento', ar: 'بينيفينتو', fr: 'Benevento' },
   bergamo: { en: 'Bergamo', ar: 'بيرغامو', fr: 'Bergame' },
@@ -49,7 +49,7 @@ export const cities = {
   'reggio-calabria': { en: 'Reggio Calabria', ar: 'ريدجو كالابريا', fr: 'Reggio de Calabre' },
   rende: { en: 'Rende', ar: 'ريندي', fr: 'Rende' },
   roma: { en: 'Rome', ar: 'روما', fr: 'Rome' },
-  salerno: { en: 'Salerno', ar: 'ساليرنو', fr: 'Salerno' },
+  salerno: { en: 'Salerno', ar: 'ساليرنو', fr: 'Salerne' },
   sassari: { en: 'Sassari', ar: 'ساساري', fr: 'Sassari' },
   siena: { en: 'Siena', ar: 'سيينا', fr: 'Sienne' },
   teramo: { en: 'Teramo', ar: 'تيرامو', fr: 'Teramo' },

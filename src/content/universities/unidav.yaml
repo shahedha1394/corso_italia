@@ -1,6 +1,7 @@
 name:
   en: "Leonardo da Vinci University"
   ar: "جامعة ليوناردو دا فينشي"
+  fr: "Université Leonardo da Vinci"
 name_it: "Università Telematica \"Leonardo da Vinci\""
 city: torrevecchia-teatina
 region: abruzzo
@@ -12,4 +13,5 @@ areas: [economics-business, law, humanities]
 description:
   en: "A small online university in Abruzzo, with programs in law, economics and psychology."
   ar: "جامعة صغيرة عبر الإنترنت في منطقة أبروتسو، لديها برامج في القانون والاقتصاد وعلم النفس."
+  fr: "Une petite université en ligne dans les Abruzzes, avec des formations en droit, économie et psychologie."
 last_checked: 2026-10-27

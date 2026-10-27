@@ -1,6 +1,7 @@
 name:
   en: "Universitas Mercatorum"
   ar: "جامعة ميركاتوروم"
+  fr: "Universitas Mercatorum"
 name_it: "Università Telematica Universitas Mercatorum"
 city: roma
 region: lazio
@@ -11,4 +12,5 @@ areas: [engineering, architecture-design, computer-science, sciences, economics-
 description:
   en: "Founded in 2006. An online university based in Rome."
   ar: "تأسست عام 2006. جامعة عبر الإنترنت مقرها روما."
+  fr: "Fondée en 2006. Une université en ligne basée à Rome."
 last_checked: 2026-10-27

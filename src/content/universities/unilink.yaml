@@ -1,6 +1,7 @@
 name:
   en: "Link Campus University"
   ar: "جامعة لينك كامبوس"
+  fr: "Link Campus University"
 name_it: "Link Campus University"
 city: roma
 region: lazio
@@ -12,4 +13,5 @@ areas: [humanities, economics-business, politics-social, law, medicine-health, a
 description:
   en: "Recognised as a non-state university in 2011. Based in Rome, with teaching sites in several other Italian cities."
   ar: "اعتُرف بها جامعةً غير حكومية عام 2011. مقرها روما، ولها مواقع تدريس في عدة مدن إيطالية أخرى."
+  fr: "Reconnue comme université non étatique en 2011. Basée à Rome, avec des sites d'enseignement dans plusieurs autres villes italiennes."
 last_checked: 2026-10-27

@@ -1,6 +1,7 @@
 name:
   en: "Kore University of Enna"
   ar: "جامعة كوري في إينا"
+  fr: "Université Kore d'Enna"
 name_it: "Università degli Studi di Enna \"Kore\""
 city: enna
 region: sicilia
@@ -12,4 +13,5 @@ areas: [engineering, architecture-design, medicine-health, economics-business, l
 description:
   en: "Established in 2005. A non-state university in Enna, with some courses in Caltagirone, Ragusa and Siracusa."
   ar: "تأسست عام 2005. جامعة غير حكومية في إينا، ولها بعض البرامج في كالتاجيروني وراغوزا وسيراكوزا."
+  fr: "Créée en 2005. Une université non étatique à Enna, avec quelques cours à Caltagirone, Ragusa et Syracuse."
 last_checked: 2026-10-27

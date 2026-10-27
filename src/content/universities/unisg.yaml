@@ -1,6 +1,7 @@
 name:
   en: "University of Gastronomic Sciences"
   ar: "جامعة علوم فن الطهي"
+  fr: "Université des sciences gastronomiques"
 name_it: "Università degli Studi di Scienze Gastronomiche"
 city: pollenzo
 region: piemonte
@@ -12,4 +13,5 @@ areas: [sciences, economics-business]
 description:
   en: "Founded in 2004 by Slow Food. A small non-state university for food sciences, culture and food management."
   ar: "أسستها منظمة Slow Food عام 2004. جامعة غير حكومية صغيرة لعلوم الغذاء وثقافته وإدارة صناعة الغذاء."
+  fr: "Fondée en 2004 par Slow Food. Une petite université non étatique pour les sciences de l'alimentation, la culture alimentaire et la gestion alimentaire."
 last_checked: 2026-10-27

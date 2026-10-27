@@ -1,6 +1,7 @@
 name:
   en: "University of Salerno"
   ar: "جامعة ساليرنو"
+  fr: "Université de Salerne"
 name_it: "Università degli Studi di Salerno"
 city: salerno
 region: campania
@@ -11,4 +12,5 @@ areas: [engineering, sciences, medicine-health, economics-business, law, politic
 description:
   en: "A public university whose main campus has been in Fisciano, a few kilometres from Salerno, since 1987, with another site in Baronissi."
   ar: "جامعة حكومية حرمها الرئيسي في فيشانو، على بعد كيلومترات قليلة من ساليرنو، منذ عام 1987، ولها موقع آخر في بارونيسي."
+  fr: "Une université publique dont le campus principal se trouve depuis 1987 à Fisciano, à quelques kilomètres de Salerne, avec un autre site à Baronissi."
 last_checked: 2026-10-26

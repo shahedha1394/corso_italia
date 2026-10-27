@@ -1,6 +1,7 @@
 name:
   en: "University of Pisa"
   ar: "جامعة بيزا"
+  fr: "Université de Pise"
 name_it: "Università di Pisa"
 city: pisa
 region: toscana
@@ -13,4 +14,5 @@ areas: [engineering, medicine-health, sciences, computer-science, economics-busi
 description:
   en: "Officially founded in 1343. A public university covering almost every field, from engineering and computer science to medicine and humanities."
   ar: "تأسست رسمياً عام 1343. جامعة حكومية تغطي معظم المجالات، من الهندسة وعلوم الحاسوب إلى الطب والعلوم الإنسانية."
+  fr: "Officiellement fondée en 1343. Une université publique qui couvre presque tous les domaines, de l'ingénierie et l'informatique à la médecine et aux lettres."
 last_checked: 2026-10-26

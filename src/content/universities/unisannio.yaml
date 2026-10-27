@@ -1,6 +1,7 @@
 name:
   en: "University of Sannio"
   ar: "جامعة سانيو"
+  fr: "Université du Sannio"
 name_it: "Università degli Studi del Sannio"
 city: benevento
 region: campania
@@ -13,4 +14,5 @@ areas: [engineering, computer-science, sciences, economics-business, law]
 description:
   en: "An autonomous university since 1998. A public university in Benevento."
   ar: "جامعة مستقلة منذ عام 1998. جامعة حكومية في بينيفينتو."
+  fr: "Université autonome depuis 1998. Une université publique à Benevento."
 last_checked: 2026-10-26

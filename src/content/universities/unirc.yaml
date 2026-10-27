@@ -1,6 +1,7 @@
 name:
   en: "Mediterranea University of Reggio Calabria"
   ar: "جامعة ميديتيرانيا في ريدجو كالابريا"
+  fr: "Université Mediterranea de Reggio de Calabre"
 name_it: "Università degli Studi di Reggio Calabria \"Mediterranea\""
 city: reggio-calabria
 region: calabria
@@ -13,4 +14,5 @@ areas: [engineering, architecture-design, computer-science, economics-business, 
 description:
   en: "Established in 1968. A public university with 5 departments."
   ar: "تأسست عام 1968. جامعة حكومية فيها 5 أقسام."
+  fr: "Créée en 1968. Une université publique avec 5 départements."
 last_checked: 2026-10-26

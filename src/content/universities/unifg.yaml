@@ -1,6 +1,7 @@
 name:
   en: "University of Foggia"
   ar: "جامعة فودجا"
+  fr: "Université de Foggia"
 name_it: "Università degli Studi di Foggia"
 city: foggia
 region: puglia
@@ -13,4 +14,5 @@ areas: [engineering, sciences, medicine-health, economics-business, law, politic
 description:
   en: "Established in 1999. A public university with 7 departments."
   ar: "تأسست عام 1999. جامعة حكومية فيها 7 أقسام."
+  fr: "Créée en 1999. Une université publique avec 7 départements."
 last_checked: 2026-10-26

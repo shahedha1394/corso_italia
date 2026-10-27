@@ -1,6 +1,7 @@
 name:
   en: "University of Udine"
   ar: "جامعة أوديني"
+  fr: "Université d'Udine"
 name_it: "Università degli Studi di Udine"
 city: udine
 region: friuli-venezia-giulia
@@ -12,4 +13,5 @@ areas: [engineering, architecture-design, computer-science, sciences, medicine-h
 description:
   en: "Established in 1978. A public university covering almost every field."
   ar: "تأسست عام 1978. جامعة حكومية تغطي معظم المجالات."
+  fr: "Créée en 1978. Une université publique qui couvre presque tous les domaines."
 last_checked: 2026-10-26

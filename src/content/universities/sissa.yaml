@@ -1,6 +1,7 @@
 name:
   en: "SISSA – International School for Advanced Studies"
   ar: "المدرسة الدولية للدراسات المتقدمة SISSA"
+  fr: "SISSA – École internationale d'études avancées"
 name_it: "Scuola Internazionale Superiore di Studi Avanzati (SISSA)"
 city: trieste
 region: friuli-venezia-giulia
@@ -12,4 +13,5 @@ areas: [sciences, computer-science]
 description:
   en: "Founded in 1978. Mainly a PhD school in mathematics, physics and neuroscience, with some master's programs run jointly with the universities of Trieste and Trento."
   ar: "تأسست عام 1978. مدرسة دكتوراه أساساً في الرياضيات والفيزياء وعلم الأعصاب، ولها بعض برامج الماجستير المشتركة مع جامعتي تريستي وترينتو."
+  fr: "Fondée en 1978. Surtout une école doctorale en mathématiques, physique et neurosciences, avec quelques masters organisés avec les universités de Trieste et de Trente."
 last_checked: 2026-10-27

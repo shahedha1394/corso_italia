@@ -1,6 +1,7 @@
 name:
   en: "University of Calabria"
   ar: "جامعة كالابريا"
+  fr: "Université de Calabre"
 name_it: "Università della Calabria"
 city: rende
 region: calabria
@@ -11,4 +12,5 @@ areas: []
 description:
   en: "Established in 1968. A public university with a single campus at Arcavacata, in Rende."
   ar: "تأسست عام 1968. جامعة حكومية لها حرم واحد في أركافاكاتا، في بلدة ريندي."
+  fr: "Créée en 1968. Une université publique avec un seul campus à Arcavacata, à Rende."
 last_checked: 2026-10-26

@@ -1,6 +1,7 @@
 name:
   en: "University of Rome Tor Vergata"
   ar: "جامعة روما تور فيرغاتا"
+  fr: "Université de Rome Tor Vergata"
 name_it: "Università degli Studi di Roma \"Tor Vergata\""
 city: roma
 region: lazio
@@ -11,4 +12,5 @@ areas: [engineering, sciences, medicine-health, economics-business, law, humanit
 description:
   en: "Established in 1982. A public university in Rome organised in 6 schools."
   ar: "تأسست عام 1982. جامعة حكومية في روما مقسّمة إلى 6 كليات."
+  fr: "Créée en 1982. Une université publique à Rome organisée en 6 écoles."
 last_checked: 2026-10-26

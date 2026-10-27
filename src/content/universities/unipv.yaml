@@ -1,6 +1,7 @@
 name:
   en: "University of Pavia"
   ar: "جامعة بافيا"
+  fr: "Université de Pavie"
 name_it: "Università degli Studi di Pavia"
 city: pavia
 region: lombardia
@@ -12,4 +13,5 @@ areas: [engineering, architecture-design, sciences, medicine-health, economics-b
 description:
   en: "Founded as a Studium Generale in 1361. A public university with 18 departments, also teaching in Cremona."
   ar: "تأسست عام 1361. جامعة حكومية فيها 18 قسماً، وتدرّس أيضاً في كريمونا."
+  fr: "Fondée comme Studium Generale en 1361. Une université publique avec 18 départements, qui enseigne aussi à Crémone."
 last_checked: 2026-10-26

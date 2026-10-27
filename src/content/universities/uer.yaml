@@ -1,6 +1,7 @@
 name:
   en: "European University of Rome"
   ar: "الجامعة الأوروبية في روما"
+  fr: "Université européenne de Rome"
 name_it: "Università Europea di Roma"
 city: roma
 region: lazio
@@ -10,4 +11,5 @@ areas: [economics-business, law, medicine-health, humanities]
 description:
   en: "A non-state university in Rome with programs including economics, law, medicine, psychology and tourism."
   ar: "جامعة غير حكومية في روما لديها برامج منها الاقتصاد والقانون والطب وعلم النفس والسياحة."
+  fr: "Une université non étatique à Rome, avec des formations notamment en économie, droit, médecine, psychologie et tourisme."
 last_checked: 2026-10-27

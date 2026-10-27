@@ -1,6 +1,7 @@
 name:
   en: "University of Insubria"
   ar: "جامعة إنسوبريا"
+  fr: "Université de l'Insubrie"
 name_it: "Università degli Studi dell'Insubria"
 city: varese
 region: lombardia
@@ -12,4 +13,5 @@ areas: [engineering, computer-science, sciences, medicine-health, economics-busi
 description:
   en: "Founded in 1998. A public university with 8 departments, in Varese, Como and Busto Arsizio."
   ar: "تأسست عام 1998. جامعة حكومية فيها 8 أقسام، في فاريزي وكومو وبوستو أرسيتسيو."
+  fr: "Fondée en 1998. Une université publique avec 8 départements, à Varese, Côme et Busto Arsizio."
 last_checked: 2026-10-26
