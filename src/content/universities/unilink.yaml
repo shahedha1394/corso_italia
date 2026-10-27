@@ -1,0 +1,15 @@
+name:
+  en: "Link Campus University"
+  ar: "جامعة لينك كامبوس"
+name_it: "Link Campus University"
+city: roma
+region: lazio
+type: private
+website: https://www.unilink.it
+international_page: https://unilink.it/international/how-to-apply
+programs_page: https://www.unilink.it/didattica/corsi-di-laurea
+areas: [humanities, economics-business, politics-social, law, medicine-health, agriculture-veterinary]
+description:
+  en: "Recognised as a non-state university in 2011. Based in Rome, with teaching sites in several other Italian cities."
+  ar: "اعتُرف بها جامعةً غير حكومية عام 2011. مقرها روما، ولها مواقع تدريس في عدة مدن إيطالية أخرى."
+last_checked: 2026-10-27
