@@ -1,0 +1,15 @@
+name:
+  en: "IMT School for Advanced Studies Lucca"
+  ar: "مدرسة IMT للدراسات المتقدمة في لوكا"
+name_it: "Scuola IMT Alti Studi Lucca"
+city: lucca
+region: toscana
+type: special
+website: https://www.imt.it
+international_page: https://www.imt.it/en/international-students/faqs-eunon-eu-students
+programs_page: https://www.imt.it/en/phd/information-for-students
+areas: [computer-science, economics-business, sciences, politics-social, humanities]
+description:
+  en: "Established in 2005. A PhD school in Lucca, teaching in English."
+  ar: "تأسست عام 2005. مدرسة دكتوراه في لوكا، تدرّس بالإنجليزية."
+last_checked: 2026-10-27

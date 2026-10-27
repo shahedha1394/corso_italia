@@ -29,6 +29,7 @@ export const cities = {
   genova: { en: 'Genoa', ar: 'جنوة' },
   laquila: { en: "L'Aquila", ar: 'لاكويلا' },
   lecce: { en: 'Lecce', ar: 'ليتشي' },
+  lucca: { en: 'Lucca', ar: 'لوكا' },
   macerata: { en: 'Macerata', ar: 'ماتشيراتا' },
   messina: { en: 'Messina', ar: 'ميسينا' },
   milano: { en: 'Milan', ar: 'ميلانو' },
