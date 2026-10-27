@@ -137,5 +137,10 @@
   "opportunities.organiser": "Organiser",
   "opportunities.details": "Details and registration",
   "dir.universities.onlineNote": "Courses at this university are taught online. If you need a study visa, ask the university first whether its programs can support a visa application.",
-  "dir.universities.specialNote": "This is a special-status institute focused on advanced study and research. Check its website for which levels it offers and how admission works."
+  "dir.universities.specialNote": "This is a special-status institute focused on advanced study and research. Check its website for which levels it offers and how admission works.",
+  "map.label": "Map of Italy with the cities that have universities in this guide",
+  "map.cityCount": "{city}: {n} universities",
+  "map.credit": "Map data: ISTAT, CC BY 4.0",
+  "map.explore": "Tap a city on the map to see its universities.",
+  "home.hero.universities": "Browse universities on the map"
 }

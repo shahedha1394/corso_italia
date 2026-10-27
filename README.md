@@ -31,3 +31,5 @@ The site is deployed to GitHub Pages at https://corsoitaly.com from `main` by `.
 | Simple pages (About, FAQ...) | `src/content/pages/<en\|ar>/<slug>.md` |
 | Page templates | `src/pages/[lang]/...` |
 | Layout and styles | `src/layouts/Base.astro`, `src/styles/global.css` |
+| Map of Italy | `src/components/ItalyMap.astro`, data in `src/data/italy-map.json` (built by `scripts/build-italy-map.py` from ISTAT data, CC BY 4.0) |
+| Icons | `src/components/Icon.astro`, `src/lib/icons.ts` (from Lucide, ISC License) |

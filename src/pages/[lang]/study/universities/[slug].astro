@@ -1,6 +1,7 @@
 ---
 import { getCollection, getEntry } from 'astro:content';
 import Base from '../../../../layouts/Base.astro';
+import ItalyMap from '../../../../components/ItalyMap.astro';
 import { arrow, langs, path, useTranslations, type Lang } from '../../../../i18n';
 import { areas, cities, regions, universityTypes } from '../../../../lib/taxonomy';
 
@@ -54,11 +55,14 @@ const checked = u.last_checked.toLocaleDateString(lang === 'ar' ? 'ar' : 'en-GB'
       </section>
     )}
 
-    <section>
-      <h2>{t('dir.universities.city')}: {cities[u.city][lang]}</h2>
-      <p class="meta">{regions[u.region][lang]}</p>
-      {city && <p>{city.data.description[lang]}</p>}
-      <p><a href={`${path(lang, '/study/cities/')}#${u.city}`}>{t('cities.title')} {arrow(lang)}</a></p>
+    <section class="uni-city">
+      <div>
+        <h2>{t('dir.universities.city')}: {cities[u.city][lang]}</h2>
+        <p class="meta">{regions[u.region][lang]}</p>
+        {city && <p>{city.data.description[lang]}</p>}
+        <p><a href={`${path(lang, '/study/cities/')}#${u.city}`}>{t('cities.title')} {arrow(lang)}</a></p>
+      </div>
+      <ItalyMap lang={lang} highlight={u.city} class="uni-city__map" />
     </section>
 
     <p class="meta">{t('common.lastChecked')}: {checked}</p>
@@ -67,6 +71,19 @@ const checked = u.last_checked.toLocaleDateString(lang === 'ar' ? 'ar' : 'en-GB'
 </Base>
 
 <style>
+  .uni-city {
+    display: grid;
+    gap: 1rem;
+    align-items: start;
+  }
+  .uni-city :global(.uni-city__map) {
+    max-inline-size: 13rem;
+  }
+  @media (min-width: 40rem) {
+    .uni-city {
+      grid-template-columns: 1fr 13rem;
+    }
+  }
   .uni-links {
     display: flex;
     flex-wrap: wrap;
