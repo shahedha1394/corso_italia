@@ -1,0 +1,16 @@
+name:
+  en: "IULM University"
+  ar: "جامعة IULM"
+name_it: "Libera Università di Lingue e Comunicazione IULM"
+city: milano
+region: lombardia
+type: private
+website: https://www.iulm.it
+international_page: https://www.iulm.it/en/orientamento-iscrizioni/iscrizioni-per-studenti-stranieri
+programs_page: https://www.iulm.it/en/offerta-formativa/corsi-di-lauree-triennali
+masters_page: https://www.iulm.it/en/offerta-formativa/corsi-di-lauree-magistrali
+areas: [humanities, economics-business, politics-social]
+description:
+  en: "Founded in 1968. A non-state university in Milan for languages, communication, tourism, marketing and the arts, with a site in Rome."
+  ar: "تأسست عام 1968. جامعة غير حكومية في ميلانو للغات والإعلام والسياحة والتسويق والفنون، ولها مقر في روما."
+last_checked: 2026-10-27
