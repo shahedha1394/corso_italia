@@ -2,7 +2,7 @@
 import { getCollection, getEntry } from 'astro:content';
 import Base from '../../../../layouts/Base.astro';
 import ItalyMap from '../../../../components/ItalyMap.astro';
-import { arrow, langs, path, useTranslations, type Lang } from '../../../../i18n';
+import { arrow, dateLocale, langs, path, useTranslations, type Lang } from '../../../../i18n';
 import { areas, cities, regions, universityTypes } from '../../../../lib/taxonomy';
 
 export async function getStaticPaths() {
@@ -15,7 +15,7 @@ const lang = Astro.params.lang as Lang;
 const t = useTranslations(lang);
 const u = uni.data;
 const city = await getEntry('cities', u.city);
-const checked = u.last_checked.toLocaleDateString(lang === 'ar' ? 'ar' : 'en-GB', { dateStyle: 'long' });
+const checked = u.last_checked.toLocaleDateString(dateLocale(lang), { dateStyle: 'long' });
 ---
 
 <Base lang={lang} title={u.name[lang]} description={u.description?.[lang]}>

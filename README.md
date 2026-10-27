@@ -1,6 +1,6 @@
 # Corso Italia
 
-A free, bilingual (English / العربية) website helping Arab students study and live in Italy.
+A free website in English, العربية and Français helping Arab students study and live in Italy.
 
 - **Study in Italy**: university and program directory, how to apply, funding, visa
 - **Living in Italy**: residence permit, health insurance, accommodation, first weeks
@@ -16,7 +16,7 @@ Requires Node.js 22.23.4 or newer (24 recommended, see `.nvmrc`).
 ```sh
 npm install
 npm run dev      # http://localhost:4321/
-npm run check    # English and Arabic are in sync
+npm run check    # English, Arabic and French are in sync
 npm run build    # static site in dist/
 ```
 
@@ -26,9 +26,9 @@ The site is deployed to GitHub Pages at https://corsoitaly.com from `main` by `.
 
 | What | Where |
 |---|---|
-| Interface text (menus, buttons) | `src/i18n/en.json`, `src/i18n/ar.json` |
-| Guides (Study, Living) | `src/content/guides/<en\|ar>/<slug>.md` |
-| Simple pages (About, FAQ...) | `src/content/pages/<en\|ar>/<slug>.md` |
+| Interface text (menus, buttons) | `src/i18n/en.json`, `src/i18n/ar.json`, `src/i18n/fr.json` |
+| Guides (Study, Living) | `src/content/guides/<en\|ar\|fr>/<slug>.md` |
+| Simple pages (About, FAQ...) | `src/content/pages/<en\|ar\|fr>/<slug>.md` |
 | Page templates | `src/pages/[lang]/...` |
 | Layout and styles | `src/layouts/Base.astro`, `src/styles/global.css` |
 | Map of Italy | `src/components/ItalyMap.astro`, data in `src/data/italy-map.json` (built by `scripts/build-italy-map.py` from ISTAT data, CC BY 4.0) |

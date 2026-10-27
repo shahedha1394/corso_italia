@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../../../layouts/Base.astro';
-import { getStaticLangPaths, path, useTranslations, type Lang } from '../../../../i18n';
+import { dateLocale, getStaticLangPaths, path, useTranslations, type Lang } from '../../../../i18n';
 import { getUpcomingDeadlines } from '../../../../lib/content';
 import { deadlineTypes } from '../../../../lib/taxonomy';
 
@@ -11,7 +11,7 @@ const lang = Astro.params.lang as Lang;
 const t = useTranslations(lang);
 const [deadlines, universities] = await Promise.all([getUpcomingDeadlines(), getCollection('universities')]);
 const uniById = new Map(universities.map((u) => [u.id, u]));
-const locale = lang === 'ar' ? 'ar' : 'en-GB';
+const locale = dateLocale(lang);
 const formatDate = (d: Date) => d.toLocaleDateString(locale, { dateStyle: 'long' });
 const monthKey = (d: Date) => `${d.getFullYear()}-${d.getMonth()}`;
 const months = [...new Map(deadlines.map((d) => [monthKey(d.data.date), d.data.date])).entries()].map(([key, date]) => ({

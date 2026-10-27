@@ -41,7 +41,11 @@ const pages = defineCollection({
   }),
 });
 
-const bilingual = z.object({ en: z.string().min(1), ar: z.string().min(1) });
+// Text in every site language. French is optional while translations are being added:
+// when it is missing, the English text is shown on French pages.
+const bilingual = z
+  .object({ en: z.string().min(1), ar: z.string().min(1), fr: z.string().min(1).optional() })
+  .transform((text) => ({ ...text, fr: text.fr ?? text.en }));
 const source = z.object({ label: z.string(), url: z.string().url() });
 
 // Short description of each city, one YAML file per city (file name = city key in taxonomy).

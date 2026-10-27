@@ -1,7 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Base from '../../../layouts/Base.astro';
-import { path, useTranslations, type Lang } from '../../../i18n';
+import { dateLocale, path, useTranslations, type Lang } from '../../../i18n';
 import { splitId } from '../../../lib/content';
 
 export async function getStaticPaths() {
@@ -17,7 +17,7 @@ const lang = Astro.params.lang as Lang;
 const t = useTranslations(lang);
 const { Content } = await render(guide);
 const sectionTitle = guide.data.section === 'study' ? t('nav.study') : t('nav.living');
-const lastChecked = guide.data.lastChecked?.toLocaleDateString(lang === 'ar' ? 'ar' : 'en-GB', {
+const lastChecked = guide.data.lastChecked?.toLocaleDateString(dateLocale(lang), {
   year: 'numeric',
   month: 'long',
   day: 'numeric',

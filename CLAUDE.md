@@ -3,7 +3,7 @@
 Two people (and their Claude agents) work on this repo. Read this before making changes.
 
 ## Project
-A free, bilingual (English + Arabic) website helping Arab students study and live in Italy, plus **EngPro** (free English learning with volunteer teachers) and an **Opportunities** board.
+A free website in English, Arabic and French helping Arab students study and live in Italy, plus **EngPro** (free English learning with volunteer teachers) and an **Opportunities** board.
 - Site map: [docs/SITEMAP.md](docs/SITEMAP.md)
 - Data model: [docs/DATA_MODEL.md](docs/DATA_MODEL.md)
 - Roadmap: [docs/ROADMAP.md](docs/ROADMAP.md)
@@ -15,11 +15,12 @@ A free, bilingual (English + Arabic) website helping Arab students study and liv
 - Before starting a task, check open PRs and the roadmap to avoid working on the same thing as the other collaborator.
 - Run `npm run check` and `npm run build` before opening a PR (Node 22.23.4+; CI runs both on every PR).
 
-## Bilingual rules (mandatory)
-- Every user-facing string exists in **both** `en` and `ar`. No hard-coded text in components; use the translation files.
+## Language rules (mandatory)
+- Every user-facing string exists in **all three** languages: `en`, `ar` and `fr`. No hard-coded text in components; use the translation files (`src/i18n/<lang>.json`).
+- Content data (universities, cities, funding...) has `en`, `ar` and `fr` text. `fr` may be missing while translations are being added: French pages then show the English text. `node scripts/check-translations.mjs --report-french` lists what is still missing.
 - Arabic pages use `dir="rtl"` and `lang="ar"`. Use CSS logical properties (`margin-inline-start`, not `margin-left`) so layouts flip correctly.
 - Numbers, dates and Italian proper names (Questura, Universitaly, codice fiscale) stay readable in both directions. In Arabic text, wrap a Latin term that ends right before `)` in Unicode isolates (U+2066 … U+2069) so the brackets render correctly.
-- Adding a guide: create the same file name in `src/content/guides/en/` and `src/content/guides/ar/`. `npm run check` fails if one is missing.
+- Adding a guide: create the same file name in `src/content/guides/en/`, `src/content/guides/ar/` and `src/content/guides/fr/`. `npm run check` fails if one is missing.
 - Adding a university: add one YAML file to `src/content/universities/` (copy an existing one). The site does not list individual study programs; link to the university's official program list instead. A new city also needs its key in `src/lib/taxonomy.ts`, a short description in `src/content/cities/<city>.yaml`, and a position on the map: add it to `CITY_MUNICIPALITY` in `scripts/build-italy-map.py` and run the script (instructions at the top of the file). Only add facts you checked on the official page, put that page in `url`, and set `last_checked` to the day you checked.
 - Announcing an opportunity or EngPro session: copy `docs/examples/opportunity.yaml` or `docs/examples/engpro-session.yaml` into `src/content/opportunities/` or `src/content/engpro-sessions/`. Past entries hide themselves; the site rebuilds every morning.
 - Adding a deadline to the calendar: copy `docs/examples/deadline.yaml` into `src/content/deadlines/`. Only dates checked on the official page; past deadlines hide themselves.

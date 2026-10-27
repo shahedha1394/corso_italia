@@ -1,7 +1,7 @@
 ---
 // Renders a date-time on the server in Rome time, then the browser rewrites it in the visitor's own time zone.
 // Date-only values (dateOnly) are shown as the same calendar day everywhere.
-import type { Lang } from '../i18n';
+import { dateLocale, type Lang } from '../i18n';
 
 interface Props {
   date: Date;
@@ -10,7 +10,7 @@ interface Props {
 }
 
 const { date, lang, dateOnly = false } = Astro.props;
-const locale = lang === 'ar' ? 'ar' : 'en-GB';
+const locale = dateLocale(lang);
 const options: Intl.DateTimeFormatOptions = dateOnly
   ? { dateStyle: 'full', timeZone: 'UTC' }
   : { dateStyle: 'full', timeStyle: 'short', timeZone: 'Europe/Rome' };

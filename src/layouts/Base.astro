@@ -13,7 +13,7 @@ const t = useTranslations(lang);
 const dir = languages[lang].dir;
 const pageTitle = title ? `${title} · ${t('site.name')}` : `${t('site.name')} · ${t('site.tagline')}`;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const rest = Astro.url.pathname.slice(base.length).replace(/^\/(en|ar)(?=\/|$)/, '') || '/';
+const rest = Astro.url.pathname.slice(base.length).replace(/^\/(en|ar|fr)(?=\/|$)/, '') || '/';
 const current = Astro.url.pathname;
 
 const nav = [
@@ -63,14 +63,16 @@ const nav = [
             ))}
           </ul>
         </nav>
-        <a
-          class="lang-switch"
-          href={switchLangPath(Astro.url.pathname, lang)}
-          hreflang={lang === 'en' ? 'ar' : 'en'}
-          aria-label={t('lang.switchLabel')}
-        >
-          {t('lang.switch')}
-        </a>
+        <nav class="lang-switch" aria-label={t('lang.choose')}>
+          {langs
+            .filter((l) => l !== lang)
+            .map((l) => (
+              <a href={switchLangPath(Astro.url.pathname, l)} hreflang={l} lang={l} aria-label={languages[l].label}>
+                <span class="lang-full">{languages[l].label}</span>
+                <span class="lang-short" aria-hidden="true">{languages[l].short}</span>
+              </a>
+            ))}
+        </nav>
       </div>
     </header>
 

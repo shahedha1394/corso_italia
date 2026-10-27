@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import { path, useTranslations } from '../i18n';
 const t = useTranslations('en');
 const ar = useTranslations('ar');
+const fr = useTranslations('fr');
 ---
 
 <Base lang="en" title={t('notFound.title')}>
@@ -10,6 +11,7 @@ const ar = useTranslations('ar');
     <h1>{t('notFound.title')}</h1>
     <p>{t('notFound.text')}</p>
     <p lang="ar" dir="rtl">{ar('notFound.text')}</p>
+    <p lang="fr">{fr('notFound.text')}</p>
     <p><a class="button" href={path('en')}>{t('notFound.home')}</a></p>
   </section>
 </Base>

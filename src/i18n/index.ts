@@ -1,9 +1,11 @@
 import en from './en.json';
 import ar from './ar.json';
+import fr from './fr.json';
 
 export const languages = {
-  en: { label: 'English', dir: 'ltr' },
-  ar: { label: 'العربية', dir: 'rtl' },
+  en: { label: 'English', short: 'EN', dir: 'ltr', locale: 'en-GB' },
+  ar: { label: 'العربية', short: 'عربي', dir: 'rtl', locale: 'ar' },
+  fr: { label: 'Français', short: 'FR', dir: 'ltr', locale: 'fr-FR' },
 } as const;
 
 export type Lang = keyof typeof languages;
@@ -12,14 +14,15 @@ export type UIKey = keyof typeof en;
 export const langs = Object.keys(languages) as Lang[];
 export const defaultLang: Lang = 'en';
 
-const ui: Record<Lang, Record<UIKey, string>> = { en, ar };
+const ui: Record<Lang, Record<UIKey, string>> = { en, ar, fr };
 
 export function useTranslations(lang: Lang) {
   return (key: UIKey) => ui[lang][key] ?? ui[defaultLang][key];
 }
 
-export function otherLang(lang: Lang): Lang {
-  return lang === 'en' ? 'ar' : 'en';
+/** Locale for formatting dates and numbers in a language. */
+export function dateLocale(lang: Lang): string {
+  return languages[lang].locale;
 }
 
 /** Build a link that respects the site base path, e.g. path('ar', '/study/') → /ar/study/ */
@@ -30,11 +33,11 @@ export function path(lang: Lang | null, to = '/'): string {
   return lang ? `${base}/${lang}${withSlash}` : `${base}${withSlash}`;
 }
 
-/** Same page in the other language: swaps the language segment of the current URL. */
-export function switchLangPath(pathname: string, lang: Lang): string {
+/** The same page in another language: swaps the language segment of the current URL. */
+export function switchLangPath(pathname: string, target: Lang): string {
   const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-  const rest = pathname.slice(base.length).replace(/^\/(en|ar)(?=\/|$)/, '');
-  return path(otherLang(lang), rest || '/');
+  const rest = pathname.slice(base.length).replace(/^\/(en|ar|fr)(?=\/|$)/, '');
+  return path(target, rest || '/');
 }
 
 export function getStaticLangPaths() {

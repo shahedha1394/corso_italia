@@ -1,6 +1,6 @@
 ---
-// Language chooser at the site root. Visitors pick Arabic or English;
-// every other page lives under /en/ or /ar/.
+// Language chooser at the site root. Visitors pick Arabic, English or French;
+// every other page lives under /en/, /ar/ or /fr/.
 import '../styles/global.css';
 import { path } from '../i18n';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -12,9 +12,10 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Corso Italia</title>
-    <meta name="description" content="Study and live in Italy, step by step. الدراسة والحياة في إيطاليا، خطوة بخطوة." />
+    <meta name="description" content="Study and live in Italy, step by step. الدراسة والحياة في إيطاليا، خطوة بخطوة. Étudier et vivre en Italie, étape par étape." />
     <link rel="alternate" hreflang="en" href={path('en')} />
     <link rel="alternate" hreflang="ar" href={path('ar')} />
+    <link rel="alternate" hreflang="fr" href={path('fr')} />
     <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,9 +30,11 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       <h1>Corso Italia</h1>
       <p lang="ar" dir="rtl" class="ar">الدراسة والحياة في إيطاليا، خطوة بخطوة</p>
       <p>Study and live in Italy, step by step</p>
+      <p lang="fr">Étudier et vivre en Italie, étape par étape</p>
       <div class="choices">
         <a class="button ar" href={path('ar')} hreflang="ar" lang="ar">العربية</a>
         <a class="button" href={path('en')} hreflang="en">English</a>
+        <a class="button" href={path('fr')} hreflang="fr" lang="fr">Français</a>
       </div>
     </main>
     <style>
