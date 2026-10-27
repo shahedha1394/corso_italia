@@ -1,0 +1,14 @@
+name:
+  en: "Pegaso Online University"
+  ar: "جامعة بيغاسو عبر الإنترنت"
+name_it: "Università Telematica Pegaso"
+city: napoli
+region: campania
+type: online
+website: https://www.unipegaso.it
+programs_page: https://www.unipegaso.it/lauree-triennali
+areas: [engineering, computer-science, economics-business, law, humanities]
+description:
+  en: "Established in 2006. An online university with its main office in Naples."
+  ar: "تأسست عام 2006. جامعة عبر الإنترنت مقرها الرئيسي في نابولي."
+last_checked: 2026-10-27
