@@ -1,6 +1,7 @@
 name:
   en: "Centre for Defence Higher Studies (CASD)"
   ar: "مركز الدراسات العليا للدفاع (CASD)"
+  fr: "Centre des hautes études de défense (CASD)"
 name_it: "Centro Alti Studi per la Difesa (CASD)"
 city: roma
 region: lazio
@@ -10,4 +11,5 @@ areas: [politics-social]
 description:
   en: "Part of the Italian Ministry of Defence in Rome. It mainly offers military and postgraduate training in defence and security, and is not a usual route for international students."
   ar: "تابع لوزارة الدفاع الإيطالية في روما. يقدّم أساساً تدريباً عسكرياً ودراسات عليا في الدفاع والأمن، وليس طريقاً معتاداً للطلاب الدوليين."
+  fr: "Rattaché au ministère italien de la Défense, à Rome. Il propose surtout une formation militaire et post-universitaire en défense et sécurité, et n'est pas une voie habituelle pour les étudiants internationaux."
 last_checked: 2026-10-27

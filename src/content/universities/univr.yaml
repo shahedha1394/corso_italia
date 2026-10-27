@@ -1,6 +1,7 @@
 name:
   en: "University of Verona"
   ar: "جامعة فيرونا"
+  fr: "Université de Vérone"
 name_it: "Università degli Studi di Verona"
 city: verona
 region: veneto
@@ -12,4 +13,5 @@ areas: [engineering, computer-science, sciences, medicine-health, economics-busi
 description:
   en: "Became a state university in 1982. A public university with 13 departments and a School of Medicine, with some courses in Vicenza."
   ar: "أصبحت جامعة حكومية عام 1982. فيها 13 قسماً وكلية للطب، ولها بعض البرامج في فيتشنزا."
+  fr: "Devenue université d'État en 1982. Une université publique avec 13 départements et une école de médecine, avec quelques cours à Vicenza."
 last_checked: 2026-10-26

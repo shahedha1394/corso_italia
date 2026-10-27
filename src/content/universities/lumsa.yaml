@@ -1,6 +1,7 @@
 name:
   en: "LUMSA University"
   ar: "جامعة لومسا LUMSA"
+  fr: "Université LUMSA"
 name_it: "Libera Università Maria Ss. Assunta (LUMSA)"
 city: roma
 region: lazio
@@ -11,4 +12,5 @@ areas: [economics-business, law, politics-social, humanities]
 description:
   en: "Established in 1939. A non-state university in Rome, with a site in Palermo."
   ar: "تأسست عام 1939. جامعة غير حكومية في روما، ولها فرع في باليرمو."
+  fr: "Créée en 1939. Une université non étatique à Rome, avec un site à Palerme."
 last_checked: 2026-10-27

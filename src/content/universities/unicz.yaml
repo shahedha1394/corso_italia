@@ -1,6 +1,7 @@
 name:
   en: "Magna Graecia University of Catanzaro"
   ar: "جامعة ماغنا غريتشا في كاتانزارو"
+  fr: "Université Magna Graecia de Catanzaro"
 name_it: "Università degli Studi di Catanzaro \"Magna Graecia\""
 city: catanzaro
 region: calabria
@@ -10,4 +11,5 @@ areas: [medicine-health, economics-business, law, politics-social]
 description:
   en: "Established in 1997. A public university with 4 departments, including medicine and health, on the Germaneto campus in Catanzaro."
   ar: "تأسست عام 1997. جامعة حكومية فيها 4 أقسام، منها الطب والصحة، في حرم جيرمانيتو في كاتانزارو."
+  fr: "Créée en 1997. Une université publique avec 4 départements, dont médecine et santé, sur le campus de Germaneto à Catanzaro."
 last_checked: 2026-10-26

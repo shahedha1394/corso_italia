@@ -1,6 +1,7 @@
 name:
   en: "Free University of Bozen-Bolzano"
   ar: "جامعة بولزانو الحرة"
+  fr: "Université libre de Bozen-Bolzano"
 name_it: "Libera Università di Bolzano"
 city: bolzano
 region: trentino-alto-adige
@@ -12,4 +13,5 @@ areas: [engineering, architecture-design, computer-science, sciences, economics-
 description:
   en: "Founded in 1997. A non-state university with campuses in Bolzano, Brixen and Bruneck, teaching in Italian, German and English."
   ar: "تأسست عام 1997. جامعة غير حكومية لها فروع في بولزانو وبريسانوني وبرونيكو، وتدرّس بالإيطالية والألمانية والإنجليزية."
+  fr: "Fondée en 1997. Une université non étatique avec des campus à Bolzano, Brixen et Bruneck, qui enseigne en italien, en allemand et en anglais."
 last_checked: 2026-10-27

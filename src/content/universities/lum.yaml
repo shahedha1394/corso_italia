@@ -1,6 +1,7 @@
 name:
   en: "LUM Giuseppe Degennaro University"
   ar: "جامعة LUM جوزيبي ديجيناريو"
+  fr: "Université LUM Giuseppe Degennaro"
 name_it: "Università LUM \"Giuseppe Degennaro\""
 city: casamassima
 region: puglia
@@ -11,4 +12,5 @@ areas: [medicine-health, economics-business, law, engineering]
 description:
   en: "Founded in 1995. A non-state university near Bari with programs in medicine, economics, law and engineering."
   ar: "تأسست عام 1995. جامعة غير حكومية قرب باري لديها برامج في الطب والاقتصاد والقانون والهندسة."
+  fr: "Fondée en 1995. Une université non étatique près de Bari, avec des programmes en médecine, en économie, en droit et en ingénierie."
 last_checked: 2026-10-27

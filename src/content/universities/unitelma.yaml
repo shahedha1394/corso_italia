@@ -1,6 +1,7 @@
 name:
   en: "Unitelma Sapienza"
   ar: "جامعة يونيتيلما سابيينزا"
+  fr: "Unitelma Sapienza"
 name_it: "Università degli Studi di Roma Unitelma Sapienza"
 city: roma
 region: lazio
@@ -12,4 +13,5 @@ areas: [computer-science, economics-business, law, politics-social, humanities]
 description:
   en: "Established in 2004. An online university based in Rome, with a master's in classical archaeology taught in English."
   ar: "تأسست عام 2004. جامعة عبر الإنترنت مقرها روما، ولها ماجستير في علم الآثار الكلاسيكي بالإنجليزية."
+  fr: "Créée en 2004. Une université en ligne basée à Rome, avec un master en archéologie classique enseigné en anglais."
 last_checked: 2026-10-27

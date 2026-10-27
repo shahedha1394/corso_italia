@@ -1,6 +1,7 @@
 name:
   en: "University of Catania"
   ar: "جامعة كاتانيا"
+  fr: "Université de Catane"
 name_it: "Università degli Studi di Catania"
 city: catania
 region: sicilia
@@ -12,4 +13,5 @@ areas: [engineering, architecture-design, computer-science, sciences, medicine-h
 description:
   en: "Established in 1434, it is the oldest university in Sicily. A public university with 17 departments covering almost every field."
   ar: "تأسست عام 1434، وهي أقدم جامعة في صقلية. جامعة حكومية فيها 17 قسماً تغطي معظم المجالات."
+  fr: "Créée en 1434, c'est la plus ancienne université de Sicile. Une université publique avec 17 départements qui couvre presque tous les domaines."
 last_checked: 2026-10-26

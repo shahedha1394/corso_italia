@@ -1,6 +1,7 @@
 name:
   en: "Uninettuno International Telematic University"
   ar: "جامعة أونينيتونو الدولية"
+  fr: "Université télématique internationale Uninettuno"
 name_it: "Università Telematica Internazionale Uninettuno"
 city: roma
 region: lazio
@@ -11,4 +12,5 @@ areas: [engineering, computer-science, economics-business, law, politics-social,
 description:
   en: "Established in 2005. An online university based in Rome whose platform offers study in several languages, including Arabic."
   ar: "تأسست عام 2005. جامعة عبر الإنترنت مقرها روما، ومنصتها تتيح الدراسة بعدة لغات منها العربية."
+  fr: "Créée en 2005. Une université en ligne basée à Rome, dont la plateforme permet d'étudier en plusieurs langues, dont l'arabe."
 last_checked: 2026-10-27

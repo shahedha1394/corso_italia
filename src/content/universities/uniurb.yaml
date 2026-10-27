@@ -1,6 +1,7 @@
 name:
   en: "University of Urbino Carlo Bo"
   ar: "جامعة أوربينو كارلو بو"
+  fr: "Université d'Urbino Carlo Bo"
 name_it: "Università degli Studi di Urbino Carlo Bo"
 city: urbino
 region: marche
@@ -11,4 +12,5 @@ areas: [sciences, economics-business, law, politics-social, humanities]
 description:
   en: "Established in 1506. A public university with 6 departments in Urbino, and an engineering program in Pesaro."
   ar: "تأسست عام 1506. جامعة حكومية فيها 6 أقسام في أوربينو، ولها برنامج هندسة في بيزارو."
+  fr: "Créée en 1506. Une université publique avec 6 départements à Urbino, et une formation en ingénierie à Pesaro."
 last_checked: 2026-10-26

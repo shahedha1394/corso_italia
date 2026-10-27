@@ -1,10 +1,10 @@
 # Site map and content outline
 
-Every page exists in two languages, served from `/en/...` and `/ar/...`.
+Every page exists in three languages, served from `/en/...`, `/ar/...` and `/fr/...`.
 Arabic pages use `dir="rtl"`. The language switcher keeps the user on the same page.
 
 ## 1. Home (`/`)
-- Short intro: "Study in Italy, step by step", in Arabic and English
+- Short intro: "Study in Italy, step by step", in Arabic, English and French
 - Three entry cards: **Study in Italy**, **EngPro**, **Opportunities**
 - "Start here" journey: Choose a program → Apply → Visa → Arrive → Settle
 - Latest announcements (3 newest, not expired)

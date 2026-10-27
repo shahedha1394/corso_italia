@@ -1,6 +1,7 @@
 name:
   en: "University of Cassino and Southern Lazio"
   ar: "جامعة كاسينو وجنوب لاتسيو"
+  fr: "Université de Cassino et du Latium méridional"
 name_it: "Università degli Studi di Cassino e del Lazio Meridionale"
 city: cassino
 region: lazio
@@ -11,4 +12,5 @@ areas: [engineering, computer-science, economics-business, law, politics-social,
 description:
   en: "A public university with 5 departments, in Cassino and Frosinone."
   ar: "جامعة حكومية فيها 5 أقسام، في كاسينو وفروزينوني."
+  fr: "Une université publique avec 5 départements, à Cassino et Frosinone."
 last_checked: 2026-10-26

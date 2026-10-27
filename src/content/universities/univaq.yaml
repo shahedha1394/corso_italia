@@ -1,6 +1,7 @@
 name:
   en: "University of L'Aquila"
   ar: "جامعة لاكويلا"
+  fr: "Université de L'Aquila"
 name_it: "Università degli Studi dell'Aquila"
 city: laquila
 region: abruzzo
@@ -10,4 +11,5 @@ areas: [engineering, architecture-design, computer-science, sciences, medicine-h
 description:
   en: "Established in 1964. A public university with 7 departments."
   ar: "تأسست عام 1964. جامعة حكومية فيها 7 أقسام."
+  fr: "Créée en 1964. Une université publique avec 7 départements."
 last_checked: 2026-10-26

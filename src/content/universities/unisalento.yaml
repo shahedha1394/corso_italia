@@ -1,6 +1,7 @@
 name:
   en: "University of Salento"
   ar: "جامعة سالينتو"
+  fr: "Université du Salento"
 name_it: "Università del Salento"
 city: lecce
 region: puglia
@@ -12,4 +13,5 @@ areas: [engineering, sciences, economics-business, law, politics-social, humanit
 description:
   en: "Teaching since 1955. A public university with nine departments in Lecce, and a site in Brindisi."
   ar: "تدرّس منذ عام 1955. جامعة حكومية فيها تسعة أقسام في ليتشي، ولها موقع في برينديزي."
+  fr: "Enseigne depuis 1955. Une université publique avec neuf départements à Lecce, et un site à Brindisi."
 last_checked: 2026-10-26

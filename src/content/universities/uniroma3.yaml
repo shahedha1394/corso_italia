@@ -1,6 +1,7 @@
 name:
   en: "Roma Tre University"
   ar: "جامعة روما تري"
+  fr: "Université Roma Tre"
 name_it: "Università degli Studi Roma Tre"
 city: roma
 region: lazio
@@ -12,4 +13,5 @@ areas: [engineering, architecture-design, computer-science, sciences, economics-
 description:
   en: "Founded in 1992. A public university in Rome with 13 departments."
   ar: "تأسست عام 1992. جامعة حكومية في روما فيها 13 قسماً."
+  fr: "Fondée en 1992. Une université publique à Rome avec 13 départements."
 last_checked: 2026-10-26

@@ -1,6 +1,7 @@
 name:
   en: "University of Perugia"
   ar: "جامعة بيروجيا"
+  fr: "Université de Pérouse"
 name_it: "Università degli Studi di Perugia"
 city: perugia
 region: umbria
@@ -11,4 +12,5 @@ areas: [engineering, computer-science, sciences, medicine-health, economics-busi
 description:
   en: "Founded in 1308. A public university with 14 departments, also teaching in Terni, Narni, Foligno and Assisi."
   ar: "تأسست عام 1308. جامعة حكومية فيها 14 قسماً، وتدرّس أيضاً في تيرني ونارني وفولينيو وأسيزي."
+  fr: "Fondée en 1308. Une université publique avec 14 départements, qui enseigne aussi à Terni, Narni, Foligno et Assisi."
 last_checked: 2026-10-26

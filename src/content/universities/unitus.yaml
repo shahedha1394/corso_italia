@@ -1,6 +1,7 @@
 name:
   en: "University of Tuscia"
   ar: "جامعة توشا"
+  fr: "Université de la Tuscia"
 name_it: "Università degli Studi della Tuscia"
 city: viterbo
 region: lazio
@@ -12,4 +13,5 @@ areas: [engineering, architecture-design, sciences, economics-business, law, pol
 description:
   en: "Founded in 1979. A public university in Viterbo with 6 departments, also teaching in Civitavecchia and Rieti."
   ar: "تأسست عام 1979. جامعة حكومية في فيتربو فيها 6 أقسام، وتدرّس أيضاً في تشيفيتافيكيا وريِيتي."
+  fr: "Fondée en 1979. Une université publique à Viterbo avec 6 départements, qui enseigne aussi à Civitavecchia et Rieti."
 last_checked: 2026-10-26

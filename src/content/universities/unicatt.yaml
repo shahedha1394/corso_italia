@@ -1,6 +1,7 @@
 name:
   en: "Catholic University of the Sacred Heart"
   ar: "الجامعة الكاثوليكية للقلب المقدس"
+  fr: "Université catholique du Sacré-Cœur"
 name_it: "Università Cattolica del Sacro Cuore"
 city: milano
 region: lombardia
@@ -12,4 +13,5 @@ areas: [economics-business, law, politics-social, humanities, sciences, medicine
 description:
   en: "Founded in 1921. A non-state university based in Milan, with campuses in Rome (where medicine is taught), Brescia, Piacenza and Cremona."
   ar: "تأسست عام 1921. جامعة غير حكومية مقرها ميلانو، ولها فروع في روما (حيث يُدرَّس الطب) وبريشا وبياتشنزا وكريمونا."
+  fr: "Fondée en 1921. Une université non étatique basée à Milan, avec des campus à Rome (où la médecine est enseignée), Brescia, Plaisance et Crémone."
 last_checked: 2026-10-27

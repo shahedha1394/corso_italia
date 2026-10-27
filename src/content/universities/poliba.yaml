@@ -1,6 +1,7 @@
 name:
   en: "Polytechnic University of Bari"
   ar: "جامعة البوليتكنيك في باري"
+  fr: "Politecnico de Bari"
 name_it: "Politecnico di Bari"
 city: bari
 region: puglia
@@ -12,4 +13,5 @@ areas: [engineering, architecture-design]
 description:
   en: "Established in 1990. A public technical university for engineering, architecture and design, also teaching in Taranto."
   ar: "تأسست عام 1990. جامعة تقنية حكومية للهندسة والعمارة والتصميم، وتدرّس أيضاً في تارانتو."
+  fr: "Créé en 1990. Une université technique publique pour l'ingénierie, l'architecture et le design, qui enseigne aussi à Taranto."
 last_checked: 2026-10-26

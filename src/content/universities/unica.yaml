@@ -1,6 +1,7 @@
 name:
   en: "University of Cagliari"
   ar: "جامعة كالياري"
+  fr: "Université de Cagliari"
 name_it: "Università degli Studi di Cagliari"
 city: cagliari
 region: sardegna
@@ -10,4 +11,5 @@ areas: [engineering, architecture-design, sciences, medicine-health, economics-b
 description:
   en: "Founded in 1620. A public university with 6 faculties and 15 departments, in Cagliari and Monserrato."
   ar: "تأسست عام 1620. جامعة حكومية فيها 6 كليات و15 قسماً، في كالياري ومونسيراتو."
+  fr: "Fondée en 1620. Une université publique avec 6 facultés et 15 départements, à Cagliari et Monserrato."
 last_checked: 2026-10-26

@@ -37,7 +37,7 @@ const groups = ([...new Set(universities.map((u) => u.data.region))] as RegionKe
 // Everything a student might type: names in all languages and the city in both languages.
 const searchText = (u: (typeof universities)[number]) =>
   normalize(
-    [u.data.name.en, u.data.name.ar, u.data.name_it, u.id, cities[u.data.city].en, cities[u.data.city].ar, u.data.city].join(' '),
+    [u.data.name.en, u.data.name.ar, u.data.name.fr, u.data.name_it, u.id, cities[u.data.city].en, cities[u.data.city].ar, cities[u.data.city].fr, u.data.city].join(' '),
   );
 ---
 

@@ -6,7 +6,7 @@ The schema that the build enforces is in `src/content.config.ts`; allowed cities
 **Implemented now:** universities, funding, deadlines, opportunities and EngPro. Fields marked *later* below are planned but not yet in the schema.
 
 The site does not keep its own list of study programs (removed in favour of a university-and-city guide): each university page links to the university's official list of programs.
-Bilingual text fields are objects with `en` and `ar` keys.
+Text fields are objects with `en`, `ar` and `fr` keys (`fr` optional for now; English is shown on French pages when it is missing).
 
 ## University (`src/content/universities/<slug>.yaml`)
 | Field | Type | Notes |

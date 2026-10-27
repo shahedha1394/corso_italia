@@ -1,6 +1,7 @@
 name:
   en: "University of Bologna"
   ar: "جامعة بولونيا"
+  fr: "Université de Bologne"
 name_it: "Alma Mater Studiorum – Università di Bologna"
 city: bologna
 region: emilia-romagna
@@ -13,4 +14,5 @@ areas: [engineering, architecture-design, medicine-health, sciences, economics-b
 description:
   en: "Its foundation is traditionally dated to 1088. A public university covering almost every field, with campuses in Bologna and in Cesena, Forlì, Ravenna and Rimini."
   ar: "يعود تأسيسها تقليدياً إلى عام 1088. جامعة حكومية تغطي معظم المجالات، ولها فروع في بولونيا وفي تشيزينا وفورلي ورافينا وريميني."
+  fr: "Sa fondation est traditionnellement datée de 1088. Une université publique qui couvre presque tous les domaines, avec des campus à Bologne et à Cesena, Forlì, Ravenne et Rimini."
 last_checked: 2026-10-26

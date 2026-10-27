@@ -1,6 +1,7 @@
 name:
   en: "Guglielmo Marconi University"
   ar: "جامعة غولييلمو ماركوني"
+  fr: "Université Guglielmo Marconi"
 name_it: "Università degli Studi Guglielmo Marconi"
 city: roma
 region: lazio
@@ -13,4 +14,5 @@ areas: [engineering, computer-science, economics-business, law, politics-social,
 description:
   en: "Recognised in 2004. An online university based in Rome, with an English-taught foundation course for international students."
   ar: "اعتُرف بها عام 2004. جامعة عبر الإنترنت مقرها روما، ولها سنة تأسيسية بالإنجليزية للطلاب الدوليين."
+  fr: "Reconnue en 2004. Une université en ligne basée à Rome, avec un cours préparatoire en anglais pour les étudiants internationaux."
 last_checked: 2026-10-27

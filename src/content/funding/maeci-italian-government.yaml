@@ -1,14 +1,17 @@
 name:
   en: "Italian Government scholarships (MAECI)"
   ar: "منح الحكومة الإيطالية (MAECI)"
+  fr: "Bourses du gouvernement italien (MAECI)"
 provider: "Italian Ministry of Foreign Affairs"
 type: government
 description:
   en: "Scholarships from the Italian Ministry of Foreign Affairs for foreign students studying in Italy. Applications are made only through the Study in Italy portal. The 2026/27 call closed on 26 March 2026."
   ar: "منح من وزارة الخارجية الإيطالية للطلاب الأجانب الذين يدرسون في إيطاليا. يتم التقديم فقط عبر بوابة Study in Italy. أُغلق باب التقديم لعام 2026/27 في 26 مارس 2026."
+  fr: "Bourses du ministère italien des Affaires étrangères pour les étudiants étrangers qui étudient en Italie. Les candidatures se font uniquement sur le portail Study in Italy. L'appel 2026/27 a fermé le 26 mars 2026."
 eligibility:
   en: "Citizens of the countries on the eligible-countries list published on the portal."
   ar: "مواطنو الدول المدرجة في قائمة الدول المؤهلة المنشورة على البوابة."
+  fr: "Les citoyens des pays figurant sur la liste des pays éligibles publiée sur le portail."
 url: https://studyinitaly.esteri.it
 sources:
   - label: "Embassy of Italy in Abuja: 2026/27 call"

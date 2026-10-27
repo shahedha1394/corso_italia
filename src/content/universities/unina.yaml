@@ -1,6 +1,7 @@
 name:
   en: "University of Naples Federico II"
   ar: "جامعة نابولي فيديريكو الثاني"
+  fr: "Université de Naples Frédéric-II"
 name_it: "Università degli Studi di Napoli Federico II"
 city: napoli
 region: campania
@@ -11,4 +12,5 @@ areas: [engineering, architecture-design, computer-science, sciences, medicine-h
 description:
   en: "Founded in 1224. A public university with 26 departments covering almost every field."
   ar: "تأسست عام 1224. جامعة حكومية فيها 26 قسماً تغطي معظم المجالات."
+  fr: "Fondée en 1224. Une université publique avec 26 départements qui couvre presque tous les domaines."
 last_checked: 2026-10-26

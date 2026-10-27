@@ -155,15 +155,37 @@ h3 {
 }
 
 .lang-switch {
-  padding: 0.4rem 0.8rem;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.lang-switch a {
+  padding: 0.35rem 0.75rem;
   border: 1px solid var(--color-border);
   border-radius: 999px;
   text-decoration: none;
   font-weight: 600;
+  font-size: 0.9rem;
 }
 
-.lang-switch:lang(en) {
+.lang-switch a[lang='ar'] {
   font-family: var(--font-arabic);
+}
+
+.lang-short {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .lang-full {
+    display: none;
+  }
+  .lang-short {
+    display: inline;
+  }
+  .lang-switch a {
+    padding: 0.3rem 0.6rem;
+  }
 }
 
 .menu-button {

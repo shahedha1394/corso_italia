@@ -1,6 +1,7 @@
 name:
   en: "University of Parma"
   ar: "جامعة بارما"
+  fr: "Université de Parme"
 name_it: "Università degli Studi di Parma"
 city: parma
 region: emilia-romagna
@@ -13,4 +14,5 @@ areas: [engineering, architecture-design, computer-science, sciences, medicine-h
 description:
   en: "A public university with 10 departments covering almost every field, with a hub in Piacenza where Medicine is taught in English."
   ar: "جامعة حكومية فيها 10 أقسام تغطي معظم المجالات، ولها فرع في بياتشنزا يُدرَّس فيه الطب بالإنجليزية."
+  fr: "Une université publique avec 10 départements qui couvre presque tous les domaines, avec un pôle à Plaisance où la médecine est enseignée en anglais."
 last_checked: 2026-10-26

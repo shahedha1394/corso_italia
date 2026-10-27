@@ -1,6 +1,7 @@
 name:
   en: "University of Trento"
   ar: "جامعة ترينتو"
+  fr: "Université de Trente"
 name_it: "Università degli Studi di Trento"
 city: trento
 region: trentino-alto-adige
@@ -13,4 +14,5 @@ areas: [engineering, computer-science, sciences, medicine-health, economics-busi
 description:
   en: "Its origins date back to 1962. A public university in Trento, with one department in Rovereto."
   ar: "تعود بداياتها إلى عام 1962. جامعة حكومية في ترينتو، ولها قسم في روفيريتو."
+  fr: "Ses origines remontent à 1962. Une université publique à Trente, avec un département à Rovereto."
 last_checked: 2026-10-26

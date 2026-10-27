@@ -1,6 +1,7 @@
 name:
   en: "University of Camerino"
   ar: "جامعة كاميرينو"
+  fr: "Université de Camerino"
 name_it: "Università degli Studi di Camerino"
 city: camerino
 region: marche
@@ -11,4 +12,5 @@ areas: [architecture-design, computer-science, sciences, medicine-health, law, a
 description:
   en: "Re-founded in 1727. A public university in Camerino, with sites in Ascoli Piceno, Matelica and San Benedetto del Tronto."
   ar: "أُعيد تأسيسها عام 1727. جامعة حكومية في كاميرينو، ولها مواقع في أسكولي بيتشينو وماتيليكا وسان بينيديتو ديل ترونتو."
+  fr: "Refondée en 1727. Une université publique à Camerino, avec des sites à Ascoli Piceno, Matelica et San Benedetto del Tronto."
 last_checked: 2026-10-26

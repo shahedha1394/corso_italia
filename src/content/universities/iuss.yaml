@@ -1,6 +1,7 @@
 name:
   en: "IUSS Pavia – University School for Advanced Studies"
   ar: "مدرسة الدراسات المتقدمة IUSS في بافيا"
+  fr: "IUSS Pavie – École universitaire d'études avancées"
 name_it: "Scuola Universitaria Superiore IUSS di Pavia"
 city: pavia
 region: lombardia
@@ -12,4 +13,5 @@ areas: [engineering, sciences, medicine-health, humanities]
 description:
   en: "Established in 1997. An advanced school in Pavia with ordinary courses alongside a degree at Pavia or Milan, joint master's degrees and PhD programs."
   ar: "تأسست عام 1997. مدرسة متقدمة في بافيا، لها دورات بالتوازي مع الدراسة في جامعة بافيا أو ميلانو، وبرامج ماجستير مشتركة ودكتوراه."
+  fr: "Créée en 1997. Une école avancée à Pavie, avec des cours ordinaires suivis en parallèle d'un diplôme à Pavie ou à Milan, des masters conjoints et des programmes de doctorat."
 last_checked: 2026-10-27

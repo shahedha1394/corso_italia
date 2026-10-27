@@ -1,6 +1,7 @@
 name:
   en: "Polytechnic University of Turin"
   ar: "جامعة البوليتكنيك في تورينو"
+  fr: "Politecnico de Turin"
 name_it: "Politecnico di Torino"
 city: torino
 region: piemonte
@@ -13,4 +14,5 @@ areas: [engineering, architecture-design, computer-science]
 description:
   en: "A technical university whose roots go back to 1859. It teaches engineering, architecture, design and planning, mainly in Turin."
   ar: "جامعة تقنية تعود جذورها إلى عام 1859. تدرّس الهندسة والعمارة والتصميم والتخطيط، وأغلب دراستها في تورينو."
+  fr: "Une université technique dont les origines remontent à 1859. Elle enseigne l'ingénierie, l'architecture, le design et l'urbanisme, surtout à Turin."
 last_checked: 2026-10-26

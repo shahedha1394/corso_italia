@@ -1,6 +1,7 @@
 name:
   en: "University of Brescia"
   ar: "جامعة بريشا"
+  fr: "Université de Brescia"
 name_it: "Università degli Studi di Brescia"
 city: brescia
 region: lombardia
@@ -11,4 +12,5 @@ areas: [engineering, medicine-health, economics-business, law, politics-social, 
 description:
   en: "Officially founded in 1982. A public university with programs in engineering, medicine, economics and law."
   ar: "تأسست رسمياً عام 1982. جامعة حكومية لديها برامج في الهندسة والطب والاقتصاد والقانون."
+  fr: "Officiellement fondée en 1982. Une université publique avec des formations en ingénierie, médecine, économie et droit."
 last_checked: 2026-10-26

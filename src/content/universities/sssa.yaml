@@ -1,6 +1,7 @@
 name:
   en: "Sant'Anna School of Advanced Studies"
   ar: "مدرسة سانت آنا للدراسات المتقدمة"
+  fr: "École supérieure Sant'Anna"
 name_it: "Scuola Superiore Sant'Anna di Pisa"
 city: pisa
 region: toscana
@@ -10,4 +11,5 @@ areas: [economics-business, law, politics-social, engineering, computer-science,
 description:
   en: "An advanced school in Pisa: its ordinary courses run alongside a degree at Pisa, Florence or Trento, and it offers PhD programs, including one in human rights and global politics."
   ar: "مدرسة عليا في بيزا: دوراتها الأساسية تكون بالتوازي مع الدراسة في جامعات بيزا أو فلورنسا أو ترينتو، وتقدّم برامج دكتوراه، منها برنامج في حقوق الإنسان والسياسة العالمية."
+  fr: "Une école supérieure à Pise : ses cours ordinaires se suivent en parallèle d'un diplôme à Pise, Florence ou Trente, et elle propose des doctorats, dont un en droits humains et politique mondiale."
 last_checked: 2026-10-27
