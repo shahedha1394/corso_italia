@@ -16,7 +16,7 @@ Bilingual text fields are objects with `en` and `ar` keys.
 | name_it | string | |
 | city | string | city slug, e.g. `milano` |
 | region | string | e.g. `lombardia` (used for DSU scholarships) |
-| type | `public` \| `private` | public = on the Ministry's list of state universities: https://www.mur.gov.it/it/aree-tematiche/universita/le-universita/universita-statali ; private = on its list of recognised non-state universities: https://www.mur.gov.it/it/aree-tematiche/universita/le-universita/universita-non-statali-riconosciute (shown as "Non-state university") |
+| type | `public` \| `private` \| `special` \| `online` | public = on the Ministry's list of state universities: https://www.mur.gov.it/it/aree-tematiche/universita/le-universita/universita-statali ; private = on its list of recognised non-state universities: https://www.mur.gov.it/it/aree-tematiche/universita/le-universita/universita-non-statali-riconosciute (shown as "Non-state university"); special = MUR list of istituti a ordinamento speciale; online = MUR list of università telematiche |
 | website | url | |
 | international_page | url | official page for international applicants |
 | programs_page | url | official list of degree programs (bachelor's list if separate) |

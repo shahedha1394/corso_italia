@@ -12,6 +12,7 @@ import {
   opportunityTypes,
   regions,
   skills,
+  universityTypes,
 } from './lib/taxonomy';
 
 // Guides live in src/content/guides/<lang>/<slug>.md.
@@ -59,7 +60,7 @@ const universities = defineCollection({
     name_it: z.string(),
     city: z.enum(keysOf(cities)),
     region: z.enum(keysOf(regions)),
-    type: z.enum(['public', 'private']),
+    type: z.enum(keysOf(universityTypes)),
     website: z.string().url(),
     international_page: z.string().url().optional(),
     // The university's own list of its degree programs. When it has separate lists,

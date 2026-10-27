@@ -86,6 +86,14 @@ export const regions = {
   veneto: { en: 'Veneto', ar: 'فينيتو' },
 } satisfies Labels;
 
+// University types, as grouped by the Ministry of University and Research (MUR).
+export const universityTypes = {
+  public: { en: 'Public university', ar: 'جامعة حكومية' },
+  private: { en: 'Non-state university', ar: 'جامعة غير حكومية' },
+  special: { en: 'Special-status institute', ar: 'معهد جامعي ذو نظام خاص' },
+  online: { en: 'Online university', ar: 'جامعة عبر الإنترنت' },
+} satisfies Labels;
+
 // Broad study areas, used to describe what each university teaches.
 export const areas = {
   engineering: { en: 'Engineering', ar: 'الهندسة' },

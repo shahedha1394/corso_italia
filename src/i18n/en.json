@@ -110,8 +110,6 @@
   "dir.universities.universitaly": "Looking for a specific program? Universitaly, the official Italian portal, lets you search every degree program in Italy.",
   "dir.universities.universitalyLink": "Search all programs on Universitaly",
   "dir.universities.growing": "The guide is growing: more universities are being added in batches, each checked on its official website.",
-  "dir.type.public": "Public university",
-  "dir.type.private": "Non-state university",
   "dir.funding.title": "Scholarships and funding",
   "dir.funding.intro": "Scholarships open to international students in Italy. Amounts and deadlines change every year, so always read the current call.",
   "dir.funding.eligibility": "Who can apply",
@@ -137,5 +135,7 @@
   "opportunities.where": "Where",
   "opportunities.deadline": "Apply by",
   "opportunities.organiser": "Organiser",
-  "opportunities.details": "Details and registration"
+  "opportunities.details": "Details and registration",
+  "dir.universities.onlineNote": "Courses at this university are taught online. If you need a study visa, ask the university first whether its programs can support a visa application.",
+  "dir.universities.specialNote": "This is a special-status institute focused on advanced study and research. Check its website for which levels it offers and how admission works."
 }

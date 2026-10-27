@@ -110,8 +110,6 @@
   "dir.universities.universitaly": "تبحث عن برنامج محدد؟ موقع ⁦Universitaly⁩، البوابة الإيطالية الرسمية، يتيح البحث في كل برامج الدراسة في إيطاليا.",
   "dir.universities.universitalyLink": "ابحث في كل البرامج على ⁦Universitaly⁩",
   "dir.universities.growing": "الدليل يكبر: نضيف جامعات جديدة على دفعات، ونتحقق من كل واحدة من موقعها الرسمي.",
-  "dir.type.public": "جامعة حكومية",
-  "dir.type.private": "جامعة غير حكومية",
   "dir.funding.title": "المنح والتمويل",
   "dir.funding.intro": "منح متاحة للطلاب الدوليين في إيطاليا. المبالغ والمواعيد تتغير كل عام، لذا اقرأ دائمًا الإعلان الحالي.",
   "dir.funding.eligibility": "من يحق له التقديم",
@@ -137,5 +135,7 @@
   "opportunities.where": "المكان",
   "opportunities.deadline": "آخر موعد للتقديم",
   "opportunities.organiser": "الجهة المنظمة",
-  "opportunities.details": "التفاصيل والتسجيل"
+  "opportunities.details": "التفاصيل والتسجيل",
+  "dir.universities.onlineNote": "الدراسة في هذه الجامعة عبر الإنترنت. إذا كنت تحتاج تأشيرة دراسة، اسأل الجامعة أولاً إن كانت برامجها تصلح لطلب التأشيرة.",
+  "dir.universities.specialNote": "هذا معهد جامعي ذو نظام خاص، يركّز على الدراسات المتقدمة والبحث. راجع موقعه لمعرفة المراحل التي يقدّمها وطريقة القبول."
 }
