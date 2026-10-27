@@ -2,7 +2,7 @@
 title: "About us"
 ---
 
-Corso Italia is a free, volunteer-run project that helps Arab students study and live in Italy. We collect clear, step-by-step information in Arabic, English and French and link to the official sources.
+Corso Italy is a free, volunteer-run project that helps Arab students study and live in Italy. We collect clear, step-by-step information in Arabic, English and French and link to the official sources.
 
 We also run **EngPro**, a free initiative where volunteer teachers help students improve their English.
 
@@ -22,4 +22,4 @@ This website does more than explain how to come to Italy to study. It also offer
 
 The website is still being developed, and we keep adding to it.
 
-— **Shahed Hammal**, founder of Corso Italia
+— **Shahed Hammal**, founder of Corso Italy

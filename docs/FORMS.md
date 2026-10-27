@@ -31,7 +31,7 @@ EngPro and the Opportunities board collect sign-ups with three Google Forms. Ans
 | 7 | Why are you learning English? / لماذا تتعلم الإنجليزية؟ | Multiple choice | To study in Italy / للدراسة في إيطاليا · For work / للعمل · Other / أخرى |
 | 8 | When are you usually free? * / متى تكون متاحًا عادةً؟ * | Checkboxes | Weekday mornings / صباح أيام الأسبوع · Weekday evenings / مساء أيام الأسبوع · Weekends / عطلة نهاية الأسبوع |
 | 9 | I agree to the EngPro code of conduct * / أوافق على قواعد السلوك في EngPro * | Checkbox | Yes / نعم |
-| 10 | I agree that the Corso Italia team may contact me about EngPro sessions * / أوافق على أن يتواصل معي فريق Corso Italia بخصوص جلسات EngPro * | Checkbox | Yes / نعم |
+| 10 | I agree that the Corso Italy team may contact me about EngPro sessions * / أوافق على أن يتواصل معي فريق Corso Italy بخصوص جلسات EngPro * | Checkbox | Yes / نعم |
 
 ## Form 2: EngPro volunteer teacher sign-up / التسجيل كمعلم متطوع في EngPro
 
