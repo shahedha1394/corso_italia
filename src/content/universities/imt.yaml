@@ -1,6 +1,7 @@
 name:
   en: "IMT School for Advanced Studies Lucca"
   ar: "مدرسة IMT للدراسات المتقدمة في لوكا"
+  fr: "École IMT d'études avancées de Lucques"
 name_it: "Scuola IMT Alti Studi Lucca"
 city: lucca
 region: toscana
@@ -12,4 +13,5 @@ areas: [computer-science, economics-business, sciences, politics-social, humanit
 description:
   en: "Established in 2005. A PhD school in Lucca, teaching in English."
   ar: "تأسست عام 2005. مدرسة دكتوراه في لوكا، تدرّس بالإنجليزية."
+  fr: "Créée en 2005. Une école doctorale à Lucques, avec un enseignement en anglais."
 last_checked: 2026-10-27

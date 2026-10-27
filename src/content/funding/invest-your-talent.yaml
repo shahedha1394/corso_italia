@@ -1,13 +1,16 @@
 name:
   en: "Invest Your Talent in Italy"
   ar: "Invest Your Talent in Italy"
+  fr: "Invest Your Talent in Italy"
 provider: "Italian Ministry of Foreign Affairs and partners"
 type: government
 description:
   en: "Scholarship programme for international students from selected countries who enrol in selected programmes at participating Italian universities. Check the current call for countries, programmes and deadlines."
   ar: "برنامج منح للطلاب الدوليين من دول محددة الملتحقين ببرامج محددة في جامعات إيطالية مشاركة. راجع الإعلان الحالي لمعرفة الدول والبرامج والمواعيد."
+  fr: "Programme de bourses pour les étudiants internationaux de certains pays qui s'inscrivent dans certaines formations des universités italiennes participantes. Consultez l'appel en cours pour les pays, les formations et les dates limites."
 eligibility:
   en: "Citizens of the countries listed in the current call."
   ar: "مواطنو الدول المدرجة في الإعلان الحالي."
+  fr: "Les citoyens des pays indiqués dans l'appel en cours."
 url: https://en.unimib.it/node/4096
 last_checked: 2026-10-25

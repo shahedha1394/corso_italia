@@ -1,6 +1,7 @@
 name:
   en: "Humanitas University"
   ar: "جامعة هيومانيتاس"
+  fr: "Université Humanitas"
 name_it: "Humanitas University"
 city: pieve-emanuele
 region: lombardia
@@ -12,4 +13,5 @@ areas: [medicine-health, engineering]
 description:
   en: "Established in 2014. A non-state university for medicine and health, near Milan, with a joint medicine and biomedical engineering track with the Politecnico di Milano."
   ar: "تأسست عام 2014. جامعة غير حكومية للطب والصحة قرب ميلانو، ولها مسار مشترك في الطب والهندسة الطبية الحيوية مع البوليتكنيك في ميلانو."
+  fr: "Créée en 2014. Une université non étatique de médecine et de santé, près de Milan, avec un parcours conjoint médecine et génie biomédical avec le Politecnico di Milano."
 last_checked: 2026-10-27

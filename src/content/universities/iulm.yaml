@@ -1,6 +1,7 @@
 name:
   en: "IULM University"
   ar: "جامعة IULM"
+  fr: "Université IULM"
 name_it: "Libera Università di Lingue e Comunicazione IULM"
 city: milano
 region: lombardia
@@ -13,4 +14,5 @@ areas: [humanities, economics-business, politics-social]
 description:
   en: "Founded in 1968. A non-state university in Milan for languages, communication, tourism, marketing and the arts, with a site in Rome."
   ar: "تأسست عام 1968. جامعة غير حكومية في ميلانو للغات والإعلام والسياحة والتسويق والفنون، ولها مقر في روما."
+  fr: "Fondée en 1968. Une université non étatique à Milan pour les langues, la communication, le tourisme, le marketing et les arts, avec un site à Rome."
 last_checked: 2026-10-27
