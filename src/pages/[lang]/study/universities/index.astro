@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import Base from '../../../../layouts/Base.astro';
 import { fill, getStaticLangPaths, path, useTranslations, type Lang } from '../../../../i18n';
 import { normalize } from '../../../../lib/search';
-import { areas, cities, regions } from '../../../../lib/taxonomy';
+import { areas, cities, regions, universityTypes } from '../../../../lib/taxonomy';
 
 export const getStaticPaths = getStaticLangPaths;
 
@@ -22,9 +22,9 @@ const filters = [
   {
     name: 'type',
     label: t('dir.universities.filter.type'),
-    options: (['public', 'private'] as const)
+    options: (Object.keys(universityTypes) as (keyof typeof universityTypes)[])
       .filter((v) => universities.some((u) => u.data.type === v))
-      .map((v) => [v, t(v === 'public' ? 'dir.type.public' : 'dir.type.private')]),
+      .map((v) => [v, universityTypes[v][lang]]),
   },
 ];
 
@@ -94,7 +94,7 @@ const searchText = (u: (typeof universities)[number]) =>
                 <a href={path(lang, `/study/universities/${u.id}/`)}>
                   <span class="uni-name">{u.data.name[lang]}</span>
                   <span class="meta">
-                    {cities[u.data.city][lang]} · {t(u.data.type === 'public' ? 'dir.type.public' : 'dir.type.private')}
+                    {cities[u.data.city][lang]} · {universityTypes[u.data.type][lang]}
                   </span>
                 </a>
               </li>

@@ -29,11 +29,13 @@ export const cities = {
   genova: { en: 'Genoa', ar: 'جنوة' },
   laquila: { en: "L'Aquila", ar: 'لاكويلا' },
   lecce: { en: 'Lecce', ar: 'ليتشي' },
+  lucca: { en: 'Lucca', ar: 'لوكا' },
   macerata: { en: 'Macerata', ar: 'ماتشيراتا' },
   messina: { en: 'Messina', ar: 'ميسينا' },
   milano: { en: 'Milan', ar: 'ميلانو' },
   modena: { en: 'Modena', ar: 'مودينا' },
   napoli: { en: 'Naples', ar: 'نابولي' },
+  novedrate: { en: 'Novedrate', ar: 'نوفيدراتي' },
   padova: { en: 'Padua', ar: 'بادوفا' },
   palermo: { en: 'Palermo', ar: 'باليرمو' },
   parma: { en: 'Parma', ar: 'بارما' },
@@ -52,6 +54,7 @@ export const cities = {
   siena: { en: 'Siena', ar: 'سيينا' },
   teramo: { en: 'Teramo', ar: 'تيرامو' },
   torino: { en: 'Turin', ar: 'تورينو' },
+  'torrevecchia-teatina': { en: 'Torrevecchia Teatina', ar: 'توريفيكيا تياتينا' },
   trento: { en: 'Trento', ar: 'ترينتو' },
   trieste: { en: 'Trieste', ar: 'تريستي' },
   udine: { en: 'Udine', ar: 'أوديني' },
@@ -84,6 +87,14 @@ export const regions = {
   umbria: { en: 'Umbria', ar: 'أومبريا' },
   'valle-d-aosta': { en: "Aosta Valley", ar: 'وادي أوستا' },
   veneto: { en: 'Veneto', ar: 'فينيتو' },
+} satisfies Labels;
+
+// University types, as grouped by the Ministry of University and Research (MUR).
+export const universityTypes = {
+  public: { en: 'Public university', ar: 'جامعة حكومية' },
+  private: { en: 'Non-state university', ar: 'جامعة غير حكومية' },
+  special: { en: 'Special-status institute', ar: 'معهد جامعي ذو نظام خاص' },
+  online: { en: 'Online university', ar: 'جامعة عبر الإنترنت' },
 } satisfies Labels;
 
 // Broad study areas, used to describe what each university teaches.

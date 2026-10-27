@@ -1,0 +1,16 @@
+name:
+  en: "Guglielmo Marconi University"
+  ar: "جامعة غولييلمو ماركوني"
+name_it: "Università degli Studi Guglielmo Marconi"
+city: roma
+region: lazio
+type: online
+website: https://www.unimarconi.it
+international_page: https://www.unimarconi.it/en/foundation-course/
+programs_page: https://www.unimarconi.it/lauree-triennali/
+masters_page: https://www.unimarconi.it/laurea-magistrale/
+areas: [engineering, computer-science, economics-business, law, politics-social, humanities]
+description:
+  en: "Recognised in 2004. An online university based in Rome, with an English-taught foundation course for international students."
+  ar: "اعتُرف بها عام 2004. جامعة عبر الإنترنت مقرها روما، ولها سنة تأسيسية بالإنجليزية للطلاب الدوليين."
+last_checked: 2026-10-27

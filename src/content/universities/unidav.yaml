@@ -1,0 +1,15 @@
+name:
+  en: "Leonardo da Vinci University"
+  ar: "جامعة ليوناردو دا فينشي"
+name_it: "Università Telematica \"Leonardo da Vinci\""
+city: torrevecchia-teatina
+region: abruzzo
+type: online
+website: https://www.unidav.it
+international_page: https://www.unidav.it/index.php/segreteria-studenti/
+programs_page: https://www.unidav.it/index.php/corsi-di-laurea/
+areas: [economics-business, law, humanities]
+description:
+  en: "A small online university in Abruzzo, with programs in law, economics and psychology."
+  ar: "جامعة صغيرة عبر الإنترنت في منطقة أبروتسو، لديها برامج في القانون والاقتصاد وعلم النفس."
+last_checked: 2026-10-27

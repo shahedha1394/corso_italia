@@ -2,7 +2,7 @@
 import { getCollection, getEntry } from 'astro:content';
 import Base from '../../../../layouts/Base.astro';
 import { arrow, langs, path, useTranslations, type Lang } from '../../../../i18n';
-import { areas, cities, regions } from '../../../../lib/taxonomy';
+import { areas, cities, regions, universityTypes } from '../../../../lib/taxonomy';
 
 export async function getStaticPaths() {
   const universities = await getCollection('universities');
@@ -21,12 +21,14 @@ const checked = u.last_checked.toLocaleDateString(lang === 'ar' ? 'ar' : 'en-GB'
   <article class="container prose">
     <header class="page-header">
       <p class="meta"><a href={path(lang, '/study/universities/')}>{t('dir.universities.title')}</a></p>
-      <span class="badge">{t(u.type === 'public' ? 'dir.type.public' : 'dir.type.private')}</span>
+      <span class="badge">{universityTypes[u.type][lang]}</span>
       <h1>{u.name[lang]}</h1>
       <p class="ltr-inline">{u.name_it}</p>
     </header>
 
     {u.description && <p>{u.description[lang]}</p>}
+    {u.type === 'online' && <p class="notice">{t('dir.universities.onlineNote')}</p>}
+    {u.type === 'special' && <p class="notice">{t('dir.universities.specialNote')}</p>}
 
     <div class="uni-links">
       <a class="button" href={u.website} rel="noopener" target="_blank">{t('dir.universities.website')}</a>
