@@ -1,0 +1,15 @@
+name:
+  en: "Campus Bio-Medico University of Rome"
+  ar: "جامعة كامبوس بيو ميديكو في روما"
+name_it: "Università Campus Bio-Medico di Roma"
+city: roma
+region: lazio
+type: private
+website: https://www.unicampus.it
+international_page: https://www.unicampus.it/en/degree-course-admissions/how-to-log-in/
+programs_page: https://www.unicampus.it/en/ammissioni-corsi-di-laurea/
+areas: [medicine-health, engineering, sciences]
+description:
+  en: "Began its activities in 1993. A non-state university in Rome for medicine, nursing, biomedical and industrial engineering, and food science."
+  ar: "بدأت نشاطها عام 1993. جامعة غير حكومية في روما للطب والتمريض والهندسة الطبية الحيوية والصناعية وعلوم الغذاء."
+last_checked: 2026-10-27

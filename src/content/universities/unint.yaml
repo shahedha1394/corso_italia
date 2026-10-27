@@ -1,0 +1,15 @@
+name:
+  en: "UNINT – University of International Studies of Rome"
+  ar: "جامعة الدراسات الدولية في روما UNINT"
+name_it: "Università degli Studi Internazionali di Roma – UNINT"
+city: roma
+region: lazio
+type: private
+website: https://www.unint.eu
+international_page: https://www.unint.eu/en/international/international-students/
+programs_page: https://www.unint.eu/didattica/
+areas: [humanities, politics-social, economics-business, computer-science]
+description:
+  en: "A small non-state university in Rome for languages and translation, international studies, economics and computer engineering."
+  ar: "جامعة غير حكومية صغيرة في روما للغات والترجمة والدراسات الدولية والاقتصاد وهندسة الحاسوب."
+last_checked: 2026-10-27
