@@ -5,7 +5,7 @@ title: "Code de conduite et protection d'EngPro"
 EngPro est gratuit pour tous. Les enseignants donnent leur temps bénévolement et les apprenants ne paient jamais.
 
 ## Pour tout le monde
-- Soyez respectueux et patient. Chacun est là pour apprendre ou pour aider.
+- Soyez respectueux et patients. Chacun est là pour apprendre ou pour aider.
 - Pas de harcèlement, de discrimination, de discours de haine ni de contenu sexuel.
 - Pas de vente, de publicité ni de demande d'argent.
 - Gardez vos coordonnées personnelles privées. Utilisez les liens des séances que nous publions.

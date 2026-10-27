@@ -7,7 +7,7 @@ export const cities = {
   ancona: { en: 'Ancona', ar: 'أنكونا', fr: 'Ancône' },
   aosta: { en: 'Aosta', ar: 'أوستا', fr: 'Aoste' },
   bari: { en: 'Bari', ar: 'باري', fr: 'Bari' },
-  benevento: { en: 'Benevento', ar: 'بينيفينتو', fr: 'Benevento' },
+  benevento: { en: 'Benevento', ar: 'بينيفينتو', fr: 'Bénévent' },
   bergamo: { en: 'Bergamo', ar: 'بيرغامو', fr: 'Bergame' },
   bologna: { en: 'Bologna', ar: 'بولونيا', fr: 'Bologne' },
   bolzano: { en: 'Bolzano', ar: 'بولزانو', fr: 'Bolzano' },
@@ -16,7 +16,7 @@ export const cities = {
   camerino: { en: 'Camerino', ar: 'كاميرينو', fr: 'Camerino' },
   campobasso: { en: 'Campobasso', ar: 'كامبوباسو', fr: 'Campobasso' },
   casamassima: { en: 'Casamassima', ar: 'كازاماسيما', fr: 'Casamassima' },
-  caserta: { en: 'Caserta', ar: 'كازيرتا', fr: 'Caserta' },
+  caserta: { en: 'Caserta', ar: 'كازيرتا', fr: 'Caserte' },
   cassino: { en: 'Cassino', ar: 'كاسينو', fr: 'Cassino' },
   castellanza: { en: 'Castellanza', ar: 'كاستيلانتسا', fr: 'Castellanza' },
   catania: { en: 'Catania', ar: 'كاتانيا', fr: 'Catane' },
@@ -61,9 +61,9 @@ export const cities = {
   urbino: { en: 'Urbino', ar: 'أوربينو', fr: 'Urbino' },
   varese: { en: 'Varese', ar: 'فاريزي', fr: 'Varese' },
   venezia: { en: 'Venice', ar: 'البندقية', fr: 'Venise' },
-  vercelli: { en: 'Vercelli', ar: 'فيرتشيلي', fr: 'Vercelli' },
+  vercelli: { en: 'Vercelli', ar: 'فيرتشيلي', fr: 'Verceil' },
   verona: { en: 'Verona', ar: 'فيرونا', fr: 'Vérone' },
-  viterbo: { en: 'Viterbo', ar: 'فيتربو', fr: 'Viterbo' },
+  viterbo: { en: 'Viterbo', ar: 'فيتربو', fr: 'Viterbe' },
 } satisfies Labels;
 
 export const regions = {
@@ -108,7 +108,7 @@ export const areas = {
   law: { en: 'Law', ar: 'القانون', fr: 'Droit' },
   'politics-social': { en: 'Political and social sciences', ar: 'العلوم السياسية والاجتماعية', fr: 'Sciences politiques et sociales' },
   humanities: { en: 'Humanities and languages', ar: 'العلوم الإنسانية واللغات', fr: 'Lettres et langues' },
-  'agriculture-veterinary': { en: 'Agriculture and veterinary', ar: 'الزراعة والطب البيطري', fr: 'Agriculture et vétérinaire' },
+  'agriculture-veterinary': { en: 'Agriculture and veterinary', ar: 'الزراعة والطب البيطري', fr: 'Agriculture et médecine vétérinaire' },
 } satisfies Labels;
 
 export const fundingTypes = {
