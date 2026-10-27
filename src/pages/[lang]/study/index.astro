@@ -1,6 +1,8 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import GuideCards from '../../../components/GuideCards.astro';
+import Icon from '../../../components/Icon.astro';
+import type { IconName } from '../../../lib/icons';
 import { getStaticLangPaths, path, useTranslations, type Lang } from '../../../i18n';
 import { getGuides } from '../../../lib/content';
 
@@ -11,20 +13,20 @@ const t = useTranslations(lang);
 const guides = await getGuides(lang, 'study');
 
 // The path a student follows, in order. Each step links to the page that explains it.
-const steps = [
-  { href: '/study/universities/', title: t('study.steps.choose'), text: t('study.steps.choose.text') },
-  { href: '/study/language-requirements/', title: t('study.steps.language'), text: t('study.steps.language.text') },
-  { href: '/study/costs/', title: t('study.steps.costs'), text: t('study.steps.costs.text') },
-  { href: '/study/how-to-apply/', title: t('study.steps.apply'), text: t('study.steps.apply.text') },
-  { href: '/study/how-to-apply/', title: t('study.steps.preenrol'), text: t('study.steps.preenrol.text') },
-  { href: '/study/visa/', title: t('study.steps.visa'), text: t('study.steps.visa.text') },
+const steps: { href: string; title: string; text: string; icon: IconName }[] = [
+  { href: '/study/universities/', title: t('study.steps.choose'), text: t('study.steps.choose.text'), icon: 'landmark' },
+  { href: '/study/language-requirements/', title: t('study.steps.language'), text: t('study.steps.language.text'), icon: 'languages' },
+  { href: '/study/costs/', title: t('study.steps.costs'), text: t('study.steps.costs.text'), icon: 'wallet' },
+  { href: '/study/how-to-apply/', title: t('study.steps.apply'), text: t('study.steps.apply.text'), icon: 'file-text' },
+  { href: '/study/how-to-apply/', title: t('study.steps.preenrol'), text: t('study.steps.preenrol.text'), icon: 'badge-check' },
+  { href: '/study/visa/', title: t('study.steps.visa'), text: t('study.steps.visa.text'), icon: 'stamp' },
 ];
 
-const tools = [
-  { href: '/study/universities/', title: t('dir.universities.title'), text: t('study.directory.universities') },
-  { href: '/study/cities/', title: t('cities.title'), text: t('study.directory.cities') },
-  { href: '/study/calendar/', title: t('calendar.title'), text: t('study.directory.calendar') },
-  { href: '/study/scholarships/', title: t('dir.funding.title'), text: t('study.directory.funding') },
+const tools: { href: string; title: string; text: string; icon: IconName }[] = [
+  { href: '/study/universities/', title: t('dir.universities.title'), text: t('study.directory.universities'), icon: 'landmark' },
+  { href: '/study/cities/', title: t('cities.title'), text: t('study.directory.cities'), icon: 'map-pin' },
+  { href: '/study/calendar/', title: t('calendar.title'), text: t('study.directory.calendar'), icon: 'calendar-days' },
+  { href: '/study/scholarships/', title: t('dir.funding.title'), text: t('study.directory.funding'), icon: 'hand-coins' },
 ];
 ---
 
@@ -41,7 +43,7 @@ const tools = [
       {steps.map((s) => (
         <li>
           <a class="card" href={path(lang, s.href)}>
-            <h3>{s.title}</h3>
+            <h3><Icon name={s.icon} size={20} class="step-icon" /> {s.title}</h3>
             <p>{s.text}</p>
           </a>
         </li>
@@ -53,7 +55,8 @@ const tools = [
     <h2>{t('study.tools.title')}</h2>
     <div class="grid">
       {tools.map((c) => (
-        <a class="card" href={path(lang, c.href)}>
+        <a class="card card--icon" href={path(lang, c.href)}>
+          <span class="card__icon"><Icon name={c.icon} size={22} /></span>
           <h3>{c.title}</h3>
           <p>{c.text}</p>
         </a>
@@ -68,6 +71,10 @@ const tools = [
 </Base>
 
 <style>
+  .step-icon {
+    color: var(--color-primary);
+    margin-inline-end: 0.2rem;
+  }
   .study-steps {
     list-style: none;
     padding: 0;

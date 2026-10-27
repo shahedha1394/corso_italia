@@ -1,0 +1,80 @@
+---
+// Map of Italy with a dot for every city that has a university in the guide.
+// Geometry comes from src/data/italy-map.json (built by scripts/build-italy-map.py from ISTAT data, CC BY 4.0).
+import { getCollection } from 'astro:content';
+import map from '../data/italy-map.json';
+import { fill, path, useTranslations, type Lang } from '../i18n';
+import { cities } from '../lib/taxonomy';
+
+interface Props {
+  lang: Lang;
+  /** City key to mark with a ring and a name label (used on university pages). */
+  highlight?: string;
+  /** Make every dot a link to that city on the cities page. */
+  linkCities?: boolean;
+  /** Short hint shown under the map, above the data credit. */
+  note?: string;
+  class?: string;
+}
+
+const { lang, highlight, linkCities = false, note, class: className } = Astro.props;
+const t = useTranslations(lang);
+
+const universities = await getCollection('universities');
+const counts = new Map<string, number>();
+for (const u of universities) counts.set(u.data.city, (counts.get(u.data.city) ?? 0) + 1);
+const regionsWithUniversities = new Set<string>(universities.map((u) => u.data.region));
+
+type CityKey = keyof typeof cities;
+const positions = map.cities as Record<string, [number, number]>;
+const dots = [...counts.entries()]
+  .filter(([key]) => key in positions)
+  .map(([key, n]) => {
+    const [x, y] = positions[key];
+    return { key: key as CityKey, x, y, n, r: 3.5 + 2 * Math.sqrt(n) };
+  })
+  // Bigger dots first, so small dots stay visible on top.
+  .sort((a, b) => b.r - a.r);
+
+const label = (key: CityKey, n: number) => fill(t('map.cityCount'), { city: cities[key][lang], n });
+const marked = highlight && highlight in positions ? { key: highlight as CityKey, x: positions[highlight][0], y: positions[highlight][1] } : null;
+// Put the name on the side of the dot that has more room.
+const labelAnchor = marked && marked.x > map.width * 0.6 ? 'end' : 'start';
+const labelOffset = labelAnchor === 'end' ? -30 : 30;
+---
+
+<figure class:list={['italy-map', className]}>
+  <svg viewBox={`0 0 ${map.width} ${map.height}`} role={linkCities ? 'group' : 'img'} aria-label={t('map.label')}>
+    <g class="italy-map__regions">
+      {Object.entries(map.regions).map(([key, d]) => (
+        <path d={d} class:list={['italy-map__region', { 'is-active': regionsWithUniversities.has(key) }]} />
+      ))}
+    </g>
+    <g class="italy-map__dots">
+      {dots.map((dot) =>
+        linkCities ? (
+          <a href={`${path(lang, '/study/cities/')}#${dot.key}`} aria-label={label(dot.key, dot.n)}>
+            <circle class="italy-map__dot" cx={dot.x} cy={dot.y} r={dot.r}>
+              <title>{label(dot.key, dot.n)}</title>
+            </circle>
+          </a>
+        ) : (
+          <circle class:list={['italy-map__dot', { 'is-muted': marked && marked.key !== dot.key }]} cx={dot.x} cy={dot.y} r={dot.r}>
+            <title>{label(dot.key, dot.n)}</title>
+          </circle>
+        ),
+      )}
+    </g>
+    {marked && (
+      <g class="italy-map__marker">
+        <circle cx={marked.x} cy={marked.y} r="20" class="italy-map__ring" />
+        <circle cx={marked.x} cy={marked.y} r="9" class="italy-map__dot is-marked" />
+        <text x={marked.x + labelOffset} y={marked.y + 13} text-anchor={labelAnchor}>{cities[marked.key][lang]}</text>
+      </g>
+    )}
+  </svg>
+  <figcaption>
+    {note && <span class="italy-map__note">{note}</span>}
+    <span class="italy-map__credit">{t('map.credit')}</span>
+  </figcaption>
+</figure>

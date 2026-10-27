@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../../../layouts/Base.astro';
+import ItalyMap from '../../../../components/ItalyMap.astro';
 import { getStaticLangPaths, path, useTranslations, type Lang } from '../../../../i18n';
 import { cities, regions } from '../../../../lib/taxonomy';
 
@@ -35,7 +36,10 @@ const cityList = cityKeys
     <p>{t('cities.intro')}</p>
   </header>
 
-  <section class="container section">
+  <section class="container section cities-layout">
+    <div class="cities-map">
+      <ItalyMap lang={lang} linkCities note={t('map.explore')} />
+    </div>
     <div class="city-groups">
       {cityList.map((c) => (
         <details class="city-group" id={c.city}>
@@ -59,6 +63,28 @@ const cityList = cityKeys
 </Base>
 
 <style>
+  .cities-layout {
+    display: grid;
+    gap: 1.5rem;
+    align-items: start;
+  }
+  .cities-map {
+    max-inline-size: 24rem;
+    inline-size: 100%;
+    justify-self: center;
+  }
+  @media (min-width: 56rem) {
+    .cities-layout {
+      grid-template-columns: minmax(0, 22rem) 1fr;
+    }
+    .cities-map {
+      position: sticky;
+      inset-block-start: 1rem;
+    }
+  }
+  .city-group {
+    scroll-margin-block-start: 1rem;
+  }
   .city-groups {
     display: grid;
     gap: 0.5rem;
@@ -100,10 +126,15 @@ const cityList = cityKeys
 </style>
 
 <script>
-  // Links like /study/cities/#roma open that city.
-  const target = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
-  if (target instanceof HTMLDetailsElement) {
-    target.open = true;
-    target.scrollIntoView();
+  // Links like /study/cities/#roma (and clicks on the map) open that city.
+  function openFromHash() {
+    const target = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (target instanceof HTMLDetailsElement) {
+      target.open = true;
+      target.scrollIntoView({ block: 'start' });
+      target.querySelector('summary')?.focus({ preventScroll: true });
+    }
   }
+  openFromHash();
+  window.addEventListener('hashchange', openFromHash);
 </script>

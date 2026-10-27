@@ -1,39 +1,55 @@
 ---
 import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import ItalyMap from '../../components/ItalyMap.astro';
 import { getStaticLangPaths, path, useTranslations, type Lang } from '../../i18n';
+import type { IconName } from '../../lib/icons';
 
 export const getStaticPaths = getStaticLangPaths;
 
 const lang = Astro.params.lang as Lang;
 const t = useTranslations(lang);
 
-const journey = [
-  t('home.journey.choose'),
-  t('home.journey.apply'),
-  t('home.journey.visa'),
-  t('home.journey.arrive'),
-  t('home.journey.settle'),
+const journey: { label: string; icon: IconName }[] = [
+  { label: t('home.journey.choose'), icon: 'search' },
+  { label: t('home.journey.apply'), icon: 'file-text' },
+  { label: t('home.journey.visa'), icon: 'stamp' },
+  { label: t('home.journey.arrive'), icon: 'plane-landing' },
+  { label: t('home.journey.settle'), icon: 'key-round' },
 ];
 
-const sections = [
-  { href: path(lang, '/study/'), title: t('nav.study'), text: t('home.sections.study') },
-  { href: path(lang, '/living/'), title: t('nav.living'), text: t('home.sections.living') },
-  { href: path(lang, '/engpro/'), title: t('nav.engpro'), text: t('home.sections.engpro') },
-  { href: path(lang, '/opportunities/'), title: t('nav.opportunities'), text: t('home.sections.opportunities') },
+const sections: { href: string; title: string; text: string; icon: IconName }[] = [
+  { href: path(lang, '/study/'), title: t('nav.study'), text: t('home.sections.study'), icon: 'graduation-cap' },
+  { href: path(lang, '/living/'), title: t('nav.living'), text: t('home.sections.living'), icon: 'house' },
+  { href: path(lang, '/engpro/'), title: t('nav.engpro'), text: t('home.sections.engpro'), icon: 'messages-square' },
+  { href: path(lang, '/opportunities/'), title: t('nav.opportunities'), text: t('home.sections.opportunities'), icon: 'calendar-days' },
 ];
 ---
 
 <Base lang={lang}>
-  <section class="container hero">
-    <h1>{t('home.hero.title')}</h1>
-    <p>{t('home.hero.text')}</p>
-    <a class="button" href={path(lang, '/study/')}>{t('home.hero.cta')}</a>
+  <section class="container hero home-hero">
+    <div class="home-hero__text">
+      <h1>{t('home.hero.title')}</h1>
+      <p>{t('home.hero.text')}</p>
+      <div class="home-hero__actions">
+        <a class="button" href={path(lang, '/study/')}>{t('home.hero.cta')}</a>
+        <a class="home-hero__link" href={path(lang, '/study/cities/')}>{t('home.hero.universities')}</a>
+      </div>
+    </div>
+    <div class="home-hero__map">
+      <ItalyMap lang={lang} linkCities note={t('map.explore')} />
+    </div>
   </section>
 
   <section class="container section">
     <h2>{t('home.journey.title')}</h2>
-    <ol class="journey">
-      {journey.map((step) => <li>{step}</li>)}
+    <ol class="journey journey--icons">
+      {journey.map((step) => (
+        <li>
+          <Icon name={step.icon} size={22} class="journey__icon" />
+          <span>{step.label}</span>
+        </li>
+      ))}
     </ol>
   </section>
 
@@ -41,7 +57,8 @@ const sections = [
     <h2>{t('home.sections.title')}</h2>
     <div class="grid">
       {sections.map((s) => (
-        <a class="card" href={s.href}>
+        <a class="card card--icon" href={s.href}>
+          <span class="card__icon"><Icon name={s.icon} size={22} /></span>
           <h3>{s.title}</h3>
           <p>{s.text}</p>
         </a>
@@ -49,3 +66,30 @@ const sections = [
     </div>
   </section>
 </Base>
+
+<style>
+  .home-hero {
+    display: grid;
+    gap: 2rem;
+    align-items: center;
+  }
+  .home-hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem 1.25rem;
+  }
+  .home-hero__link {
+    font-weight: 600;
+  }
+  .home-hero__map {
+    max-inline-size: min(26rem, 85vw);
+    justify-self: center;
+    inline-size: 100%;
+  }
+  @media (min-width: 52rem) {
+    .home-hero {
+      grid-template-columns: 1.15fr 1fr;
+    }
+  }
+</style>

@@ -493,3 +493,128 @@ a.card:hover {
 .prose th {
   background: var(--color-primary-soft);
 }
+
+/* Line icons (src/components/Icon.astro) */
+.icon {
+  flex: none;
+  vertical-align: middle;
+}
+
+/* Map of Italy (src/components/ItalyMap.astro) */
+.italy-map {
+  margin: 0;
+}
+
+.italy-map svg {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+  /* Keep SVG coordinates and label anchors the same in Arabic pages. */
+  direction: ltr;
+}
+
+.italy-map__region {
+  fill: var(--color-surface);
+  stroke: var(--color-border);
+  stroke-width: 1.2;
+  stroke-linejoin: round;
+}
+
+.italy-map__region.is-active {
+  fill: var(--color-primary-soft);
+  stroke: var(--color-bg);
+}
+
+.italy-map__dot {
+  fill: var(--color-primary);
+  stroke: var(--color-bg);
+  stroke-width: 1.5;
+}
+
+.italy-map__dot.is-muted {
+  fill: var(--color-muted);
+  opacity: 0.35;
+}
+
+.italy-map a:hover .italy-map__dot,
+.italy-map a:focus-visible .italy-map__dot {
+  fill: var(--color-accent);
+}
+
+.italy-map a:focus-visible {
+  outline: none;
+}
+
+.italy-map a:focus-visible .italy-map__dot {
+  stroke: var(--color-text);
+  stroke-width: 2.5;
+}
+
+.italy-map__ring {
+  fill: none;
+  stroke: var(--color-accent);
+  stroke-width: 2.5;
+}
+
+.italy-map__dot.is-marked {
+  fill: var(--color-accent);
+}
+
+.italy-map__marker text {
+  font: 700 40px var(--font-latin);
+  fill: var(--color-text);
+  paint-order: stroke;
+  stroke: var(--color-bg);
+  stroke-width: 9px;
+  stroke-linejoin: round;
+}
+
+[dir='rtl'] .italy-map__marker text {
+  font-family: var(--font-arabic);
+}
+
+.italy-map figcaption {
+  display: grid;
+  gap: 0.2rem;
+  margin-block-start: 0.4rem;
+}
+
+.italy-map__note {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+.italy-map__credit {
+  font-size: 0.75rem;
+  color: var(--color-muted);
+}
+
+/* Journey steps with icons (home page) */
+.journey--icons li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: 'num num' 'icon label';
+  align-items: center;
+  gap: 0.6rem 0.5rem;
+}
+
+.journey--icons li::before {
+  grid-area: num;
+}
+
+.journey__icon {
+  grid-area: icon;
+  color: var(--color-primary);
+}
+
+/* Cards with an icon */
+.card__icon {
+  display: inline-grid;
+  place-items: center;
+  inline-size: 2.5rem;
+  block-size: 2.5rem;
+  margin-block-end: 0.75rem;
+  border-radius: 50%;
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+}
