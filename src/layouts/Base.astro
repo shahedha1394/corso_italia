@@ -34,6 +34,7 @@ const nav = [
     <meta name="description" content={description ?? t('site.description')} />
     {langs.map((l) => <link rel="alternate" hreflang={l} href={new URL(path(l, rest), Astro.site)} />)}
     <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
+    <link rel="apple-touch-icon" href={`${base}/apple-touch-icon.png`} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -46,7 +47,7 @@ const nav = [
     <header class="site-header">
       <div class="container header-row">
         <a class="brand" href={path(lang)}>
-          <span class="brand-mark" aria-hidden="true"></span>
+          <img class="brand-logo" src={`${base}/logo.svg`} alt="" width="32" height="32" />
           {t('site.name')}
         </a>
         <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
