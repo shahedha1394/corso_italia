@@ -1,4 +1,4 @@
-# Corso Italia
+# Corso Italy
 
 A free website in English, العربية and Français helping Arab students study and live in Italy.
 

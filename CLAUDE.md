@@ -1,4 +1,4 @@
-# Corso Italia – guidelines for contributors and AI agents
+# Corso Italy – guidelines for contributors and AI agents
 
 Two people (and their Claude agents) work on this repo. Read this before making changes.
 

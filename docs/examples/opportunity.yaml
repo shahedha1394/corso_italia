@@ -3,7 +3,7 @@ title:
   en: "Workshop: writing a motivation letter"
   ar: "ورشة عمل: كتابة خطاب الدافع"
 type: workshop            # workshop | teaching_session | scholarship_call | other
-organiser: "Corso Italia volunteers"
+organiser: "Corso Italy volunteers"
 mode: online              # online | in_person
 # city: milano            # only for in_person, must be a key in src/lib/taxonomy.ts
 start: 2026-11-20T18:00:00+01:00
