@@ -236,6 +236,22 @@ h3 {
   max-inline-size: 40rem;
 }
 
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-social a {
+  display: inline-flex;
+  color: var(--color-muted);
+}
+
+.footer-social a:hover,
+.footer-social a:focus-visible {
+  color: var(--color-primary);
+}
+
 .footer-links {
   list-style: none;
   display: flex;
