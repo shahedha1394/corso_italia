@@ -2,6 +2,8 @@
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import ItalyMap from '../../components/ItalyMap.astro';
+import VideoEmbed from '../../components/VideoEmbed.astro';
+import { getVideos } from '../../lib/content';
 import { getStaticLangPaths, path, useTranslations, type Lang } from '../../i18n';
 import type { IconName } from '../../lib/icons';
 
@@ -9,6 +11,7 @@ export const getStaticPaths = getStaticLangPaths;
 
 const lang = Astro.params.lang as Lang;
 const t = useTranslations(lang);
+const [latestVideo] = await getVideos();
 
 const journey: { label: string; icon: IconName }[] = [
   { label: t('home.journey.choose'), icon: 'search' },
@@ -53,6 +56,15 @@ const sections: { href: string; title: string; text: string; icon: IconName }[] 
     </ol>
   </section>
 
+  {latestVideo && (
+    <section class="container section latest-video">
+      <h2>{t('home.latestVideo')}</h2>
+      <VideoEmbed id={latestVideo.data.youtube} title={latestVideo.data.title[lang]} lang={lang} />
+      <h3>{latestVideo.data.title[lang]}</h3>
+      <p><a href={path(lang, '/videos/')}>{t('videos.all')}</a></p>
+    </section>
+  )}
+
   <section class="container section">
     <h2>{t('home.sections.title')}</h2>
     <div class="grid">
@@ -68,6 +80,9 @@ const sections: { href: string; title: string; text: string; icon: IconName }[] 
 </Base>
 
 <style>
+  .latest-video {
+    max-inline-size: 48rem;
+  }
   .home-hero {
     display: grid;
     gap: 2rem;

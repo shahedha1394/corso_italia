@@ -2,7 +2,8 @@
 import { getCollection, render } from 'astro:content';
 import Base from '../../../layouts/Base.astro';
 import { dateLocale, path, useTranslations, type Lang } from '../../../i18n';
-import { splitId } from '../../../lib/content';
+import VideoEmbed from '../../../components/VideoEmbed.astro';
+import { getVideos, splitId } from '../../../lib/content';
 
 export async function getStaticPaths() {
   const guides = await getCollection('guides');
@@ -16,6 +17,7 @@ const { guide } = Astro.props;
 const lang = Astro.params.lang as Lang;
 const t = useTranslations(lang);
 const { Content } = await render(guide);
+const videos = await getVideos(splitId(guide.id).slug);
 const sectionTitle = guide.data.section === 'study' ? t('nav.study') : t('nav.living');
 const lastChecked = guide.data.lastChecked?.toLocaleDateString(dateLocale(lang), {
   year: 'numeric',
@@ -36,6 +38,8 @@ const lastChecked = guide.data.lastChecked?.toLocaleDateString(dateLocale(lang),
     </header>
 
     {guide.data.draft && <p class="notice">{t('common.draftNotice')}</p>}
+
+    {videos.map((v) => <VideoEmbed id={v.data.youtube} title={v.data.title[lang]} lang={lang} />)}
 
     <Content />
 

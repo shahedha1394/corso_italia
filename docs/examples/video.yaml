@@ -1,0 +1,16 @@
+# Copy to src/content/videos/<short-name>.yaml and edit. One file per video.
+# The video then appears on the Videos page, on the home page (if it is the newest)
+# and at the top of its guide (if you set `guide`).
+title:
+  en: "How to renew your residence permit"
+  ar: "كيف تجدّد تصريح الإقامة"
+  fr: "Comment renouveler votre titre de séjour"
+youtube: https://www.youtube.com/watch?v=XXXXXXXXXXX   # the YouTube link, or just the 11-character video ID
+category: papers          # study | papers | life | engpro
+guide: residence-permit   # optional: file name of the guide it explains (how-to-apply, costs, funding,
+                          # language-requirements, visa, first-weeks, residence-permit, health-insurance, accommodation)
+published: 2026-11-01     # the day you published it; newest videos come first
+# description:            # optional, one or two sentences
+#   en: "..."
+#   ar: "..."
+#   fr: "..."

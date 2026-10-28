@@ -40,3 +40,9 @@ export async function getUpcomingDeadlines(now = new Date()) {
     .filter((d) => d.data.date >= startOfToday)
     .sort((a, b) => a.data.date.getTime() - b.data.date.getTime());
 }
+
+/** Videos, newest first. Pass a guide slug to get only the videos linked to that guide. */
+export async function getVideos(guide?: string) {
+  const all = await getCollection('videos', ({ data }) => !guide || data.guide === guide);
+  return all.sort((a, b) => b.data.published.valueOf() - a.data.published.valueOf());
+}

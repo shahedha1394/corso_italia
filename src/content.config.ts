@@ -13,6 +13,7 @@ import {
   regions,
   skills,
   universityTypes,
+  videoCategories,
 } from './lib/taxonomy';
 
 // Guides live in src/content/guides/<lang>/<slug>.md.
@@ -152,6 +153,30 @@ const engproResources = defineCollection({
   }),
 });
 
+// YouTube videos, one YAML file per video (see docs/examples/video.yaml).
+// `youtube` accepts a full YouTube link (watch, youtu.be, shorts, live) or just the video ID.
+const youtubeId = z.string().transform((value, ctx) => {
+  const id = value.trim().match(/(?:v=|youtu\.be\/|shorts\/|live\/|embed\/)([\w-]{11})/)?.[1] ?? value.trim();
+  if (!/^[\w-]{11}$/.test(id)) {
+    ctx.addIssue({ code: 'custom', message: `Not a YouTube link or video ID: ${value}` });
+    return z.NEVER;
+  }
+  return id;
+});
+
+const videos = defineCollection({
+  loader: glob({ pattern: '*.yaml', base: './src/content/videos' }),
+  schema: z.object({
+    title: bilingual,
+    youtube: youtubeId,
+    category: z.enum(keysOf(videoCategories)),
+    // Optional: the guide this video explains, by its file name, e.g. residence-permit
+    guide: z.string().regex(/^[a-z0-9-]+$/).optional(),
+    published: z.coerce.date(),
+    description: bilingual.optional(),
+  }),
+});
+
 export const collections = {
   cities: cityInfo,
   guides,
@@ -162,4 +187,5 @@ export const collections = {
   deadlines,
   'engpro-sessions': engproSessions,
   'engpro-resources': engproResources,
+  videos,
 };

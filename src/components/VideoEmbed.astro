@@ -1,0 +1,91 @@
+---
+// A YouTube video that loads from YouTube only when the visitor presses play
+// (until then we show the thumbnail, so no YouTube player or cookies on page load).
+import { fill, useTranslations, type Lang } from '../i18n';
+
+interface Props {
+  id: string;
+  title: string;
+  lang: Lang;
+}
+
+const { id, title, lang } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<figure class="video">
+  <button
+    type="button"
+    class="video__facade"
+    data-video={id}
+    data-title={title}
+    data-lang={lang}
+    aria-label={fill(t('videos.play'), { title })}
+  >
+    <img src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`} alt="" loading="lazy" width="480" height="360" />
+    <span class="video__play" aria-hidden="true">
+      <svg viewBox="0 0 68 48" width="68" height="48"><path d="M66.5 7.7a8.5 8.5 0 0 0-6-6C55.3.3 34 .3 34 .3s-21.3 0-26.5 1.4a8.5 8.5 0 0 0-6 6C.1 12.9.1 24 .1 24s0 11.1 1.4 16.3a8.5 8.5 0 0 0 6 6C12.7 47.7 34 47.7 34 47.7s21.3 0 26.5-1.4a8.5 8.5 0 0 0 6-6C67.9 35.1 67.9 24 67.9 24s0-11.1-1.4-16.3Z" fill="#b3261e"/><path d="M45 24 27 14v20z" fill="#fff"/></svg>
+    </span>
+  </button>
+  <figcaption class="meta">
+    {t('videos.privacy')} · <a href={`https://www.youtube.com/watch?v=${id}`} rel="noopener" target="_blank">{t('videos.youtube')}</a>
+  </figcaption>
+</figure>
+
+<script>
+  document.addEventListener('click', (event) => {
+    const button = (event.target as Element).closest<HTMLButtonElement>('.video__facade');
+    if (!button) return;
+    const { video, title, lang } = button.dataset;
+    const frame = document.createElement('iframe');
+    frame.src = `https://www.youtube-nocookie.com/embed/${video}?autoplay=1&rel=0&hl=${lang}`;
+    frame.title = title ?? '';
+    frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    frame.allowFullscreen = true;
+    frame.className = 'video__frame';
+    button.replaceWith(frame);
+    frame.focus();
+  });
+</script>
+
+<style>
+  .video {
+    margin: 0 0 1.5rem;
+  }
+  .video__facade,
+  :global(.video__frame) {
+    display: block;
+    inline-size: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    border-radius: var(--radius);
+    background: #000;
+  }
+  .video__facade {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .video__facade img {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .video__play {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transition: transform 0.15s ease;
+  }
+  .video__facade:hover .video__play,
+  .video__facade:focus-visible .video__play {
+    transform: scale(1.1);
+  }
+  .video figcaption {
+    margin-block-start: 0.4rem;
+    font-size: 0.85rem;
+  }
+</style>
