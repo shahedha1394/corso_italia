@@ -19,16 +19,16 @@ sources:
 ## En bref
 
 - La plus grande aide pour la plupart des étudiants est la **bourse régionale DSU** : de l'argent, et parfois une chambre et les repas.
-- Elle dépend des **revenus de votre famille**. Les étudiants internationaux ont en général besoin d'un **ISEE parificato**, ou d'un certificat de l'ambassade d'Italie s'ils viennent d'un pays particulièrement pauvre.
+- Elle dépend des **revenus de votre famille**, avec des plafonds qui varient selon la région. Les étudiants internationaux ont en général besoin d'un **ISEE parificato**, ou d'un certificat de l'ambassade d'Italie s'ils viennent d'un pays particulièrement pauvre.
 - Le **gouvernement italien (MAECI)** propose aussi des bourses via le portail Study in Italy. L'appel 2026/2027 s'est clôturé en mars 2026.
 - Les appels se clôturent tôt, souvent **avant le début des cours**. Vérifiez les dates dès que vous choisissez votre université.
 
 ## 1. Les bourses régionales DSU
 
-Chaque région a une agence DSU qui attribue des bourses aux étudiants inscrits dans ses universités, y compris les étudiants internationaux. Pour 2026/2027, par exemple, l'appel de l'Université de Vérone applique ces plafonds nationaux :
+Chaque région finance des bourses pour les étudiants inscrits dans ses universités, y compris les étudiants internationaux. Selon la région, l'appel est géré par une agence régionale DSU ou par l'université elle-même, et chaque région fixe ses propres plafonds de revenus et montants. Par exemple, l'appel 2026/2027 de l'Université de Vérone (région Vénétie) applique :
 
 - **ISEE familial jusqu'à 26 306,25 €** et **ISPE jusqu'à 43 125,94 €**.
-- Pour les étudiants qui vivent loin de leur famille, environ **7 171,11 € par an**, et jusqu'à **8 246 €** pour les revenus les plus bas.
+- Pour les étudiants qui vivent loin de leur famille : **8 246 € par an** pour les revenus les plus bas, **7 171,11 €** pour la tranche intermédiaire, puis un montant qui diminue progressivement (jusqu'à **3 585,50 €**) près du plafond de revenus.
 
 Il faut aussi valider un nombre minimum de crédits chaque année pour garder la bourse. Lisez attentivement l'appel de votre région.
 

@@ -15,7 +15,7 @@
   "videos.empty": "The first videos are coming soon.",
   "videos.play": "Play video: {title}",
   "videos.youtube": "Watch on YouTube",
-  "videos.privacy": "The video loads from YouTube only when you press play.",
+  "videos.privacy": "The video player loads from YouTube only when you press play.",
   "videos.channel": "Subscribe to our YouTube channel",
   "home.latestVideo": "Latest video",
   "videos.all": "All videos",

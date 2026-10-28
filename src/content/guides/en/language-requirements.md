@@ -23,7 +23,7 @@ This page gives the **general rules** that apply at most Italian universities. E
 ## 1. Programmes taught in English
 
 - **Usual level: B2.** Most universities ask for at least B2 English. A few programmes accept B1, and some competitive master's programmes ask for C1.
-- **Common certificates:** IELTS Academic, TOEFL iBT, Cambridge English (B2 First, C1 Advanced) and PTE Academic. As a rough guide, universities usually ask for IELTS between 5.5 and 6.5, or TOEFL iBT between about 72 and 94.
+- **Common certificates:** IELTS Academic, TOEFL iBT, Cambridge English (B2 First, C1 Advanced) and PTE Academic. As a rough guide, requirements range from about IELTS 5.0 to 6.5, or TOEFL iBT about 59 to 94, and are usually higher for master's programmes.
 - **Duolingo English Test:** accepted by only some universities. Others say clearly that they do not accept it.
 - **Common exemptions:** being a native speaker or a citizen of an English-speaking country, or having completed a previous degree taught entirely in English. Some universities accept a letter from your university saying your studies were in English; others do not.
 - **Without a certificate:** some universities check your English with their own test or during an interview.

@@ -58,10 +58,10 @@ Non-state universities (for example LUISS, Bocconi or Cattolica) and online univ
 
 ## 5. Scholarships that cover your costs
 
-Every region runs **right-to-study (DSU) scholarships**. International students can apply. For 2026/2027, the University of Verona's call, for example, uses these national limits and amounts:
+Every region funds **right-to-study (DSU) scholarships**, and international students can apply. Each region sets its own income limits and amounts, so check your region's call. For example, the University of Verona's 2026/2027 call (Veneto region) uses:
 
 - Family **ISEE up to €26,306.25** and **ISPE up to €43,125.94**.
-- For students living away from home (*fuori sede*), the scholarship is **€7,171.11** a year for most applicants, and up to **€8,246** for the lowest incomes. At Verona, part of it is kept back to pay for meals and, if you get one, a room in a student residence.
+- For students living away from home (*fuori sede*): **€8,246** a year for the lowest incomes, **€7,171.11** in the middle band, and gradually less (down to **€3,585.50**) near the income limit. At Verona, part of it is kept back to pay for meals and, if you get one, a room in a student residence.
 
 Students from particularly poor countries need a certificate from the Italian embassy in their country instead of an ISEE parificato. Calls often close before classes start, so check the deadline early (Verona's 2026/2027 call closed on 30 September 2026). Read the [scholarships and funding guide](../funding/) for more.
 

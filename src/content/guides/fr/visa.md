@@ -10,7 +10,7 @@ sources:
     url: https://www.unife.it/it/internazionale/venire/iscriversi/informazioni/circolare_2026-2027_studenti_internazionali.pdf
   - label: "Visa pour l'Italie (ministère des Affaires étrangères)"
     url: https://vistoperitalia.esteri.it
-  - label: "Ambassade d'Italie à Minsk : documents pour un visa d'études de type D (exemple)"
+  - label: "Ambassade d'Italie à Minsk : documents pour un visa d'études de type D (exemple 2025/2026 ; les montants et les dates ont changé)"
     url: https://ambminsk.esteri.it/wp-content/uploads/2026/01/Lista-documenti-visto-D-Studio_ITA.pdf
   - label: "Ambassade d'Italie à Maputo : visa d'études pour l'inscription à l'université (exemple)"
     url: https://ambmaputo.esteri.it/wp-content/uploads/2026/06/STUDIO-IMMATRICOLAZIONE-UNIVERSITA.pdf
@@ -56,9 +56,9 @@ Certaines ambassades demandent deux copies de chaque document. Lisez attentiveme
 
 ## 5. Après l'obtention du visa
 
-- Le visa est en général valable **365 jours avec entrées multiples**.
+- Le visa est en général valable **365 jours avec entrées multiples**. Si vous devez venir en Italie pour un examen d'entrée ou un test de langue en présentiel, vous recevez d'abord un visa valable **100 jours**.
 - Dans les **8 jours ouvrables** qui suivent votre arrivée en Italie, demandez votre titre de séjour. Voir le [guide du titre de séjour](../../living/residence-permit/).
-- Finalisez votre inscription à l'université. Si vous n'êtes pas inscrit sur Universitaly au **31 janvier** de l'année universitaire, votre visa peut être révoqué.
+- Finalisez votre inscription à l'université. Si vous n'êtes pas inscrit sur Universitaly au **31 janvier** de l'année universitaire, votre visa sera révoqué et la Questura en sera informée.
 
 ## 6. Conseils
 

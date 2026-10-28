@@ -33,7 +33,7 @@ For your first weeks, a hotel or short stay gives you time to visit rooms in per
 ## Your contract
 
 - Ask for a **written contract** and check how long it lasts, the deposit, and what the rent includes (bills, internet).
-- The contract must be **registered** within 30 days. Ask the landlord for proof of registration: you need it for your residence permit.
+- The contract must be **registered** within 30 days. Ask the landlord for proof of registration: you may need it for your residence permit.
 - The owner must send the **hospitality declaration** to the police within 48 hours. Keep a copy.
 
 ## Avoiding scams

@@ -71,4 +71,4 @@ Read the [study visa guide](../visa/) for the full checklist.
 
 - Within **8 working days** of arriving, apply for your residence permit for study. See the [residence permit guide](../../living/residence-permit/).
 - Complete your **enrolment** at the university. University fees are usually paid before enrolment is finished, which happens after you receive your visa.
-- Students who are not enrolled on Universitaly by **31 January** of the academic year may have their visa revoked.
+- Students who are not enrolled on Universitaly by **31 January** of the academic year will have their visa revoked, and the Questura is informed.

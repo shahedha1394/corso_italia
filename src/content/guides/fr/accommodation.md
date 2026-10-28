@@ -33,7 +33,7 @@ Pour les premières semaines, un hôtel ou un court séjour vous laisse le temps
 ## Votre contrat
 
 - Demandez un **contrat écrit**, et vérifiez sa durée, le dépôt de garantie et ce que le loyer comprend (charges, internet).
-- Le contrat doit être **enregistré** dans les 30 jours. Demandez au propriétaire la preuve d'enregistrement : vous en avez besoin pour votre titre de séjour.
+- Le contrat doit être **enregistré** dans les 30 jours. Demandez au propriétaire la preuve d'enregistrement : vous pourriez en avoir besoin pour votre titre de séjour.
 - Le propriétaire doit envoyer la **déclaration d'hébergement** à la police dans les 48 heures. Gardez-en une copie.
 
 ## Éviter les arnaques
