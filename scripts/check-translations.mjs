@@ -28,7 +28,7 @@ for (const collection of ['guides', 'pages']) {
 
 if (process.argv.includes('--report-french')) {
   const missing = [];
-  for (const dir of ['universities', 'cities', 'funding', 'deadlines', 'engpro-resources', 'opportunities', 'engpro-sessions']) {
+  for (const dir of ['universities', 'cities', 'funding', 'deadlines', 'engpro-resources', 'opportunities', 'engpro-sessions', 'videos']) {
     for (const f of readdirSync(`src/content/${dir}`).filter((f) => f.endsWith('.yaml'))) {
       const text = readFileSync(`src/content/${dir}/${f}`, 'utf8');
       const en = (text.match(/^\s+en:/gm) ?? []).length;

@@ -41,5 +41,8 @@ title {en, ar}, type (`workshop` | `teaching_session` | `scholarship_call` | `ot
 ## EngPro resources (`src/content/engpro-resources/<slug>.yaml`)
 title {en, ar}, CEFR level(s), skill (`speaking` | `listening` | `reading` | `writing` | `grammar` | `vocabulary` | `exam`), url, free: true.
 
+## Video (`src/content/videos/<slug>.yaml`)
+title {en, ar, fr}, youtube (link or video ID), category (`study` | `papers` | `life` | `engpro`), guide (optional guide file name), published date, description {en, ar, fr} (optional). Videos load from youtube-nocookie.com only after the visitor presses play.
+
 ## Not in the repo (needs a small backend, step 4)
 Sign-ups for EngPro learners and volunteers, opportunity submissions and the admin approval queue. Personal data stays out of Git.

@@ -1,0 +1,60 @@
+---
+import Base from '../../../layouts/Base.astro';
+import VideoEmbed from '../../../components/VideoEmbed.astro';
+import { getStaticLangPaths, useTranslations, type Lang } from '../../../i18n';
+import { getVideos } from '../../../lib/content';
+import { videoCategories } from '../../../lib/taxonomy';
+import { social } from '../../../config/site';
+
+export const getStaticPaths = getStaticLangPaths;
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+const videos = await getVideos();
+const groups = (Object.keys(videoCategories) as (keyof typeof videoCategories)[])
+  .map((category) => ({ category, items: videos.filter((v) => v.data.category === category) }))
+  .filter((g) => g.items.length > 0);
+---
+
+<Base lang={lang} title={t('videos.title')} description={t('videos.intro')}>
+  <header class="container page-header">
+    <h1>{t('videos.title')}</h1>
+    <p>{t('videos.intro')}</p>
+    <p><a href={social.youtube} rel="noopener" target="_blank">{t('videos.channel')}</a></p>
+  </header>
+
+  {groups.length === 0 ? (
+    <section class="container section">
+      <p class="card">{t('videos.empty')}</p>
+    </section>
+  ) : (
+    groups.map((g) => (
+      <section class="container section">
+        <h2>{videoCategories[g.category][lang]}</h2>
+        <div class="video-grid">
+          {g.items.map((v) => (
+            <article>
+              <VideoEmbed id={v.data.youtube} title={v.data.title[lang]} lang={lang} />
+              <h3>{v.data.title[lang]}</h3>
+              {v.data.description && <p>{v.data.description[lang]}</p>}
+            </article>
+          ))}
+        </div>
+      </section>
+    ))
+  )}
+</Base>
+
+<style>
+  .video-grid {
+    display: grid;
+    gap: 1.5rem 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr));
+  }
+  .video-grid h3 {
+    margin-block: 0 0.35rem;
+  }
+  .video-grid p {
+    margin-block-start: 0;
+  }
+</style>

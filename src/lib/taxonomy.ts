@@ -139,6 +139,13 @@ export const modes = {
   in_person: { en: 'In person', ar: 'حضوري', fr: 'En présentiel' },
 } satisfies Labels;
 
+export const videoCategories = {
+  study: { en: 'Studying and applying', ar: 'الدراسة والتقديم', fr: 'Études et candidature' },
+  papers: { en: 'Visa and paperwork', ar: 'التأشيرة والأوراق الرسمية', fr: 'Visa et démarches' },
+  life: { en: 'Daily life and vlogs', ar: 'الحياة اليومية والفلوغات', fr: 'Vie quotidienne et vlogs' },
+  engpro: { en: 'EngPro and English', ar: 'EngPro والإنجليزية', fr: 'EngPro et anglais' },
+} satisfies Labels;
+
 export const cefrLevels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'] as const;
 
 export const skills = {
