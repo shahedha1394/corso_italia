@@ -1,7 +1,9 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../../layouts/Base.astro';
+import Icon from '../../../components/Icon.astro';
 import SignupButton from '../../../components/SignupButton.astro';
+import { engproTeachers } from '../../../config/engpro-teachers';
 import { getStaticLangPaths, path, useTranslations, type Lang } from '../../../i18n';
 import { forms } from '../../../config/forms';
 import { skills } from '../../../lib/taxonomy';
@@ -42,6 +44,21 @@ const levelRange = (levels: string[]) => (levels.length > 1 ? `${levels[0]}–${
       </div>
     </div>
   </section>
+
+  {engproTeachers.length > 0 && (
+    <section class="container section thanks">
+      <h2><Icon name="heart" size={26} class="thanks__icon" /> {t('engpro.thanks.title')}</h2>
+      <p class="thanks__text">{t('engpro.thanks.text')}</p>
+      <ul class="thanks__list">
+        {engproTeachers.map((teacher) => (
+          <li>
+            <span class="thanks__name ltr-inline" lang="en">{teacher.name}</span>
+            <span class="meta">{teacher.country[lang]}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
 
   <section class="container section">
     <h2>{t('engpro.resources.title')}</h2>
@@ -96,5 +113,53 @@ const levelRange = (levels: string[]) => (levels.length > 1 ? `${levels[0]}–${
   }
   .hero-link {
     color: #fff;
+  }
+  .thanks {
+    background: #e6f4f1;
+    border-radius: var(--radius);
+    padding: 1.5rem;
+  }
+  .thanks h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-block-start: 0;
+    color: #005f54;
+  }
+  .thanks :global(.thanks__icon) {
+    color: #b3261e;
+    fill: #b3261e;
+  }
+  .thanks__text {
+    max-inline-size: 45rem;
+  }
+  .thanks__list {
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 0;
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr));
+  }
+  .thanks__list li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-inline-start: 4px solid #00b39a;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+  }
+  .thanks__name {
+    font-weight: 600;
+  }
+  @media (prefers-color-scheme: dark) {
+    .thanks {
+      background: #13302b;
+    }
+    .thanks h2 {
+      color: #7fd8c6;
+    }
   }
 </style>
