@@ -36,7 +36,7 @@ Pour une licence, il vous faut un diplôme obtenu après **au moins 12 années d
 
 ### Quelle est la date limite pour le visa ?
 
-Pour 2026/2027, demandez le visa d'études avant le **30 novembre 2026** ; pour 2027/2028, avant le **31 octobre 2027**. Votre université peut fixer une date antérieure. Voir [Visa d'études](../study/visa/).
+Pour 2026/2027, demandez le visa d'études au plus tard le **30 novembre 2026** ; pour 2027/2028, au plus tard le **31 octobre 2027**. Votre université peut fixer une date antérieure. Voir [Visa d'études](../study/visa/).
 
 ### Combien d'argent dois-je justifier pour le visa ?
 

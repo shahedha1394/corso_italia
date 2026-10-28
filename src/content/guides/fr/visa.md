@@ -22,7 +22,7 @@ Ce guide s'adresse aux étudiants **qui ne sont pas citoyens de l'UE et qui vive
 
 ## 1. Qui a besoin d'un visa d'études
 
-Il vous faut un **visa d'études de long séjour de type D** pour l'inscription à l'université (« Immatricolazione Università ») si vous n'êtes pas citoyen de l'UE et que vous vivez hors d'Italie.
+Il vous faut un **visa d'études de long séjour de type D** pour l'inscription à l'université (« Immatricolazione Università ») si vous n'êtes pas citoyen de l'UE et que vous vivez hors d'Italie.
 
 Vous n'en avez **pas** besoin si vous êtes citoyen de l'UE, ou si vous vivez déjà légalement en Italie avec un titre de séjour qui vous permet de vous inscrire (renseignez-vous auprès du bureau international de votre université).
 
@@ -33,7 +33,7 @@ Vous ne pouvez demander le visa qu'après la **validation de votre préinscripti
 ## 3. Où et quand faire la demande
 
 - **Où :** à l'ambassade ou au consulat d'Italie du pays où vous vivez. Beaucoup d'ambassades donnent les rendez-vous via [Prenot@mi](https://prenotami.esteri.it) ; certaines passent par un centre de visas externe. Le site de votre ambassade l'indique.
-- **Quand :** pour 2026/2027, avant le **30 novembre 2026** ; pour 2027/2028, avant le **31 octobre 2027**. Votre université peut fixer une date antérieure.
+- **Quand :** pour 2026/2027, au plus tard le **30 novembre 2026** ; pour 2027/2028, au plus tard le **31 octobre 2027**. Votre université peut fixer une date antérieure.
 - **Faites-la tôt.** Les rendez-vous peuvent être difficiles à obtenir, et il faut du temps pour réunir les documents et les traductions.
 - Depuis le 11 janvier 2025, vos **empreintes digitales** sont relevées lors de la demande de visa national.
 

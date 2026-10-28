@@ -6,7 +6,7 @@ order: 30
 draft: false
 lastChecked: 2026-10-27
 sources:
-  - label: "تعميم وزارة الجامعات (MUR) للطلاب الدوليين، العامان الدراسيان 2026/2027 و2027/2028 (نسخة منشورة على موقع جامعة فيرارا)"
+  - label: "تعميم وزارة الجامعات (⁦MUR⁩) للطلاب الدوليين، العامان الدراسيان 2026/2027 و2027/2028 (نسخة منشورة على موقع جامعة فيرارا)"
     url: https://www.unife.it/it/internazionale/venire/iscriversi/informazioni/circolare_2026-2027_studenti_internazionali.pdf
   - label: "جامعة سابينزا في روما: التقديم كطالب دولي (مثال)"
     url: https://www.uniroma1.it/en/pagina/applying-sapienza-international-student

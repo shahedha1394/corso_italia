@@ -33,7 +33,7 @@ Vous pouvez garder une assurance valable en Italie pendant tout votre séjour. A
 ## Option 2 : le service national de santé (SSN)
 
 1. Payez les **700 €** pour l'année (le mode de paiement dépend de la région : certaines utilisent le formulaire F24, d'autres un bulletin postal).
-2. Allez au bureau de santé de votre quartier (appelé **ASL**, **ASP** ou **ATS** selon la région).
+2. Allez à l'agence sanitaire locale de votre secteur (appelée **ASL**, **ASP** ou **ATS** selon la région).
 3. Apportez : le reçu du paiement, votre passeport, votre codice fiscale, votre titre de séjour ou son reçu, et une preuve d'inscription ou de domicile.
 4. Choisissez votre **médecin traitant**.
 

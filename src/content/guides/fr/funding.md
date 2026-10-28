@@ -42,7 +42,7 @@ Le ministère des Affaires étrangères propose des bourses aux étudiants étra
 
 ## 4. Bourses des universités et exonérations
 
-Beaucoup d'universités ont leurs propres bourses ou des frais réduits pour les étudiants internationaux. Consultez la page « bourses » ou « frais » de chaque université.
+Beaucoup d'universités ont leurs propres bourses ou des frais réduits pour les étudiants internationaux. Consultez la page « bourses » ou « frais » de chaque université.
 
 ## 5. Autres financements
 

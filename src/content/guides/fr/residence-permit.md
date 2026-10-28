@@ -26,10 +26,10 @@ Vous devez faire la demande dans les **8 jours ouvrables qui suivent votre arriv
 
 ## 2. Le kit de la poste
 
-1. Prenez le **kit jaune** (*kit giallo*) dans un bureau de poste doté d'un guichet « Sportello Amico ». Le formulaire qu'il contient (*modulo 1*) est uniquement en italien.
+1. Prenez le **kit jaune** (*kit giallo*) dans un bureau de poste doté d'un guichet « Sportello Amico ». Le formulaire qu'il contient (*modulo 1*) est uniquement en italien.
 2. Remplissez-le à l'encre noire et en majuscules. Les **patronati** et les **CAF** aident souvent gratuitement, et beaucoup d'universités ont un guichet d'aide.
 3. Préparez des copies des pages d'identité de votre passeport, de votre visa et de votre tampon d'entrée, un **timbre fiscal de 16 €** (*marca da bollo*, vendu dans les bureaux de tabac), une copie de votre assurance santé et, si votre Questura les demande, une preuve de logement et de ressources.
-4. Apportez le kit au bureau de poste avec votre passeport et envoyez-le depuis là.
+4. Apportez le kit au bureau de poste avec votre passeport et envoyez-le sur place.
 
 **Combien ça coûte.** Par exemple, l'Université de Pise indique pour un titre d'un an : le timbre fiscal de 16 €, **30 €** payés à la poste lors de l'envoi du kit, et un bulletin de paiement de **70,46 €**. Vérifiez les montants actuels au bureau de poste.
 

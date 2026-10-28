@@ -8,7 +8,7 @@ Nous animons aussi **EngPro**, une initiative gratuite où des enseignants bén�
 
 ## Pourquoi nous avons créé ce site
 
-En 2025, je suis partie à Lesbos, en Grèce, pour effectuer un stage auprès des réfugiés du camp de Mavrovouni, dans le cadre de mon master en droits de l'homme et gestion des conflits en Italie.
+En 2025, je suis partie à Lesbos, en Grèce, pour effectuer un stage auprès des réfugiés du camp de Mavrovouni, dans le cadre de mon master en droits humains et gestion des conflits en Italie.
 
 J'y ai rencontré des personnes de nombreux pays qui avaient risqué leur vie pour traverser la mer en bateau. Elles avaient vécu la peur. Beaucoup avaient perdu des proches, des membres de leur famille et des amis, et avaient survécu de justesse.
 

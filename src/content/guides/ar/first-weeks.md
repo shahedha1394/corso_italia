@@ -6,11 +6,11 @@ order: 10
 draft: false
 lastChecked: 2026-10-28
 sources:
-  - label: "تعميم وزارة الجامعات (MUR) للطلاب الدوليين، العامان الدراسيان 2026/2027 و2027/2028 (نسخة منشورة على موقع جامعة فيرارا)"
+  - label: "تعميم وزارة الجامعات (⁦MUR⁩) للطلاب الدوليين، العامان الدراسيان 2026/2027 و2027/2028 (نسخة منشورة على موقع جامعة فيرارا)"
     url: https://www.unife.it/it/internazionale/venire/iscriversi/informazioni/circolare_2026-2027_studenti_internazionali.pdf
   - label: "وزارة الخارجية الإيطالية: الكوديتشي فيسكالي للمواطنين الأجانب"
     url: https://www.esteri.it/it/servizi-consolari-e-visti/italiani-all-estero/codice_fiscale/
-  - label: "وكالة الإيرادات (Agenzia delle Entrate)"
+  - label: "وكالة الإيرادات (⁦Agenzia delle Entrate⁩)"
     url: https://www.agenziaentrate.gov.it
   - label: "Portale Immigrazione"
     url: https://www.portaleimmigrazione.it

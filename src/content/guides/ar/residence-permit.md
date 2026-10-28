@@ -1,12 +1,12 @@
 ---
-title: "تصريح الإقامة (permesso di soggiorno)"
+title: "تصريح الإقامة (⁦permesso di soggiorno⁩)"
 description: "كيف تقدّم على تصريح الإقامة للدراسة بعد وصولك، وكيف تجدّده، وماذا بعد التخرّج."
 section: living
 order: 20
 draft: false
 lastChecked: 2026-10-28
 sources:
-  - label: "تعميم وزارة الجامعات (MUR) للطلاب الدوليين، العامان الدراسيان 2026/2027 و2027/2028 (نسخة منشورة على موقع جامعة فيرارا)"
+  - label: "تعميم وزارة الجامعات (⁦MUR⁩) للطلاب الدوليين، العامان الدراسيان 2026/2027 و2027/2028 (نسخة منشورة على موقع جامعة فيرارا)"
     url: https://www.unife.it/it/internazionale/venire/iscriversi/informazioni/circolare_2026-2027_studenti_internazionali.pdf
   - label: "جامعة بيزا: تصريح الإقامة للطلاب"
     url: https://www.unipi.it/ateneo/rapporti-internazionali/info-e-servizi-di-accoglienza/ingresso-e-soggiorno-cittadini-extra-ue/permesso-per-studio/
