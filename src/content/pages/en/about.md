@@ -22,4 +22,5 @@ This website does more than explain how to come to Italy to study. It also offer
 
 The website is still being developed, and we keep adding to it.
 
-— **Shahed Hammal**, founder of Corso Italy
+— **Shahed Hammal**, founder of Corso Italy  
+Master in Human Rights and Conflict Management, Scuola Superiore Sant'Anna (Pisa)

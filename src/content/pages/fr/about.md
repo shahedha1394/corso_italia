@@ -22,4 +22,5 @@ Ce site ne se contente pas d'expliquer comment venir étudier en Italie. Il offr
 
 Le site est encore en cours de développement, et nous l'enrichissons régulièrement.
 
-— **Shahed Hammal**, fondatrice de Corso Italy
+— **Shahed Hammal**, fondatrice de Corso Italy  
+Master en droits humains et gestion des conflits, Scuola Superiore Sant'Anna (Pise)
