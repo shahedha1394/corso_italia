@@ -7,4 +7,4 @@ export const social = {
 
 // Visitor counter (GoatCounter: no cookies, no personal data). Put the site code here,
 // e.g. 'corsoitaly' for https://corsoitaly.goatcounter.com. Leave empty to turn it off.
-export const goatcounter = '';
+export const goatcounter = 'corsoitaly';
