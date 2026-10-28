@@ -1,32 +1,51 @@
 ---
 title: "Scholarships and funding"
-description: "Regional DSU scholarships, government scholarships, university waivers and other funding."
+description: "Regional DSU scholarships, Italian government scholarships, university waivers and other funding."
 section: study
 order: 20
-draft: true
+draft: false
+lastChecked: 2026-10-28
 sources:
   - label: "Study in Italy (Ministry of Foreign Affairs)"
     url: https://studyinitaly.esteri.it
-  - label: "Ministry of University and Research (MUR)"
-    url: https://www.mur.gov.it
+  - label: "University of Verona: scholarship call 2026/2027 (example)"
+    url: https://cdn.docs.univr.it/documenti/Concorso/bando/bando787603.pdf
+  - label: "MUR: right to study (scholarship decrees and list of particularly poor countries)"
+    url: https://www.mur.gov.it/it/aree-tematiche/universita/studenti-diritto-allo-studio-e-residenze/diritto-allo-studio
+  - label: "Embassy of Italy in Abuja: Italian government scholarships 2026/2027"
+    url: https://ambabuja.esteri.it/en/news/dall_ambasciata/2026/03/borse-di-studio-per-la-a-2026-2027-offerte-dal-governo-italiano-a-studenti-stranieri/
 ---
 
-## Regional DSU scholarships
+## In short
 
-To be written.
+- The biggest help for most students is the **regional DSU scholarship**: money, and sometimes a room and meals.
+- It depends on your **family income**. International students usually need an **ISEE parificato**, or a certificate from the Italian embassy if they come from a particularly poor country.
+- The **Italian government (MAECI)** also offers scholarships through the Study in Italy portal. The 2026/2027 call closed in March 2026.
+- Calls close early, often **before classes start**. Check the dates as soon as you choose your university.
 
-## The ISEE parificato
+## 1. Regional DSU scholarships
 
-To be written.
+Each region has a DSU agency that gives scholarships to students enrolled in its universities, including international students. For 2026/2027, for example, the University of Verona call applies these national limits:
 
-## Italian government scholarships
+- Family **ISEE up to €26,306.25** and **ISPE up to €43,125.94**.
+- For students who live away from their family, about **€7,171.11 per year**, and up to **€8,246** for the lowest incomes.
 
-To be written.
+You also need to pass a minimum number of credits each year to keep the scholarship. Read your region's call carefully.
 
-## University scholarships and fee waivers
+## 2. The ISEE parificato
 
-To be written.
+If your family's income and property are abroad, you need an **ISEE parificato**, issued in Italy by an authorised tax assistance centre (**CAF**) using documents from your country. Students from the ministry's list of **particularly poor countries** need a certificate from the Italian embassy instead. Start early: documents from your country may need translation and legalisation.
 
-## Funding from your home country and other organisations
+## 3. Italian government scholarships (MAECI)
 
-To be written.
+The Ministry of Foreign Affairs offers scholarships to foreign students from the countries on its list. You apply only through [Study in Italy](https://studyinitaly.esteri.it). The 2026/2027 call closed on **26 March 2026**, so check the portal early for the next one.
+
+## 4. University scholarships and fee waivers
+
+Many universities have their own scholarships or lower fees for international students. Look at the "scholarships" or "fees" page of each university.
+
+## 5. Other funding
+
+Some governments, foundations and international organisations fund study abroad. Ask in your country too.
+
+See the full list in our [scholarships directory](../scholarships/), and how fees work in [How much it costs](../costs/).
