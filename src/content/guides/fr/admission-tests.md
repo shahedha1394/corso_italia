@@ -142,6 +142,16 @@ La plupart des masters des universités publiques n'ont pas de test national. L'
 - **Entretien :** certains programmes ajoutent un entretien en ligne.
 - **GMAT ou GRE :** surtout demandés par les programmes sélectifs d'économie et de gestion. Vérifiez la page du programme.
 
+## Où s'entraîner
+
+Toutes ces ressources sont gratuites. Certaines demandent un compte gratuit.
+
+- **IMAT :** les sujets des années précédentes sont publics. Ce guide indique où les trouver, ainsi que d'autres simulateurs : [TestBuddy : où s'entraîner pour l'IMAT](https://testbuddy.it/blog/imat/where-to-practice-for-imat-2025-past-papers--top-simulators) (site privé de préparation, pas une page officielle).
+- **TOLC :** simulations avec la structure et la durée réelles, et anciens tests avec corrigés commentés, dans l'[espace d'entraînement du CISIA](https://www.cisiaonline.it/prepararsi/tolc-esercitazioni) (inscription gratuite).
+- **CEnT-S :** le CISIA a ajouté des simulations du nouveau test dans le même espace ([annonce du CISIA](https://www.cisiaonline.it/en/news/practice-cent-s-simulations-available-practice-area?page=1), [page CEnT-S](https://cisiaonline.it/cent/cent-s)).
+- **Semestre filtre :** la plateforme officielle gratuite de la CRUI et du MUR, avec des exercices de base et des simulations au format de l'examen : [semestreaperto-medodovet.it](https://www.semestreaperto-medodovet.it/).
+- **Universités privées et Bocconi :** chaque université publie ses propres exemples de questions ou tests d'entraînement sur sa page d'admission. Consultez la page de l'université qui vous intéresse.
+
 ## Récapitulatif : quel test pour quel programme ?
 
 | Programme | Test | Période habituelle | Frais |

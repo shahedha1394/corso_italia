@@ -142,6 +142,16 @@ Most master's programs at public universities have no national test. The univers
 - **Interviews:** some programs add an online interview.
 - **GMAT or GRE:** mainly asked by competitive economics and management programs. Check the program page.
 
+## Where to practise
+
+All of these are free. Some need a free account.
+
+- **IMAT:** past papers are public. This guide lists where to find them and other simulators: [TestBuddy: where to practise for IMAT](https://testbuddy.it/blog/imat/where-to-practice-for-imat-2025-past-papers--top-simulators) (a private preparation site, not an official page).
+- **TOLC:** simulations with the real structure and timing, and past tests with explained solutions, in the [CISIA practice area](https://www.cisiaonline.it/prepararsi/tolc-esercitazioni) (free registration).
+- **CEnT-S:** CISIA added simulations of the new test to the same practice area ([CISIA announcement](https://www.cisiaonline.it/en/news/practice-cent-s-simulations-available-practice-area?page=1), [CEnT-S page](https://cisiaonline.it/cent/cent-s)).
+- **Filter semester:** the official free platform by CRUI and MUR, with basic exercises and simulations in the exam format: [semestreaperto-medodovet.it](https://www.semestreaperto-medodovet.it/).
+- **Private universities and Bocconi:** each university publishes its own sample questions or practice tests on its admissions page. Check the page of the university you want.
+
 ## Summary: which test for which program?
 
 | Program | Test | Usual period | Fee |
