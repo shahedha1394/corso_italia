@@ -1,0 +1,59 @@
+---
+// Invitation to subscribe to the Corso Italy YouTube channel.
+import Icon from './Icon.astro';
+import { useTranslations, type Lang } from '../i18n';
+import { social } from '../config/site';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+// sub_confirmation=1 opens YouTube's subscribe prompt.
+const subscribeUrl = `${social.youtube}?sub_confirmation=1`;
+---
+
+<aside class="channel-card">
+  <span class="channel-card__icon"><Icon name="youtube" size={30} /></span>
+  <div>
+    <h2>{t('channel.title')}</h2>
+    <p>{t('channel.text')}</p>
+    <a class="button channel-card__button" href={subscribeUrl} rel="noopener" target="_blank">{t('channel.cta')}</a>
+  </div>
+</aside>
+
+<style>
+  .channel-card {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-inline-start: 5px solid #c4302b;
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem;
+  }
+  .channel-card h2 {
+    margin: 0 0 0.4rem;
+    font-size: 1.2rem;
+  }
+  .channel-card p {
+    margin: 0 0 1rem;
+    max-inline-size: 42rem;
+  }
+  .channel-card__icon {
+    display: inline-flex;
+    color: #c4302b;
+    flex-shrink: 0;
+  }
+  .channel-card__button {
+    background: #c4302b;
+    border-color: #c4302b;
+  }
+  .channel-card__button:hover,
+  .channel-card__button:focus-visible {
+    background: #a32622;
+    border-color: #a32622;
+  }
+</style>
