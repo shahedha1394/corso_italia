@@ -31,7 +31,7 @@ Cette page présente les **règles générales** appliquées dans la plupart des
 ## 2. Formations enseignées en italien
 
 - **Niveau : B2.** Les règles nationales exigent au moins un niveau B2 en italien pour les étudiants qui vivent hors de l'UE et ont besoin d'un visa.
-- **Le test de l'université :** chaque université évalue votre italien avec son propre test, en général en ligne et avant la demande de visa. Plusieurs universités utilisent le même test commun en ligne (par exemple le CISIA TEST ITA L2).
+- **Le test de l'université :** chaque université évalue votre italien avec son propre test, en général en ligne et avant la demande de visa. Plusieurs universités utilisent le même test commun en ligne (par exemple le [CISIA TEST ITA L2](https://cisiaonline.it/en/other-tests/test-ita-l2)).
 - **Certificats :** beaucoup d'universités acceptent les certificats d'italien reconnus (CILS, CELI, CERT.IT et PLIDA, qui font partie du groupe CLIQ) de niveau B2 ou plus. Un certificat CLIQ de niveau C1 ou C2, ou le diplôme des universités pour étrangers de Pérouse ou de Sienne, vous dispense du test.
 
 ## 3. Si vous étudiez en anglais, avez-vous besoin de l'italien ?

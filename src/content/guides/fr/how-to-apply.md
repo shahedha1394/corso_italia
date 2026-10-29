@@ -41,7 +41,7 @@ Utilisez notre [guide des universités](../universities/) pour trouver des unive
 ## 2. Préparer vos documents
 
 - Votre **diplôme original** et, pour les candidats en master, votre **relevé de notes**.
-- Un document qui atteste la valeur et l'authenticité de votre diplôme : une **attestation CIMEA** (comparabilité et vérification) ou une **déclaration de valeur** (*Dichiarazione di valore*) de l'ambassade d'Italie. Si votre pays applique la Convention de Lisbonne, vous pourrez peut-être télécharger l'attestation de comparabilité sur le service ARDI du CIMEA.
+- Un document qui atteste la valeur et l'authenticité de votre diplôme : une **attestation [CIMEA](https://www.cimea.it)** (comparabilité et vérification) ou une **déclaration de valeur** (*Dichiarazione di valore*) de l'ambassade d'Italie. Si votre pays applique la Convention de Lisbonne, vous pourrez peut-être télécharger l'attestation de comparabilité sur le service ARDI du CIMEA.
 - Un **supplément au diplôme**, si votre université en délivre un.
 - Des **traductions** en italien, si nécessaire (pour les formations enseignées en anglais, le relevé de notes n'a parfois pas besoin d'être traduit).
 - Votre **certificat de langue**.

@@ -18,7 +18,7 @@ sources:
 
 - Pour le visa, vous devez prouver que vous avez un **logement adapté** en Italie. Une simple demande de résidence étudiante ne suffit pas.
 - Les **résidences étudiantes** sont gérées par les agences régionales DSU et par certaines universités. Les places sont limitées, et la demande se fait via l'appel à candidatures annuel.
-- Un **contrat de location** doit être enregistré auprès de l'Agenzia delle Entrate dans les **30 jours** qui suivent sa signature.
+- Un **contrat de location** doit être enregistré auprès de l'[Agenzia delle Entrate](https://www.agenziaentrate.gov.it) dans les **30 jours** qui suivent sa signature.
 - La personne qui vous héberge ou vous loue une chambre doit le déclarer à la police dans les **48 heures** (*dichiarazione di ospitalità*).
 - **Ne payez jamais** avant d'avoir vu la chambre (sur place ou en appel vidéo) et le contrat.
 

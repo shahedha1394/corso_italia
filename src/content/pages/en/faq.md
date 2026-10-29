@@ -26,11 +26,11 @@ Most ask for B2 level. IELTS Academic, TOEFL iBT, Cambridge English and PTE Acad
 
 ### How do I apply?
 
-You choose a programme, apply to the university (often on its own portal), then complete your pre-enrolment on Universitaly. After the university validates it, you apply for the visa. See [How to apply](../study/how-to-apply/).
+You choose a programme, apply to the university (often on its own portal), then complete your pre-enrolment on [Universitaly](https://www.universitaly.it). After the university validates it, you apply for the visa. See [How to apply](../study/how-to-apply/).
 
 ### Is my school diploma enough?
 
-For a bachelor's degree you need a secondary school diploma obtained after at least 12 years of schooling, with a CIMEA statement or a Dichiarazione di valore and, if your country has a university entrance exam, proof that you passed it. See [How to apply](../study/how-to-apply/).
+For a bachelor's degree you need a secondary school diploma obtained after at least 12 years of schooling, with a [CIMEA](https://www.cimea.it) statement or a Dichiarazione di valore and, if your country has a university entrance exam, proof that you passed it. See [How to apply](../study/how-to-apply/).
 
 ## Visa and money
 

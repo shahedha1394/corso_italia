@@ -26,11 +26,11 @@ La plupart demandent le niveau B2. Les plus courants sont IELTS Academic, TOEFL 
 
 ### Comment postuler ?
 
-Vous choisissez une formation, vous postulez auprès de l'université (souvent sur son propre portail), puis vous faites votre préinscription sur Universitaly. Une fois qu'elle est validée par l'université, vous demandez le visa. Voir [Comment postuler](../study/how-to-apply/).
+Vous choisissez une formation, vous postulez auprès de l'université (souvent sur son propre portail), puis vous faites votre préinscription sur [Universitaly](https://www.universitaly.it). Une fois qu'elle est validée par l'université, vous demandez le visa. Voir [Comment postuler](../study/how-to-apply/).
 
 ### Mon diplôme de fin d'études secondaires suffit-il ?
 
-Pour une licence, il vous faut un diplôme obtenu après **au moins 12 années de scolarité**, avec une attestation CIMEA ou une Dichiarazione di valore et, si votre pays a un examen d'entrée à l'université, la preuve que vous l'avez réussi. Voir [Comment postuler](../study/how-to-apply/).
+Pour une licence, il vous faut un diplôme obtenu après **au moins 12 années de scolarité**, avec une attestation [CIMEA](https://www.cimea.it) ou une Dichiarazione di valore et, si votre pays a un examen d'entrée à l'université, la preuve que vous l'avez réussi. Voir [Comment postuler](../study/how-to-apply/).
 
 ## Visa et argent
 

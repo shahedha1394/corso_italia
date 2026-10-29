@@ -28,11 +28,11 @@ Vous n'en avez **pas** besoin si vous êtes citoyen de l'UE, ou si vous vivez d�
 
 ## 2. Avant de faire la demande
 
-Vous ne pouvez demander le visa qu'après la **validation de votre préinscription sur Universitaly** par votre université. Voir [Comment postuler](../how-to-apply/) pour ces étapes.
+Vous ne pouvez demander le visa qu'après la **validation de votre préinscription sur [Universitaly](https://www.universitaly.it)** par votre université. Voir [Comment postuler](../how-to-apply/) pour ces étapes.
 
 ## 3. Où et quand faire la demande
 
-- **Où :** à l'ambassade ou au consulat d'Italie du pays où vous vivez. Beaucoup d'ambassades donnent les rendez-vous via [Prenot@mi](https://prenotami.esteri.it) ; certaines passent par un centre de visas externe. Le site de votre ambassade l'indique.
+- **Où :** à l'ambassade ou au consulat d'Italie du pays où vous vivez. Beaucoup d'ambassades donnent les rendez-vous via [Prenot@mi](https://prenotami.esteri.it) ; certaines passent par un centre de visas externe. Le site de votre ambassade l'indique. Vous pouvez vérifier les documents nécessaires et trouver votre ambassade sur le site officiel [Visa pour l'Italie](https://vistoperitalia.esteri.it).
 - **Quand :** pour 2026/2027, au plus tard le **30 novembre 2026** ; pour 2027/2028, au plus tard le **31 octobre 2027**. Votre université peut fixer une date antérieure.
 - **Faites-la tôt.** Les rendez-vous peuvent être difficiles à obtenir, et il faut du temps pour réunir les documents et les traductions.
 - Depuis le 11 janvier 2025, vos **empreintes digitales** sont relevées lors de la demande de visa national.
@@ -44,7 +44,7 @@ La liste exacte dépend de l'ambassade, mais il vous faut en général :
 1. Un **passeport** valable au moins 3 mois après la fin du visa, avec des copies des pages d'identité.
 2. Le **formulaire de demande de visa** (type D), rempli et signé, et une **photo d'identité** récente (format OACI).
 3. Le **récapitulatif de votre préinscription sur Universitaly**, validé par l'université.
-4. Votre **diplôme de fin d'études secondaires** (ou votre diplôme universitaire, pour un master), avec une attestation **CIMEA** ou une **Dichiarazione di valore**.
+4. Votre **diplôme de fin d'études secondaires** (ou votre diplôme universitaire, pour un master), avec une attestation **[CIMEA](https://www.cimea.it)** ou une **Dichiarazione di valore**.
 5. Votre **certificat de langue** : italien B2 pour les formations en italien, ou un certificat dans la langue d'enseignement. Voir [Exigences linguistiques](../language-requirements/).
 6. **Une preuve de ressources** : pour 2026/2027, la somme nationale est de **10 179,85 € par an**, de sources légales et traçables, de préférence les vôtres ou celles de votre famille (par exemple un relevé bancaire, avec une lettre de prise en charge si le compte est celui d'un parent).
 7. **Une preuve de logement** en Italie, comme un bail, une réservation d'hôtel pour les premières semaines ou une place confirmée en résidence étudiante. Une simple demande de résidence ne suffit pas.

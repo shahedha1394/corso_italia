@@ -18,7 +18,7 @@ sources:
 
 - For the visa you must show **suitable accommodation** in Italy. An application for a student residence alone is not enough.
 - **Student residences** are run by the regional DSU agencies and some universities. Places are limited, and you apply through the yearly call.
-- A **rental contract** must be registered with the Agenzia delle Entrate within **30 days** of signing.
+- A **rental contract** must be registered with the [Agenzia delle Entrate](https://www.agenziaentrate.gov.it) within **30 days** of signing.
 - Whoever hosts you or rents you a room must tell the police within **48 hours** (*dichiarazione di ospitalità*).
 - **Never pay** before you have seen the room (in person or by video call) and the contract.
 
