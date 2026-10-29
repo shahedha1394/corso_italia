@@ -7,4 +7,5 @@ export const engproTeachers: { name: string; country: { en: string; ar: string; 
   { name: 'Caroline Renkes', country: { en: 'Wales', ar: 'ويلز', fr: 'Pays de Galles' } },
   { name: 'Anna Fornari', country: { en: 'Italy', ar: 'إيطاليا', fr: 'Italie' } },
   { name: 'Yousef Ahmad', country: { en: 'Syria', ar: 'سوريا', fr: 'Syrie' } },
+  { name: 'Zahra Omrani', country: { en: 'Iran', ar: 'إيران', fr: 'Iran' } },
 ];
