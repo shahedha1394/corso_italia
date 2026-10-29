@@ -3,6 +3,7 @@ import { getCollection, render } from 'astro:content';
 import Base from '../../../layouts/Base.astro';
 import { dateLocale, path, useTranslations, type Lang } from '../../../i18n';
 import VideoEmbed from '../../../components/VideoEmbed.astro';
+import { social } from '../../../config/site';
 import { getVideos, splitId } from '../../../lib/content';
 
 export async function getStaticPaths() {
@@ -40,6 +41,9 @@ const lastChecked = guide.data.lastChecked?.toLocaleDateString(dateLocale(lang),
     {guide.data.draft && <p class="notice">{t('common.draftNotice')}</p>}
 
     {videos.map((v) => <VideoEmbed id={v.data.youtube} title={v.data.title[lang]} lang={lang} />)}
+    {videos.length > 0 && (
+      <p class="meta"><a href={`${social.youtube}?sub_confirmation=1`} rel="noopener" target="_blank">{t('videos.subscribeLine')}</a></p>
+    )}
 
     <Content />
 

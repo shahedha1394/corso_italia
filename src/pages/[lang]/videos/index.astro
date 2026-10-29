@@ -1,10 +1,10 @@
 ---
 import Base from '../../../layouts/Base.astro';
+import ChannelCard from '../../../components/ChannelCard.astro';
 import VideoEmbed from '../../../components/VideoEmbed.astro';
 import { getStaticLangPaths, useTranslations, type Lang } from '../../../i18n';
 import { getVideos } from '../../../lib/content';
 import { videoCategories } from '../../../lib/taxonomy';
-import { social } from '../../../config/site';
 
 export const getStaticPaths = getStaticLangPaths;
 
@@ -20,8 +20,11 @@ const groups = (Object.keys(videoCategories) as (keyof typeof videoCategories)[]
   <header class="container page-header">
     <h1>{t('videos.title')}</h1>
     <p>{t('videos.intro')}</p>
-    <p><a href={social.youtube} rel="noopener" target="_blank">{t('videos.channel')}</a></p>
   </header>
+
+  <section class="container section">
+    <ChannelCard lang={lang} />
+  </section>
 
   {groups.length === 0 ? (
     <section class="container section">

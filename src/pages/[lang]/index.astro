@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import ItalyMap from '../../components/ItalyMap.astro';
+import ChannelCard from '../../components/ChannelCard.astro';
 import VideoEmbed from '../../components/VideoEmbed.astro';
 import { getVideos } from '../../lib/content';
 import { getStaticLangPaths, path, useTranslations, type Lang } from '../../i18n';
@@ -64,6 +65,10 @@ const sections: { href: string; title: string; text: string; icon: IconName }[] 
       <p><a href={path(lang, '/videos/')}>{t('videos.all')}</a></p>
     </section>
   )}
+
+  <section class="container section">
+    <ChannelCard lang={lang} />
+  </section>
 
   <section class="container section">
     <h2>{t('home.sections.title')}</h2>
