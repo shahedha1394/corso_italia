@@ -1,0 +1,200 @@
+---
+// A year at a glance: when each stage usually happens for students who start in September or October.
+// Month names come from Intl, so they follow the page language. The "today" marker is set at build
+// time; the site rebuilds every morning, so it stays current.
+import { dateLocale, path, useTranslations, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const locale = dateLocale(lang);
+
+// The ruler runs from September to November of the following year (15 months).
+const FIRST_MONTH = 8; // September, 0-based
+const LENGTH = 15;
+const monthIndex = (i: number) => (FIRST_MONTH + i) % 12;
+const monthName = (i: number, style: 'short' | 'long') =>
+  new Date(2026, monthIndex(i), 1).toLocaleDateString(locale, { month: style });
+
+const ruler = Array.from({ length: LENGTH }, (_, i) => monthName(i, 'short'));
+
+// start and end are positions on the ruler (0 = September).
+const phases = [
+  { start: 0, end: 3, title: t('timeline.p1'), text: t('timeline.p1.text') },
+  { start: 2, end: 7, title: t('timeline.p2'), text: t('timeline.p2.text') },
+  { start: 6, end: 11, title: t('timeline.p3'), text: t('timeline.p3.text') },
+  { start: 9, end: 13, title: t('timeline.p4'), text: t('timeline.p4.text') },
+  { start: 12, end: 14, title: t('timeline.p5'), text: t('timeline.p5.text') },
+].map((p) => ({ ...p, range: `${monthName(p.start, 'long')} – ${monthName(p.end, 'long')}` }));
+
+// Position of the current month on the first year of the ruler.
+const today = (new Date().getMonth() - FIRST_MONTH + 12) % 12;
+---
+
+<section class="timeline" aria-labelledby="timeline-title">
+  <h2 id="timeline-title">{t('timeline.title')}</h2>
+  <p class="meta">{t('timeline.intro')}</p>
+
+  <div class="timeline__chart" style={`--months: ${LENGTH}; --today: ${today};`}>
+    <div class="timeline__ruler" aria-hidden="true">
+      {ruler.map((m) => <span>{m}</span>)}
+    </div>
+    <ol class="timeline__phases">
+      {phases.map((p, i) => (
+        <li class="timeline__phase">
+          <div class="timeline__text">
+            <h3><span class="timeline__num">{i + 1}</span> {p.title}</h3>
+            <p class="timeline__range">{p.range}</p>
+            <p>{p.text}</p>
+          </div>
+          <div class="timeline__track" aria-hidden="true">
+            <span class="timeline__bar" style={`--start: ${p.start}; --end: ${p.end};`}></span>
+          </div>
+        </li>
+      ))}
+    </ol>
+    <span class="timeline__today" aria-hidden="true"><span>{t('timeline.today')}</span></span>
+  </div>
+
+  <p class="meta">
+    {t('timeline.note')} <a href={path(lang, '/study/calendar/')}>{t('timeline.calendar')}</a>
+  </p>
+</section>
+
+<style>
+  .timeline__chart {
+    --gutter: 0rem;
+    position: relative;
+    margin-block: 1rem;
+  }
+  .timeline__ruler {
+    display: none;
+  }
+  .timeline__phases {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.75rem;
+  }
+  .timeline__phase {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 0.85rem 1rem;
+  }
+  .timeline__text h3 {
+    margin: 0;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .timeline__num {
+    display: inline-grid;
+    place-items: center;
+    inline-size: 1.6rem;
+    block-size: 1.6rem;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: var(--color-primary-contrast);
+    font-size: 0.85rem;
+    flex: none;
+  }
+  .timeline__range {
+    color: var(--color-primary);
+    font-weight: 600;
+    margin-block: 0.25rem;
+  }
+  .timeline__text p:last-child {
+    margin-block-end: 0;
+  }
+  .timeline__track {
+    position: relative;
+    block-size: 0.6rem;
+    margin-block-start: 0.6rem;
+    background: var(--color-primary-soft);
+    border-radius: 999px;
+  }
+  .timeline__bar {
+    position: absolute;
+    inset-block: 0;
+    inset-inline-start: calc(var(--start) / var(--months) * 100%);
+    inline-size: calc((var(--end) - var(--start) + 1) / var(--months) * 100%);
+    background: var(--color-primary);
+    border-radius: 999px;
+  }
+  .timeline__today {
+    display: none;
+  }
+
+  /* Wide screens: a Gantt chart with the text on one side and the bars on a shared month ruler. */
+  @media (min-width: 52rem) {
+    .timeline__chart {
+      --gutter: 17rem;
+      margin-block-start: 2.25rem;
+    }
+    .timeline__ruler {
+      display: grid;
+      grid-template-columns: repeat(var(--months), 1fr);
+      margin-inline-start: var(--gutter);
+      font-size: 0.75rem;
+      color: var(--color-muted);
+      text-align: center;
+      border-block-end: 1px solid var(--color-border);
+      padding-block-end: 0.35rem;
+      margin-block-end: 0.5rem;
+    }
+    .timeline__phases {
+      gap: 0.5rem;
+    }
+    .timeline__phase {
+      display: grid;
+      grid-template-columns: var(--gutter) 1fr;
+      align-items: center;
+      background: none;
+      border: none;
+      border-block-end: 1px dashed var(--color-border);
+      border-radius: 0;
+      padding: 0.5rem 0;
+    }
+    .timeline__text {
+      padding-inline-end: 1rem;
+    }
+    .timeline__text p:last-child {
+      font-size: 0.9rem;
+      color: var(--color-muted);
+    }
+    .timeline__track {
+      margin: 0;
+      block-size: 1.1rem;
+      background: none;
+    }
+    .timeline__today {
+      display: block;
+      position: absolute;
+      inset-block: 0;
+      inset-inline-start: calc(var(--gutter) + (var(--today) + 0.5) / var(--months) * (100% - var(--gutter)));
+      border-inline-start: 2px dashed var(--color-accent);
+      pointer-events: none;
+    }
+    .timeline__today span {
+      position: absolute;
+      inset-block-start: -1.4rem;
+      inset-inline-start: 0;
+      translate: -50% 0;
+      white-space: nowrap;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--color-accent);
+      background: var(--color-bg);
+      padding-inline: 0.25rem;
+    }
+    :global([dir='rtl']) .timeline__today span {
+      translate: 50% 0;
+    }
+  }
+</style>
