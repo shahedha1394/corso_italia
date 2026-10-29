@@ -7,10 +7,11 @@ city: brescia
 region: lombardia
 type: public
 website: https://www.unibs.it
+programs_page: https://www.unibs.it/en/courses
 international_page: https://www.unibs.it/en/international/degree-seeking-students/admission
 areas: [engineering, medicine-health, economics-business, law, politics-social, agriculture-veterinary]
 description:
   en: "Officially founded in 1982. A public university with programs in engineering, medicine, economics and law."
   ar: "تأسست رسمياً عام 1982. جامعة حكومية لديها برامج في الهندسة والطب والاقتصاد والقانون."
   fr: "Officiellement fondée en 1982. Une université publique avec des formations en ingénierie, médecine, économie et droit."
-last_checked: 2026-10-26
+last_checked: 2026-10-29

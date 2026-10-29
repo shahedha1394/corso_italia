@@ -7,10 +7,11 @@ city: ferrara
 region: emilia-romagna
 type: public
 website: https://www.unife.it
+programs_page: https://www.unife.it/it/corsi/lauree-e-lauree-magistrali
 international_page: https://www.unife.it/en/come-to-study/enroll/how-to-enroll
 areas: [engineering, architecture-design, computer-science, sciences, medicine-health, economics-business, law, humanities, agriculture-veterinary]
 description:
   en: "Founded in 1391. A public university with 13 departments."
   ar: "تأسست عام 1391. جامعة حكومية فيها 13 قسماً."
   fr: "Fondée en 1391. Une université publique avec 13 départements."
-last_checked: 2026-10-26
+last_checked: 2026-10-29

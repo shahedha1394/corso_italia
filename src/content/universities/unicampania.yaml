@@ -7,9 +7,11 @@ city: caserta
 region: campania
 type: public
 website: https://www.unicampania.it
+programs_page: https://www.unicampania.it/index.php/didattica/offerta-formativa
+international_page: https://international.unicampania.it/index.php/en/international/services-for-foreign-students
 areas: [engineering, architecture-design, sciences, medicine-health, economics-business, law, politics-social, humanities]
 description:
   en: "Established in 1991. A public university with 16 departments in Caserta, Naples, Aversa, Santa Maria Capua Vetere and Capua."
   ar: "تأسست عام 1991. جامعة حكومية فيها 16 قسماً في كازيرتا ونابولي وأفيرسا وسانتا ماريا كابوا فيتيري وكابوا."
   fr: "Créée en 1991. Une université publique avec 16 départements à Caserte, Naples, Aversa, Santa Maria Capua Vetere et Capoue."
-last_checked: 2026-10-26
+last_checked: 2026-10-29

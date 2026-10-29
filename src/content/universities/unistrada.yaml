@@ -7,9 +7,10 @@ city: reggio-calabria
 region: calabria
 type: private
 website: https://www.unistrada.it
+programs_page: https://www.unistrada.it/home/21-corsi-di-laurea
 areas: [humanities, politics-social]
 description:
   en: "Established in 2007. A small non-state university in Reggio Calabria for languages and Italian for foreigners."
   ar: "تأسست عام 2007. جامعة غير حكومية صغيرة في ريدجو كالابريا للغات وتعليم الإيطالية للأجانب."
   fr: "Créée en 2007. Une petite université non étatique à Reggio de Calabre pour les langues et l'italien pour étrangers."
-last_checked: 2026-10-27
+last_checked: 2026-10-29
