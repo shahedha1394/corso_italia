@@ -6,7 +6,7 @@ title:
   ar: "كيف تجدّد تصريح الإقامة"
   fr: "Comment renouveler votre titre de séjour"
 youtube: https://www.youtube.com/watch?v=XXXXXXXXXXX   # the YouTube link, or just the 11-character video ID
-category: papers          # study | papers | life | engpro
+category: papers          # study | papers | life | engpro | stories
 guide: residence-permit   # optional: file name of the guide it explains (how-to-apply, costs, funding,
                           # language-requirements, visa, first-weeks, residence-permit, health-insurance, accommodation)
 published: 2026-11-01     # the day you published it; newest videos come first
@@ -14,3 +14,13 @@ published: 2026-11-01     # the day you published it; newest videos come first
 #   en: "..."
 #   ar: "..."
 #   fr: "..."
+
+# For a student story (category: stories), also fill in:
+# guest:
+#   name: "Ahmad"            # as the guest wants it shown (first name is fine)
+#   country:
+#     en: "Syria"
+#     ar: "سوريا"
+#     fr: "Syrie"
+# university: unipi          # optional: file name in src/content/universities/
+# live: 2026-11-20T18:00:00+01:00   # optional: start of the live stream; shown as "upcoming live" until then

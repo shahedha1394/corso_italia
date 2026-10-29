@@ -30,8 +30,9 @@ const nav = [
   { href: path(lang, '/opportunities/'), label: t('nav.opportunities') },
   { href: path(lang, '/about/'), label: t('nav.about') },
 ];
+nav.splice(3, 0, { href: path(lang, '/stories/'), label: t('nav.stories') });
 // The Videos link appears only once there is at least one video.
-if ((await getVideos()).length > 0) nav.splice(3, 0, { href: path(lang, '/videos/'), label: t('nav.videos') });
+if ((await getVideos()).length > 0) nav.splice(4, 0, { href: path(lang, '/videos/'), label: t('nav.videos') });
 ---
 
 <!doctype html>

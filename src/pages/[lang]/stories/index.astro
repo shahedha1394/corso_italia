@@ -1,0 +1,94 @@
+---
+import { getEntry } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import ChannelCard from '../../../components/ChannelCard.astro';
+import LocalTime from '../../../components/LocalTime.astro';
+import SignupButton from '../../../components/SignupButton.astro';
+import StoryGuest from '../../../components/StoryGuest.astro';
+import VideoEmbed from '../../../components/VideoEmbed.astro';
+import { getStaticLangPaths, useTranslations, type Lang } from '../../../i18n';
+import { forms } from '../../../config/forms';
+import { getStories } from '../../../lib/content';
+
+export const getStaticPaths = getStaticLangPaths;
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+const { upcoming, past } = await getStories();
+// Attach each story's university (for its name and link).
+const withUni = async (list: typeof past) =>
+  Promise.all(list.map(async (v) => ({ v, uni: v.data.university ? await getEntry(v.data.university) : undefined })));
+const upcomingItems = await withUni(upcoming);
+const pastItems = await withUni(past);
+---
+
+<Base lang={lang} title={t('stories.title')} description={t('stories.intro')}>
+  <header class="container page-header">
+    <h1>{t('stories.title')}</h1>
+    <p>{t('stories.intro')}</p>
+  </header>
+
+  {upcomingItems.length > 0 && (
+    <section class="container section">
+      <h2>{t('stories.upcoming')}</h2>
+      <div class="story-grid">
+        {upcomingItems.map(({ v, uni }) => (
+          <article class="story">
+            <p class="badge">{t('stories.liveOn')} <LocalTime date={v.data.live!} lang={lang} /></p>
+            <VideoEmbed id={v.data.youtube} title={v.data.title[lang]} lang={lang} />
+            <h3>{v.data.title[lang]}</h3>
+            <StoryGuest video={v} uni={uni} lang={lang} />
+            {v.data.description && <p>{v.data.description[lang]}</p>}
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <section class="container section">
+    <h2>{t('stories.past')}</h2>
+    {pastItems.length === 0 ? (
+      <p class="card">{t('stories.empty')}</p>
+    ) : (
+      <div class="story-grid">
+        {pastItems.map(({ v, uni }) => (
+          <article class="story">
+            <VideoEmbed id={v.data.youtube} title={v.data.title[lang]} lang={lang} />
+            <h3>{v.data.title[lang]}</h3>
+            <StoryGuest video={v} uni={uni} lang={lang} />
+            {v.data.description && <p>{v.data.description[lang]}</p>}
+          </article>
+        ))}
+      </div>
+    )}
+  </section>
+
+  <section class="container section">
+    <div class="card share-card">
+      <h2>{t('stories.share.title')}</h2>
+      <p>{t('stories.share.text')}</p>
+      <p><SignupButton lang={lang} href={forms.shareStory} label={t('stories.share.cta')} /></p>
+    </div>
+  </section>
+
+  <section class="container section">
+    <ChannelCard lang={lang} />
+  </section>
+</Base>
+
+<style>
+  .story-grid {
+    display: grid;
+    gap: 1.5rem 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr));
+  }
+  .story h3 {
+    margin-block: 0 0.35rem;
+  }
+  .story p {
+    margin-block-start: 0;
+  }
+  .share-card h2 {
+    margin-block-start: 0;
+  }
+</style>

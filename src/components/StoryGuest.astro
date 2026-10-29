@@ -1,0 +1,27 @@
+---
+// "Name · Country · Studies at University" line under a student-story video.
+import type { CollectionEntry } from 'astro:content';
+import { path, useTranslations, type Lang } from '../i18n';
+
+interface Props {
+  video: CollectionEntry<'videos'>;
+  uni?: CollectionEntry<'universities'>;
+  lang: Lang;
+}
+
+const { video, uni, lang } = Astro.props;
+const t = useTranslations(lang);
+const guest = video.data.guest;
+---
+
+{guest && (
+  <p class="meta">
+    <span class="ltr-inline">{guest.name}</span> · {guest.country[lang]}
+    {uni && (
+      <>
+        {' · '}{t('stories.studies')}{' '}
+        <a href={path(lang, `/study/universities/${uni.id}/`)}>{uni.data.name[lang]}</a>
+      </>
+    )}
+  </p>
+)}

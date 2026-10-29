@@ -174,6 +174,11 @@ const videos = defineCollection({
     guide: z.string().regex(/^[a-z0-9-]+$/).optional(),
     published: z.coerce.date(),
     description: bilingual.optional(),
+    // Student stories (category: stories): who is interviewed and where they study.
+    guest: z.object({ name: z.string(), country: bilingual }).optional(),
+    university: reference('universities').optional(),
+    // For a live stream: when it starts (date-time with time zone). Until then it is shown as "upcoming live".
+    live: z.coerce.date().optional(),
   }),
 });
 

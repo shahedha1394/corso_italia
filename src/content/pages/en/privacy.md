@@ -6,7 +6,7 @@ This website does not use tracking cookies and does not ask you for personal dat
 
 **Who is responsible.** Corso Italy is run by Shahed Hammal. For any question about your data, write to [shahedhammal@corsoitaly.com](mailto:shahedhammal@corsoitaly.com).
 
-**Sign-up forms.** The EngPro sign-up forms (and, when it opens, the form for submitting opportunities) are hosted on Google Forms. When you fill one in, your answers are stored by Google and seen only by the Corso Italy team, who use them to organise EngPro and review submissions. We use them because you give your consent when you send the form. We keep the answers for **one year**, then delete them. You can ask us at any time to see or delete your data sooner.
+**Sign-up forms.** The EngPro sign-up forms, the form to share your experience in a student story (and, when it opens, the form for submitting opportunities) are hosted on Google Forms. When you fill one in, your answers are stored by Google and seen only by the Corso Italy team, who use them to organise EngPro, arrange student-story interviews and review submissions. If you take part in a live interview, it is streamed and kept on our YouTube channel and on this site, only with your agreement. We use them because you give your consent when you send the form. We keep the answers for **one year**, then delete them. You can ask us at any time to see or delete your data sooner.
 
 **Visitor counter.** To know how many people use the site and which pages help them most, we count visits with GoatCounter. It does not use cookies and does not collect personal data: we only see totals, such as the number of visits per page, the country and the type of device.
 
