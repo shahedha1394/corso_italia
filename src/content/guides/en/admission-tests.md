@@ -36,6 +36,8 @@ There is **no single entrance exam** for Italian universities. The test you need
 - **Master's degrees** (*laurea magistrale*): usually no entrance exam. The university assesses your file.
 - **Private universities**: their own tests and calendars, often months earlier than public universities.
 
+<a id="imat"></a>
+
 ## 2. Medicine in English at public universities: IMAT
 
 IMAT (International Medical Admissions Test) is the national test for Medicine and Surgery, Dentistry and Veterinary Medicine taught in English at public universities. Italian, EU and non-EU candidates can take it, in Italy or at some authorised centres abroad. The filter semester does not apply to these programs: if you pass, you enrol directly in October.
@@ -58,6 +60,8 @@ IMAT (International Medical Admissions Test) is the national test for Medicine a
 - **2027:** the decree is expected in July or August 2027 and the test at the end of September 2027. These are estimates, not official dates.
 - **English certificate:** not needed to sit the test, but some universities ask for one when you enrol.
 
+<a id="filter-semester"></a>
+
 ## 3. Medicine in Italian at public universities: the filter semester
 
 Since 2025/2026 there is **no entrance test** for medicine, dentistry and veterinary medicine taught in Italian at public universities. Instead, anyone with a secondary school diploma enrols in an open first semester (*semestre filtro*), studies three subjects and takes three national exams. A national ranking then decides who continues. Places are still limited: 18,889 places in medicine for 2026/2027.
@@ -72,6 +76,8 @@ Since 2025/2026 there is **no entrance test** for medicine, dentistry and veteri
 - **Non-EU candidates living abroad** have a separate ranking.
 
 Free official practice: [semestreaperto-medodovet.it](https://www.semestreaperto-medodovet.it/).
+
+<a id="tolc"></a>
 
 ## 4. Most bachelor's programs taught in Italian: TOLC
 
@@ -99,6 +105,8 @@ TOLC (*Test OnLine CISIA*) is the most common test for bachelor's programs at pu
 - Taking the test does **not** enrol you. You must still apply to the university.
 - Book on [testcisia.it](https://testcisia.it/). The 2027 dates were not published yet on 29 October 2026.
 
+<a id="cent-s"></a>
+
 ## 5. Programs taught in English: CEnT-S
 
 Since November 2025, CISIA has replaced the English TOLCs with one test, **CEnT-S**, for English-taught programs in engineering, economics, pharmacy and other sciences.
@@ -108,6 +116,8 @@ Since November 2025, CISIA has replaced the English TOLCs with one test, **CEnT-
 - One attempt per period. From 2026/2027 there are five periods, from November to September. Tests run in the afternoon only.
 - Scores are normalised at the end of each period.
 - You can take it at a university (CEnT@UNI) or from home (CEnT@casa).
+
+<a id="private-medicine"></a>
 
 ## 6. Medicine at private universities
 
@@ -125,6 +135,8 @@ Private universities do not use IMAT or the filter semester. Each one has its ow
 - The first instalment after admission is usually **not refundable** (between €2,500 and €7,500). Compare all your dates before you pay.
 - Other private universities with medicine: LUM (Bari), Link Campus, Università Europea di Roma, Kore (Enna).
 
+<a id="bocconi"></a>
+
 ## 7. Bocconi University (Milan)
 
 - **Accepted tests for bachelor's programs:** the Bocconi online test, the SAT or the ACT. For law programs only, also the LSAT or the Bocconi online test – Law.
@@ -132,6 +144,8 @@ Private universities do not use IMAT or the filter semester. Each one has its ow
 - **Attempts:** up to 4 attempts at the Bocconi test for 2027/2028.
 - **2027/2028 dates for international applicants:** book the online test by 19 January 2027; the winter application round runs from 25 November 2026 to 26 January 2027.
 - Up to 50–55% of places in English-taught programs may be reserved for international applicants.
+
+<a id="masters"></a>
 
 ## 8. Master's degrees
 

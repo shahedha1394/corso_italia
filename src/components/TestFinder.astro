@@ -1,0 +1,172 @@
+---
+// "Which test do I need?" — a small form on the admission tests guide.
+// Every answer is rendered at build time and hidden; the script only shows the one that matches.
+import { useTranslations, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+const results = [
+  { id: 'imat', title: t('finder.result.imat'), text: t('finder.result.imat.text') },
+  { id: 'filter-semester', title: t('finder.result.filter'), text: t('finder.result.filter.text') },
+  { id: 'private-medicine', title: t('finder.result.privmed'), text: t('finder.result.privmed.text') },
+  { id: 'tolc', title: t('finder.result.tolc'), text: t('finder.result.tolc.text') },
+  { id: 'cent-s', title: t('finder.result.cents'), text: t('finder.result.cents.text') },
+  { id: 'bocconi', title: t('finder.result.private'), text: t('finder.result.private.text') },
+  { id: 'masters', title: t('finder.result.masters'), text: t('finder.result.masters.text') },
+] as const;
+
+const questions = [
+  {
+    name: 'level',
+    label: t('finder.level'),
+    options: [
+      { value: 'bachelor', label: t('finder.level.bachelor') },
+      { value: 'master', label: t('finder.level.master') },
+    ],
+  },
+  {
+    name: 'field',
+    label: t('finder.field'),
+    options: [
+      { value: 'medicine', label: t('finder.field.medicine') },
+      { value: 'other', label: t('finder.field.other') },
+    ],
+  },
+  {
+    name: 'language',
+    label: t('finder.language'),
+    options: [
+      { value: 'it', label: t('finder.language.it') },
+      { value: 'en', label: t('finder.language.en') },
+    ],
+  },
+  {
+    name: 'type',
+    label: t('finder.type'),
+    options: [
+      { value: 'public', label: t('finder.type.public') },
+      { value: 'private', label: t('finder.type.private') },
+    ],
+  },
+];
+---
+
+<section class="test-finder" aria-labelledby="test-finder-title">
+  <h2 id="test-finder-title">{t('finder.title')}</h2>
+  <p class="meta">{t('finder.intro')}</p>
+  <form class="test-finder__form">
+    {questions.map((q) => (
+      <fieldset data-question={q.name}>
+        <legend>{q.label}</legend>
+        {q.options.map((o, i) => (
+          <label>
+            <input type="radio" name={q.name} value={o.value} checked={i === 0} />
+            {o.label}
+          </label>
+        ))}
+      </fieldset>
+    ))}
+  </form>
+  <div class="test-finder__results" aria-live="polite">
+    {results.map((r, i) => (
+      <div class="test-finder__result" data-result={r.id} hidden={i !== 1}>
+        <p class="test-finder__label">{t('finder.answer')}</p>
+        <h3>{r.title}</h3>
+        <p>{r.text}</p>
+        <a href={`#${r.id}`}>{t('finder.more')}</a>
+      </div>
+    ))}
+  </div>
+</section>
+
+<script>
+  function pick(level: string, field: string, language: string, type: string): string {
+    if (level === 'master') return 'masters';
+    if (field === 'medicine') {
+      if (type === 'private') return 'private-medicine';
+      return language === 'en' ? 'imat' : 'filter-semester';
+    }
+    if (type === 'private') return 'bocconi';
+    return language === 'en' ? 'cent-s' : 'tolc';
+  }
+
+  for (const finder of document.querySelectorAll<HTMLElement>('.test-finder')) {
+    const form = finder.querySelector<HTMLFormElement>('form');
+    if (!form) continue;
+    const update = () => {
+      const data = new FormData(form);
+      const value = (name: string) => String(data.get(name) ?? '');
+      const level = value('level');
+      // Field, language and university type do not change the answer for master's degrees.
+      for (const name of ['field', 'language', 'type']) {
+        const set = form.querySelector<HTMLFieldSetElement>(`[data-question="${name}"]`);
+        if (set) set.hidden = level === 'master';
+      }
+      const id = pick(level, value('field'), value('language'), value('type'));
+      for (const r of finder.querySelectorAll<HTMLElement>('[data-result]')) {
+        r.hidden = r.dataset.result !== id;
+      }
+    };
+    form.addEventListener('change', update);
+    update();
+  }
+</script>
+
+<style>
+  .test-finder {
+    background: var(--color-primary-soft);
+    border-radius: var(--radius);
+    padding: 1.25rem;
+    margin-block: 1.5rem 2rem;
+  }
+  .test-finder h2 {
+    margin-block-start: 0;
+  }
+  .test-finder__form {
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    margin-block: 1rem;
+  }
+  fieldset {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    background: var(--color-surface);
+    padding: 0.75rem;
+    margin: 0;
+  }
+  fieldset[hidden] {
+    display: none;
+  }
+  legend {
+    font-weight: 600;
+    padding-inline: 0.25rem;
+  }
+  label {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding-block: 0.25rem;
+    cursor: pointer;
+  }
+  .test-finder__result {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-inline-start: 4px solid var(--color-primary);
+    border-radius: var(--radius);
+    padding: 1rem;
+  }
+  .test-finder__result h3 {
+    margin-block: 0.25rem 0.5rem;
+  }
+  .test-finder__label {
+    color: var(--color-muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+</style>
