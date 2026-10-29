@@ -36,6 +36,8 @@ Il n'existe **pas d'examen d'entrée unique** pour les universités italiennes. 
 - **Masters** (*laurea magistrale*) : en général pas d'examen d'entrée. L'université évalue votre dossier.
 - **Universités privées** : leurs propres tests et calendriers, souvent plusieurs mois avant les universités publiques.
 
+<a id="imat"></a>
+
 ## 2. Médecine en anglais dans les universités publiques : IMAT
 
 L'IMAT (International Medical Admissions Test) est le test national pour Medicine and Surgery, Dentistry et Veterinary Medicine enseignés en anglais dans les universités publiques. Les candidats italiens, européens et non européens peuvent le passer, en Italie ou dans certains centres agréés à l'étranger. Le semestre filtre ne concerne pas ces programmes : si vous réussissez, vous vous inscrivez directement en octobre.
@@ -58,6 +60,8 @@ L'IMAT (International Medical Admissions Test) est le test national pour Medicin
 - **2027 :** le décret est attendu en juillet ou août 2027 et le test fin septembre 2027. Ce sont des estimations, pas des dates officielles.
 - **Certificat d'anglais :** pas nécessaire pour passer le test, mais certaines universités le demandent à l'inscription.
 
+<a id="filter-semester"></a>
+
 ## 3. Médecine en italien dans les universités publiques : le semestre filtre
 
 Depuis 2025/2026, il n'y a **plus de test d'entrée** pour la médecine, la dentisterie et la médecine vétérinaire en italien dans les universités publiques. Toute personne titulaire du diplôme de fin d'études secondaires s'inscrit à un premier semestre ouvert (*semestre filtro*), suit trois matières et passe trois examens nationaux. Un classement national décide ensuite qui continue. Les places restent limitées : 18 889 places en médecine pour 2026/2027.
@@ -72,6 +76,8 @@ Depuis 2025/2026, il n'y a **plus de test d'entrée** pour la médecine, la dent
 - **Les candidats non européens résidant à l'étranger** ont un classement séparé.
 
 Entraînement officiel gratuit : [semestreaperto-medodovet.it](https://www.semestreaperto-medodovet.it/).
+
+<a id="tolc"></a>
 
 ## 4. La plupart des licences en italien : TOLC
 
@@ -99,6 +105,8 @@ Le TOLC (*Test OnLine CISIA*) est le test le plus courant pour les licences des 
 - Passer le test **ne vous inscrit pas**. Vous devez aussi postuler auprès de l'université.
 - Réservation sur [testcisia.it](https://testcisia.it/). Les dates 2027 n'étaient pas encore publiées au 29 octobre 2026.
 
+<a id="cent-s"></a>
+
 ## 5. Programmes en anglais : CEnT-S
 
 Depuis novembre 2025, le CISIA a remplacé les English TOLC par un test unique, le **CEnT-S**, pour les programmes enseignés en anglais en ingénierie, économie, pharmacie et autres sciences.
@@ -108,6 +116,8 @@ Depuis novembre 2025, le CISIA a remplacé les English TOLC par un test unique, 
 - Une tentative par période. À partir de 2026/2027, il y a cinq périodes, de novembre à septembre. Le test a lieu l'après-midi uniquement.
 - Les scores sont normalisés à la fin de chaque période.
 - Vous pouvez le passer à l'université (CEnT@UNI) ou depuis chez vous (CEnT@casa).
+
+<a id="private-medicine"></a>
 
 ## 6. Médecine dans les universités privées
 
@@ -125,6 +135,8 @@ Les universités privées n'utilisent ni l'IMAT ni le semestre filtre. Chacune a
 - Le premier versement après l'admission n'est en général **pas remboursable** (entre 2 500 et 7 500 €). Comparez toutes vos dates avant de payer.
 - Autres universités privées avec médecine : LUM (Bari), Link Campus, Università Europea di Roma, Kore (Enna).
 
+<a id="bocconi"></a>
+
 ## 7. Université Bocconi (Milan)
 
 - **Tests acceptés pour les licences :** le test en ligne Bocconi, le SAT ou l'ACT. Pour les programmes de droit uniquement, aussi le LSAT ou le test en ligne Bocconi – Law.
@@ -132,6 +144,8 @@ Les universités privées n'utilisent ni l'IMAT ni le semestre filtre. Chacune a
 - **Tentatives :** jusqu'à 4 tentatives au test Bocconi pour 2027/2028.
 - **Dates 2027/2028 pour les candidats internationaux :** réservez le test en ligne avant le 19 janvier 2027 ; la session de candidature d'hiver va du 25 novembre 2026 au 26 janvier 2027.
 - Jusqu'à 50–55 % des places des programmes en anglais peuvent être réservées aux candidats internationaux.
+
+<a id="masters"></a>
 
 ## 8. Masters
 
