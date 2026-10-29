@@ -144,6 +144,7 @@ export const videoCategories = {
   papers: { en: 'Visa and paperwork', ar: 'التأشيرة والأوراق الرسمية', fr: 'Visa et démarches' },
   life: { en: 'Daily life and vlogs', ar: 'الحياة اليومية والفلوغات', fr: 'Vie quotidienne et vlogs' },
   engpro: { en: 'EngPro and English', ar: 'EngPro والإنجليزية', fr: 'EngPro et anglais' },
+  stories: { en: 'Student stories', ar: 'تجارب الطلاب', fr: "Témoignages d'étudiants" },
 } satisfies Labels;
 
 export const cefrLevels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'] as const;

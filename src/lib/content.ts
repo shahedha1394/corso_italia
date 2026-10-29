@@ -41,6 +41,14 @@ export async function getUpcomingDeadlines(now = new Date()) {
     .sort((a, b) => a.data.date.getTime() - b.data.date.getTime());
 }
 
+/** Student stories: upcoming live interviews (soonest first) and past ones (newest first). */
+export async function getStories(now = new Date()) {
+  const all = await getCollection('videos', ({ data }) => data.category === 'stories');
+  const upcoming = all.filter((v) => v.data.live && v.data.live > now).sort((a, b) => a.data.live!.valueOf() - b.data.live!.valueOf());
+  const past = all.filter((v) => !upcoming.includes(v)).sort((a, b) => b.data.published.valueOf() - a.data.published.valueOf());
+  return { upcoming, past };
+}
+
 /** Videos, newest first. Pass a guide slug to get only the videos linked to that guide. */
 export async function getVideos(guide?: string) {
   const all = await getCollection('videos', ({ data }) => !guide || data.guide === guide);

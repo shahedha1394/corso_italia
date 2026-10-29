@@ -10,6 +10,7 @@ EngPro and the Opportunities board collect sign-ups with three Google Forms. Ans
    - Form 1 → `engproLearner`
    - Form 2 → `engproTeacher`
    - Form 3 → `submitOpportunity`
+   - Form 4 → `shareStory`
 5. Open a pull request with that change. The "Coming soon" label on the site turns into a button.
 
 `*` = required question.
@@ -73,3 +74,23 @@ EngPro and the Opportunities board collect sign-ups with three Google Forms. Ans
 
 ### Publishing a submitted opportunity
 After you approve a submission, copy `docs/examples/opportunity.yaml` to `src/content/opportunities/<short-name>.yaml`, fill it in (including the Arabic text), and open a pull request. Or ask Claude: "publish row N from the opportunities sheet" and paste the row.
+
+---
+
+## Form 4: Share your experience / شارك تجربتك
+
+Title: **Corso Italy – Share your experience in a live conversation / شارك تجربتك في لقاء مباشر**
+
+| # | Question | Type | Options |
+|---|---|---|---|
+| 1 | First name, as you'd like it shown * / الاسم الأول كما تحب أن يظهر * | Short answer | |
+| 2 | Country of origin * / بلدك الأصلي * | Short answer | |
+| 3 | University and city in Italy * / الجامعة والمدينة في إيطاليا * | Short answer | |
+| 4 | Level and field of study * / المرحلة والتخصص * | Short answer | |
+| 5 | Year you arrived in Italy / سنة وصولك إلى إيطاليا | Short answer | |
+| 6 | What would you like to talk about? * / عن ماذا تحب أن تتحدث؟ * | Checkboxes | Applying / التقديم; Visa and permit / التأشيرة والإقامة; Scholarships / المنح; Housing / السكن; Daily life / الحياة اليومية; Other / غير ذلك |
+| 7 | Tell us briefly about your experience * / احكِ لنا باختصار عن تجربتك * | Paragraph | |
+| 8 | Preferred language for the conversation * / اللغة المفضّلة للقاء * | Multiple choice | Arabic / العربية; English / الإنجليزية; French / الفرنسية |
+| 9 | When are you usually available? / متى تكون متاحاً عادةً؟ | Short answer | |
+| 10 | Are you comfortable showing your face on camera? * / هل ترتاح لظهور وجهك أمام الكاميرا؟ * | Multiple choice | Yes / نعم; Audio only / صوت فقط |
+| 11 | I agree that the conversation is streamed live and kept on the Corso Italy YouTube channel and website, and that the team may contact me by email to arrange it * / أوافق على بثّ اللقاء مباشرةً وحفظه على قناة ⁦Corso Italy⁩ في يوتيوب وعلى الموقع، وعلى أن يتواصل معي الفريق بالإيميل لترتيبه * | Checkbox | Yes / نعم |
