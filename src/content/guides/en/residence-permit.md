@@ -13,7 +13,7 @@ sources:
   - label: "Sapienza University of Rome: residence permit for study"
     url: https://www.uniroma1.it/it/pagina/permesso-di-soggiorno-motivi-di-studio
   - label: "Consolidated Immigration Act (Legislative Decree 286/1998), art. 5 (renewal) and art. 39-bis.1 (permit to look for work after studies)"
-    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1998-07-25;286
+    url: https://www.normattiva.it/eli/stato/DECRETO_LEGISLATIVO/1998/07/25/286/CONSOLIDATED
   - label: "Legislative Decree 83/2026 (renewal deadline raised to 90 days, from 22 May 2026)"
     url: https://www.normattiva.it/eli/id/2026/05/20/26G00100/ORIGINAL
   - label: "Portale Immigrazione"

@@ -9,7 +9,7 @@ sources:
   - label: "Circulaire du MUR pour les étudiants internationaux, années universitaires 2026/2027 et 2027/2028 (copie publiée par l'Université de Ferrare)"
     url: https://www.unife.it/it/internazionale/venire/iscriversi/informazioni/circolare_2026-2027_studenti_internazionali.pdf
   - label: "Ministère des Affaires étrangères : le codice fiscale pour les citoyens étrangers"
-    url: https://www.esteri.it/it/servizi-consolari-e-visti/italiani-all-estero/codice_fiscale/
+    url: https://www.esteri.it/it/servizi-opportunita/italiani-all-estero/codice_fiscale/
   - label: "Agenzia delle Entrate"
     url: https://www.agenziaentrate.gov.it
   - label: "Portale Immigrazione"

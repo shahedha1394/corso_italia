@@ -7,11 +7,11 @@ city: viterbo
 region: lazio
 type: public
 website: https://www.unitus.it
-programs_page: https://www.unitus.it/corsi/corsi-di-laurea-triennale/
+programs_page: https://www.unitus.it/en/courses/first-cycle-degree/
 masters_page: https://www.unitus.it/corsi/corsi-di-laurea-magistrale/
 areas: [engineering, architecture-design, sciences, economics-business, law, politics-social, humanities, agriculture-veterinary]
 description:
   en: "Founded in 1979. A public university in Viterbo with 6 departments, also teaching in Civitavecchia and Rieti."
   ar: "تأسست عام 1979. جامعة حكومية في فيتربو فيها 6 أقسام، وتدرّس أيضاً في تشيفيتافيكيا وريِيتي."
   fr: "Fondée en 1979. Une université publique à Viterbe avec 6 départements, qui enseigne aussi à Civitavecchia et Rieti."
-last_checked: 2026-10-26
+last_checked: 2026-10-29

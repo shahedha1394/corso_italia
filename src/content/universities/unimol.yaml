@@ -8,9 +8,10 @@ region: molise
 type: public
 website: https://www.unimol.it
 programs_page: https://www3.unimol.it/didattica/corsi-di-laurea
+international_page: https://www.unimol.it/english/international-applicant/
 areas: [engineering, computer-science, sciences, medicine-health, economics-business, law, politics-social, humanities, agriculture-veterinary]
 description:
   en: "Founded in 1982. A public university with 6 departments in Campobasso, Pesche and Termoli."
   ar: "تأسست عام 1982. جامعة حكومية فيها 6 أقسام في كامبوباسو وبيسكي وترمولي."
   fr: "Fondée en 1982. Une université publique avec 6 départements à Campobasso, Pesche et Termoli."
-last_checked: 2026-10-26
+last_checked: 2026-10-29

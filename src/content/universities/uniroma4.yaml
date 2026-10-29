@@ -8,9 +8,10 @@ region: lazio
 type: public
 website: https://www.uniroma4.it
 programs_page: https://www.uniroma4.it/index.php/didactics/study-courses/?lang=en
+international_page: https://www.uniroma4.it/index.php/international-relations/international-students/?lang=en
 areas: [medicine-health, economics-business]
 description:
   en: "Founded in 1928 as an academy of physical education. A public university specialising in sport and exercise sciences."
   ar: "تأسست عام 1928 كأكاديمية للتربية البدنية. جامعة حكومية متخصصة في علوم الرياضة والتمارين."
   fr: "Fondée en 1928 comme académie d'éducation physique. Une université publique spécialisée dans les sciences du sport et de l'activité physique."
-last_checked: 2026-10-26
+last_checked: 2026-10-29

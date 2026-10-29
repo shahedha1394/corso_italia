@@ -8,9 +8,10 @@ region: abruzzo
 type: public
 website: https://www.unich.it
 programs_page: https://en.unich.it/teaching/academic-programs
+international_page: https://www.unich.it/international/international-students-degree-seekers
 areas: [engineering, architecture-design, sciences, medicine-health, economics-business, law, politics-social, humanities]
 description:
   en: "A public university with 3 schools and 7 further departments, in Chieti and Pescara."
   ar: "جامعة حكومية فيها 3 كليات و7 أقسام أخرى، في كييتي وبيسكارا."
   fr: "Une université publique avec 3 écoles et 7 autres départements, à Chieti et Pescara."
-last_checked: 2026-10-26
+last_checked: 2026-10-29

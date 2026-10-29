@@ -8,9 +8,10 @@ region: toscana
 type: public
 website: https://www.unistrasi.it
 programs_page: https://www.unistrasi.it/public/articoli/3771/Manifesto%20annuale%20degli%20studi%20a.a.%202026_2027.pdf
+international_page: https://dipartimento.unistrasi.it/1/193/534/International_student_enrolment.htm
 areas: [humanities]
 description:
   en: "A small public university with a single humanities department and a few bachelor's and master's programs."
   ar: "جامعة حكومية صغيرة فيها قسم واحد للعلوم الإنسانية، وعدد قليل من برامج البكالوريوس والماجستير."
   fr: "Une petite université publique avec un seul département de lettres et quelques licences et masters."
-last_checked: 2026-10-26
+last_checked: 2026-10-29
