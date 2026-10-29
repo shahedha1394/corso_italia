@@ -197,5 +197,20 @@
   "finder.result.private": "The university's own test",
   "finder.result.private.text": "Private universities set their own tests and dates. For example, Bocconi accepts its online test, the SAT or the ACT.",
   "finder.result.masters": "Usually no test: a file assessment",
-  "finder.result.masters.text": "The university checks your degree, transcript, CV and language certificate. Some economics and management programs also ask for the GMAT or GRE."
+  "finder.result.masters.text": "The university checks your degree, transcript, CV and language certificate. Some economics and management programs also ask for the GMAT or GRE.",
+  "timeline.title": "Your year at a glance",
+  "timeline.intro": "When each stage usually happens if you want to start in September or October. The stages overlap, so start early.",
+  "timeline.today": "Today",
+  "timeline.p1": "Explore and prepare",
+  "timeline.p1.text": "Choose universities and cities, check the language requirements and start preparing for tests.",
+  "timeline.p2": "Apply and take tests",
+  "timeline.p2.text": "Many universities open applications and pre-assessment, and most admission tests take place.",
+  "timeline.p3": "Admission and pre-enrolment",
+  "timeline.p3.text": "Universities send their answers. Prepare your documents and pre-enrol on Universitaly.",
+  "timeline.p4": "Study visa",
+  "timeline.p4.text": "Book your consulate appointment early. Some tests, such as IMAT, are still in September.",
+  "timeline.p5": "Arrive and settle in",
+  "timeline.p5.text": "Enrol at the university and request your residence permit within 8 working days of arriving.",
+  "timeline.note": "These are usual periods, not deadlines. Each university sets its own dates:",
+  "timeline.calendar": "see the deadlines calendar"
 }

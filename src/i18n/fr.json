@@ -197,5 +197,20 @@
   "finder.result.private": "Le test de l'université",
   "finder.result.private.text": "Les universités privées fixent leurs propres tests et dates. Par exemple, Bocconi accepte son test en ligne, le SAT ou l'ACT.",
   "finder.result.masters": "En général pas de test : évaluation du dossier",
-  "finder.result.masters.text": "L'université examine votre diplôme, votre relevé de notes, votre CV et votre certificat de langue. Certains programmes d'économie et de gestion demandent aussi le GMAT ou le GRE."
+  "finder.result.masters.text": "L'université examine votre diplôme, votre relevé de notes, votre CV et votre certificat de langue. Certains programmes d'économie et de gestion demandent aussi le GMAT ou le GRE.",
+  "timeline.title": "Votre année en un coup d'œil",
+  "timeline.intro": "Quand chaque étape a lieu en général si vous voulez commencer en septembre ou en octobre. Les étapes se chevauchent : commencez tôt.",
+  "timeline.today": "Aujourd'hui",
+  "timeline.p1": "Explorer et se préparer",
+  "timeline.p1.text": "Choisissez universités et villes, vérifiez les exigences linguistiques et commencez à préparer les tests.",
+  "timeline.p2": "Postuler et passer les tests",
+  "timeline.p2.text": "Beaucoup d'universités ouvrent les candidatures et la pré-évaluation, et la plupart des tests d'admission ont lieu.",
+  "timeline.p3": "Admission et préinscription",
+  "timeline.p3.text": "Les universités répondent. Préparez vos documents et faites la préinscription sur Universitaly.",
+  "timeline.p4": "Visa d'études",
+  "timeline.p4.text": "Prenez rendez-vous au consulat tôt. Certains tests, comme l'IMAT, ont encore lieu en septembre.",
+  "timeline.p5": "Arriver et s'installer",
+  "timeline.p5.text": "Inscrivez-vous à l'université et demandez votre titre de séjour dans les 8 jours ouvrables suivant votre arrivée.",
+  "timeline.note": "Ce sont des périodes habituelles, pas des dates limites. Chaque université fixe ses propres dates :",
+  "timeline.calendar": "voir le calendrier des échéances"
 }
