@@ -4,7 +4,7 @@ description: "قائمة قصيرة للأيام التي تلي وصولك: ت�
 section: living
 order: 10
 draft: false
-lastChecked: 2026-10-28
+lastChecked: 2026-10-29
 sources:
   - label: "تعميم وزارة الجامعات (⁦MUR⁩) للطلاب الدوليين، العامان الدراسيان 2026/2027 و2027/2028 (نسخة منشورة على موقع جامعة فيرارا)"
     url: https://www.unife.it/it/internazionale/venire/iscriversi/informazioni/circolare_2026-2027_studenti_internazionali.pdf

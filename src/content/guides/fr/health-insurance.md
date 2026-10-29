@@ -4,7 +4,7 @@ description: "Assurance privée ou service national de santé (SSN) : ce dont l
 section: living
 order: 30
 draft: false
-lastChecked: 2026-10-28
+lastChecked: 2026-10-29
 sources:
   - label: "Circulaire du MUR pour les étudiants internationaux, années universitaires 2026/2027 et 2027/2028 (copie publiée par l'Université de Ferrare)"
     url: https://www.unife.it/it/internazionale/venire/iscriversi/informazioni/circolare_2026-2027_studenti_internazionali.pdf

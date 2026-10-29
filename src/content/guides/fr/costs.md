@@ -4,7 +4,7 @@ description: "Frais d'inscription, taxes, la somme à justifier pour le visa et 
 section: study
 order: 15
 draft: false
-lastChecked: 2026-10-27
+lastChecked: 2026-10-29
 sources:
   - label: "Circulaire du MUR pour les étudiants internationaux, année universitaire 2026/2027 (copie publiée par l'Université de Ferrare)"
     url: https://www.unife.it/it/internazionale/venire/iscriversi/informazioni/circolare_2026-2027_studenti_internazionali.pdf

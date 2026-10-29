@@ -4,7 +4,7 @@ description: "Tuition fees, taxes, the money you must show for your visa, and sc
 section: study
 order: 15
 draft: false
-lastChecked: 2026-10-27
+lastChecked: 2026-10-29
 sources:
   - label: "MUR circular for international students, academic year 2026/2027 (copy published by the University of Ferrara)"
     url: https://www.unife.it/it/internazionale/venire/iscriversi/informazioni/circolare_2026-2027_studenti_internazionali.pdf

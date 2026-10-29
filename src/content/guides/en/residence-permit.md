@@ -4,7 +4,7 @@ description: "How to apply for your student residence permit after you arrive, h
 section: living
 order: 20
 draft: false
-lastChecked: 2026-10-28
+lastChecked: 2026-10-29
 sources:
   - label: "MUR circular for international students, academic years 2026/2027 and 2027/2028 (copy published by the University of Ferrara)"
     url: https://www.unife.it/it/internazionale/venire/iscriversi/informazioni/circolare_2026-2027_studenti_internazionali.pdf

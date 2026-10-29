@@ -12,6 +12,14 @@ sources:
     url: https://www.cisiaonline.it
   - label: "CISIA : calendrier et réservation des tests"
     url: https://testcisia.it/
+  - label: "Università di Messina : appel 2026/2027 de médecine en anglais (règles de l'IMAT, DM 1005 du 6 août 2026)"
+    url: https://www.unime.it/sites/default/files/2026-08/Bando%20Medicine%20and%20Surgery%202026-2027_signed%20%28prt%29_0.pdf
+  - label: "MUR : inscription au semestre filtre 2026/2027 et dates des examens"
+    url: https://www.mur.gov.it/it/news/lunedi-13072026/medicina-al-le-iscrizioni-al-semestre-aperto
+  - label: "CISIA : règlement TOLC 2026"
+    url: https://cisiaonline.it/sites/default/files/Regolamenti/Rules-TOLC-2026.pdf
+  - label: "CISIA : structure et périodes du CEnT-S"
+    url: https://cisiaonline.it/cent/cent-s
   - label: "Futura : guide de l'IMAT avec les données 2026 (DM 1005 du 6 août 2026)"
     url: https://futura.study/blog/medicina/imat/
   - label: "Futura : semestre filtre 2026/2027 (DM 941 du 10 juillet 2026)"

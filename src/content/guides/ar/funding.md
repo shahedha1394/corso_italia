@@ -4,7 +4,7 @@ description: "منح DSU الإقليمية، ومنح الحكومة الإيط
 section: study
 order: 20
 draft: false
-lastChecked: 2026-10-28
+lastChecked: 2026-10-29
 sources:
   - label: "Study in Italy (وزارة الخارجية الإيطالية)"
     url: https://studyinitaly.esteri.it

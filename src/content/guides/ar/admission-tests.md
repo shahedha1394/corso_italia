@@ -12,6 +12,14 @@ sources:
     url: https://www.cisiaonline.it
   - label: "⁦CISIA⁩: مواعيد الاختبارات والحجز"
     url: https://testcisia.it/
+  - label: "جامعة ميسينا: إعلان الطب بالإنجليزية 2026/2027 (قواعد ⁦IMAT⁩ من المرسوم ⁦DM 1005⁩ بتاريخ 6 آب/أغسطس 2026)"
+    url: https://www.unime.it/sites/default/files/2026-08/Bando%20Medicine%20and%20Surgery%202026-2027_signed%20%28prt%29_0.pdf
+  - label: "وزارة الجامعات (⁦MUR⁩): التسجيل في الفصل التمهيدي 2026/2027 ومواعيد الامتحانات"
+    url: https://www.mur.gov.it/it/news/lunedi-13072026/medicina-al-le-iscrizioni-al-semestre-aperto
+  - label: "⁦CISIA⁩: قواعد ⁦TOLC⁩ لعام 2026"
+    url: https://cisiaonline.it/sites/default/files/Regolamenti/Rules-TOLC-2026.pdf
+  - label: "⁦CISIA⁩: هيكل ⁦CEnT-S⁩ وفتراته"
+    url: https://cisiaonline.it/cent/cent-s
   - label: "⁦Futura⁩: دليل ⁦IMAT⁩ مع بيانات 2026 (المرسوم ⁦DM 1005⁩ بتاريخ 6 آب/أغسطس 2026)"
     url: https://futura.study/blog/medicina/imat/
   - label: "⁦Futura⁩: الفصل التمهيدي 2026/2027 (المرسوم ⁦DM 941⁩ بتاريخ 10 تموز/يوليو 2026)"
