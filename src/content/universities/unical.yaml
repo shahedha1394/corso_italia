@@ -7,10 +7,12 @@ city: rende
 region: calabria
 type: public
 website: https://www.unical.it
+programs_page: https://www.unical.it/didattica/offerta-formativa/
+masters_page: https://www.unical.it/didattica/offerta-formativa/lauree-magistrali/
 international_page: https://www.unical.it/internazionale/intenational-students/bachelors-degree/
 areas: []
 description:
   en: "Established in 1968. A public university with a single campus at Arcavacata, in Rende."
   ar: "تأسست عام 1968. جامعة حكومية لها حرم واحد في أركافاكاتا، في بلدة ريندي."
   fr: "Créée en 1968. Une université publique avec un seul campus à Arcavacata, à Rende."
-last_checked: 2026-10-26
+last_checked: 2026-10-29

@@ -41,7 +41,7 @@ Use our [university guide](../universities/) to find universities, then open eac
 ## 2. Prepare your documents
 
 - Your **original diploma** (or degree) and, for master's applicants, your **transcript**.
-- A document that shows the value and authenticity of your qualification: a **CIMEA statement** (comparability and verification) or a **Declaration of Value** (*Dichiarazione di valore*) from the Italian embassy. If your country follows the Lisbon Convention, you may be able to download the comparability statement from CIMEA's ARDI service.
+- A document that shows the value and authenticity of your qualification: a **[CIMEA](https://www.cimea.it) statement** (comparability and verification) or a **Declaration of Value** (*Dichiarazione di valore*) from the Italian embassy. If your country follows the Lisbon Convention, you may be able to download the comparability statement from CIMEA's ARDI service.
 - A **Diploma Supplement**, if your university issues one.
 - **Translations** into Italian, where needed (for programs taught in English, the transcript may not need translating).
 - Your **language certificate**.

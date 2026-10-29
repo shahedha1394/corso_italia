@@ -13,7 +13,7 @@ sources:
   - label: "Université Sapienza de Rome : titre de séjour pour études"
     url: https://www.uniroma1.it/it/pagina/permesso-di-soggiorno-motivi-di-studio
   - label: "Texte unique sur l'immigration (décret législatif 286/1998), art. 5 (renouvellement) et art. 39-bis.1 (titre de séjour pour chercher un emploi après les études)"
-    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1998-07-25;286
+    url: https://www.normattiva.it/eli/stato/DECRETO_LEGISLATIVO/1998/07/25/286/CONSOLIDATED
   - label: "Décret législatif 83/2026 (délai de renouvellement porté à 90 jours, depuis le 22 mai 2026)"
     url: https://www.normattiva.it/eli/id/2026/05/20/26G00100/ORIGINAL
   - label: "Portale Immigrazione"

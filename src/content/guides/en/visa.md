@@ -28,11 +28,11 @@ You do **not** need one if you are an EU citizen, or if you already live legally
 
 ## 2. Before you apply
 
-You can apply for the visa only after your **pre-enrolment on Universitaly has been validated** by your university. See [How to apply](../how-to-apply/) for those steps.
+You can apply for the visa only after your **pre-enrolment on [Universitaly](https://www.universitaly.it) has been validated** by your university. See [How to apply](../how-to-apply/) for those steps.
 
 ## 3. Where and when to apply
 
-- **Where:** at the Italian embassy or consulate in the country where you live. Many embassies take appointments through [Prenot@mi](https://prenotami.esteri.it); some use an external visa centre. Your embassy's website says which.
+- **Where:** at the Italian embassy or consulate in the country where you live. Many embassies take appointments through [Prenot@mi](https://prenotami.esteri.it); some use an external visa centre. Your embassy's website says which. You can check which documents you need, and find your embassy, on the official [Visa for Italy](https://vistoperitalia.esteri.it) website.
 - **When:** for 2026/2027, by **30 November 2026**; for 2027/2028, by **31 October 2027**. Your university may set an earlier date.
 - **Apply early.** Appointments can be hard to get, and you need time to collect documents and translations.
 - Since 11 January 2025, your **fingerprints** are taken when you apply for a national visa.
@@ -44,7 +44,7 @@ The exact list depends on the embassy, but you usually need:
 1. **Passport** valid for at least 3 months after the visa ends, with copies of the data pages.
 2. **Visa application form** (type D), filled in and signed, and a recent **passport photo** (ICAO format).
 3. Your **Universitaly pre-enrolment summary**, validated by the university.
-4. Your **school diploma** (or degree, for a master's), with a **CIMEA** statement or a **Dichiarazione di valore**.
+4. Your **school diploma** (or degree, for a master's), with a **[CIMEA](https://www.cimea.it)** statement or a **Dichiarazione di valore**.
 5. Your **language certificate**: Italian B2 for programmes taught in Italian, or a certificate in the teaching language. See [Language requirements](../language-requirements/).
 6. **Proof of money:** for 2026/2027 the national amount is **€10,179.85 per year**, from legal and traceable sources, preferably yours or your family's (for example a bank statement, with a sponsor letter if the account is a parent's).
 7. **Proof of accommodation** in Italy, such as a rental contract, a hotel booking for the first weeks, or a confirmed place in a student residence. An application for a residence alone is not enough.

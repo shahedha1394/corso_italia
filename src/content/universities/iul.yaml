@@ -7,9 +7,10 @@ city: firenze
 region: toscana
 type: online
 website: https://www.iuline.it
+programs_page: https://www.iuline.it/corsi-di-laurea-online/
 areas: [humanities, economics-business, politics-social]
 description:
   en: "An online university based in Florence, with programs in education, psychology, economics, communication and sport sciences."
   ar: "جامعة عبر الإنترنت مقرها فلورنسا، لديها برامج في التربية وعلم النفس والاقتصاد والإعلام وعلوم الرياضة."
   fr: "Une université en ligne basée à Florence, avec des formations en éducation, psychologie, économie, communication et sciences du sport."
-last_checked: 2026-10-28
+last_checked: 2026-10-29

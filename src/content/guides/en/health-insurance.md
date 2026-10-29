@@ -12,8 +12,6 @@ sources:
     url: https://www.unipa.it/strutture/orientamento/studenti-stranieri/copertura-sanitaria/
   - label: "Università Cattolica: health insurance for degree students"
     url: https://international.unicatt.it/ucscinternational-health-services-health-insurance-degree-programmes
-  - label: "University of Florence: health and medical care"
-    url: https://unifi.it/vp-10834-health-and-medical-care.html
   - label: "University of Pisa: health care for international students"
     url: https://www.unipi.it/ateneo/rapporti-internazionali/info-e-servizi-di-accoglienza/ingresso-e-soggiorno-cittadini-extra-ue/sanita
   - label: "Ministry of Health"

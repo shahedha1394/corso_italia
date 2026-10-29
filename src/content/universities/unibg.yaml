@@ -9,9 +9,10 @@ type: public
 website: https://www.unibg.it
 programs_page: https://discover.unibg.it/bachelor
 masters_page: https://discover.unibg.it/master
+international_page: https://en.unibg.it/node/382
 areas: [engineering, economics-business, law, politics-social, humanities]
 description:
   en: "Founded in 1968 as an institute of foreign languages, and a state university since 1992. Its campus is spread across the city of Bergamo."
   ar: "تأسست عام 1968 كمعهد للغات الأجنبية، وأصبحت جامعة حكومية عام 1992. حرمها موزّع في أنحاء مدينة بيرغامو."
   fr: "Fondée en 1968 comme institut de langues étrangères, et université d'État depuis 1992. Son campus est réparti dans la ville de Bergame."
-last_checked: 2026-10-26
+last_checked: 2026-10-29

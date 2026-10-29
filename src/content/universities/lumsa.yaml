@@ -7,10 +7,11 @@ city: roma
 region: lazio
 type: private
 website: https://lumsa.it
+programs_page: https://lumsa.it/it/corsi
 international_page: https://lumsa.it/en/10-steps-enrollment-masters-degree-programmes
 areas: [economics-business, law, politics-social, humanities]
 description:
   en: "Established in 1939. A non-state university in Rome, with a site in Palermo."
   ar: "تأسست عام 1939. جامعة غير حكومية في روما، ولها فرع في باليرمو."
   fr: "Créée en 1939. Une université non étatique à Rome, avec un site à Palerme."
-last_checked: 2026-10-27
+last_checked: 2026-10-29

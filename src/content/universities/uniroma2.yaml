@@ -7,10 +7,12 @@ city: roma
 region: lazio
 type: public
 website: https://web.uniroma2.it
-international_page: https://web-2022.uniroma2.it/en/percorso/admissions/sezione/how_to_apply
+programs_page: https://web.uniroma2.it/it/percorso/offerta_formativa
+masters_page: https://web.uniroma2.it/it/percorso/offerta_formativa/sezione/corsi_di_laurea_magistrale
+international_page: https://web.uniroma2.it/en/percorso/admissions
 areas: [engineering, sciences, medicine-health, economics-business, law, humanities]
 description:
   en: "Established in 1982. A public university in Rome organised in 6 schools."
   ar: "تأسست عام 1982. جامعة حكومية في روما مقسّمة إلى 6 كليات."
   fr: "Créée en 1982. Une université publique à Rome organisée en 6 écoles."
-last_checked: 2026-10-26
+last_checked: 2026-10-29

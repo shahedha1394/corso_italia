@@ -7,10 +7,11 @@ city: casamassima
 region: puglia
 type: private
 website: https://www.lum.it
+programs_page: https://www.lum.it/en/departments/
 international_page: https://www.lum.it/en/enrolment/
 areas: [medicine-health, economics-business, law, engineering]
 description:
   en: "Founded in 1995. A non-state university near Bari with programs in medicine, economics, law and engineering."
   ar: "تأسست عام 1995. جامعة غير حكومية قرب باري لديها برامج في الطب والاقتصاد والقانون والهندسة."
   fr: "Fondée en 1995. Une université non étatique près de Bari, avec des formations en médecine, en économie, en droit et en ingénierie."
-last_checked: 2026-10-27
+last_checked: 2026-10-29

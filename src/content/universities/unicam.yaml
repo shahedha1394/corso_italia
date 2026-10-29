@@ -7,10 +7,11 @@ city: camerino
 region: marche
 type: public
 website: https://www.unicam.it
+programs_page: https://www.unicam.it/en/offerta-formativa-en
 international_page: https://www.unicam.it/international-student/study-at-unicam/admissions
 areas: [architecture-design, computer-science, sciences, medicine-health, law, agriculture-veterinary]
 description:
   en: "Re-founded in 1727. A public university in Camerino, with sites in Ascoli Piceno, Matelica and San Benedetto del Tronto."
   ar: "أُعيد تأسيسها عام 1727. جامعة حكومية في كاميرينو، ولها مواقع في أسكولي بيتشينو وماتيليكا وسان بينيديتو ديل ترونتو."
   fr: "Refondée en 1727. Une université publique à Camerino, avec des sites à Ascoli Piceno, Matelica et San Benedetto del Tronto."
-last_checked: 2026-10-26
+last_checked: 2026-10-29

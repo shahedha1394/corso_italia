@@ -8,9 +8,10 @@ region: basilicata
 type: public
 website: https://portale.unibas.it
 programs_page: https://portale.unibas.it/site/en/home/study-at-unibas/articolo3923.html
+international_page: https://internazionale.unibas.it/site/home/discover-university/info-package---what-you-need-to-know.html
 areas: [engineering, architecture-design, computer-science, sciences, economics-business, humanities, agriculture-veterinary]
 description:
   en: "A public university in Potenza, with architecture taught in Matera."
   ar: "جامعة حكومية في بوتنزا، وتُدرَّس العمارة فيها في ماتيرا."
   fr: "Une université publique basée à Potenza ; l'architecture est enseignée à Matera."
-last_checked: 2026-10-26
+last_checked: 2026-10-29

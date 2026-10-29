@@ -7,9 +7,11 @@ city: catanzaro
 region: calabria
 type: public
 website: https://web.unicz.it
+programs_page: https://web.unicz.it/it/page/offerta-formativa
+international_page: https://web.unicz.it/it/news/130624/corsi-di-studio-e-numero-di-posti-riservati-studenti-extra-ue
 areas: [medicine-health, economics-business, law, politics-social]
 description:
   en: "Established in 1997. A public university with 4 departments, including medicine and health, on the Germaneto campus in Catanzaro."
   ar: "تأسست عام 1997. جامعة حكومية فيها 4 أقسام، منها الطب والصحة، في حرم جيرمانيتو في كاتانزارو."
   fr: "Créée en 1997. Une université publique avec 4 départements, dont médecine et santé, sur le campus de Germaneto à Catanzaro."
-last_checked: 2026-10-26
+last_checked: 2026-10-29

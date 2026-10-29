@@ -13,7 +13,7 @@ sources:
   - label: "جامعة سابينزا في روما: تصريح الإقامة للدراسة"
     url: https://www.uniroma1.it/it/pagina/permesso-di-soggiorno-motivi-di-studio
   - label: "قانون الهجرة الموحّد (المرسوم التشريعي 286/1998)، المادة 5 (التجديد) والمادة 39 مكرر 1 (تصريح البحث عن عمل بعد الدراسة)"
-    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1998-07-25;286
+    url: https://www.normattiva.it/eli/stato/DECRETO_LEGISLATIVO/1998/07/25/286/CONSOLIDATED
   - label: "المرسوم التشريعي 83/2026 (رفع مهلة التجديد إلى 90 يوماً، منذ 22 أيار/مايو 2026)"
     url: https://www.normattiva.it/eli/id/2026/05/20/26G00100/ORIGINAL
   - label: "Portale Immigrazione"

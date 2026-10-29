@@ -7,10 +7,12 @@ city: napoli
 region: campania
 type: public
 website: https://www.uniparthenope.it
+programs_page: https://orienta.uniparthenope.it/laurea-triennale/
+masters_page: https://orienta.uniparthenope.it/laurea-magistrale/
 international_page: https://international.uniparthenope.it/how-to-enrol/
 areas: [engineering, sciences, economics-business, law]
 description:
   en: "Founded in 1919 as a naval institute. A public university in Naples with programs in engineering, sciences, economics, law and sport sciences."
   ar: "تأسست عام 1919 كمعهد بحري. جامعة حكومية في نابولي لديها برامج في الهندسة والعلوم والاقتصاد والقانون وعلوم الرياضة."
   fr: "Fondée en 1919 comme institut naval. Une université publique à Naples avec des formations en ingénierie, sciences, économie, droit et sciences du sport."
-last_checked: 2026-10-26
+last_checked: 2026-10-29

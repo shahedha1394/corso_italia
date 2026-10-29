@@ -7,10 +7,11 @@ city: vercelli
 region: piemonte
 type: public
 website: https://www.uniupo.it
+programs_page: https://www.uniupo.it/en/courses
 international_page: https://uniupo.it/en/international/degree-seeking
 areas: [computer-science, sciences, medicine-health, economics-business, politics-social, humanities]
 description:
   en: "Founded in 1998. A public university with 8 departments and a School of Medicine, in Vercelli, Novara and Alessandria."
   ar: "تأسست عام 1998. جامعة حكومية فيها 8 أقسام وكلية للطب، في فيرتشيلي ونوفارا وأليساندريا."
   fr: "Fondée en 1998. Une université publique avec 8 départements et une école de médecine, à Verceil, Novare et Alexandrie."
-last_checked: 2026-10-26
+last_checked: 2026-10-29

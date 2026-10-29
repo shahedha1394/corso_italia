@@ -9,9 +9,10 @@ type: public
 website: https://www.uniss.it
 programs_page: https://www.uniss.it/it/didattica/offerta-formativa/lauree-triennali-e-ciclo-unico
 masters_page: https://www.uniss.it/it/study/our-study-programmes/masters-degree
+international_page: https://www.uniss.it/it/didattica/servizi-agli-studenti/guide-studenti/immatricolazione-studenti-non-comunitari
 areas: [engineering, architecture-design, sciences, medicine-health, economics-business, law, politics-social, humanities, agriculture-veterinary]
 description:
   en: "Founded in 1558. A public university with 10 departments in Sassari, and sites in Alghero, Olbia, Nuoro and Oristano."
   ar: "تأسست عام 1558. جامعة حكومية فيها 10 أقسام في ساساري، ولها مواقع في ألغيرو وأولبيا ونوورو وأوريستانو."
   fr: "Fondée en 1558. Une université publique avec 10 départements à Sassari, et des sites à Alghero, Olbia, Nuoro et Oristano."
-last_checked: 2026-10-26
+last_checked: 2026-10-29

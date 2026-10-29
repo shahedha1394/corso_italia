@@ -12,8 +12,6 @@ sources:
     url: https://www.unipa.it/strutture/orientamento/studenti-stranieri/copertura-sanitaria/
   - label: "الجامعة الكاثوليكية: التأمين الصحي لطلاب الشهادات"
     url: https://international.unicatt.it/ucscinternational-health-services-health-insurance-degree-programmes
-  - label: "جامعة فلورنسا: الصحة والرعاية الطبية"
-    url: https://unifi.it/vp-10834-health-and-medical-care.html
   - label: "جامعة بيزا: الرعاية الصحية للطلاب الدوليين"
     url: https://www.unipi.it/ateneo/rapporti-internazionali/info-e-servizi-di-accoglienza/ingresso-e-soggiorno-cittadini-extra-ue/sanita
   - label: "وزارة الصحة الإيطالية"

@@ -7,10 +7,12 @@ city: napoli
 region: campania
 type: public
 website: https://www.unior.it
-masters_page: https://www.unior.it/sites/default/files/2026-05/List%20of%20the%20Master%20Degree%20Courses.pdf
+programs_page: https://www.unior.it/en/study-lorientale/teaching-and-learning/offerta-formativa/bachelors-degrees
+masters_page: https://www.unior.it/en/study-us/teaching-and-learning/offerta-formativa/second-cycle-degree
+international_page: https://www.unior.it/en/study-lorientale/teaching-and-learning/immatricolarsi-e-iscriversi/foreign-students
 areas: [humanities, politics-social]
 description:
   en: "Its origins go back to a college founded in Naples in 1732. A public university for languages, cultures and international studies."
   ar: "تعود أصولها إلى كلية تأسست في نابولي عام 1732. جامعة حكومية للغات والثقافات والدراسات الدولية."
   fr: "Ses origines remontent à un collège fondé à Naples en 1732. Une université publique pour les langues, les cultures et les études internationales."
-last_checked: 2026-10-26
+last_checked: 2026-10-29

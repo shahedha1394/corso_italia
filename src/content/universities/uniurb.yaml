@@ -7,10 +7,12 @@ city: urbino
 region: marche
 type: public
 website: https://www.uniurb.it
-masters_page: https://www.uniurb.it/international/regular-students/academic-programs/masters
+programs_page: https://www.uniurb.it/offertaformativa
+masters_page: https://www.uniurb.it/studiaconnoi/futuri-studenti/corsi-di-studio/lauree-magistrali-biennali
+international_page: https://www.uniurb.it/international/regular-students/enrolment/non-eu-citizens-living-abroad
 areas: [sciences, economics-business, law, politics-social, humanities]
 description:
   en: "Established in 1506. A public university with 6 departments in Urbino, and an engineering program in Pesaro."
   ar: "تأسست عام 1506. جامعة حكومية فيها 6 أقسام في أوربينو، ولها برنامج هندسة في بيزارو."
   fr: "Créée en 1506. Une université publique avec 6 départements à Urbino, et une formation en ingénierie à Pesaro."
-last_checked: 2026-10-26
+last_checked: 2026-10-29
