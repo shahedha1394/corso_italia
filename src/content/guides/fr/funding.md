@@ -4,7 +4,7 @@ description: "Bourses régionales DSU, bourses du gouvernement italien, exonéra
 section: study
 order: 20
 draft: false
-lastChecked: 2026-10-28
+lastChecked: 2026-10-29
 sources:
   - label: "Study in Italy (ministère des Affaires étrangères)"
     url: https://studyinitaly.esteri.it

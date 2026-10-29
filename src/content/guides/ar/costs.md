@@ -4,7 +4,7 @@ description: "الرسوم الدراسية والضرائب، والمبلغ ا
 section: study
 order: 15
 draft: false
-lastChecked: 2026-10-27
+lastChecked: 2026-10-29
 sources:
   - label: "تعميم وزارة الجامعات (⁦MUR⁩) للطلاب الدوليين، العام الدراسي 2026/2027 (نسخة منشورة على موقع جامعة فيرارا)"
     url: https://www.unife.it/it/internazionale/venire/iscriversi/informazioni/circolare_2026-2027_studenti_internazionali.pdf

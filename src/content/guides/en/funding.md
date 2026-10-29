@@ -4,7 +4,7 @@ description: "Regional DSU scholarships, Italian government scholarships, univer
 section: study
 order: 20
 draft: false
-lastChecked: 2026-10-28
+lastChecked: 2026-10-29
 sources:
   - label: "Study in Italy (Ministry of Foreign Affairs)"
     url: https://studyinitaly.esteri.it
