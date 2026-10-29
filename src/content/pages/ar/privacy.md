@@ -12,8 +12,7 @@ title: "الخصوصية"
 
 **خدمات ترى عنوان ⁦IP⁩ الخاص بك.** مثل أي موقع، بعض الخدمات ترى عنوان ⁦IP⁩ عند تحميل الصفحة:
 
-- الموقع مستضاف على **⁦GitHub Pages⁩**، التي تحتفظ بسجلّات الخادم ([بيان الخصوصية لدى ⁦GitHub⁩](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)).
-- الخطوط تُحمَّل من **⁦Google Fonts⁩**.
+- الموقع وخطوطه مستضافة على **⁦GitHub Pages⁩**، التي تحتفظ بسجلّات الخادم ([بيان الخصوصية لدى ⁦GitHub⁩](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)).
 - الصور المصغّرة للفيديوهات تُحمَّل من **خادم الصور في يوتيوب** (⁦i.ytimg.com⁩). أما مشغّل يوتيوب نفسه (⁦youtube-nocookie.com⁩) فلا يُحمَّل إلا عندما تضغط على تشغيل، ومن تلك اللحظة تنطبق سياسة الخصوصية الخاصة بيوتيوب.
 
 **حقوقك.** يمكنك أن تطلب منا الاطلاع على بياناتك أو تصحيحها أو حذفها. وإذا رأيت أننا لم نحترم حقوقك، فيمكنك تقديم شكوى إلى هيئة حماية البيانات الإيطالية، [⁦Garante per la protezione dei dati personali⁩](https://www.garanteprivacy.it).

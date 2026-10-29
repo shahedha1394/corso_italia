@@ -26,6 +26,7 @@ A free website in English, Arabic and French helping Arab students study and liv
 - Adding a video: copy `docs/examples/video.yaml` into `src/content/videos/`. It shows on the Videos page, on the home page if it is the newest, and at the top of its guide if `guide` is set. The Videos link in the menu appears once there is one video.
 - Adding a deadline to the calendar: copy `docs/examples/deadline.yaml` into `src/content/deadlines/`. Only dates checked on the official page; past deadlines hide themselves.
 - Sign-up form links live in `src/config/forms.ts`. Answers stay in Google Forms/Sheets and are never copied into the repo.
+- Fonts are self-hosted: `scripts/fetch-fonts.mjs` downloads them into `public/fonts/` at build time (not committed). Do not link Google Fonts or other font CDNs directly.
 - Links inside templates use `path(lang, '/study/')` from `src/i18n` so the GitHub Pages base path is respected.
 
 ## Content rules

@@ -12,8 +12,7 @@ Ce site n'utilise pas de cookies de suivi et ne vous demande pas de données per
 
 **Services qui reçoivent votre adresse IP.** Comme pour tout site web, certains services voient votre adresse IP lors du chargement d'une page :
 
-- Le site est hébergé sur **GitHub Pages**, qui conserve des journaux de serveur ([déclaration de confidentialité de GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)).
-- Les polices sont chargées depuis **Google Fonts**.
+- Le site et ses polices sont hébergés sur **GitHub Pages**, qui conserve des journaux de serveur ([déclaration de confidentialité de GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)).
 - Les miniatures des vidéos sont chargées depuis **le serveur d'images de YouTube** (i.ytimg.com). Le lecteur YouTube lui-même (youtube-nocookie.com) ne se charge que lorsque vous appuyez sur lecture, et la politique de confidentialité de YouTube s'applique alors.
 
 **Vos droits.** Vous pouvez nous demander de consulter, de corriger ou de supprimer vos données. Si vous estimez que nous n'avons pas respecté vos droits, vous pouvez adresser une réclamation à l'autorité italienne de protection des données, le [Garante per la protezione dei dati personali](https://www.garanteprivacy.it).

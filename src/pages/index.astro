@@ -36,12 +36,7 @@ const ogImage = new URL(`${base}/og-image.jpg`, Astro.site).href;
     <link rel="alternate" hreflang="x-default" href={canonical} />
     <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
     <link rel="apple-touch-icon" href={`${base}/apple-touch-icon.png`} />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+Arabic:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href={`${base}/fonts/fonts.css`} />
   </head>
   <body>
     <main class="container chooser">
