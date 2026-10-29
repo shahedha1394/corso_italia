@@ -6,9 +6,10 @@ title:
   ar: "كيف تجدّد تصريح الإقامة"
   fr: "Comment renouveler votre titre de séjour"
 youtube: https://www.youtube.com/watch?v=XXXXXXXXXXX   # the YouTube link, or just the 11-character video ID
-category: papers          # study | papers | life | engpro | stories
+category: papers          # study | papers | life | engpro | stories | about
 guide: residence-permit   # optional: file name of the guide it explains (how-to-apply, costs, funding,
                           # language-requirements, visa, first-weeks, residence-permit, health-insurance, accommodation)
+# page: about             # optional: also show it on a simple page (about, faq...)
 published: 2026-11-01     # the day you published it; newest videos come first
 # description:            # optional, one or two sentences
 #   en: "..."

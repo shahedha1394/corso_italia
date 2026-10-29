@@ -172,6 +172,8 @@ const videos = defineCollection({
     category: z.enum(keysOf(videoCategories)),
     // Optional: the guide this video explains, by its file name, e.g. residence-permit
     guide: z.string().regex(/^[a-z0-9-]+$/).optional(),
+    // Optional: a simple page (src/content/pages) to show it on, by its file name, e.g. about
+    page: z.string().regex(/^[a-z0-9-]+$/).optional(),
     published: z.coerce.date(),
     description: bilingual.optional(),
     // Student stories (category: stories): who is interviewed and where they study.

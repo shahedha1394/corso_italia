@@ -145,6 +145,7 @@ export const videoCategories = {
   life: { en: 'Daily life and vlogs', ar: 'الحياة اليومية والفلوغات', fr: 'Vie quotidienne et vlogs' },
   engpro: { en: 'EngPro and English', ar: 'EngPro والإنجليزية', fr: 'EngPro et anglais' },
   stories: { en: 'Student stories', ar: 'تجارب الطلاب', fr: "Témoignages d'étudiants" },
+  about: { en: 'About Corso Italy', ar: 'عن Corso Italy', fr: 'À propos de Corso Italy' },
 } satisfies Labels;
 
 export const cefrLevels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'] as const;

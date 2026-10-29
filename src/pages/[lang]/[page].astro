@@ -1,7 +1,8 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
-import { splitId } from '../../lib/content';
+import VideoEmbed from '../../components/VideoEmbed.astro';
+import { getVideos, splitId } from '../../lib/content';
 
 export async function getStaticPaths() {
   const pages = await getCollection('pages');
@@ -12,7 +13,8 @@ export async function getStaticPaths() {
 }
 
 const { page } = Astro.props;
-const { lang } = splitId(page.id);
+const { lang, slug } = splitId(page.id);
+const videos = (await getVideos()).filter((v) => v.data.page === slug);
 const { Content } = await render(page);
 ---
 
@@ -21,6 +23,8 @@ const { Content } = await render(page);
     <header class="page-header">
       <h1>{page.data.title}</h1>
     </header>
+    {videos.map((v) => <VideoEmbed id={v.data.youtube} title={v.data.title[lang]} lang={lang} />)}
+
     <Content />
   </article>
 </Base>
