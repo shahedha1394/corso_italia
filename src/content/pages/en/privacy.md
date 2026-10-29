@@ -12,8 +12,7 @@ This website does not use tracking cookies and does not ask you for personal dat
 
 **Services that receive your IP address.** Like any website, some services see your IP address when a page loads:
 
-- The site is hosted on **GitHub Pages**, which keeps server logs ([GitHub's privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)).
-- The fonts are loaded from **Google Fonts**.
+- The site and its fonts are hosted on **GitHub Pages**, which keeps server logs ([GitHub's privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)).
 - Video thumbnails are loaded from **YouTube's image server** (i.ytimg.com). The YouTube player itself (youtube-nocookie.com) loads only when you press play, and from then on YouTube's own privacy policy applies.
 
 **Your rights.** You can ask us to see, correct or delete your data. If you think we have not respected your rights, you can complain to the Italian data protection authority, the [Garante per la protezione dei dati personali](https://www.garanteprivacy.it).
