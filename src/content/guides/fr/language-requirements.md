@@ -23,7 +23,7 @@ Cette page présente les **règles générales** appliquées dans la plupart des
 ## 1. Formations enseignées en anglais
 
 - **Niveau habituel : B2.** La plupart des universités demandent au moins un niveau B2 en anglais. Quelques formations acceptent le B1, et certains masters très sélectifs demandent le C1.
-- **Certificats courants :** IELTS Academic, TOEFL iBT, Cambridge English (B2 First, C1 Advanced) et PTE Academic. À titre indicatif, les universités demandent en général un IELTS entre 5,5 et 6,5, ou un TOEFL iBT entre 72 et 94 environ.
+- **Certificats courants :** IELTS Academic, TOEFL iBT, Cambridge English (B2 First, C1 Advanced) et PTE Academic. À titre indicatif, les exigences vont d'environ 5,0 à 6,5 à l'IELTS, ou d'environ 59 à 94 au TOEFL iBT, et sont en général plus élevées pour les masters.
 - **Duolingo English Test :** accepté seulement par certaines universités. D'autres indiquent clairement qu'elles ne l'acceptent pas.
 - **Dispenses courantes :** être de langue maternelle anglaise ou citoyen d'un pays anglophone, ou avoir obtenu un diplôme précédent entièrement enseigné en anglais. Certaines universités acceptent une lettre de votre université attestant que vos études étaient en anglais ; d'autres non.
 - **Sans certificat :** certaines universités évaluent votre anglais avec leur propre test ou lors d'un entretien.

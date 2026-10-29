@@ -12,8 +12,10 @@ sources:
     url: https://www.unipi.it/ateneo/rapporti-internazionali/info-e-servizi-di-accoglienza/ingresso-e-soggiorno-cittadini-extra-ue/permesso-per-studio/
   - label: "Sapienza University of Rome: residence permit for study"
     url: https://www.uniroma1.it/it/pagina/permesso-di-soggiorno-motivi-di-studio
-  - label: "Consolidated Immigration Act, art. 39-bis.1 (permit to look for work after studies)"
-    url: https://brocardi.it/testo-unico-immigrazione/titolo-v/capo-ii/art39bis1.html
+  - label: "Consolidated Immigration Act (Legislative Decree 286/1998), art. 5 (renewal) and art. 39-bis.1 (permit to look for work after studies)"
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1998-07-25;286
+  - label: "Legislative Decree 83/2026 (renewal deadline raised to 90 days, from 22 May 2026)"
+    url: https://www.normattiva.it/eli/id/2026/05/20/26G00100/ORIGINAL
   - label: "Portale Immigrazione"
     url: https://www.portaleimmigrazione.it
 ---
@@ -45,7 +47,7 @@ You will get a message, or see on the website, when the permit is ready. Bring y
 
 ## 5. Renewal
 
-- Apply **at least 60 days before your permit expires** (some universities advise 90 days), again through the post office.
+- Apply **at least 90 days before your permit expires** (the legal deadline since 22 May 2026; some older documents still say 60 days), again through the post office.
 - You need proof of enrolment and of exams passed: **at least one exam** in your first year and **at least two** in later years. One exam may be enough for serious, documented health reasons or force majeure.
 - You can renew for at most **three years beyond the normal length** of your programme.
 - If your new permit is not ready when the old one expires, your renewal receipt lets you stay legally.
@@ -53,10 +55,11 @@ You will get a message, or see on the website, when the permit is ready. Bring y
 ## 6. Working and travelling
 
 - With a study permit you may work up to **20 hours per week**, up to **1,040 hours per year**.
-- To travel to other Schengen countries you need a **valid permit**, not just a receipt. Before travelling with only a receipt, ask your university's international office or the border police.
+- To travel to other Schengen countries you need a **valid permit**, not just a receipt.
+- With only a receipt, you can usually travel to your home country and back on **direct flights only** (no stop in another Schengen country), and only if you also have your valid multi-entry visa (first permit) or your expired permit (renewal). Ask your university's international office or the border police before you travel.
 
 ## 7. After graduation
 
-If you graduate in Italy (bachelor's, master's, PhD and some other diplomas), you can ask for a permit to **look for work or start a business** when your study permit expires. It lasts **9 to 12 months**, and you must register with the employment services (*Centro per l'Impiego*). If you find a job, you can ask to convert it into a work permit, if you meet the conditions.
+If you graduate in Italy (bachelor's, master's, PhD and some other diplomas), you can ask for a permit to **look for work or start a business** when your study permit expires. It lasts **9 to 12 months**. You need enough income and health insurance, and you must declare that you are available for work at the employment services (*Centro per l'Impiego*). If you find a job, you can ask to convert it into a work permit, if you meet the conditions.
 
 See also the [study visa guide](../../study/visa/).

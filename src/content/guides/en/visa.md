@@ -10,7 +10,7 @@ sources:
     url: https://www.unife.it/it/internazionale/venire/iscriversi/informazioni/circolare_2026-2027_studenti_internazionali.pdf
   - label: "Visa for Italy (Ministry of Foreign Affairs)"
     url: https://vistoperitalia.esteri.it
-  - label: "Italian Embassy in Minsk: documents for a type D study visa (example)"
+  - label: "Italian Embassy in Minsk: documents for a type D study visa (2025/2026 example; amounts and dates have changed)"
     url: https://ambminsk.esteri.it/wp-content/uploads/2026/01/Lista-documenti-visto-D-Studio_ITA.pdf
   - label: "Italian Embassy in Maputo: study visa for university enrolment (example)"
     url: https://ambmaputo.esteri.it/wp-content/uploads/2026/06/STUDIO-IMMATRICOLAZIONE-UNIVERSITA.pdf
@@ -56,9 +56,9 @@ Some embassies ask for two copies of every document. Read your embassy's list ca
 
 ## 5. After you get the visa
 
-- The visa is usually valid for **365 days with multiple entries**.
+- The visa is usually valid for **365 days with multiple entries**. If you must come to Italy for an in-person entrance exam or language test, you first get a visa valid for **100 days**.
 - Within **8 working days** of arriving in Italy, apply for your residence permit. See the [residence permit guide](../../living/residence-permit/).
-- Complete your enrolment at the university. If you are not enrolled on Universitaly by **31 January** of the academic year, your visa can be revoked.
+- Complete your enrolment at the university. If you are not enrolled on Universitaly by **31 January** of the academic year, your visa will be revoked and the Questura informed.
 
 ## 6. Tips
 

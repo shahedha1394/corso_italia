@@ -71,4 +71,4 @@ Lisez le [guide du visa d'études](../visa/) pour la liste complète.
 
 - Dans les **8 jours ouvrables** qui suivent votre arrivée, demandez votre titre de séjour pour études. Voir le [guide du titre de séjour](../../living/residence-permit/).
 - Finalisez votre **inscription** à l'université. Les frais universitaires se paient en général avant la fin de l'inscription, qui a lieu après l'obtention du visa.
-- Les étudiants qui ne sont pas inscrits sur Universitaly au **31 janvier** de l'année universitaire peuvent voir leur visa révoqué.
+- Les étudiants qui ne sont pas inscrits sur Universitaly au **31 janvier** de l'année universitaire voient leur visa révoqué, et la Questura en est informée.

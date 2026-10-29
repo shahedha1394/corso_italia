@@ -12,7 +12,7 @@ Yes, it is free, and no, it is not an agency. Corso Italy is a volunteer project
 
 ### Is the information official?
 
-We take every fact from official sources (the Ministry of University and Research, embassies and universities), and each guide shows its sources and the date we last checked it. Rules change often, so always confirm with your university or embassy before you act.
+We take our facts mainly from official sources (the Ministry of University and Research, embassies and universities), and each guide shows its sources and the date we last checked it. Rules change often, so always confirm with your university or embassy before you act.
 
 ## Applying
 
@@ -30,7 +30,7 @@ You choose a programme, apply to the university (often on its own portal), then 
 
 ### Is my school diploma enough?
 
-For a bachelor's degree you need a secondary school diploma obtained after at least 12 years of schooling, with a CIMEA statement or a Dichiarazione di valore. See [How to apply](../study/how-to-apply/).
+For a bachelor's degree you need a secondary school diploma obtained after at least 12 years of schooling, with a CIMEA statement or a Dichiarazione di valore and, if your country has a university entrance exam, proof that you passed it. See [How to apply](../study/how-to-apply/).
 
 ## Visa and money
 
@@ -70,7 +70,7 @@ Start with your region's DSU agency and your university's housing office. Never 
 
 ### Can I stay in Italy after I graduate?
 
-If you graduate in Italy, you can ask for a permit to look for work or start a business. It lasts 9 to 12 months. See [Residence permit](../living/residence-permit/).
+If you graduate in Italy, you can ask for a permit to look for work or start a business. It lasts 9 to 12 months, and you need enough income and health insurance. See [Residence permit](../living/residence-permit/).
 
 ## EngPro
 

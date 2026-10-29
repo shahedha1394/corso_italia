@@ -58,10 +58,10 @@ Les universités non étatiques (par exemple LUISS, Bocconi ou Cattolica) et les
 
 ## 5. Des bourses pour couvrir vos dépenses
 
-Chaque région propose des **bourses du droit aux études (DSU)**, ouvertes aux étudiants internationaux. Pour 2026/2027, l'appel de l'Université de Vérone, par exemple, applique ces plafonds et montants nationaux :
+Chaque région finance des **bourses du droit aux études (DSU)**, ouvertes aux étudiants internationaux. Chaque région fixe ses propres plafonds de revenus et montants ; consultez l'appel de votre région. Par exemple, l'appel 2026/2027 de l'Université de Vérone (région Vénétie) applique :
 
 - **ISEE familial jusqu'à 26 306,25 €** et **ISPE jusqu'à 43 125,94 €**.
-- Pour les étudiants qui vivent loin de leur famille (*fuori sede*), la bourse est de **7 171,11 €** par an pour la plupart des candidats, et jusqu'à **8 246 €** pour les revenus les plus bas. À Vérone, une partie est retenue pour payer les repas et, si vous en obtenez une, une chambre en résidence universitaire.
+- Pour les étudiants qui vivent loin de leur famille (*fuori sede*) : **8 246 €** par an pour les revenus les plus bas, **7 171,11 €** pour la tranche intermédiaire, puis un montant qui diminue progressivement (jusqu'à **3 585,50 €**) près du plafond de revenus. À Vérone, une partie est retenue pour payer les repas et, si vous en obtenez une, une chambre en résidence universitaire.
 
 Les étudiants des pays particulièrement pauvres ont besoin d'un certificat de l'ambassade d'Italie dans leur pays à la place de l'ISEE parificato. Les appels se clôturent souvent avant le début des cours : vérifiez la date limite à l'avance (l'appel 2026/2027 de Vérone s'est clôturé le 30 septembre 2026). Lisez le [guide des bourses et financements](../funding/) pour en savoir plus.
 

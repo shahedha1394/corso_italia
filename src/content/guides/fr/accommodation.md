@@ -17,7 +17,7 @@ sources:
 ## En bref
 
 - Pour le visa, vous devez prouver que vous avez un **logement adapté** en Italie. Une simple demande de résidence étudiante ne suffit pas.
-- Les **résidences étudiantes** sont gérées par les agences régionales DSU et par certaines universités. Les places sont limitées, et la demande se fait par l'appel annuel.
+- Les **résidences étudiantes** sont gérées par les agences régionales DSU et par certaines universités. Les places sont limitées, et la demande se fait via l'appel à candidatures annuel.
 - Un **contrat de location** doit être enregistré auprès de l'Agenzia delle Entrate dans les **30 jours** qui suivent sa signature.
 - La personne qui vous héberge ou vous loue une chambre doit le déclarer à la police dans les **48 heures** (*dichiarazione di ospitalità*).
 - **Ne payez jamais** avant d'avoir vu la chambre (sur place ou en appel vidéo) et le contrat.
@@ -33,12 +33,12 @@ Pour les premières semaines, un hôtel ou un court séjour vous laisse le temps
 ## Votre contrat
 
 - Demandez un **contrat écrit**, et vérifiez sa durée, le dépôt de garantie et ce que le loyer comprend (charges, internet).
-- Le contrat doit être **enregistré** dans les 30 jours. Demandez au propriétaire la preuve d'enregistrement : vous en avez besoin pour votre titre de séjour.
+- Le contrat doit être **enregistré** dans les 30 jours. Demandez au propriétaire la preuve d'enregistrement : vous pourriez en avoir besoin pour votre titre de séjour.
 - Le propriétaire doit envoyer la **déclaration d'hébergement** à la police dans les 48 heures. Gardez-en une copie.
 
 ## Éviter les arnaques
 
 - N'envoyez pas d'argent par virement ou par un service de transfert à quelqu'un que vous n'avez pas rencontré, pour une chambre que vous n'avez pas vue.
-- Méfiez-vous des prix beaucoup plus bas que les autres dans le même quartier, et des propriétaires qui sont « à l'étranger » et ne peuvent pas montrer la chambre.
+- Méfiez-vous des prix beaucoup plus bas que les autres dans le même quartier, et des propriétaires qui sont « à l'étranger » et ne peuvent pas montrer la chambre.
 - Vérifiez que la personne est bien le propriétaire ou une vraie agence, et ne payez le dépôt qu'avec un contrat signé.
 - En cas de doute, demandez au service logement de votre université.

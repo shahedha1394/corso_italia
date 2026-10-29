@@ -10,7 +10,7 @@ sources:
     url: https://www.unife.it/it/internazionale/venire/iscriversi/informazioni/circolare_2026-2027_studenti_internazionali.pdf
   - label: "Visa pour l'Italie (ministère des Affaires étrangères)"
     url: https://vistoperitalia.esteri.it
-  - label: "Ambassade d'Italie à Minsk : documents pour un visa d'études de type D (exemple)"
+  - label: "Ambassade d'Italie à Minsk : documents pour un visa d'études de type D (exemple 2025/2026 ; les montants et les dates ont changé)"
     url: https://ambminsk.esteri.it/wp-content/uploads/2026/01/Lista-documenti-visto-D-Studio_ITA.pdf
   - label: "Ambassade d'Italie à Maputo : visa d'études pour l'inscription à l'université (exemple)"
     url: https://ambmaputo.esteri.it/wp-content/uploads/2026/06/STUDIO-IMMATRICOLAZIONE-UNIVERSITA.pdf
@@ -22,7 +22,7 @@ Ce guide s'adresse aux étudiants **qui ne sont pas citoyens de l'UE et qui vive
 
 ## 1. Qui a besoin d'un visa d'études
 
-Il vous faut un **visa d'études de long séjour de type D** pour l'inscription à l'université (« Immatricolazione Università ») si vous n'êtes pas citoyen de l'UE et que vous vivez hors d'Italie.
+Il vous faut un **visa d'études de long séjour de type D** pour l'inscription à l'université (« Immatricolazione Università ») si vous n'êtes pas citoyen de l'UE et que vous vivez hors d'Italie.
 
 Vous n'en avez **pas** besoin si vous êtes citoyen de l'UE, ou si vous vivez déjà légalement en Italie avec un titre de séjour qui vous permet de vous inscrire (renseignez-vous auprès du bureau international de votre université).
 
@@ -33,7 +33,7 @@ Vous ne pouvez demander le visa qu'après la **validation de votre préinscripti
 ## 3. Où et quand faire la demande
 
 - **Où :** à l'ambassade ou au consulat d'Italie du pays où vous vivez. Beaucoup d'ambassades donnent les rendez-vous via [Prenot@mi](https://prenotami.esteri.it) ; certaines passent par un centre de visas externe. Le site de votre ambassade l'indique.
-- **Quand :** pour 2026/2027, avant le **30 novembre 2026** ; pour 2027/2028, avant le **31 octobre 2027**. Votre université peut fixer une date antérieure.
+- **Quand :** pour 2026/2027, au plus tard le **30 novembre 2026** ; pour 2027/2028, au plus tard le **31 octobre 2027**. Votre université peut fixer une date antérieure.
 - **Faites-la tôt.** Les rendez-vous peuvent être difficiles à obtenir, et il faut du temps pour réunir les documents et les traductions.
 - Depuis le 11 janvier 2025, vos **empreintes digitales** sont relevées lors de la demande de visa national.
 
@@ -56,9 +56,9 @@ Certaines ambassades demandent deux copies de chaque document. Lisez attentiveme
 
 ## 5. Après l'obtention du visa
 
-- Le visa est en général valable **365 jours avec entrées multiples**.
+- Le visa est en général valable **365 jours avec entrées multiples**. Si vous devez venir en Italie pour un examen d'entrée ou un test de langue en présentiel, vous recevez d'abord un visa valable **100 jours**.
 - Dans les **8 jours ouvrables** qui suivent votre arrivée en Italie, demandez votre titre de séjour. Voir le [guide du titre de séjour](../../living/residence-permit/).
-- Finalisez votre inscription à l'université. Si vous n'êtes pas inscrit sur Universitaly au **31 janvier** de l'année universitaire, votre visa peut être révoqué.
+- Finalisez votre inscription à l'université. Si vous n'êtes pas inscrit sur Universitaly au **31 janvier** de l'année universitaire, votre visa sera révoqué et la Questura en sera informée.
 
 ## 6. Conseils
 

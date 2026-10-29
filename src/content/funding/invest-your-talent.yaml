@@ -5,12 +5,17 @@ name:
 provider: "Italian Ministry of Foreign Affairs and partners"
 type: government
 description:
-  en: "Scholarship programme for international students from selected countries who enrol in selected programmes at participating Italian universities. Check the current call for countries, programmes and deadlines."
-  ar: "برنامج منح للطلاب الدوليين من دول محددة الملتحقين ببرامج محددة في جامعات إيطالية مشاركة. راجع الإعلان الحالي لمعرفة الدول والبرامج والمواعيد."
-  fr: "Programme de bourses pour les étudiants internationaux de certains pays qui s'inscrivent dans certaines formations des universités italiennes participantes. Consultez l'appel en cours pour les pays, les formations et les dates limites."
+  en: "Scholarship programme of the Italian Ministry of Foreign Affairs for students from selected countries who enrol in master's and postgraduate courses taught in English (engineering and technology, architecture and design, economics and management) at participating Italian universities. The 2026/27 call closed on 11 May 2026."
+  ar: "برنامج منح من وزارة الخارجية الإيطالية لطلاب من دول محددة يلتحقون ببرامج ماجستير ودراسات عليا تُدرَّس بالإنجليزية (الهندسة والتكنولوجيا، والعمارة والتصميم، والاقتصاد والإدارة) في جامعات إيطالية مشاركة. أُغلق إعلان 2026/27 في 11 أيار/مايو 2026."
+  fr: "Programme de bourses du ministère italien des Affaires étrangères pour les étudiants de certains pays qui s'inscrivent en master ou en formation de troisième cycle enseignés en anglais (ingénierie et technologies, architecture et design, économie et gestion) dans les universités italiennes participantes. L'appel 2026/27 s'est clôturé le 11 mai 2026."
 eligibility:
-  en: "Citizens of the countries listed in the current call."
-  ar: "مواطنو الدول المدرجة في الإعلان الحالي."
-  fr: "Les citoyens des pays indiqués dans l'appel en cours."
-url: https://en.unimib.it/node/4096
-last_checked: 2026-10-25
+  en: "Students from the countries listed in the current call. Check the call for the nationality or residence and age conditions."
+  ar: "الطلاب من الدول المدرجة في الإعلان الحالي. راجع الإعلان لمعرفة شروط الجنسية أو الإقامة والعمر."
+  fr: "Les étudiants des pays indiqués dans l'appel en cours. Consultez l'appel pour les conditions de nationalité ou de résidence et d'âge."
+url: https://www.esteri.it/en/servizi-opportunita/opportunita/borse-di-studio/per-cittadini-stranieri/progetti-speciali/invest-your-talent-in-italy/
+sources:
+  - label: "Invest Your Talent in Italy: programme site"
+    url: https://investyourtalentapplication.esteri.it/SitoIYT/EN/invest-your-talent-in-italy
+  - label: "University of Milano-Bicocca: participating university (example)"
+    url: https://en.unimib.it/node/4096
+last_checked: 2026-10-28

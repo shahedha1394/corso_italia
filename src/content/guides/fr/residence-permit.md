@@ -12,8 +12,10 @@ sources:
     url: https://www.unipi.it/ateneo/rapporti-internazionali/info-e-servizi-di-accoglienza/ingresso-e-soggiorno-cittadini-extra-ue/permesso-per-studio/
   - label: "Université Sapienza de Rome : titre de séjour pour études"
     url: https://www.uniroma1.it/it/pagina/permesso-di-soggiorno-motivi-di-studio
-  - label: "Texte unique sur l'immigration, art. 39-bis.1 (titre de séjour pour chercher un emploi après les études)"
-    url: https://brocardi.it/testo-unico-immigrazione/titolo-v/capo-ii/art39bis1.html
+  - label: "Texte unique sur l'immigration (décret législatif 286/1998), art. 5 (renouvellement) et art. 39-bis.1 (titre de séjour pour chercher un emploi après les études)"
+    url: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1998-07-25;286
+  - label: "Décret législatif 83/2026 (délai de renouvellement porté à 90 jours, depuis le 22 mai 2026)"
+    url: https://www.normattiva.it/eli/id/2026/05/20/26G00100/ORIGINAL
   - label: "Portale Immigrazione"
     url: https://www.portaleimmigrazione.it
 ---
@@ -26,10 +28,10 @@ Vous devez faire la demande dans les **8 jours ouvrables qui suivent votre arriv
 
 ## 2. Le kit de la poste
 
-1. Prenez le **kit jaune** (*kit giallo*) dans un bureau de poste doté d'un guichet « Sportello Amico ». Le formulaire qu'il contient (*modulo 1*) est uniquement en italien.
+1. Prenez le **kit jaune** (*kit giallo*) dans un bureau de poste doté d'un guichet « Sportello Amico ». Le formulaire qu'il contient (*modulo 1*) est uniquement en italien.
 2. Remplissez-le à l'encre noire et en majuscules. Les **patronati** et les **CAF** aident souvent gratuitement, et beaucoup d'universités ont un guichet d'aide.
 3. Préparez des copies des pages d'identité de votre passeport, de votre visa et de votre tampon d'entrée, un **timbre fiscal de 16 €** (*marca da bollo*, vendu dans les bureaux de tabac), une copie de votre assurance santé et, si votre Questura les demande, une preuve de logement et de ressources.
-4. Apportez le kit au bureau de poste avec votre passeport et envoyez-le depuis là.
+4. Apportez le kit au bureau de poste avec votre passeport et envoyez-le sur place.
 
 **Combien ça coûte.** Par exemple, l'Université de Pise indique pour un titre d'un an : le timbre fiscal de 16 €, **30 €** payés à la poste lors de l'envoi du kit, et un bulletin de paiement de **70,46 €**. Vérifiez les montants actuels au bureau de poste.
 
@@ -45,7 +47,7 @@ Vous recevrez un message, ou vous le verrez sur le site, quand le titre sera pr�
 
 ## 5. Le renouvellement
 
-- Faites la demande **au moins 60 jours avant l'expiration de votre titre** (certaines universités conseillent 90 jours), de nouveau par la poste.
+- Faites la demande **au moins 90 jours avant l'expiration de votre titre** (délai légal depuis le 22 mai 2026 ; certains documents anciens indiquent encore 60 jours), de nouveau par la poste.
 - Il vous faut une preuve d'inscription et des examens réussis : **au moins un examen** la première année et **au moins deux** les années suivantes. Un seul examen peut suffire pour de graves raisons de santé documentées ou en cas de force majeure.
 - Vous pouvez renouveler au maximum **trois ans au-delà de la durée normale** de votre formation.
 - Si votre nouveau titre n'est pas prêt quand l'ancien expire, votre reçu de renouvellement vous permet de rester légalement.
@@ -53,10 +55,11 @@ Vous recevrez un message, ou vous le verrez sur le site, quand le titre sera pr�
 ## 6. Travailler et voyager
 
 - Avec un titre de séjour pour études, vous pouvez travailler jusqu'à **20 heures par semaine**, dans la limite de **1 040 heures par an**.
-- Pour voyager dans les autres pays de l'espace Schengen, il vous faut un **titre valide**, pas seulement un reçu. Avant de voyager avec un simple reçu, renseignez-vous auprès du bureau international de votre université ou de la police aux frontières.
+- Pour voyager dans les autres pays de l'espace Schengen, il vous faut un **titre valide**, pas seulement un reçu.
+- Avec un simple reçu, vous pouvez en général aller dans votre pays et revenir **uniquement par vol direct** (sans escale dans un autre pays Schengen), et seulement si vous avez aussi votre visa à entrées multiples encore valable (premier titre) ou votre titre expiré (renouvellement). Renseignez-vous auprès du bureau international de votre université ou de la police aux frontières avant de partir.
 
 ## 7. Après le diplôme
 
-Si vous obtenez votre diplôme en Italie (licence, master, doctorat et certains autres diplômes), vous pouvez demander, à l'expiration de votre titre pour études, un titre de séjour pour **chercher un emploi ou créer une entreprise**. Il dure **de 9 à 12 mois**, et vous devez vous inscrire auprès des services de l'emploi (*Centro per l'Impiego*). Si vous trouvez un emploi, vous pouvez demander à le convertir en titre de séjour pour travail, si vous remplissez les conditions.
+Si vous obtenez votre diplôme en Italie (licence, master, doctorat et certains autres diplômes), vous pouvez demander, à l'expiration de votre titre pour études, un titre de séjour pour **chercher un emploi ou créer une entreprise**. Il dure **de 9 à 12 mois**. Il vous faut des revenus suffisants et une assurance santé, et vous devez déclarer votre disponibilité à travailler auprès des services de l'emploi (*Centro per l'Impiego*). Si vous trouvez un emploi, vous pouvez demander à le convertir en titre de séjour pour travail, si vous remplissez les conditions.
 
 Voir aussi le [guide du visa d'études](../../study/visa/).

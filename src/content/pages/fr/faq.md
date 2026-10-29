@@ -12,7 +12,7 @@ Oui, c'est gratuit, et non, ce n'est pas une agence. Corso Italy est un projet b
 
 ### Les informations sont-elles officielles ?
 
-Nous prenons chaque information dans des sources officielles (ministère de l'Université et de la Recherche, ambassades et universités), et chaque guide indique ses sources et la date de notre dernière vérification. Les règles changent souvent ; vérifiez toujours auprès de votre université ou de votre ambassade avant d'agir.
+Nous prenons nos informations principalement dans des sources officielles (ministère de l'Université et de la Recherche, ambassades et universités), et chaque guide indique ses sources et la date de notre dernière vérification. Les règles changent souvent ; vérifiez toujours auprès de votre université ou de votre ambassade avant d'agir.
 
 ## Candidature
 
@@ -30,13 +30,13 @@ Vous choisissez une formation, vous postulez auprès de l'université (souvent s
 
 ### Mon diplôme de fin d'études secondaires suffit-il ?
 
-Pour une licence, il vous faut un diplôme obtenu après **au moins 12 années de scolarité**, avec une attestation CIMEA ou une Dichiarazione di valore. Voir [Comment postuler](../study/how-to-apply/).
+Pour une licence, il vous faut un diplôme obtenu après **au moins 12 années de scolarité**, avec une attestation CIMEA ou une Dichiarazione di valore et, si votre pays a un examen d'entrée à l'université, la preuve que vous l'avez réussi. Voir [Comment postuler](../study/how-to-apply/).
 
 ## Visa et argent
 
 ### Quelle est la date limite pour le visa ?
 
-Pour 2026/2027, demandez le visa d'études avant le **30 novembre 2026** ; pour 2027/2028, avant le **31 octobre 2027**. Votre université peut fixer une date antérieure. Voir [Visa d'études](../study/visa/).
+Pour 2026/2027, demandez le visa d'études au plus tard le **30 novembre 2026** ; pour 2027/2028, au plus tard le **31 octobre 2027**. Votre université peut fixer une date antérieure. Voir [Visa d'études](../study/visa/).
 
 ### Combien d'argent dois-je justifier pour le visa ?
 
@@ -70,7 +70,7 @@ Commencez par l'agence DSU de votre région et le service logement de votre univ
 
 ### Puis-je rester en Italie après mon diplôme ?
 
-Si vous obtenez votre diplôme en Italie, vous pouvez demander un titre de séjour pour chercher un emploi ou créer une entreprise. Il dure de 9 à 12 mois. Voir [Titre de séjour](../living/residence-permit/).
+Si vous obtenez votre diplôme en Italie, vous pouvez demander un titre de séjour pour chercher un emploi ou créer une entreprise. Il dure de 9 à 12 mois, et il faut des revenus suffisants et une assurance santé. Voir [Titre de séjour](../living/residence-permit/).
 
 ## EngPro
 

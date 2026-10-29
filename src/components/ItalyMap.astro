@@ -36,7 +36,7 @@ const dots = [...counts.entries()]
   // Bigger dots first, so small dots stay visible on top.
   .sort((a, b) => b.r - a.r);
 
-const label = (key: CityKey, n: number) => fill(t('map.cityCount'), { city: cities[key][lang], n });
+const label = (key: CityKey, n: number) => fill(t(n === 1 ? 'map.cityCountOne' : 'map.cityCount'), { city: cities[key][lang], n });
 const marked = highlight && highlight in positions ? { key: highlight as CityKey, x: positions[highlight][0], y: positions[highlight][1] } : null;
 // Put the name on the side of the dot that has more room.
 const labelAnchor = marked && marked.x > map.width * 0.6 ? 'end' : 'start';

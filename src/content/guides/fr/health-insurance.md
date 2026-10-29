@@ -14,6 +14,8 @@ sources:
     url: https://international.unicatt.it/ucscinternational-health-services-health-insurance-degree-programmes
   - label: "Université de Florence : santé et soins médicaux"
     url: https://unifi.it/vp-10834-health-and-medical-care.html
+  - label: "Université de Pise : soins de santé pour les étudiants internationaux"
+    url: https://www.unipi.it/ateneo/rapporti-internazionali/info-e-servizi-di-accoglienza/ingresso-e-soggiorno-cittadini-extra-ue/sanita
   - label: "Ministère de la Santé"
     url: https://www.salute.gov.it
 ---
@@ -24,7 +26,7 @@ sources:
 - Une fois arrivé, vous avez deux options : une **assurance privée** ou l'**inscription au service national de santé (SSN)**.
 - L'inscription au SSN coûte **700 € par année civile** (de janvier à décembre) pour les étudiants non européens, comme l'indiquent plusieurs universités.
 - Avec le SSN, vous choisissez un **médecin traitant** (*medico di base*), dont les consultations sont gratuites.
-- En cas d'urgence, appelez le **112**.
+- En cas d'urgence, appelez le **112** (le **118** fonctionne aussi pour une ambulance).
 
 ## Option 1 : l'assurance privée
 
@@ -33,9 +35,11 @@ Vous pouvez garder une assurance valable en Italie pendant tout votre séjour. A
 ## Option 2 : le service national de santé (SSN)
 
 1. Payez les **700 €** pour l'année (le mode de paiement dépend de la région : certaines utilisent le formulaire F24, d'autres un bulletin postal).
-2. Allez au bureau de santé de votre quartier (appelé **ASL**, **ASP** ou **ATS** selon la région).
+2. Allez à l'agence sanitaire locale de votre secteur (appelée **ASL**, **ASP** ou **ATS** selon la région).
 3. Apportez : le reçu du paiement, votre passeport, votre codice fiscale, votre titre de séjour ou son reçu, et une preuve d'inscription ou de domicile.
 4. Choisissez votre **médecin traitant**.
+
+Si vous avez un contrat de travail régulier en Italie, vous pouvez vous inscrire gratuitement au SSN au lieu de payer les 700 €. Renseignez-vous auprès de votre agence sanitaire locale.
 
 L'inscription prend fin le **31 décembre**, quelle que soit la date du paiement : s'inscrire en fin d'année ne couvre donc que quelques mois. C'est pourquoi l'Università Cattolica conseille aux étudiants qui arrivent en septembre d'acheter d'abord une assurance privée de 12 mois, puis de s'inscrire au SSN.
 
@@ -45,6 +49,6 @@ Les étudiants de l'UE peuvent utiliser leur carte européenne d'assurance malad
 
 ## Urgences
 
-- Appelez le **112** en cas d'urgence.
+- Appelez le **112** en cas d'urgence (le **118** fonctionne aussi pour une ambulance).
 - La nuit et les jours fériés, la **guardia medica** (médecin de garde) peut vous aider.
 - Pour les problèmes graves, allez au **pronto soccorso** (urgences) d'un hôpital.
