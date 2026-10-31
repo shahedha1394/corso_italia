@@ -8,4 +8,5 @@ export const engproTeachers: { name: string; country: { en: string; ar: string; 
   { name: 'Anna Fornari', country: { en: 'Italy', ar: 'إيطاليا', fr: 'Italie' } },
   { name: 'Yousef Ahmad', country: { en: 'Syria', ar: 'سوريا', fr: 'Syrie' } },
   { name: 'Zahra Omrani', country: { en: 'Iran', ar: 'إيران', fr: 'Iran' } },
+  { name: 'Felicitas Jung', country: { en: 'Germany', ar: 'ألمانيا', fr: 'Allemagne' } },
 ];
