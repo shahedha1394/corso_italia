@@ -50,7 +50,7 @@ Si les revenus et le patrimoine de votre famille sont à l'étranger, vous ne po
 - **Un montant fixe selon votre pays.** Par exemple, à l'Université de la Tuscia, les étudiants sans cet ISEE paient un montant fixe de **600 € à 1 950 €** par an, selon le niveau de revenu de leur pays. À l'Université de Turin, les frais des étudiants dont les revenus sont à l'étranger vont de **500 € à 1 500 €** par an selon le revenu par habitant de leur pays, plus 156 € pour la taxe régionale et le droit de timbre.
 - **Pays particulièrement pauvres.** Le ministère publie une liste de pays dont les étudiants bénéficient d'un traitement particulier (pour 2026/2027 : décret ministériel 176 du 24 février 2026). À l'Université de Turin, les étudiants de ces pays ne paient que le premier versement de 156 €.
 
-Les règles changent d'une année à l'autre et d'une université à l'autre. Lisez toujours la page des frais de votre université pour l'année en cours.
+Les règles changent d'une année à l'autre et d'une université à l'autre. Lisez toujours la page des frais de votre université pour l'année en cours. Pour comparer les universités, voir notre page [frais d'inscription par université](../fees/).
 
 ## 4. Universités non étatiques et universités en ligne
 

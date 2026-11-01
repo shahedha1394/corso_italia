@@ -16,3 +16,10 @@ description:
   ar: "تأسست عام 1968 كمعهد للغات الأجنبية، وأصبحت جامعة حكومية عام 1992. حرمها موزّع في أنحاء مدينة بيرغامو."
   fr: "Fondée en 1968 comme institut de langues étrangères, et université d'État depuis 1992. Son campus est réparti dans la ville de Bergame."
 last_checked: 2026-10-29
+fees:
+  min: 200
+  basis: income
+  includes_tax: false
+  year: "2026/27"
+  url: https://www.unibg.it/sites/default/files/media/documents/2026-10-26/Guida%20alla%20contribuzione%20studentesca%20a.a.%202026-2027.pdf
+  last_checked: 2026-11-01

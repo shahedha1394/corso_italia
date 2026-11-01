@@ -15,3 +15,9 @@ description:
   ar: "تأسست عام 1997. جامعة غير حكومية لها فروع في بولزانو وبريسانوني وبرونيكو، وتدرّس بالإيطالية والألمانية والإنجليزية."
   fr: "Fondée en 1997. Une université non étatique avec des campus à Bolzano, Brixen et Bruneck, qui enseigne en italien, en allemand et en anglais."
 last_checked: 2026-10-27
+fees:
+  min: 1200
+  approx: true
+  basis: flat
+  url: https://www.unibz.it/applicants/international/international-degree-seeking-applicants/degree-seeking-non-eu-citizens-living-abroad
+  last_checked: 2026-11-01

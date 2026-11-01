@@ -15,3 +15,10 @@ description:
   ar: "تأسست عام 1921. جامعة غير حكومية مقرها ميلانو، ولها فروع في روما (حيث يُدرَّس الطب) وبريشا وبياتشنزا وكريمونا."
   fr: "Fondée en 1921. Une université non étatique basée à Milan, avec des campus à Rome (où la médecine est enseignée), Brescia, Plaisance et Crémone."
 last_checked: 2026-10-27
+fees:
+  min: 5600
+  max: 9350
+  basis: reductions
+  year: "2026/27"
+  url: https://international.unicatt.it/ucscinternational-TUITION%20GUIDE%20ACADEMIC%20YEAR%202026-2027%20_%20FIRST%20YEAR.pdf
+  last_checked: 2026-11-01

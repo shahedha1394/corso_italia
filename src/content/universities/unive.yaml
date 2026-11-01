@@ -15,3 +15,11 @@ description:
   ar: "تأسست عام 1868 كمدرسة للتجارة. جامعة حكومية فيها 8 أقسام، ولها مواقع في البندقية وميستري وتريفيزو."
   fr: "Fondée en 1868 comme école de commerce. Une université publique avec 8 départements et des sites à Venise, Mestre et Trévise."
 last_checked: 2026-10-26
+fees:
+  min: 700
+  max: 2300
+  basis: country
+  includes_tax: true
+  year: "2026/27"
+  url: https://www.unive.it/pag/50473/
+  last_checked: 2026-11-01

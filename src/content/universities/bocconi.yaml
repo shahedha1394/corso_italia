@@ -16,3 +16,10 @@ description:
   ar: "تأسست في ميلانو عام 1902. جامعة خاصة تركّز على الاقتصاد والإدارة، ولديها برامج في القانون والعلوم السياسية وعلوم الحاسوب."
   fr: "Fondée à Milan en 1902. Une université privée axée sur l'économie et la gestion, avec des formations en droit, en sciences politiques et en informatique."
 last_checked: 2026-10-26
+fees:
+  min: 3540
+  max: 17700
+  basis: reductions
+  year: "2027/28"
+  url: https://www.unibocconi.it/en/fees
+  last_checked: 2026-11-01

@@ -16,3 +16,10 @@ description:
   ar: "تأسست عام 1863. جامعة تقنية متخصصة في الهندسة والعمارة والتصميم، ولها فروع في ميلانو وفي ليكو وكريمونا ومانتوفا وبياتشنزا."
   fr: "Fondé en 1863. Une université technique pour l'ingénierie, l'architecture et le design, avec des campus à Milan et à Lecco, Crémone, Mantoue et Plaisance."
 last_checked: 2026-10-26
+fees:
+  min: 157
+  max: 3943
+  basis: income
+  year: "2026/27"
+  url: https://dynamicpoli.polimi.it/en/prospective-students/how-much-does-it-cost/laurea-laurea-magistrale-and-single-cycle-programmes
+  last_checked: 2026-11-01

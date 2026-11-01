@@ -15,3 +15,10 @@ description:
   ar: "تأسست عام 2014. جامعة غير حكومية للطب والصحة قرب ميلانو، ولها مسار مشترك في الطب والهندسة الطبية الحيوية مع البوليتكنيك في ميلانو."
   fr: "Créée en 2014. Une université non étatique de médecine et de santé, près de Milan, avec un parcours conjoint médecine et génie biomédical avec le Politecnico di Milano."
 last_checked: 2026-10-27
+fees:
+  min: 3656
+  max: 23206
+  basis: programme
+  year: "2026/27"
+  url: https://www.hunimed.eu/wp-content/uploads/2026/02/University-Fee-Regulations_Summary-for-International-Students_2026_2027-1.pdf
+  last_checked: 2026-11-01

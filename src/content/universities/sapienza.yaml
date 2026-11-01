@@ -15,3 +15,10 @@ description:
   ar: "تأسست عام 1303. جامعة حكومية في روما تغطي معظم المجالات، من الطب والهندسة إلى العلوم الإنسانية والقانون."
   fr: "Fondée en 1303. Une université publique à Rome qui couvre presque tous les domaines, de la médecine et l'ingénierie aux lettres et au droit."
 last_checked: 2026-10-26
+fees:
+  min: 300
+  max: 1500
+  basis: country
+  year: "2025/26"
+  url: https://www.uniroma1.it/en/content/standard-registration-fee-amounts
+  last_checked: 2026-11-01

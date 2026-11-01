@@ -15,3 +15,10 @@ description:
   ar: "تأسست عام 1939. جامعة غير حكومية في روما، ولها فرع في باليرمو."
   fr: "Créée en 1939. Une université non étatique à Rome, avec un site à Palerme."
 last_checked: 2026-10-29
+fees:
+  min: 4390
+  basis: flat
+  includes_tax: true
+  year: "2026/27"
+  url: https://backoffice.lumsa.it/sites/default/files/file/3564/2026-07/guida-pratica-per-lo-studente-aa2627.pdf
+  last_checked: 2026-11-01

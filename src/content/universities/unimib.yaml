@@ -15,3 +15,11 @@ description:
   ar: "تأسست عام 1998. جامعة حكومية فيها 14 قسماً في ميلانو ومونتسا، منها علم النفس والتربية."
   fr: "Créée en 1998. Une université publique avec 14 départements à Milan et Monza, dont la psychologie et les sciences de l'éducation."
 last_checked: 2026-10-26
+fees:
+  min: 200
+  max: 3600
+  basis: country
+  includes_tax: false
+  year: "2026/27"
+  url: https://en.unimib.it/sites/sten/files/2026-07/01_Contribution%20Guide%2026_27.pdf
+  last_checked: 2026-11-01

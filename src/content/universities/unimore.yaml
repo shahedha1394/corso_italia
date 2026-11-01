@@ -15,3 +15,11 @@ description:
   ar: "تأسست عام 1175. جامعة حكومية فيها 13 قسماً في مودينا وريدجو إميليا، ولها بعض البرامج في كاربي ومانتوفا."
   fr: "Fondée en 1175. Une université publique avec 13 départements à Modène et à Reggio d'Émilie, et quelques cours à Carpi et Mantoue."
 last_checked: 2026-10-26
+fees:
+  min: 380
+  max: 1080
+  basis: country
+  includes_tax: false
+  year: "2026/27"
+  url: https://www.unimore.it/sites/default/files/2026-06/ESTRATTO%20delibera%20tasse%202026%202027.pdf
+  last_checked: 2026-11-01

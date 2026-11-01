@@ -50,7 +50,7 @@ If your family's income and assets are abroad, you cannot use a normal Italian I
 - **A fixed fee based on your country.** For example, at the University of Tuscia students without this ISEE pay a fixed amount from **€600 to €1,950** a year, depending on their country's income level. At the University of Turin, fees for students with income abroad go from **€500 to €1,500** a year, based on their country's income per person, plus €156 for the regional tax and stamp duty.
 - **Particularly poor countries.** The Ministry publishes a list of countries whose students get special treatment (for 2026/2027: Ministerial Decree 176 of 24 February 2026). At the University of Turin, students from these countries pay only the first instalment of €156.
 
-Rules change from year to year and from one university to another. Always read your university's fees page for the current year.
+Rules change from year to year and from one university to another. Always read your university's fees page for the current year. To compare universities, see our [tuition fees by university](../fees/) page.
 
 ## 4. Non-state and online universities
 

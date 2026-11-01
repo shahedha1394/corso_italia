@@ -16,3 +16,11 @@ description:
   ar: "يعود تأسيسها تقليدياً إلى عام 1088. جامعة حكومية تغطي معظم المجالات، ولها فروع في بولونيا وفي تشيزينا وفورلي ورافينا وريميني."
   fr: "Sa fondation est traditionnellement datée de 1088. Une université publique qui couvre presque tous les domaines, avec des campus à Bologne et à Cesena, Forlì, Ravenne et Rimini."
 last_checked: 2026-10-26
+fees:
+  min: 500
+  max: 1400
+  basis: country
+  includes_tax: false
+  year: "2026/27"
+  url: https://www.unibo.it/en/study/enrolment-fees-and-other-procedures/degree-programmes/tuition-fees-and-exemptions/reduced-fixed-fee-for-citizens-of-particularly-poor-and-developing-countries-or-non-eu-non-oecd-countries
+  last_checked: 2026-11-01

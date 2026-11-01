@@ -15,3 +15,11 @@ description:
   ar: "تأسست عام 1991. جامعة غير حكومية صغيرة للاقتصاد والأعمال وهندسة الإدارة."
   fr: "Fondée en 1991. Une petite université non étatique pour l'économie, la gestion d'entreprise et l'ingénierie de gestion."
 last_checked: 2026-10-27
+fees:
+  min: 8800
+  max: 10000
+  basis: programme
+  includes_tax: false
+  year: "2026/27"
+  url: https://en.liuc.it/?p=31973
+  last_checked: 2026-11-01

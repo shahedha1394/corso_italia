@@ -15,3 +15,10 @@ description:
   ar: "جامعة غير حكومية في ميلانو للطب وعلم النفس والفلسفة والعلوم السياسية."
   fr: "Une université non étatique à Milan pour la médecine, la psychologie, la philosophie et les sciences politiques."
 last_checked: 2026-10-27
+fees:
+  min: 20190
+  max: 20690
+  basis: programme
+  year: "2026/27"
+  url: https://www.medicine.unisr.it/attachments/Prospetto-tasse_2026-2027_MD/adbd2a7f-f7e1-4090-b7a5-8f79a5e54280/a9f96625-aa91-4156-b02f-f1c9ae425468.pdf
+  last_checked: 2026-11-01
