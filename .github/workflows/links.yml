@@ -1,0 +1,49 @@
+name: Link check
+
+# Builds the site and checks every link on every page: links between our own pages
+# and links to official websites. Runs on pull requests that change content, every
+# Monday morning, and by hand from the Actions tab. It reports broken links in the
+# job summary and in the "link-report" artifact; it does not block merging.
+on:
+  pull_request:
+    paths:
+      - 'src/**'
+      - 'public/**'
+      - '.github/workflows/links.yml'
+  schedule:
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --root-dir ${{ github.workspace }}/dist
+            --no-progress
+            --max-concurrency 8
+            --timeout 30
+            --max-retries 2
+            --accept 200..=299,429
+            --user-agent "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+            --exclude-path dist/fonts
+            'dist/**/*.html'
+          format: markdown
+          output: link-report.md
+          fail: false
+          jobSummary: true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: link-report
+          path: link-report.md

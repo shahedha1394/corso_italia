@@ -18,6 +18,9 @@ const pageTitle = title ? `${title} Â· ${t('site.name')}` : `${t('site.name')} Â
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const rest = Astro.url.pathname.slice(base.length).replace(/^\/(en|ar|fr)(?=\/|$)/, '') || '/';
 const current = Astro.url.pathname;
+// The 404 page exists only once, so its language links go to each language's home page.
+const isNotFound = /^\/404(\.html)?\/?$/.test(rest);
+const otherLang = (l: Lang) => (isNotFound ? path(l) : switchLangPath(Astro.url.pathname, l));
 const pageDescription = description ?? t('site.description');
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const ogImage = new URL(`${base}/og-image.jpg`, Astro.site).href;
@@ -42,20 +45,20 @@ if ((await getVideos()).length > 0) nav.splice(4, 0, { href: path(lang, '/videos
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{pageTitle}</title>
     <meta name="description" content={pageDescription} />
-    <link rel="canonical" href={canonical} />
+    {!isNotFound && <link rel="canonical" href={canonical} />}
     <link rel="sitemap" href={`${base}/sitemap.xml`} />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={t('site.name')} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={pageDescription} />
-    <meta property="og:url" content={canonical} />
+    {!isNotFound && <meta property="og:url" content={canonical} />}
     <meta property="og:locale" content={ogLocale} />
     <meta property="og:image" content={ogImage} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content={t('site.ogAlt')} />
     <meta name="twitter:card" content="summary_large_image" />
-    {langs.map((l) => <link rel="alternate" hreflang={l} href={new URL(path(l, rest), Astro.site)} />)}
+    {!isNotFound && langs.map((l) => <link rel="alternate" hreflang={l} href={new URL(path(l, rest), Astro.site)} />)}
     <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
     <link rel="apple-touch-icon" href={`${base}/apple-touch-icon.png`} />
     <link rel="stylesheet" href={`${base}/fonts/fonts.css`} />
@@ -86,7 +89,7 @@ if ((await getVideos()).length > 0) nav.splice(4, 0, { href: path(lang, '/videos
           {langs
             .filter((l) => l !== lang)
             .map((l) => (
-              <a href={switchLangPath(Astro.url.pathname, l)} hreflang={l} lang={l} aria-label={languages[l].label}>
+              <a href={otherLang(l)} hreflang={l} lang={l} aria-label={languages[l].label}>
                 <span class="lang-full">{languages[l].label}</span>
                 <span class="lang-short" aria-hidden="true">{languages[l].short}</span>
               </a>
