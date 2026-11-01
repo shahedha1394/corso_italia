@@ -45,13 +45,13 @@ if ((await getVideos()).length > 0) nav.splice(4, 0, { href: path(lang, '/videos
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{pageTitle}</title>
     <meta name="description" content={pageDescription} />
-    <link rel="canonical" href={canonical} />
+    {!isNotFound && <link rel="canonical" href={canonical} />}
     <link rel="sitemap" href={`${base}/sitemap.xml`} />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={t('site.name')} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={pageDescription} />
-    <meta property="og:url" content={canonical} />
+    {!isNotFound && <meta property="og:url" content={canonical} />}
     <meta property="og:locale" content={ogLocale} />
     <meta property="og:image" content={ogImage} />
     <meta property="og:image:width" content="1200" />
