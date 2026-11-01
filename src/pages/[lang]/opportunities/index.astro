@@ -2,7 +2,7 @@
 import Base from '../../../layouts/Base.astro';
 import LocalTime from '../../../components/LocalTime.astro';
 import SignupButton from '../../../components/SignupButton.astro';
-import { getStaticLangPaths, useTranslations, type Lang } from '../../../i18n';
+import { arrow, getStaticLangPaths, path, useTranslations, type Lang } from '../../../i18n';
 import { forms } from '../../../config/forms';
 import { getActiveOpportunities } from '../../../lib/content';
 import { cities, modes, opportunityTypes } from '../../../lib/taxonomy';
@@ -19,6 +19,14 @@ const items = await getActiveOpportunities();
     <h1>{t('opportunities.title')}</h1>
     <p>{t('opportunities.intro')}</p>
   </header>
+
+  <section class="container section">
+    <a class="card" href={path(lang, '/study/volunteering-and-pathways/')}>
+      <h2>{t('opportunities.pathways.title')}</h2>
+      <p>{t('opportunities.pathways.text')}</p>
+      <p>{t('opportunities.pathways.link')} {arrow(lang)}</p>
+    </a>
+  </section>
 
   <section class="container section">
     {items.length === 0 ? (

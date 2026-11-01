@@ -4,6 +4,8 @@ name: Link check
 # and links to official websites. Runs on pull requests that change content, every
 # Monday morning, and by hand from the Actions tab. It reports broken links in the
 # job summary and in the "link-report" artifact; it does not block merging.
+# Links to https://corsoitaly.com itself (canonical and language tags) are skipped:
+# our own pages are checked as files in dist/, and new pages are not online until merged.
 on:
   pull_request:
     paths:
@@ -37,6 +39,7 @@ jobs:
             --accept 200..=299,429
             --user-agent "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
             --exclude-path dist/fonts
+            --exclude '^https://corsoitaly\.com/'
             'dist/**/*.html'
           format: markdown
           output: link-report.md
