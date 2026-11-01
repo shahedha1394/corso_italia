@@ -15,3 +15,10 @@ description:
   ar: "جامعة غير حكومية صغيرة في روما للغات والترجمة والدراسات الدولية والاقتصاد وهندسة الحاسوب."
   fr: "Une petite université non étatique à Rome pour les langues et la traduction, les études internationales, l'économie et l'ingénierie informatique."
 last_checked: 2026-10-27
+fees:
+  min: 3900
+  max: 9900
+  basis: programme
+  year: "2026/27"
+  url: https://www.unint.eu/en/enter-unint/taxes-and-contributions-2026-2027/
+  last_checked: 2026-11-01

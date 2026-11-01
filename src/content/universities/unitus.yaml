@@ -15,3 +15,11 @@ description:
   ar: "تأسست عام 1979. جامعة حكومية في فيتربو فيها 6 أقسام، وتدرّس أيضاً في تشيفيتافيكيا وريِيتي."
   fr: "Fondée en 1979. Une université publique à Viterbe avec 6 départements, qui enseigne aussi à Civitavecchia et Rieti."
 last_checked: 2026-10-29
+fees:
+  min: 600
+  max: 1950
+  basis: country
+  includes_tax: false
+  year: "2026/27"
+  url: https://www.unitus.it/wp-content/uploads/2026/07/ALL.A_DISCIPLINA-TASSE-E-CONTRIBUTI-A.A.-2026-2027_POST-SEDUTA.rev-aa_18.6.2026-2.pdf
+  last_checked: 2026-11-01

@@ -16,3 +16,11 @@ description:
   ar: "تأسست رسمياً عام 1343. جامعة حكومية تغطي معظم المجالات، من الهندسة وعلوم الحاسوب إلى الطب والعلوم الإنسانية."
   fr: "Officiellement fondée en 1343. Une université publique qui couvre presque tous les domaines, de l'ingénierie et l'informatique à la médecine et aux lettres."
 last_checked: 2026-10-26
+fees:
+  min: 290
+  max: 2900
+  basis: country
+  includes_tax: false
+  year: "2026/27"
+  url: https://www.unipi.it/wp-content/uploads/regolamentotasse_2026_2027.pdf
+  last_checked: 2026-11-01

@@ -15,3 +15,11 @@ description:
   ar: "تأسست عام 1404. جامعة حكومية فيها 27 قسماً. أما الهندسة والعمارة في تورينو فتُدرَّس في جامعة البوليتكنيك في تورينو."
   fr: "Fondée en 1404. Une université publique avec 27 départements. À Turin, l'ingénierie et l'architecture sont enseignées au Politecnico di Torino."
 last_checked: 2026-10-26
+fees:
+  min: 500
+  max: 1500
+  basis: country
+  includes_tax: false
+  year: "2026/27"
+  url: https://www.unito.it/didattica/tasse/contribuzione-studenti-internazionali
+  last_checked: 2026-11-01

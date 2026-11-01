@@ -97,6 +97,16 @@ export const universityTypes = {
   online: { en: 'Online university', ar: 'جامعة عبر الإنترنت', fr: 'Université en ligne' },
 } satisfies Labels;
 
+// How a university sets the fee shown on the tuition fees page.
+export const feeBases = {
+  country: { en: 'Fixed fee by country of origin', ar: 'رسم ثابت حسب بلد الطالب', fr: "Montant fixe selon le pays d'origine" },
+  income: { en: 'Based on family income (ISEE parificato)', ar: 'حسب دخل العائلة (⁦ISEE parificato⁩)', fr: 'Selon les revenus de la famille (ISEE parificato)' },
+  exempt: { en: 'Non-EU students exempt from the university fee', ar: 'طلاب خارج الاتحاد الأوروبي معفون من رسم الجامعة', fr: "Étudiants non européens exonérés des frais d'université" },
+  flat: { en: 'One fee for international students', ar: 'رسم واحد للطلاب الدوليين', fr: 'Un seul montant pour les étudiants internationaux' },
+  programme: { en: 'Depends on the programme', ar: 'حسب البرنامج', fr: 'Selon le programme' },
+  reductions: { en: 'Full fee, with reductions or scholarships', ar: 'رسم كامل مع تخفيضات أو منح ممكنة', fr: 'Montant plein, avec réductions ou bourses possibles' },
+} satisfies Labels;
+
 // Broad study areas, used to describe what each university teaches.
 export const areas = {
   engineering: { en: 'Engineering', ar: 'الهندسة', fr: 'Ingénierie' },

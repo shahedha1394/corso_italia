@@ -4,6 +4,7 @@ import { z } from 'astro/zod';
 import {
   areas,
   cefrLevels,
+  feeBases,
   cities,
   deadlineTypes,
   fundingTypes,
@@ -74,6 +75,21 @@ const universities = defineCollection({
     masters_page: z.string().url().optional(),
     areas: z.array(z.enum(keysOf(areas))).default([]),
     description: bilingual.optional(),
+    // Yearly fees for international students with family income abroad (tuition fees page).
+    // min/max in euro. includes_tax: true if the regional tax is already in the amount,
+    // false if it is added on top, left out if the official page does not say.
+    fees: z
+      .object({
+        min: z.number().nonnegative(),
+        max: z.number().nonnegative().optional(),
+        approx: z.boolean().default(false),
+        basis: z.enum(keysOf(feeBases)),
+        includes_tax: z.boolean().optional(),
+        year: z.string().optional(),
+        url: z.string().url(),
+        last_checked: z.coerce.date(),
+      })
+      .optional(),
     last_checked: z.coerce.date(),
   }),
 });

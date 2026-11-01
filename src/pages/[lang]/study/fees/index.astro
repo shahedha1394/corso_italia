@@ -1,0 +1,137 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../../../layouts/Base.astro';
+import { arrow, dateLocale, getStaticLangPaths, path, useTranslations, type Lang } from '../../../../i18n';
+import { cities, feeBases } from '../../../../lib/taxonomy';
+
+export const getStaticPaths = getStaticLangPaths;
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+
+// Universities with checked fee data. "Lower" and "higher" are split by amount, not by type:
+// a university is in the lower group if the most a student pays there is up to LOWER_LIMIT a year.
+const LOWER_LIMIT = 5000;
+const withFees = (await getCollection('universities')).filter((u) => u.data.fees);
+const top = (u: (typeof withFees)[number]) => u.data.fees!.max ?? u.data.fees!.min;
+const byAmount = (a: (typeof withFees)[number], b: (typeof withFees)[number]) =>
+  a.data.fees!.min - b.data.fees!.min || top(a) - top(b);
+const lower = withFees.filter((u) => top(u) <= LOWER_LIMIT).sort(byAmount);
+const higher = withFees.filter((u) => top(u) > LOWER_LIMIT).sort(byAmount);
+
+// Latin digits in every language, so amounts read the same everywhere.
+const money = new Intl.NumberFormat(lang === 'ar' ? 'ar-u-nu-latn' : dateLocale(lang), {
+  style: 'currency',
+  currency: 'EUR',
+  maximumFractionDigits: 0,
+});
+
+function amount(f: NonNullable<(typeof withFees)[number]['data']['fees']>): string {
+  if (f.min === 0 && (f.max ?? 0) === 0) return t('fees.zero');
+  if (f.approx) return `${t('fees.about')} ${money.format(f.min)}`;
+  if (f.max === undefined) return f.basis === 'flat' ? money.format(f.min) : `${t('fees.from')} ${money.format(f.min)}`;
+  if (f.max === f.min) return money.format(f.min);
+  return `${money.format(f.min)} – ${money.format(f.max)}`;
+}
+
+function tax(f: NonNullable<(typeof withFees)[number]['data']['fees']>): string | undefined {
+  if (f.includes_tax === true) return t('fees.taxIncluded');
+  if (f.includes_tax === false) return t('fees.taxExtra');
+  return undefined;
+}
+
+const sections = [
+  { id: 'lower', title: t('fees.lower'), intro: t('fees.lower.intro'), items: lower },
+  { id: 'higher', title: t('fees.higher'), intro: t('fees.higher.intro'), items: higher },
+];
+---
+
+<Base lang={lang} title={t('fees.title')} description={t('fees.intro')}>
+  <header class="container page-header">
+    <p class="meta"><a href={path(lang, '/study/')}>{t('nav.study')}</a></p>
+    <h1>{t('fees.title')}</h1>
+    <p>{t('fees.intro')}</p>
+  </header>
+
+  <section class="container">
+    <div class="notice fees-notice">
+      <p><strong>{t('fees.noFree.title')}</strong></p>
+      <p>{t('fees.noFree.text')}</p>
+    </div>
+    <p><a href={path(lang, '/study/costs/')}>{t('fees.costsGuide')} {arrow(lang)}</a></p>
+  </section>
+
+  {sections.map((s) => (
+    <section class="container section" id={s.id}>
+      <h2>{s.title}</h2>
+      <p class="meta">{s.intro}</p>
+      <ol class="fees-list">
+        {s.items.map((u) => {
+          const f = u.data.fees!;
+          const note = tax(f);
+          return (
+            <li class="card fee-card">
+              <div class="fee-card__head">
+                <h3><a href={path(lang, `/study/universities/${u.id}/`)}>{u.data.name[lang]}</a></h3>
+                <span class="meta">{cities[u.data.city][lang]}</span>
+              </div>
+              <p class="fee-card__amount">{amount(f)} <span class="fee-card__per">{t('fees.perYear')}</span></p>
+              <p class="meta">
+                {feeBases[f.basis][lang]}
+                {note && <> · {note}</>}
+              </p>
+              <p class="meta">
+                {f.year && <>{t('fees.year')} {f.year} · </>}
+                <a href={f.url} rel="noopener" target="_blank">{t('fees.official')}</a>
+              </p>
+            </li>
+          );
+        })}
+      </ol>
+    </section>
+  ))}
+
+  <section class="container section">
+    <p class="meta">{t('fees.missing')}</p>
+    <p class="notice">{t('common.disclaimer')}</p>
+  </section>
+</Base>
+
+<style>
+  .fees-notice p {
+    margin-block: 0.25rem;
+  }
+  .fees-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr));
+  }
+  .fee-card__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.25rem 0.75rem;
+  }
+  .fee-card__head h3 {
+    margin: 0;
+    font-size: 1.05rem;
+  }
+  .fee-card__amount {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-block: 0.5rem 0.25rem;
+  }
+  .fee-card__per {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--color-muted);
+  }
+  .fee-card .meta {
+    margin-block: 0.15rem;
+  }
+</style>

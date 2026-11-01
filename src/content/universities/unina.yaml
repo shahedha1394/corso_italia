@@ -15,3 +15,11 @@ description:
   ar: "تأسست عام 1224. جامعة حكومية فيها 26 قسماً تغطي معظم المجالات."
   fr: "Fondée en 1224. Une université publique avec 26 départements qui couvre presque tous les domaines."
 last_checked: 2026-10-29
+fees:
+  min: 0
+  max: 0
+  basis: exempt
+  includes_tax: false
+  year: "2026/27"
+  url: https://www.unina.it/documents/d/guest/guida_studente_rapida_26-27_10-7-2026
+  last_checked: 2026-11-01

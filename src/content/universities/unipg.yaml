@@ -14,3 +14,11 @@ description:
   ar: "تأسست عام 1308. جامعة حكومية فيها 14 قسماً، وتدرّس أيضاً في تيرني ونارني وفولينيو وأسيزي."
   fr: "Fondée en 1308. Une université publique avec 14 départements, qui enseigne aussi à Terni, Narni, Foligno et Assise."
 last_checked: 2026-10-26
+fees:
+  min: 400
+  max: 1000
+  basis: country
+  includes_tax: true
+  year: "2026/27"
+  url: https://www.unipg.it/files/pagine/100/studenti-con-reddito-patrimonio-estero-tasse-e-contributi-universitari_26_27.pdf
+  last_checked: 2026-11-01

@@ -15,3 +15,11 @@ description:
   ar: "تأسست عام 1548. جامعة حكومية تغطي معظم المجالات."
   fr: "Fondée en 1548. Une université publique qui couvre presque tous les domaines."
 last_checked: 2026-10-26
+fees:
+  min: 156
+  max: 506
+  basis: country
+  includes_tax: true
+  year: "2025/26"
+  url: https://international.unime.it/node/44
+  last_checked: 2026-11-01

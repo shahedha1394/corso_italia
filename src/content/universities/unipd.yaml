@@ -16,3 +16,10 @@ description:
   ar: "تأسست عام 1222. جامعة حكومية تغطي معظم المجالات، مقرها الرئيسي في بادوفا ولها مواقع أخرى أغلبها في منطقة فينيتو."
   fr: "Fondée en 1222. Une université publique qui couvre presque tous les domaines, avec son campus principal à Padoue et d'autres sites surtout en Vénétie."
 last_checked: 2026-10-28
+fees:
+  min: 930
+  max: 2990
+  basis: country
+  year: "2026/27"
+  url: https://www.unipd.it/en/tuition-fees
+  last_checked: 2026-11-01

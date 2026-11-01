@@ -24,6 +24,7 @@ Text fields are objects with `en`, `ar` and `fr` keys (`fr` optional for now; En
 | areas | list | broad study areas from `areas` in `src/lib/taxonomy.ts`, only those seen on the official site |
 | tuition_range_eur | {min, max} | per year | *later*
 | description | {en, ar} | one or two sentences, only facts from the official site |
+| fees | object, optional | Yearly fees for international students with family income abroad, shown on `/study/fees/`. `min`, `max` (euro, max optional), `approx` (bool), `basis` (`country` \| `income` \| `exempt` \| `flat` \| `programme` \| `reductions`), `includes_tax` (true if the regional tax is in the amount, false if added on top, omit if the page does not say), `year` (e.g. "2026/27"), `url` (official fees page), `last_checked`. Only amounts read on the official page. |
 | last_checked | date | |
 
 ## City (`src/content/cities/<city-key>.yaml`)

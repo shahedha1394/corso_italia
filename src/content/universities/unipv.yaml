@@ -15,3 +15,10 @@ description:
   ar: "تأسست عام 1361. جامعة حكومية فيها 18 قسماً، وتدرّس أيضاً في كريمونا."
   fr: "Fondée comme Studium Generale en 1361. Une université publique avec 18 départements, qui enseigne aussi à Crémone."
 last_checked: 2026-10-26
+fees:
+  min: 390
+  max: 4550
+  basis: country
+  year: "2026/27"
+  url: https://portale.unipv.it/it/didattica/corsi-di-laurea/contribuzione-universitaria/futuri-studenti/flat-rate-studenti-internazionali
+  last_checked: 2026-11-01
