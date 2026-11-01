@@ -231,5 +231,8 @@
   "fees.year": "Année universitaire",
   "fees.official": "Page officielle des frais",
   "fees.missing": "Nous ne listons que les universités dont nous avons pu vérifier les frais sur une page officielle. Si votre université n'y figure pas, cherchez sa page « tasse e contributi ».",
-  "study.directory.fees": "Comparez ce que paient les étudiants internationaux, des frais les plus bas aux plus élevés."
+  "study.directory.fees": "Comparez ce que paient les étudiants internationaux, des frais les plus bas aux plus élevés.",
+  "opportunities.pathways.title": "Volontariat et autres voies pour venir en Italie",
+  "opportunities.pathways.text": "Le Corps européen de solidarité, le service civil italien, le visa de volontariat et les couloirs pour réfugiés : qui peut participer et où postuler.",
+  "opportunities.pathways.link": "Lire le guide"
 }
