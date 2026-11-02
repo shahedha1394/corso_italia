@@ -15,3 +15,8 @@ description:
   ar: "تأسست عام 1810. مدرسة عليا في بيزا ولها مقر في فلورنسا: دوراتها الأساسية تكون بالتوازي مع الدراسة في جامعة بيزا (أو فلورنسا)، وتقدّم برامج دكتوراه."
   fr: "Fondée en 1810. Une école supérieure à Pise, avec un site à Florence : ses cours ordinaires se suivent en parallèle d'un diplôme à l'Université de Pise (ou de Florence), et elle propose des doctorats."
 last_checked: 2026-10-27
+phd:
+  cycle: 42
+  page: "https://www.sns.it/en/phd-admission-competition"
+  deadlines: [2026-04-13, 2026-06-22, 2026-08-03]
+  last_checked: 2026-11-02

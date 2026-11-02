@@ -15,3 +15,9 @@ description:
   ar: "تأسست عام 1481. جامعة حكومية لديها برامج في جنوة وفي سافونا وإمبيريا ولا سبيتسيا وكيافاري."
   fr: "Fondée en 1481. Une université publique avec des formations à Gênes et à Savone, Imperia, La Spezia et Chiavari."
 last_checked: 2026-10-26
+phd:
+  cycle: 42
+  page: "https://unige.it/usg/it/dottorati-di-ricerca"
+  call: "https://unige.it/sites/unige.it/files/2026-06/DR%202458%20del%205.06.2026.pdf"
+  deadlines: [2026-07-09]
+  last_checked: 2026-11-02

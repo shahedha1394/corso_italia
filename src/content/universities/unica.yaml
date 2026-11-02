@@ -15,3 +15,11 @@ description:
   ar: "تأسست عام 1620. جامعة حكومية فيها 6 كليات و15 قسماً، في كالياري ومونسيراتو."
   fr: "Fondée en 1620. Une université publique avec 6 facultés et 15 départements, à Cagliari et Monserrato."
 last_checked: 2026-10-29
+phd:
+  cycle: 42
+  page: "https://web.unica.it/unica/en/studenti_s01_ss05.page"
+  call: "https://web.unica.it/unica/protected/544034/0/def/ref/AVS543900/"
+  deadlines: [2026-09-28]
+  scholarship: 16243
+  remote_interview: "yes"
+  last_checked: 2026-11-02

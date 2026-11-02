@@ -15,3 +15,11 @@ description:
   ar: "تأسست عام 1978. جامعة حكومية تغطي معظم المجالات."
   fr: "Créée en 1978. Une université publique qui couvre presque tous les domaines."
 last_checked: 2026-11-01
+phd:
+  cycle: 42
+  call: "https://www.uniud.it/it/ricerca/lavorare-nella-ricerca/dottorato-ricerca/ammissione-ai-corsi/bando-e-modulistica/bandi-e-modulistica-2026/dr-317-2026_phd_uniud_bando_42_i-sess_12-posizioni.pdf"
+  deadlines: [2026-06-04]
+  scholarship: 16243
+  scholarship_max: 19367
+  remote_interview: "some"
+  last_checked: 2026-11-02

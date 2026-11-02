@@ -21,3 +21,10 @@ fees:
   basis: flat
   url: https://www.unibz.it/applicants/international/international-degree-seeking-applicants/degree-seeking-non-eu-citizens-living-abroad
   last_checked: 2026-11-01
+phd:
+  cycle: 42
+  call: "https://www.unibz.it/assets/Documents/PhD/PhD-1-call/General-part-1st-call-42nd-cycle-ita+ted.pdf"
+  deadlines: [2026-04-21]
+  scholarship: 28000
+  remote_interview: "some"
+  last_checked: 2026-11-02

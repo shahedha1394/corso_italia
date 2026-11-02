@@ -23,3 +23,8 @@ fees:
   year: "2026/27"
   url: https://www.unito.it/didattica/tasse/contribuzione-studenti-internazionali
   last_checked: 2026-11-01
+phd:
+  cycle: 42
+  page: "https://www.dottorato.unito.it/do/home.pl/View?doc=Bando_XLII_ciclo.html"
+  deadlines: [2026-06-09]
+  last_checked: 2026-11-02

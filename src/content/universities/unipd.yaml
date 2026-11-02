@@ -23,3 +23,12 @@ fees:
   year: "2026/27"
   url: https://www.unipd.it/en/tuition-fees
   last_checked: 2026-11-01
+phd:
+  cycle: 42
+  page: "https://www.unipd.it/dottorati-42-ciclo"
+  call: "https://crf.unipd.it/sites/crf.unipd.it/files/Normativa%2042_clean.pdf"
+  deadlines: [2026-05-20]
+  scholarship: 17443
+  scholarship_max: 18643
+  remote_interview: "yes"
+  last_checked: 2026-11-02

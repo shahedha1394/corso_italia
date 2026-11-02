@@ -49,6 +49,9 @@ const checked = u.last_checked.toLocaleDateString(dateLocale(lang), { dateStyle:
       {u.international_page && (
         <a class="button button-secondary" href={u.international_page} rel="noopener" target="_blank">{t('dir.universities.international')}</a>
       )}
+      {u.phd && (
+        <a class="button button-secondary" href={`${path(lang, '/study/phd/')}#${uni.id}`}>{t('dir.universities.phd')}</a>
+      )}
     </div>
 
     {u.areas.length > 0 && (

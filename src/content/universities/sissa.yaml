@@ -15,3 +15,8 @@ description:
   ar: "تأسست عام 1978. مدرسة دكتوراه أساساً في الرياضيات والفيزياء وعلم الأعصاب، ولها بعض برامج الماجستير المشتركة مع جامعتي تريستي وترينتو."
   fr: "Fondée en 1978. Surtout une école doctorale en mathématiques, physique et neurosciences, avec quelques masters organisés avec les universités de Trieste et de Trente."
 last_checked: 2026-10-27
+phd:
+  cycle: 42
+  page: "https://www.sissa.it/bandi/ammissione-ai-corsi-di-phd-della-sissa-lanno-accademico-202627-admission-sissa-phd-courses"
+  deadlines: [2026-01-19, 2026-08-27]
+  last_checked: 2026-11-02

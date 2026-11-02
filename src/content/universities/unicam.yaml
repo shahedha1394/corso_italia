@@ -15,3 +15,11 @@ description:
   ar: "أُعيد تأسيسها عام 1727. جامعة حكومية في كاميرينو، ولها مواقع في أسكولي بيتشينو وماتيليكا وسان بينيديتو ديل ترونتو."
   fr: "Refondée en 1727. Une université publique à Camerino, avec des sites à Ascoli Piceno, Matelica et San Benedetto del Tronto."
 last_checked: 2026-10-29
+phd:
+  cycle: 42
+  page: "https://isas.unicam.it"
+  call: "https://www.unicam.it/sites/default/files/bandi/2026/06/UNICAM%20Bando%20PHD%20ciclo%20XLII%20a.a.26-27_I%20IT_signed.pdf"
+  deadlines: [2026-07-24]
+  scholarship: 16243
+  remote_interview: "yes"
+  last_checked: 2026-11-02

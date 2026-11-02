@@ -16,3 +16,11 @@ description:
   ar: "جامعة حكومية فيها 10 أقسام، مقرها في تريستي ولها مواقع في غوريتسيا وبوردينوني وبورتوغروارو."
   fr: "Une université publique avec 10 départements, basée à Trieste avec des sites à Gorizia, Pordenone et Portogruaro."
 last_checked: 2026-10-29
+phd:
+  cycle: 42
+  page: "https://portale.units.it/en/research/phd"
+  call: "https://repo.units.it/docs/units_PhD_bando_en.42.pdf"
+  deadlines: [2026-05-25, 2026-08-31]
+  scholarship: 16243
+  remote_interview: "yes"
+  last_checked: 2026-11-02

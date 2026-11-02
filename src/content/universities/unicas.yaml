@@ -15,3 +15,10 @@ description:
   ar: "جامعة حكومية فيها 5 أقسام، في كاسينو وفروزينوني."
   fr: "Une université publique avec 5 départements, à Cassino et Frosinone."
 last_checked: 2026-10-29
+phd:
+  cycle: 42
+  page: "https://www.unicas.it/ateneo/bandi-di-concorso/corsi-di-dottorato-di-ricerca-aa-20262027-xlii-ciclo/"
+  call: "https://www.unicas.it/media/mmdlritf/dr-n-572_2026_dottorato-xlii-ciclo.pdf"
+  deadlines: [2026-08-31]
+  scholarship: 16243
+  last_checked: 2026-11-02

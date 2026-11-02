@@ -22,3 +22,7 @@ fees:
   year: "2026/27"
   url: https://international.unicatt.it/ucscinternational-TUITION%20GUIDE%20ACADEMIC%20YEAR%202026-2027%20_%20FIRST%20YEAR.pdf
   last_checked: 2026-11-01
+phd:
+  cycle: 42
+  page: "https://dottorati.unicatt.it/candidarsi/i-bandi.html"
+  last_checked: 2026-11-02

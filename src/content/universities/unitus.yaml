@@ -23,3 +23,10 @@ fees:
   year: "2026/27"
   url: https://www.unitus.it/wp-content/uploads/2026/07/ALL.A_DISCIPLINA-TASSE-E-CONTRIBUTI-A.A.-2026-2027_POST-SEDUTA.rev-aa_18.6.2026-2.pdf
   last_checked: 2026-11-01
+phd:
+  cycle: 42
+  call: "https://www.unitus.it/wp-content/uploads/2026/07/Bando-dottorati-42-ciclo-versione-ITA-2026-signed-prot.pdf"
+  deadlines: [2026-08-18]
+  scholarship: 16243
+  remote_interview: "yes"
+  last_checked: 2026-11-02

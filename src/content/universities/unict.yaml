@@ -15,3 +15,10 @@ description:
   ar: "تأسست عام 1434، وهي أقدم جامعة في صقلية. جامعة حكومية فيها 17 قسماً تغطي معظم المجالات."
   fr: "Créée en 1434, c'est la plus ancienne université de Sicile. Une université publique avec 17 départements qui couvre presque tous les domaines."
 last_checked: 2026-10-26
+phd:
+  cycle: 42
+  call: "https://www.unict.it/sites/default/files/ds_bandi/dr_2322_del_29-06-2026_it.pdf"
+  deadlines: [2026-07-31]
+  scholarship: 16243
+  remote_interview: "some"
+  last_checked: 2026-11-02

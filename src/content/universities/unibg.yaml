@@ -23,3 +23,10 @@ fees:
   year: "2026/27"
   url: https://www.unibg.it/sites/default/files/media/documents/2026-10-26/Guida%20alla%20contribuzione%20studentesca%20a.a.%202026-2027.pdf
   last_checked: 2026-11-01
+phd:
+  cycle: 42
+  page: "https://www.unibg.it/node/19659"
+  call: "https://www.unibg.it/sites/default/files/media/documents/2026-07-17/BandoXLII%20Ciclo_ITA.pdf"
+  deadlines: [2026-09-09]
+  scholarship: 19021.08
+  last_checked: 2026-11-02

@@ -15,3 +15,11 @@ description:
   ar: "تأسست عام 1925. جامعة حكومية صغيرة معروفة بتعليم اللغة والثقافة الإيطالية، ولديها عدد قليل من برامج البكالوريوس والماجستير، منها العلاقات الدولية."
   fr: "Créée en 1925. Une petite université publique connue pour la langue et la culture italiennes, avec quelques licences et masters, dont un en relations internationales."
 last_checked: 2026-10-29
+phd:
+  cycle: 42
+  page: "https://www.unistrapg.it/amministrazione-trasparente/bandi-di-concorso/concorsi-e-selezioni-dottorati-assegni-borse-e-contratti-attivita-di-ricerca"
+  call: "https://www.unistrapg.it/sites/default/files/concorso/220426-Bando-LILAIM-XLII-ITA.pdf"
+  deadlines: [2026-05-28]
+  scholarship: 16243
+  remote_interview: "yes"
+  last_checked: 2026-11-02

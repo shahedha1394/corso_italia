@@ -23,3 +23,8 @@ fees:
   year: "2026/27"
   url: https://www.unipa.it/mobilita/en/new-students/tuition-fees/
   last_checked: 2026-11-01
+phd:
+  cycle: 42
+  page: "https://www.unipa.it/didattica/dottorati/dottorato-xlii/bando-di-accesso-ciclo-42/"
+  deadlines: [2026-08-12]
+  last_checked: 2026-11-02

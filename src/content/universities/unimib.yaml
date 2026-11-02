@@ -23,3 +23,11 @@ fees:
   year: "2026/27"
   url: https://en.unimib.it/sites/sten/files/2026-07/01_Contribution%20Guide%2026_27.pdf
   last_checked: 2026-11-01
+phd:
+  cycle: 42
+  page: "https://www.unimib.it/studiare/dottorato-ricerca/accedere-al-dottorato"
+  call: "https://www.unimib.it/sites/default/files/2026-03/BANDO%2042%20CICLO_parte%20generale_P.pdf"
+  deadlines: [2026-04-17, 2026-07-22]
+  scholarship: 16243
+  remote_interview: "yes"
+  last_checked: 2026-11-02

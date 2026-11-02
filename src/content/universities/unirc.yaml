@@ -16,3 +16,11 @@ description:
   ar: "تأسست عام 1968. جامعة حكومية فيها 5 أقسام."
   fr: "Créée en 1968. Une université publique avec 5 départements."
 last_checked: 2026-10-26
+phd:
+  cycle: 42
+  page: "https://www.unirc.it/ricerca/dottorato-di-ricerca/futuri-dottorandi"
+  call: "https://www.unirc.it/sites/default/files/2026-07/DR.%20n.%20261%20del%2028.07.2026_Bando_XLII-IT.pdf"
+  deadlines: [2026-09-03]
+  scholarship: 16243
+  remote_interview: "yes"
+  last_checked: 2026-11-02
