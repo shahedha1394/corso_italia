@@ -16,3 +16,9 @@ description:
   ar: "تعود أصولها إلى كلية تأسست في نابولي عام 1732. جامعة حكومية للغات والثقافات والدراسات الدولية."
   fr: "Ses origines remontent à un collège fondé à Naples en 1732. Une université publique pour les langues, les cultures et les études internationales."
 last_checked: 2026-10-29
+phd:
+  cycle: 42
+  call: "https://www.unior.it/sites/default/files/2026-07/Bando%20Dottorato%20di%20Ricerca%20ciclo%20XLII%20a.a.%202026%202027%20%281%29%20%283%29%20%281%29.pdf"
+  scholarship: 16243
+  remote_interview: "yes"
+  last_checked: 2026-11-02

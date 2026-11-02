@@ -23,3 +23,10 @@ fees:
   year: "2026/27"
   url: https://www.unina.it/documents/d/guest/guida_studente_rapida_26-27_10-7-2026
   last_checked: 2026-11-01
+phd:
+  cycle: 42
+  call: "https://www.unina.it/documents/d/guest/dot_42_ciclo_bando"
+  deadlines: [2026-07-21]
+  scholarship: 16243
+  remote_interview: "some"
+  last_checked: 2026-11-02

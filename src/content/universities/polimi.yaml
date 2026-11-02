@@ -23,3 +23,8 @@ fees:
   year: "2026/27"
   url: https://dynamicpoli.polimi.it/en/prospective-students/how-much-does-it-cost/laurea-laurea-magistrale-and-single-cycle-programmes
   last_checked: 2026-11-01
+phd:
+  cycle: 42
+  page: "https://www.polimi.it/en/phd/prospective-phd-candidates/admission/calls-and-open-positions"
+  deadlines: [2026-07-01, 2026-09-18]
+  last_checked: 2026-11-02

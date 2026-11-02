@@ -16,3 +16,8 @@ description:
   ar: "تأسست عام 1982. جامعة حكومية في روما مقسّمة إلى 6 كليات."
   fr: "Créée en 1982. Une université publique à Rome organisée en 6 écoles."
 last_checked: 2026-10-29
+phd:
+  cycle: 42
+  page: "https://dottorati.uniroma2.it/42-ciclo_p10363.aspx"
+  deadlines: [2026-06-09]
+  last_checked: 2026-11-02

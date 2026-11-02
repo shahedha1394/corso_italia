@@ -15,3 +15,11 @@ description:
   ar: "تأسست عام 1991. جامعة حكومية فيها 16 قسماً في كازيرتا ونابولي وأفيرسا وسانتا ماريا كابوا فيتيري وكابوا."
   fr: "Créée en 1991. Une université publique avec 16 départements à Caserte, Naples, Aversa, Santa Maria Capua Vetere et Capoue."
 last_checked: 2026-10-29
+phd:
+  cycle: 42
+  page: "https://www.unicampania.it/index.php/didattica/dottorati-di-ricerca/iscriversi-ad-un-dottorato"
+  call: "https://www.letterebeniculturali.unicampania.it/images/Bando_di_concorso_per_lammissione_ai_corsi_di_dottorato_di_ricerca_-_42_ciclo.pdf"
+  deadlines: [2026-07-17]
+  scholarship: 16243
+  remote_interview: "yes"
+  last_checked: 2026-11-02

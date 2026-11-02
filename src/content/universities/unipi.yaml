@@ -24,3 +24,9 @@ fees:
   year: "2026/27"
   url: https://www.unipi.it/wp-content/uploads/regolamentotasse_2026_2027.pdf
   last_checked: 2026-11-01
+phd:
+  cycle: 42
+  page: "https://www.unipi.it/didattica/corsi/dottorati/bando2026-27/"
+  deadlines: [2026-06-08, 2026-08-10]
+  scholarship: 16243
+  last_checked: 2026-11-02

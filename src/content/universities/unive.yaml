@@ -23,3 +23,10 @@ fees:
   year: "2026/27"
   url: https://www.unive.it/pag/50473/
   last_checked: 2026-11-01
+phd:
+  cycle: 42
+  call: "https://www.unive.it/web/fileadmin/user_upload/dottorati/doc/accesso/bando_42/Bando_42_e_allegato_A_ITA.pdf"
+  deadlines: [2026-05-06]
+  scholarship: 16243
+  remote_interview: "yes"
+  last_checked: 2026-11-02

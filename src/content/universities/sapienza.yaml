@@ -22,3 +22,11 @@ fees:
   year: "2025/26"
   url: https://www.uniroma1.it/en/content/standard-registration-fee-amounts
   last_checked: 2026-11-01
+phd:
+  cycle: 42
+  page: "https://www.uniroma1.it/it/pagina/dottorati-di-ricerca"
+  call: "https://www.uniroma1.it/sites/default/files/field_file_allegati/bando_phd_42degciclo_con_allegati_def_pubbl.pdf"
+  deadlines: [2026-06-17]
+  scholarship: 16243
+  remote_interview: "some"
+  last_checked: 2026-11-02

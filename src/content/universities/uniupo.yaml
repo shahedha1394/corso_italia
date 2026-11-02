@@ -15,3 +15,10 @@ description:
   ar: "تأسست عام 1998. جامعة حكومية فيها 8 أقسام وكلية للطب، في فيرتشيلي ونوفارا وأليساندريا."
   fr: "Fondée en 1998. Une université publique avec 8 départements et une école de médecine, à Verceil, Novare et Alexandrie."
 last_checked: 2026-10-29
+phd:
+  cycle: 42
+  page: "https://uniupo.it/it/corsi/dottorato-di-ricerca/il-dottorato-upo/bando-dottorato-di-ricerca"
+  call: "https://uniupo.it/sites/default/files/2026-06/Bando%20dottorati%20di%20ricerca_42%20ciclo_2026_2027.pdf"
+  deadlines: [2026-07-10]
+  scholarship: 16243
+  last_checked: 2026-11-02

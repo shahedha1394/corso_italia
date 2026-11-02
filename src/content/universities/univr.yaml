@@ -15,3 +15,11 @@ description:
   ar: "أصبحت جامعة حكومية عام 1982. فيها 13 قسماً وكلية للطب، ولها بعض البرامج في فيتشنزا."
   fr: "Devenue université d'État en 1982. Une université publique avec 13 départements et une école de médecine, avec quelques cours à Vicence."
 last_checked: 2026-10-26
+phd:
+  cycle: 42
+  page: "https://www.univr.it/en/phds"
+  call: "https://cdn.docs.univr.it/documenti/IscrizGenConcorsi/bandocomune/bandocomune977409.pdf"
+  deadlines: [2026-06-09]
+  scholarship: 17602.57
+  remote_interview: "some"
+  last_checked: 2026-11-02

@@ -25,6 +25,7 @@ Text fields are objects with `en`, `ar` and `fr` keys (`fr` optional for now; En
 | tuition_range_eur | {min, max} | per year | *later*
 | description | {en, ar} | one or two sentences, only facts from the official site |
 | fees | object, optional | Yearly fees for international students with family income abroad, shown on `/study/fees/`. `min`, `max` (euro, max optional), `approx` (bool), `basis` (`country` \| `income` \| `exempt` \| `flat` \| `programme` \| `reductions`), `includes_tax` (true if the regional tax is in the amount, false if added on top, omit if the page does not say), `year` (e.g. "2026/27"), `url` (official fees page), `last_checked`. Only amounts read on the official page. |
+| phd | object, optional | PhD admissions from the latest call we checked, shown on `/study/phd/` and linked from the university page. `cycle` (Italian *ciclo*, e.g. 42), `page` (PhD admissions page) and/or `call` (the call, usually a PDF), `deadlines` (every closing date in that call, as dates), `scholarship` and `scholarship_max` (gross euro a year), `remote_interview` (`"yes"` if candidates abroad can be interviewed online, `"some"` if it depends on the programme or needs a reason), `last_checked`. Leave out anything the call does not say. Calls still open appear at the top of the page automatically. |
 | last_checked | date | |
 
 ## City (`src/content/cities/<city-key>.yaml`)

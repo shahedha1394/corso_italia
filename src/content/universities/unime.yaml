@@ -23,3 +23,11 @@ fees:
   year: "2025/26"
   url: https://international.unime.it/node/44
   last_checked: 2026-11-01
+phd:
+  cycle: 42
+  page: "https://international.unime.it/node/628"
+  call: "https://www.unime.it/sites/default/files/2026-06/Bando%20Dottorati%20di%20Ricerca%2042%C2%B0%20ciclo%20con%20Schede_signed.pdf"
+  deadlines: [2026-07-24]
+  scholarship: 16243
+  remote_interview: "some"
+  last_checked: 2026-11-02

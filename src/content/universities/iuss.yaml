@@ -15,3 +15,11 @@ description:
   ar: "تأسست عام 1997. مدرسة متقدمة في بافيا، لها دورات بالتوازي مع الدراسة في جامعة بافيا أو ميلانو، وبرامج ماجستير مشتركة ودكتوراه."
   fr: "Créée en 1997. Une école avancée à Pavie, avec des cours ordinaires suivis en parallèle d'un diplôme à Pavie ou à Milan, des masters conjoints et des programmes de doctorat."
 last_checked: 2026-10-27
+phd:
+  cycle: 42
+  page: "http://www.iusspavia.it"
+  call: "https://www.iusspavia.it/sites/default/files/2026-05/Bando%20PhD%20XLII_sito.pdf"
+  deadlines: [2026-06-12]
+  scholarship: 18645.63
+  remote_interview: "yes"
+  last_checked: 2026-11-02

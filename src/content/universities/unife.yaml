@@ -15,3 +15,8 @@ description:
   ar: "تأسست عام 1391. جامعة حكومية فيها 13 قسماً."
   fr: "Fondée en 1391. Une université publique avec 13 départements."
 last_checked: 2026-10-29
+phd:
+  cycle: 42
+  page: "https://iuss.unife.it/en/admissions/calls/cycle-42-call"
+  deadlines: [2026-06-24]
+  last_checked: 2026-11-02

@@ -23,3 +23,7 @@ fees:
   year: "2027/28"
   url: https://www.unibocconi.it/en/fees
   last_checked: 2026-11-01
+phd:
+  cycle: 42
+  page: "https://www.unibocconi.it/en/applying-bocconi/phd-programs"
+  last_checked: 2026-11-02

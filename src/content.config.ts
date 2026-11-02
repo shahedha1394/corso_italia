@@ -90,6 +90,25 @@ const universities = defineCollection({
         last_checked: z.coerce.date(),
       })
       .optional(),
+    // PhD admissions, from the latest call we checked (cycle = the Italian "ciclo", e.g. 42).
+    // page: the university's PhD admissions page; call: the call itself (usually a PDF).
+    // deadlines: every closing date in that call (some universities have several rounds).
+    // scholarship: gross amount a year in euro (scholarship_max if it differs by programme).
+    // remote_interview: 'yes' if candidates abroad can have the interview online,
+    // 'some' if it depends on the programme or needs a reason. Leave out what the call does not say.
+    phd: z
+      .object({
+        cycle: z.number().int(),
+        page: z.string().url().optional(),
+        call: z.string().url().optional(),
+        deadlines: z.array(z.coerce.date()).default([]),
+        scholarship: z.number().positive().optional(),
+        scholarship_max: z.number().positive().optional(),
+        remote_interview: z.enum(['yes', 'some']).optional(),
+        last_checked: z.coerce.date(),
+      })
+      .refine((p) => p.page || p.call, { message: 'phd needs a page or a call link' })
+      .optional(),
     last_checked: z.coerce.date(),
   }),
 });

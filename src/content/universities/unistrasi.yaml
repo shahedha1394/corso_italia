@@ -15,3 +15,10 @@ description:
   ar: "جامعة حكومية صغيرة فيها قسم واحد للعلوم الإنسانية، وعدد قليل من برامج البكالوريوس والماجستير."
   fr: "Une petite université publique avec un seul département de lettres et quelques licences et masters."
 last_checked: 2026-10-29
+phd:
+  cycle: 42
+  page: "https://dottorato.unistrasi.it/200/556/Accesso_al_dottorato.htm"
+  call: "https://online.unistrasi.it/albo/files/000854887-UPSSCLE-13849786-6dee-42e8-a234-a5745b7f4275-000.pdf"
+  scholarship: 16243.28
+  remote_interview: "some"
+  last_checked: 2026-11-02

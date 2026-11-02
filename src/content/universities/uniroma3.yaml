@@ -15,3 +15,11 @@ description:
   ar: "تأسست عام 1992. جامعة حكومية في روما فيها 13 قسماً."
   fr: "Fondée en 1992. Une université publique à Rome avec 13 départements."
 last_checked: 2026-10-26
+phd:
+  cycle: 42
+  page: "https://apps.uniroma3.it/public/bando2026"
+  call: "https://apps.uniroma3.it/public/bando2026/BANDO42eng.pdf"
+  deadlines: [2026-07-14]
+  scholarship: 16243
+  remote_interview: "some"
+  last_checked: 2026-11-02

@@ -15,3 +15,10 @@ description:
   ar: "تعود أصولها إلى عام 1321. جامعة حكومية فيها 10 كليات تغطي معظم المجالات، ولها مواقع في فلورنسا وسيستو فيورنتينو وكالينتسانو وبراتو."
   fr: "Ses origines remontent à 1321. Une université publique avec 10 écoles qui couvre presque tous les domaines, avec des sites à Florence, Sesto Fiorentino, Calenzano et Prato."
 last_checked: 2026-10-26
+phd:
+  cycle: 42
+  call: "https://www.unifi.it/sites/default/files/2026-05/all.1_bando_42_ita.pdf"
+  deadlines: [2026-06-11]
+  scholarship: 16243
+  remote_interview: "some"
+  last_checked: 2026-11-02

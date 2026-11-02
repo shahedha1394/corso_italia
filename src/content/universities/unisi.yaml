@@ -15,3 +15,11 @@ description:
   ar: "أقدم وثيقة تذكر وجودها تعود إلى عام 1240. جامعة حكومية فيها 15 قسماً، وتدرّس أيضاً في أريتسو وغروسيتو."
   fr: "Le premier document attestant son existence date de 1240. Une université publique avec 15 départements, qui enseigne aussi à Arezzo et Grosseto."
 last_checked: 2026-10-26
+phd:
+  cycle: 42
+  page: "https://www.unisi.it/ricerca/dottorati-di-ricerca/dottorati-di-ricerca-42-ciclo"
+  call: "https://www.unisi.it/sites/default/files/allegati/Allegato_1_DR_dottorati_c42_1_avviso_selezione.pdf"
+  deadlines: [2026-06-29]
+  scholarship: 16243
+  remote_interview: "yes"
+  last_checked: 2026-11-02

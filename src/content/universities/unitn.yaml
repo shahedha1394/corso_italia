@@ -16,3 +16,11 @@ description:
   ar: "تعود بداياتها إلى عام 1962. جامعة حكومية في ترينتو، ولها قسم في روفيريتو."
   fr: "Ses origines remontent à 1962. Une université publique à Trente, avec un département à Rovereto."
 last_checked: 2026-10-26
+phd:
+  cycle: 42
+  page: "https://www.sociologia.unitn.it/en/dottorato/srs"
+  call: "https://www.unitn.it/sites/default/files/2026-04/Bando%20SRS_42.pdf"
+  deadlines: [2026-05-14]
+  scholarship: 18345
+  remote_interview: "yes"
+  last_checked: 2026-11-02

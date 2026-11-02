@@ -15,3 +15,9 @@ description:
   ar: "جامعة حكومية حرمها الرئيسي في فيشانو، على بعد كيلومترات قليلة من ساليرنو، منذ عام 1987، ولها موقع آخر في بارونيسي."
   fr: "Une université publique dont le campus principal se trouve depuis 1987 à Fisciano, à quelques kilomètres de Salerne, avec un autre site à Baronissi."
 last_checked: 2026-10-29
+phd:
+  cycle: 42
+  page: "https://web.unisa.it/en/teaching/phd-programmes"
+  call: "https://web.unisa.it/uploads/rescue/277/14911/call-for-phd-courses-xlii-cycle-secondo-bando-.pdf"
+  deadlines: [2026-08-06, 2026-11-06]
+  last_checked: 2026-11-02

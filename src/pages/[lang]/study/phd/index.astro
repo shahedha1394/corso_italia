@@ -1,0 +1,166 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../../../layouts/Base.astro';
+import { arrow, dateLocale, fill, getStaticLangPaths, path, useTranslations, type Lang } from '../../../../i18n';
+import { cities } from '../../../../lib/taxonomy';
+
+export const getStaticPaths = getStaticLangPaths;
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+
+// Universities with a checked PhD call. Sorted by the first closing date of that call,
+// so the list reads like a year: the earliest calls first. The site rebuilds every
+// morning, so "open now" stays correct without editing the data.
+const all = (await getCollection('universities')).filter((u) => u.data.phd);
+type Uni = (typeof all)[number];
+const first = (u: Uni) => u.data.phd!.deadlines[0]?.getTime() ?? Infinity;
+const sorted = [...all].sort((a, b) => first(a) - first(b) || a.data.name[lang].localeCompare(b.data.name[lang]));
+
+const today = new Date();
+today.setHours(0, 0, 0, 0);
+const openNow = sorted
+  .map((u) => ({ u, next: u.data.phd!.deadlines.find((d) => d >= today) }))
+  .filter((x) => x.next)
+  .sort((a, b) => a.next!.getTime() - b.next!.getTime());
+
+const locale = lang === 'ar' ? 'ar-u-nu-latn' : dateLocale(lang);
+const formatDate = (d: Date) => d.toLocaleDateString(locale, { dateStyle: 'medium' });
+const money = new Intl.NumberFormat(locale, { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 });
+const monthOf = (d: Date) => d.toLocaleDateString(locale, { month: 'long', year: 'numeric' });
+
+const withDates = sorted.filter((u) => u.data.phd!.deadlines.length > 0);
+const noDates = sorted.filter((u) => u.data.phd!.deadlines.length === 0);
+const groups = [...new Map(withDates.map((u) => [monthOf(u.data.phd!.deadlines[0]), [] as Uni[]])).entries()];
+for (const u of withDates) groups.find(([m]) => m === monthOf(u.data.phd!.deadlines[0]))![1].push(u);
+if (noDates.length) groups.push([t('phd.noDate'), noDates]);
+
+function scholarship(u: Uni): string | undefined {
+  const p = u.data.phd!;
+  if (!p.scholarship) return undefined;
+  if (p.scholarship_max && p.scholarship_max !== p.scholarship) {
+    return `${money.format(p.scholarship)} – ${money.format(p.scholarship_max)}`;
+  }
+  return money.format(p.scholarship);
+}
+---
+
+<Base lang={lang} title={t('phd.title')} description={t('phd.intro')}>
+  <header class="container page-header">
+    <p class="meta"><a href={path(lang, '/study/')}>{t('nav.study')}</a></p>
+    <h1>{t('phd.title')}</h1>
+    <p>{t('phd.intro')}</p>
+  </header>
+
+  <section class="container">
+    <div class="notice phd-notice">
+      <p><strong>{t('phd.notice.title')}</strong></p>
+      <p>{t('phd.notice.text')}</p>
+    </div>
+    <p><a href={path(lang, '/study/phd-in-italy/')}>{t('phd.guide')} {arrow(lang)}</a></p>
+  </section>
+
+  {openNow.length > 0 && (
+    <section class="container section" id="open">
+      <h2>{t('phd.open')}</h2>
+      <ul class="phd-open">
+        {openNow.map(({ u, next }) => (
+          <li>
+            <a href={`#${u.id}`}>{u.data.name[lang]}</a>
+            <span class="meta"> · {fill(t('phd.closes'), { date: formatDate(next!) })}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <section class="container section">
+    <h2>{t('phd.list')}</h2>
+    <p class="meta">{fill(t('phd.list.intro'), { count: sorted.length })}</p>
+    {groups.map(([label, items]) => (
+      <>
+        <h3 class="phd-month">{label}</h3>
+        <ol class="phd-list">
+          {items.map((u) => {
+            const p = u.data.phd!;
+            const amount = scholarship(u);
+            return (
+              <li class="card phd-card" id={u.id}>
+                <div class="phd-card__head">
+                  <h4><a href={path(lang, `/study/universities/${u.id}/`)}>{u.data.name[lang]}</a></h4>
+                  <span class="meta">{cities[u.data.city][lang]}</span>
+                </div>
+                {p.deadlines.length > 0 && (
+                  <p>
+                    <strong>{t(p.deadlines.length > 1 ? 'phd.deadlines' : 'phd.deadline')}:</strong>{' '}
+                    {p.deadlines.map(formatDate).join(' · ')}
+                  </p>
+                )}
+                {amount && (
+                  <p>
+                    <strong>{t('phd.scholarship')}:</strong> {amount} <span class="meta">{t('phd.grossYear')}</span>
+                  </p>
+                )}
+                {p.remote_interview && <p class="meta">{t(p.remote_interview === 'yes' ? 'phd.remote.yes' : 'phd.remote.some')}</p>}
+                <p class="phd-card__links">
+                  {p.page && <a href={p.page} rel="noopener" target="_blank">{t('phd.page')}</a>}
+                  {p.call && <a href={p.call} rel="noopener" target="_blank">{t('phd.call')}</a>}
+                </p>
+              </li>
+            );
+          })}
+        </ol>
+      </>
+    ))}
+  </section>
+
+  <section class="container section">
+    <h2>{t('phd.risk.title')}</h2>
+    <p>{t('phd.risk.text')}</p>
+    <p><a href="https://www.unipd.it/en/dottorati-42risk" rel="noopener" target="_blank">{t('phd.risk.link')}</a></p>
+  </section>
+
+  <section class="container section">
+    <p class="meta">{t('phd.missing')}</p>
+    <p class="notice">{t('common.disclaimer')}</p>
+  </section>
+</Base>
+
+<style>
+  .phd-notice p {
+    margin-block: 0.25rem;
+  }
+  .phd-open {
+    padding-inline-start: 1.25rem;
+  }
+  .phd-month {
+    margin-block: 1.5rem 0.75rem;
+  }
+  .phd-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr));
+  }
+  .phd-card__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.25rem 0.75rem;
+  }
+  .phd-card__head h4 {
+    margin: 0;
+    font-size: 1.05rem;
+  }
+  .phd-card p {
+    margin-block: 0.35rem;
+  }
+  .phd-card__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+  }
+</style>

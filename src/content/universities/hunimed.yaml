@@ -22,3 +22,12 @@ fees:
   year: "2026/27"
   url: https://www.hunimed.eu/wp-content/uploads/2026/02/University-Fee-Regulations_Summary-for-International-Students_2026_2027-1.pdf
   last_checked: 2026-11-01
+phd:
+  cycle: 42
+  page: "https://www.hunimed.eu/course/phd-mecm/"
+  call: "https://www.hunimed.eu/wp-content/uploads/2026/05/Bando-unico-PhD_42-ciclo_ITA.pdf"
+  deadlines: [2026-06-26]
+  scholarship: 21000
+  scholarship_max: 22400
+  remote_interview: "yes"
+  last_checked: 2026-11-02

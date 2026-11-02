@@ -16,3 +16,11 @@ description:
   ar: "جامعة تقنية تعود جذورها إلى عام 1859. تدرّس الهندسة والعمارة والتصميم والتخطيط، وأغلب دراستها في تورينو."
   fr: "Une université technique dont les origines remontent à 1859. Elle enseigne l'ingénierie, l'architecture, le design et l'urbanisme, surtout à Turin."
 last_checked: 2026-10-26
+phd:
+  cycle: 42
+  page: "https://www.polito.it/didattica/dottorato-di-ricerca-e-scuola-di-specializzazione/ammissione-al-dottorato/ammissione/bando-di-concorso"
+  call: "https://www.polito.it/sites/default/files/2026-03/Bando%20di%20concorso_Dottorato_42ciclo_DEFINITIVO_per%20sito.pdf"
+  deadlines: [2026-04-30, 2026-11-16, 2027-02-15]
+  scholarship: 18854.52
+  remote_interview: "yes"
+  last_checked: 2026-11-02

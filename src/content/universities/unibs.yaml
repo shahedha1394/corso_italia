@@ -15,3 +15,11 @@ description:
   ar: "تأسست رسمياً عام 1982. جامعة حكومية لديها برامج في الهندسة والطب والاقتصاد والقانون."
   fr: "Officiellement fondée en 1982. Une université publique avec des formations en ingénierie, médecine, économie et droit."
 last_checked: 2026-10-29
+phd:
+  cycle: 42
+  page: "https://www.unibs.it/it/node/1078"
+  call: "https://www.unibs.it/sites/default/files/2026-06/DR%20558%20Bando%20Ordinario%2042_0.pdf"
+  deadlines: [2026-07-23]
+  scholarship: 18432.84
+  remote_interview: "some"
+  last_checked: 2026-11-02

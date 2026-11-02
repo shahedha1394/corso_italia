@@ -15,3 +15,9 @@ description:
   ar: "جامعة حكومية فيها 5 أقسام، تركّز على العلوم الإنسانية والقانون والاقتصاد والعلوم الاجتماعية."
   fr: "Une université publique avec 5 départements, axée sur les lettres, le droit, l'économie et les sciences sociales."
 last_checked: 2026-10-26
+phd:
+  cycle: 42
+  call: "https://www.unimc.it/it/dottorato-di-ricerca/ammissione-ai-corsi/ciclo-42-ate/2026-61816_bandoate_42_eng-tables.pdf"
+  scholarship: 16243
+  remote_interview: "yes"
+  last_checked: 2026-11-02

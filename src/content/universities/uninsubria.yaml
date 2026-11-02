@@ -15,3 +15,10 @@ description:
   ar: "تأسست عام 1998. جامعة حكومية فيها 8 أقسام، في فاريزي وكومو وبوستو أرسيتسيو."
   fr: "Fondée en 1998. Une université publique avec 8 départements, à Varese, Côme et Busto Arsizio."
 last_checked: 2026-10-26
+phd:
+  cycle: 42
+  page: "https://www.uninsubria.it/la-didattica/dottorati-di-ricerca"
+  call: "https://www.uninsubria.it/sites/default/files/2026-06/Bando_XLII_ciclo_e_allegato_IT_sito.pdf"
+  scholarship: 16243
+  remote_interview: "some"
+  last_checked: 2026-11-02

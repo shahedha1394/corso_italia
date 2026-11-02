@@ -15,3 +15,11 @@ description:
   ar: "تأسست عام 1997. جامعة حكومية فيها 4 أقسام، منها الطب والصحة، في حرم جيرمانيتو في كاتانزارو."
   fr: "Créée en 1997. Une université publique avec 4 départements, dont médecine et santé, sur le campus de Germaneto à Catanzaro."
 last_checked: 2026-10-29
+phd:
+  cycle: 42
+  page: "https://web.unicz.it/it/category/dottorati-di-ricerca"
+  call: "https://web.unicz.it/uploads/2026/07/bando-dottorato-2026-27-ius-dr-867.pdf"
+  deadlines: [2026-08-03]
+  scholarship: 16243
+  remote_interview: "some"
+  last_checked: 2026-11-02

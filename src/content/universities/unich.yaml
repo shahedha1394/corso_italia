@@ -15,3 +15,10 @@ description:
   ar: "جامعة حكومية فيها 3 كليات و7 أقسام أخرى، في كييتي وبيسكارا."
   fr: "Une université publique avec 3 écoles et 7 autres départements, à Chieti et Pescara."
 last_checked: 2026-10-29
+phd:
+  cycle: 42
+  page: "https://www.scuolasuperiore.unich.it/bandi-di-concorso"
+  call: "https://www.scuolasuperiore.unich.it/sites/sc03/files/bando_42_it.pdf"
+  deadlines: [2026-08-21]
+  scholarship: 16243
+  last_checked: 2026-11-02

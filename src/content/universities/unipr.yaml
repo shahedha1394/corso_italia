@@ -16,3 +16,11 @@ description:
   ar: "جامعة حكومية فيها 10 أقسام تغطي معظم المجالات، ولها فرع في بياتشنزا يُدرَّس فيه الطب بالإنجليزية."
   fr: "Une université publique avec 10 départements qui couvre presque tous les domaines, avec un pôle à Plaisance où la médecine est enseignée en anglais."
 last_checked: 2026-10-26
+phd:
+  cycle: 42
+  page: "https://www.unipr.it/i-dottorati-di-ricerca-xlii-ciclo-aa-20262027"
+  call: "https://www.unipr.it/sites/default/files/2026-06/BANDO%20dottorati%2042%20ciclo.pdf"
+  deadlines: [2026-07-23]
+  scholarship: 18752
+  remote_interview: "some"
+  last_checked: 2026-11-02
