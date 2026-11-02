@@ -313,5 +313,14 @@
   "calendar.year.intro": "Each dot is a deadline. Tap a month to see its deadlines.",
   "calendar.year.count": "{n} deadlines",
   "calendar.year.countOne": "1 deadline",
-  "calendar.year.none": "no deadlines"
+  "calendar.year.none": "no deadlines",
+  "visacalc.title": "Is my money enough for the visa?",
+  "visacalc.intro": "For 2026/27 you must show {amount} a year to get a study visa. Enter what you have.",
+  "visacalc.scholarship": "Scholarship (a year)",
+  "visacalc.savings": "Your savings or your family's",
+  "visacalc.sponsor": "A guarantor in Italy",
+  "visacalc.flight": "Add about {amount} for the return flight (asked by the Consulate in Jerusalem, for example)",
+  "visacalc.ok": "Enough: you have {have}, and {need} is needed.",
+  "visacalc.gap": "You are missing {gap}: you have {have}, and {need} is needed.",
+  "visacalc.note": "Only money from legal and traceable sources counts, and a regional scholarship counts only once it has been awarded. This is an estimate: the embassy or consulate decides."
 }

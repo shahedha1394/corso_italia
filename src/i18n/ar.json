@@ -313,5 +313,14 @@
   "calendar.year.intro": "كل نقطة موعد نهائي. اضغط على شهر لترى مواعيده.",
   "calendar.year.count": "{n} مواعيد",
   "calendar.year.countOne": "موعد واحد",
-  "calendar.year.none": "لا مواعيد"
+  "calendar.year.none": "لا مواعيد",
+  "visacalc.title": "هل يكفي مالي للتأشيرة؟",
+  "visacalc.intro": "للعام 2026/27 يجب أن تثبت {amount} في السنة لتحصل على تأشيرة الدراسة. أدخل ما لديك.",
+  "visacalc.scholarship": "المنحة (في السنة)",
+  "visacalc.savings": "مدخراتك أو مدخرات عائلتك",
+  "visacalc.sponsor": "كفيل في إيطاليا",
+  "visacalc.flight": "أضف حوالي {amount} لتذكرة العودة (تطلبها مثلاً القنصلية في القدس)",
+  "visacalc.ok": "المبلغ كافٍ: لديك {have}، والمطلوب {need}.",
+  "visacalc.gap": "ينقصك {gap}: لديك {have}، والمطلوب {need}.",
+  "visacalc.note": "يُحسب فقط المال من مصادر قانونية يمكن تتبعها، والمنحة الإقليمية لا تُحسب إلا بعد منحها فعلاً. هذا تقدير فقط: القرار للسفارة أو القنصلية."
 }

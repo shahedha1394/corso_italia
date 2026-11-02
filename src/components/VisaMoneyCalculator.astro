@@ -1,0 +1,151 @@
+---
+// Visa money calculator: does what you have reach the amount a student must show for the study visa?
+// The amount is the national figure for 2026/27 (also in the visa, costs and how-to-apply guides).
+// Update REQUIRED when the Ministry publishes a new figure.
+import { dateLocale, useTranslations, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const REQUIRED = 10179.85;
+const RETURN_FLIGHT = 500;
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const locale = lang === 'ar' ? 'ar-u-nu-latn' : dateLocale(lang);
+const money = new Intl.NumberFormat(locale, { style: 'currency', currency: 'EUR', maximumFractionDigits: 2 });
+
+const fields = [
+  { name: 'scholarship', label: t('visacalc.scholarship') },
+  { name: 'savings', label: t('visacalc.savings') },
+  { name: 'sponsor', label: t('visacalc.sponsor') },
+];
+---
+
+<section
+  class="visa-calc"
+  aria-labelledby="visa-calc-title"
+  data-required={REQUIRED}
+  data-flight={RETURN_FLIGHT}
+  data-locale={locale}
+  data-ok={t('visacalc.ok')}
+  data-gap={t('visacalc.gap')}
+>
+  <h2 id="visa-calc-title">{t('visacalc.title')}</h2>
+  <p class="meta">{t('visacalc.intro').replace('{amount}', money.format(REQUIRED))}</p>
+  <form class="visa-calc__form" onsubmit="return false">
+    {fields.map((f) => (
+      <label>
+        <span>{f.label}</span>
+        <span class="visa-calc__input">
+          <span aria-hidden="true">€</span>
+          <input type="number" name={f.name} min="0" step="50" inputmode="decimal" placeholder="0" />
+        </span>
+      </label>
+    ))}
+    <label class="visa-calc__check">
+      <input type="checkbox" name="flight" />
+      <span>{t('visacalc.flight').replace('{amount}', money.format(RETURN_FLIGHT))}</span>
+    </label>
+  </form>
+  <div class="visa-calc__bar" aria-hidden="true"><span class="visa-calc__fill"></span></div>
+  <p class="visa-calc__result" aria-live="polite"></p>
+  <p class="meta">{t('visacalc.note')}</p>
+</section>
+
+<script>
+  for (const calc of document.querySelectorAll<HTMLElement>('.visa-calc')) {
+    const form = calc.querySelector<HTMLFormElement>('form');
+    const fill = calc.querySelector<HTMLElement>('.visa-calc__fill');
+    const result = calc.querySelector<HTMLElement>('.visa-calc__result');
+    if (!form || !fill || !result) continue;
+    const d = calc.dataset;
+    const money = new Intl.NumberFormat(d.locale, { style: 'currency', currency: 'EUR', maximumFractionDigits: 2 });
+    const update = () => {
+      const num = (name: string) => Math.max(0, Number((form.elements.namedItem(name) as HTMLInputElement).value) || 0);
+      const flight = (form.elements.namedItem('flight') as HTMLInputElement).checked;
+      const need = Number(d.required) + (flight ? Number(d.flight) : 0);
+      const have = num('scholarship') + num('savings') + num('sponsor');
+      const share = Math.min(1, have / need);
+      fill.style.inlineSize = `${share * 100}%`;
+      calc.classList.toggle('is-ok', have >= need);
+      result.textContent =
+        have >= need
+          ? d.ok!.replace('{have}', money.format(have)).replace('{need}', money.format(need))
+          : d.gap!.replace('{gap}', money.format(need - have)).replace('{have}', money.format(have)).replace('{need}', money.format(need));
+    };
+    form.addEventListener('input', update);
+    update();
+  }
+</script>
+
+<style>
+  .visa-calc {
+    background: var(--color-primary-soft);
+    border-radius: var(--radius);
+    padding: 1.25rem;
+    margin-block: 1.5rem 2rem;
+  }
+  .visa-calc h2 {
+    margin-block-start: 0;
+  }
+  .visa-calc__form {
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+    margin-block: 1rem;
+  }
+  .visa-calc__form label {
+    display: grid;
+    gap: 0.25rem;
+    font-weight: 600;
+  }
+  .visa-calc__input {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding-inline: 0.6rem;
+    direction: ltr;
+  }
+  .visa-calc__input input {
+    border: 0;
+    background: transparent;
+    inline-size: 100%;
+    min-inline-size: 0;
+    padding-block: 0.5rem;
+    font: inherit;
+    color: inherit;
+  }
+  .visa-calc__check {
+    grid-column: 1 / -1;
+    display: flex !important;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 400 !important;
+  }
+  .visa-calc__bar {
+    block-size: 0.9rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    overflow: hidden;
+  }
+  .visa-calc__fill {
+    display: block;
+    block-size: 100%;
+    inline-size: 0;
+    background: var(--color-accent);
+    transition: inline-size 0.2s ease;
+  }
+  .visa-calc.is-ok .visa-calc__fill {
+    background: var(--color-primary);
+  }
+  .visa-calc__result {
+    font-weight: 700;
+    margin-block: 0.75rem 0.5rem;
+  }
+</style>
