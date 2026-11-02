@@ -313,5 +313,14 @@
   "calendar.year.intro": "Chaque point est une date limite. Touchez un mois pour voir ses dates.",
   "calendar.year.count": "{n} dates limites",
   "calendar.year.countOne": "1 date limite",
-  "calendar.year.none": "aucune date limite"
+  "calendar.year.none": "aucune date limite",
+  "visacalc.title": "Mon argent suffit-il pour le visa ?",
+  "visacalc.intro": "Pour 2026/27, vous devez prouver {amount} par an pour obtenir un visa d'études. Indiquez ce que vous avez.",
+  "visacalc.scholarship": "Bourse (par an)",
+  "visacalc.savings": "Vos économies ou celles de votre famille",
+  "visacalc.sponsor": "Un garant en Italie",
+  "visacalc.flight": "Ajouter environ {amount} pour le vol retour (demandé par exemple par le Consulat à Jérusalem)",
+  "visacalc.ok": "Suffisant : vous avez {have}, et il faut {need}.",
+  "visacalc.gap": "Il vous manque {gap} : vous avez {have}, et il faut {need}.",
+  "visacalc.note": "Seul l'argent d'origine légale et traçable compte, et une bourse régionale ne compte qu'une fois attribuée. C'est une estimation : l'ambassade ou le consulat décide."
 }

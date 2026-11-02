@@ -5,6 +5,7 @@ import { dateLocale, path, useTranslations, type Lang } from '../../../i18n';
 import VideoEmbed from '../../../components/VideoEmbed.astro';
 import TestFinder from '../../../components/TestFinder.astro';
 import ScholarshipFinder from '../../../components/ScholarshipFinder.astro';
+import VisaMoneyCalculator from '../../../components/VisaMoneyCalculator.astro';
 import { social } from '../../../config/site';
 import { getVideos, splitId } from '../../../lib/content';
 
@@ -49,6 +50,7 @@ const lastChecked = guide.data.lastChecked?.toLocaleDateString(dateLocale(lang),
 
     {splitId(guide.id).slug === 'admission-tests' && <TestFinder lang={lang} />}
     {splitId(guide.id).slug === 'funding' && <ScholarshipFinder lang={lang} />}
+    {['visa', 'costs'].includes(splitId(guide.id).slug) && <VisaMoneyCalculator lang={lang} />}
 
     <Content />
 
