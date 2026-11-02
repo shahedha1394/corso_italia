@@ -1,0 +1,174 @@
+---
+// "Which scholarships fit me?" — three questions, then the guides and scholarships that apply.
+// Every card is rendered at build time; the script only shows the ones whose conditions match.
+// Conditions are space-separated lists: a card shows when each answer is in its list (or the list is "any").
+import { arrow, path, useTranslations, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+const questions = [
+  {
+    name: 'where',
+    label: t('schol.where'),
+    options: [
+      { value: 'outside', label: t('schol.where.outside') },
+      { value: 'italy', label: t('schol.where.italy') },
+    ],
+  },
+  {
+    name: 'situation',
+    label: t('schol.situation'),
+    options: [
+      { value: 'none', label: t('schol.situation.none') },
+      { value: 'palestinian', label: t('schol.situation.palestinian') },
+      { value: 'refugee', label: t('schol.situation.refugee') },
+      { value: 'conflict', label: t('schol.situation.conflict') },
+    ],
+  },
+  {
+    name: 'level',
+    label: t('schol.level'),
+    options: [
+      { value: 'bachelor', label: t('schol.level.bachelor') },
+      { value: 'master', label: t('schol.level.master') },
+      { value: 'phd', label: t('schol.level.phd') },
+    ],
+  },
+];
+
+const cards = [
+  { id: 'palestinian', href: '/study/palestinian-students/', where: 'any', situation: 'palestinian', level: 'any' },
+  { id: 'refugee-italy', href: '/study/refugees-and-conflict-areas/', where: 'italy', situation: 'refugee', level: 'any' },
+  { id: 'unicore', href: '/study/refugees-and-conflict-areas/', where: 'outside', situation: 'refugee', level: 'master' },
+  { id: 'conflict', href: '/study/refugees-and-conflict-areas/', where: 'any', situation: 'conflict', level: 'any' },
+  { id: 'phd', href: '/study/phd/', where: 'any', situation: 'any', level: 'phd' },
+  { id: 'phd-risk', href: '/study/phd-in-italy/', where: 'any', situation: 'palestinian refugee conflict', level: 'phd' },
+  { id: 'dsu', href: '/study/funding/', where: 'any', situation: 'any', level: 'bachelor master' },
+  { id: 'maeci', href: '/study/funding/', where: 'any', situation: 'any', level: 'master phd' },
+  { id: 'university', href: '/study/scholarships/', where: 'any', situation: 'any', level: 'any' },
+  { id: 'pathways', href: '/study/volunteering-and-pathways/', where: 'outside', situation: 'refugee', level: 'any' },
+  { id: 'support', href: '/living/support-and-help/', where: 'any', situation: 'palestinian refugee conflict', level: 'any' },
+  { id: 'visa', href: '/study/visa/', where: 'outside', situation: 'any', level: 'any' },
+] as const;
+---
+
+<section class="schol-finder" aria-labelledby="schol-finder-title">
+  <h2 id="schol-finder-title">{t('schol.title')}</h2>
+  <p class="meta">{t('schol.intro')}</p>
+  <form class="schol-finder__form">
+    {questions.map((q) => (
+      <fieldset>
+        <legend>{q.label}</legend>
+        {q.options.map((o, i) => (
+          <label>
+            <input type="radio" name={q.name} value={o.value} checked={i === 0} />
+            {o.label}
+          </label>
+        ))}
+      </fieldset>
+    ))}
+  </form>
+  <p class="schol-finder__label">{t('schol.answer')}</p>
+  <ul class="schol-finder__results" aria-live="polite">
+    {cards.map((c) => (
+      <li data-where={c.where} data-situation={c.situation} data-level={c.level}>
+        <a class="card" href={path(lang, c.href)}>
+          <h3>{t(`schol.card.${c.id}` as Parameters<typeof t>[0])}</h3>
+          <p>{t(`schol.card.${c.id}.text` as Parameters<typeof t>[0])}</p>
+          <span class="schol-finder__more">{t('schol.more')} {arrow(lang)}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+  <p class="meta">{t('schol.note')}</p>
+</section>
+
+<script>
+  for (const finder of document.querySelectorAll<HTMLElement>('.schol-finder')) {
+    const form = finder.querySelector<HTMLFormElement>('form');
+    if (!form) continue;
+    const update = () => {
+      const data = new FormData(form);
+      const answer = (name: string) => String(data.get(name) ?? '');
+      const fits = (list: string | undefined, value: string) => !list || list === 'any' || list.split(' ').includes(value);
+      for (const item of finder.querySelectorAll<HTMLElement>('[data-where]')) {
+        item.hidden = !(
+          fits(item.dataset.where, answer('where')) &&
+          fits(item.dataset.situation, answer('situation')) &&
+          fits(item.dataset.level, answer('level'))
+        );
+      }
+    };
+    form.addEventListener('change', update);
+    update();
+  }
+</script>
+
+<style>
+  .schol-finder {
+    background: var(--color-primary-soft);
+    border-radius: var(--radius);
+    padding: 1.25rem;
+    margin-block: 1.5rem 2rem;
+  }
+  .schol-finder h2 {
+    margin-block-start: 0;
+  }
+  .schol-finder__form {
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    margin-block: 1rem;
+  }
+  fieldset {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    background: var(--color-surface);
+    padding: 0.75rem;
+    margin: 0;
+  }
+  legend {
+    font-weight: 600;
+    padding-inline: 0.25rem;
+  }
+  label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-block: 0.2rem;
+  }
+  .schol-finder__label {
+    font-weight: 700;
+    margin-block: 0.5rem;
+  }
+  .schol-finder__results {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem;
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
+  }
+  .schol-finder__results li[hidden] {
+    display: none;
+  }
+  .schol-finder__results .card {
+    display: block;
+    block-size: 100%;
+  }
+  .schol-finder__results h3 {
+    margin-block: 0 0.35rem;
+    font-size: 1.05rem;
+  }
+  .schol-finder__results p {
+    margin-block: 0 0.5rem;
+  }
+  .schol-finder__more {
+    font-weight: 600;
+  }
+</style>
