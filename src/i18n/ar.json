@@ -261,5 +261,8 @@
   "phd.missing": "نذكر فقط الجامعات التي استطعنا التحقق من إعلان الدكتوراه فيها على صفحة رسمية. إذا لم تجد جامعتك هنا، ابحث في موقعها عن «⁦Dottorato di ricerca⁩».",
   "opportunities.palestine.title": "الطلاب الفلسطينيون",
   "opportunities.palestine.text": "منح للطلاب والباحثين الفلسطينيين، ووضع طلاب غزة، والجهات التي تساعد.",
-  "opportunities.palestine.link": "اقرأ الدليل"
+  "opportunities.palestine.link": "اقرأ الدليل",
+  "opportunities.refugees.title": "منح للاجئين والقادمين من مناطق النزاع",
+  "opportunities.refugees.text": "منح للاجئين ولمن لديه حماية، وللطلاب من دول فيها نزاع، وللباحثين المعرّضين للخطر.",
+  "opportunities.refugees.link": "اقرأ الدليل"
 }
