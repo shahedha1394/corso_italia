@@ -1,0 +1,150 @@
+---
+// Fees map: one dot per city with checked fees, coloured by the lowest yearly fee
+// an international student with family income abroad can pay there (the "max" of each university,
+// or "min" when there is no max, as on the fees page). Each dot links to that university on the page.
+import { getCollection } from 'astro:content';
+import map from '../data/italy-map.json';
+import { dateLocale, useTranslations, type Lang } from '../i18n';
+import { cities } from '../lib/taxonomy';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const locale = lang === 'ar' ? 'ar-u-nu-latn' : dateLocale(lang);
+const money = new Intl.NumberFormat(locale, { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 });
+
+const withFees = (await getCollection('universities')).filter((u) => u.data.fees);
+type Uni = (typeof withFees)[number];
+const top = (u: Uni) => u.data.fees!.max ?? u.data.fees!.min;
+const range = (u: Uni) => {
+  const f = u.data.fees!;
+  return f.max !== undefined && f.max !== f.min ? `${money.format(f.min)} – ${money.format(f.max)}` : money.format(f.min);
+};
+
+// Same limit as the fees page for "lower" and "higher"; a third band for the cheapest.
+const bands = [
+  { id: 'low', max: 1000, label: t('feesmap.low') },
+  { id: 'mid', max: 5000, label: t('feesmap.mid') },
+  { id: 'high', max: Infinity, label: t('feesmap.high') },
+] as const;
+
+type CityKey = keyof typeof cities;
+const positions = map.cities as Record<string, [number, number]>;
+const byCity = new Map<CityKey, Uni[]>();
+for (const u of withFees) {
+  const key = u.data.city as CityKey;
+  if (!(key in positions)) continue;
+  byCity.set(key, [...(byCity.get(key) ?? []), u]);
+}
+const dots = [...byCity.entries()]
+  .map(([key, unis]) => {
+    unis.sort((a, b) => top(a) - top(b));
+    const cheapest = top(unis[0]);
+    const band = bands.find((b) => cheapest <= b.max)!;
+    const [x, y] = positions[key];
+    const label = `${cities[key][lang]}: ${unis.map((u) => `${u.data.name[lang]} ${range(u)}`).join('; ')}`;
+    return { key, x, y, unis, band: band.id, label, r: 5 + 2 * Math.sqrt(unis.length) };
+  })
+  .sort((a, b) => b.r - a.r);
+---
+
+<figure class="fees-map">
+  <svg viewBox={`0 0 ${map.width} ${map.height}`} role="group" aria-label={t('feesmap.label')}>
+    <g>
+      {Object.values(map.regions).map((d) => <path d={d} class="fees-map__region" />)}
+    </g>
+    <g>
+      {dots.map((dot) => (
+        <a href={`#${dot.unis[0].id}`} aria-label={dot.label}>
+          <circle class={`fees-map__dot band-${dot.band}`} cx={dot.x} cy={dot.y} r={dot.r}>
+            <title>{dot.label}</title>
+          </circle>
+        </a>
+      ))}
+    </g>
+  </svg>
+  <figcaption>
+    <ul class="fees-map__legend">
+      {bands.map((b) => (
+        <li><span class={`fees-map__key band-${b.id}`} aria-hidden="true" /> {b.label}</li>
+      ))}
+    </ul>
+    <span class="meta">{t('feesmap.note')}</span>
+    <span class="fees-map__credit">{t('map.credit')}</span>
+  </figcaption>
+</figure>
+
+<style>
+  .fees-map {
+    margin: 0;
+    max-inline-size: 30rem;
+  }
+  .fees-map svg {
+    display: block;
+    inline-size: 100%;
+    block-size: auto;
+    direction: ltr;
+  }
+  .fees-map__region {
+    fill: var(--color-surface);
+    stroke: var(--color-border);
+    stroke-width: 1.2;
+    stroke-linejoin: round;
+  }
+  .fees-map__dot {
+    stroke: var(--color-bg);
+    stroke-width: 1.5;
+  }
+  .fees-map a:hover .fees-map__dot,
+  .fees-map a:focus-visible .fees-map__dot {
+    stroke: var(--color-text);
+    stroke-width: 3;
+  }
+  .fees-map a:focus-visible {
+    outline: none;
+  }
+  .band-low {
+    fill: var(--color-primary);
+    background: var(--color-primary);
+  }
+  .band-mid {
+    fill: #e0a800;
+    background: #e0a800;
+  }
+  .band-high {
+    fill: var(--color-accent);
+    background: var(--color-accent);
+  }
+  .fees-map figcaption {
+    display: grid;
+    gap: 0.3rem;
+    margin-block-start: 0.5rem;
+  }
+  .fees-map__legend {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem 1rem;
+    font-size: 0.9rem;
+  }
+  .fees-map__legend li {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+  .fees-map__key {
+    display: inline-block;
+    inline-size: 0.85rem;
+    block-size: 0.85rem;
+    border-radius: 50%;
+  }
+  .fees-map__credit {
+    font-size: 0.75rem;
+    color: var(--color-muted);
+  }
+</style>
