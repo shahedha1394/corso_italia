@@ -261,5 +261,8 @@
   "phd.missing": "We list only universities whose PhD call we could check on an official page. If your university is not here, look for \"Dottorato di ricerca\" on its website.",
   "opportunities.palestine.title": "Palestinian students",
   "opportunities.palestine.text": "Scholarships for Palestinian students and researchers, the situation of students from Gaza, and the organisations that help.",
-  "opportunities.palestine.link": "Read the guide"
+  "opportunities.palestine.link": "Read the guide",
+  "opportunities.refugees.title": "Scholarships for refugees and students from conflict areas",
+  "opportunities.refugees.text": "Scholarships for refugees, people with protection, students from countries in conflict and researchers at risk.",
+  "opportunities.refugees.link": "Read the guide"
 }

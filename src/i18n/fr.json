@@ -261,5 +261,8 @@
   "phd.missing": "Nous indiquons seulement les universités dont nous avons pu vérifier l'appel de doctorat sur une page officielle. Si votre université n'est pas ici, cherchez « Dottorato di ricerca » sur son site.",
   "opportunities.palestine.title": "Étudiants palestiniens",
   "opportunities.palestine.text": "Bourses pour étudiants et chercheurs palestiniens, situation des étudiants de Gaza et organisations qui aident.",
-  "opportunities.palestine.link": "Lire le guide"
+  "opportunities.palestine.link": "Lire le guide",
+  "opportunities.refugees.title": "Bourses pour réfugiés et étudiants venant de zones de conflit",
+  "opportunities.refugees.text": "Bourses pour réfugiés, personnes protégées, étudiants de pays en conflit et chercheurs en danger.",
+  "opportunities.refugees.link": "Lire le guide"
 }
