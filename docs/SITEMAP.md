@@ -78,6 +78,7 @@ Separate section, own landing page and look, targeted at learners and volunteer 
 
 ## 6. Shared pages
 - About us / team, Contact, FAQ, Disclaimer ("information only, always check official sources"), Privacy policy (GDPR), Terms
+- Search (`/search`): searches guides (section by section), pages, universities, cities, scholarships, opportunities and videos in the page language. The index `/<lang>/search-index.json` is built with the site; the search icon in the header and the box on the home page open it.
 
 ## Content rules (apply to every guide)
 - Written in both languages; an English page is not published without its Arabic version (or a visible "translation coming" note)

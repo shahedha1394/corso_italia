@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import SearchBox from '../../components/SearchBox.astro';
 import Icon from '../../components/Icon.astro';
 import ItalyMap from '../../components/ItalyMap.astro';
 import ChannelCard from '../../components/ChannelCard.astro';
@@ -35,6 +36,7 @@ const sections: { href: string; title: string; text: string; icon: IconName }[] 
     <div class="home-hero__text">
       <h1>{t('home.hero.title')}</h1>
       <p>{t('home.hero.text')}</p>
+      <SearchBox lang={lang} id="home-search" />
       <div class="home-hero__actions">
         <a class="button" href={path(lang, '/study/')}>{t('home.hero.cta')}</a>
         <a class="home-hero__link" href={path(lang, '/study/cities/')}>{t('home.hero.universities')}</a>
@@ -101,6 +103,9 @@ const sections: { href: string; title: string; text: string; icon: IconName }[] 
   }
   .home-hero__link {
     font-weight: 600;
+  }
+  .home-hero__text :global(.search-box) {
+    margin-block: 0 1.25rem;
   }
   .home-hero__map {
     max-inline-size: min(26rem, 85vw);

@@ -85,6 +85,9 @@ if ((await getVideos()).length > 0) nav.splice(4, 0, { href: path(lang, '/videos
             ))}
           </ul>
         </nav>
+        <a class="header-search" href={path(lang, '/search/')} aria-label={t('search.label')} title={t('search.label')} aria-current={current.startsWith(path(lang, '/search/')) ? 'page' : undefined}>
+          <Icon name="search" size={20} />
+        </a>
         <nav class="lang-switch" aria-label={t('lang.choose')}>
           {langs
             .filter((l) => l !== lang)

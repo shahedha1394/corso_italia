@@ -1,0 +1,320 @@
+---
+// Site search. Everything runs in the browser: the page downloads /<lang>/search-index.json
+// (built with the site) on the first search and looks for every word of the query in it.
+import Base from '../../layouts/Base.astro';
+import SearchBox from '../../components/SearchBox.astro';
+import { getStaticLangPaths, path, useTranslations, type Lang } from '../../i18n';
+
+export const getStaticPaths = getStaticLangPaths;
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const kinds = {
+  guide: t('search.kind.guide'),
+  page: t('search.kind.page'),
+  section: t('search.kind.section'),
+  university: t('search.kind.university'),
+  city: t('search.kind.city'),
+  funding: t('search.kind.funding'),
+  opportunity: t('search.kind.opportunity'),
+  video: t('search.kind.video'),
+};
+const suggestions = t('search.suggestions').split('|');
+---
+
+<Base lang={lang} title={t('search.title')} description={t('search.intro')}>
+  <section
+    class="container site-search"
+    data-index={`${base}/${lang}/search-index.json`}
+    data-kinds={JSON.stringify(kinds)}
+    data-count={t('search.count')}
+    data-count-one={t('search.countOne')}
+    data-none={t('search.none')}
+    data-loading={t('search.loading')}
+    data-error={t('search.error')}
+  >
+    <header class="page-header">
+      <h1>{t('search.title')}</h1>
+      <p>{t('search.intro')}</p>
+    </header>
+    <SearchBox lang={lang} id="site-search-q" autofocus />
+    <p class="site-search__hints">
+      <span>{t('search.suggest')}</span>
+      {suggestions.map((s) => (
+        <a class="site-search__hint" href={`${path(lang, '/search/')}?q=${encodeURIComponent(s)}`} dir="auto">{s}</a>
+      ))}
+    </p>
+    <p class="site-search__status" aria-live="polite"></p>
+    <ol class="site-search__results"></ol>
+  </section>
+</Base>
+
+<script>
+  import { normalize } from '../../lib/search';
+
+  type Item = { k: string; t: string; h?: string; u: string; x: string };
+  type Entry = { item: Item; t: string; h: string; x: string };
+
+  const root = document.querySelector<HTMLElement>('.site-search');
+  const input = root?.querySelector<HTMLInputElement>('input[name="q"]');
+  const form = input?.form;
+  const status = root?.querySelector<HTMLElement>('.site-search__status');
+  const list = root?.querySelector<HTMLOListElement>('.site-search__results');
+  const hints = root?.querySelector<HTMLElement>('.site-search__hints');
+
+  if (root && input && form && status && list) {
+    const d = root.dataset;
+    const kinds = JSON.parse(d.kinds ?? '{}') as Record<string, string>;
+    const MAX_RESULTS = 30;
+    const MAX_PER_PAGE = 3;
+    let index: Entry[] | null = null;
+    let loading: Promise<void> | null = null;
+
+    const load = () =>
+      (loading ??= fetch(d.index!)
+        .then((r) => {
+          if (!r.ok) throw new Error(String(r.status));
+          return r.json() as Promise<Item[]>;
+        })
+        .then((items) => {
+          index = items.map((item) => ({ item, t: normalize(item.t), h: normalize(item.h ?? ''), x: normalize(item.x) }));
+        }));
+
+    // Query words: normalised, without the Arabic article on longer words ("التأشيرة" also finds "تأشيرة").
+    const words = (q: string) =>
+      normalize(q)
+        .split(/[\s,.;:!?؟،()"'’«»“”/-]+/)
+        .map((w) => (w.length > 4 && w.startsWith('ال') ? w.slice(2) : w))
+        .filter((w) => w.length > 1 || /\d/.test(w));
+
+    const count = (text: string, w: string) => {
+      let n = 0;
+      for (let i = text.indexOf(w); i !== -1 && n < 5; i = text.indexOf(w, i + w.length)) n++;
+      return n;
+    };
+
+    // Title counts most, then the section heading, then the text. With `all`, every word must appear.
+    const score = (e: Entry, ws: string[], phrase: string, all = true) => {
+      let s = 0;
+      for (const w of ws) {
+        const inT = e.t.includes(w);
+        const inH = e.h.includes(w);
+        const n = count(e.x, w);
+        if (!inT && !inH && n === 0) {
+          if (all) return 0;
+          continue;
+        }
+        s += (inT ? 10 : 0) + (inH ? 6 : 0) + (n > 0 ? 1 + n * 0.3 : 0);
+        if (inT && e.t.split(' ').includes(w)) s += 3;
+        // The page itself comes before its own sections.
+        if (inT && !e.h) s += 10;
+      }
+      if (ws.length > 1) {
+        if (e.t.includes(phrase) || e.h.includes(phrase)) s += 8;
+        else if (e.x.includes(phrase)) s += 3;
+      }
+      return s;
+    };
+
+    // Text with the query words in <mark>. The text is normalised letter by letter so that
+    // positions in the normalised text point back to the original letters.
+    const highlight = (text: string, ws: string[]) => {
+      let norm = '';
+      const at: number[] = [];
+      for (let i = 0; i < text.length; i++) {
+        const n = normalize(text[i]);
+        norm += n;
+        for (let j = 0; j < n.length; j++) at.push(i);
+      }
+      const ranges: [number, number][] = [];
+      for (const w of ws) {
+        for (let p = norm.indexOf(w); p !== -1; p = norm.indexOf(w, p + w.length)) {
+          ranges.push([at[p], at[p + w.length - 1] + 1]);
+        }
+      }
+      ranges.sort((a, b) => a[0] - b[0]);
+      const frag = document.createDocumentFragment();
+      let pos = 0;
+      for (const [a, b] of ranges) {
+        if (a < pos) continue;
+        frag.append(text.slice(pos, a));
+        const m = document.createElement('mark');
+        m.textContent = text.slice(a, b);
+        frag.append(m);
+        pos = b;
+      }
+      frag.append(text.slice(pos));
+      return { frag, first: ranges.length ? ranges[0][0] : -1 };
+    };
+
+    // About 200 characters of text around the first match.
+    const snippet = (text: string, ws: string[]) => {
+      if (!text) return null;
+      const { first } = highlight(text, ws);
+      let start = Math.max(0, first - 70);
+      if (start > 0) start = text.indexOf(' ', start) + 1 || start;
+      let end = Math.min(text.length, start + 200);
+      if (end < text.length) end = text.lastIndexOf(' ', end) > start ? text.lastIndexOf(' ', end) : end;
+      const p = document.createElement('p');
+      p.append(start > 0 ? '… ' : '', highlight(text.slice(start, end), ws).frag, end < text.length ? ' …' : '');
+      return p;
+    };
+
+    // A message with the query inside <bdi>, so a Latin query reads right in Arabic and the other way round.
+    const message = (template: string, q: string, n = 0) => {
+      const [before, after = ''] = template.replace('{n}', String(n)).split('{q}');
+      const b = document.createElement('bdi');
+      b.textContent = `“${q}”`;
+      status.replaceChildren(before, b, after);
+    };
+
+    let run = 0;
+    const search = async () => {
+      const q = input.value.trim();
+      const url = new URL(location.href);
+      if (q) url.searchParams.set('q', q);
+      else url.searchParams.delete('q');
+      history.replaceState(null, '', url);
+      const ws = words(q);
+      if (hints) hints.hidden = ws.length > 0;
+      if (ws.length === 0) {
+        status.textContent = '';
+        list.replaceChildren();
+        return;
+      }
+      const mine = ++run;
+      if (!index) status.textContent = d.loading ?? '';
+      try {
+        await load();
+      } catch {
+        loading = null;
+        status.textContent = d.error ?? '';
+        return;
+      }
+      if (mine !== run || !index) return;
+
+      const phrase = ws.join(' ');
+      const rank = (all: boolean) =>
+        index!
+          .map((e) => ({ e, s: score(e, ws, phrase, all) }))
+          .filter((r) => r.s > 0)
+          .sort((a, b) => b.s - a.s);
+      // Nothing has every word: show what has some of them.
+      let found = rank(true);
+      if (found.length === 0 && ws.length > 1) found = rank(false);
+      // At most a few sections of the same page, so one long guide does not fill the list.
+      const perPage = new Map<string, number>();
+      const shown: Entry[] = [];
+      for (const { e } of found) {
+        const page = e.item.u.split('#')[0];
+        const n = perPage.get(page) ?? 0;
+        if (n >= MAX_PER_PAGE) continue;
+        perPage.set(page, n + 1);
+        shown.push(e);
+        if (shown.length >= MAX_RESULTS) break;
+      }
+
+      if (shown.length === 0) message(d.none ?? '', q);
+      else message((shown.length === 1 ? d.countOne : d.count) ?? '', q, shown.length);
+
+      list.replaceChildren(
+        ...shown.map(({ item }) => {
+          const li = document.createElement('li');
+          const a = document.createElement('a');
+          a.className = 'card site-search__result';
+          a.href = item.u;
+          const kind = document.createElement('span');
+          kind.className = 'badge';
+          kind.textContent = kinds[item.k] ?? '';
+          const title = document.createElement('h2');
+          title.append(highlight(item.t, ws).frag);
+          if (item.h) {
+            const h = document.createElement('span');
+            h.className = 'site-search__heading';
+            h.append(highlight(item.h, ws).frag);
+            title.append(' · ', h);
+          }
+          a.append(kind, title);
+          const p = snippet(item.x, ws);
+          if (p) a.append(p);
+          li.append(a);
+          return li;
+        }),
+      );
+    };
+
+    let timer: ReturnType<typeof setTimeout> | undefined;
+    input.addEventListener('input', () => {
+      clearTimeout(timer);
+      timer = setTimeout(search, 150);
+    });
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      clearTimeout(timer);
+      search();
+    });
+    input.value = new URLSearchParams(location.search).get('q') ?? '';
+    search();
+  }
+</script>
+
+<style>
+  .site-search .search-box {
+    max-inline-size: none;
+  }
+  .site-search__hints {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem;
+    margin-block: 1rem;
+    color: var(--color-muted);
+  }
+  .site-search__hints[hidden] {
+    display: none;
+  }
+  .site-search__hint {
+    padding: 0.2rem 0.7rem;
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .site-search__status {
+    font-weight: 600;
+    margin-block: 1rem;
+  }
+  .site-search__results {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem;
+    display: grid;
+    gap: 0.75rem;
+  }
+  .site-search__result {
+    display: block;
+    color: var(--color-text);
+    text-decoration: none;
+  }
+  .site-search__result h2 {
+    font-size: 1.1rem;
+    margin-block: 0.4rem 0.3rem;
+    color: var(--color-primary);
+  }
+  .site-search__heading {
+    color: var(--color-text);
+    font-weight: 600;
+  }
+  .site-search__result p {
+    margin: 0;
+    color: var(--color-muted);
+    font-size: 0.95rem;
+  }
+  .site-search mark {
+    background: var(--color-primary-soft);
+    color: inherit;
+    border-radius: 3px;
+    padding-inline: 1px;
+  }
+</style>
