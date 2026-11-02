@@ -308,5 +308,10 @@
   "schol.card.support": "Aide gratuite : juridique, santé et alimentation",
   "schol.card.support.text": "Les organisations qui aident gratuitement en Italie, et des conseils pour avant le départ.",
   "schol.card.visa": "L'argent pour le visa d'études",
-  "schol.card.visa.text": "Vous devez prouver 10 179,85 € par an. Vérifiez que votre bourse ou vos économies suffisent."
+  "schol.card.visa.text": "Vous devez prouver 10 179,85 € par an. Vérifiez que votre bourse ou vos économies suffisent.",
+  "calendar.year.title": "Les 12 prochains mois",
+  "calendar.year.intro": "Chaque point est une date limite. Touchez un mois pour voir ses dates.",
+  "calendar.year.count": "{n} dates limites",
+  "calendar.year.countOne": "1 date limite",
+  "calendar.year.none": "aucune date limite"
 }
