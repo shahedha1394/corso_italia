@@ -322,5 +322,11 @@
   "visacalc.flight": "Ajouter environ {amount} pour le vol retour (demandé par exemple par le Consulat à Jérusalem)",
   "visacalc.ok": "Suffisant : vous avez {have}, et il faut {need}.",
   "visacalc.gap": "Il vous manque {gap} : vous avez {have}, et il faut {need}.",
-  "visacalc.note": "Seul l'argent d'origine légale et traçable compte, et une bourse régionale ne compte qu'une fois attribuée. C'est une estimation : l'ambassade ou le consulat décide."
+  "visacalc.note": "Seul l'argent d'origine légale et traçable compte, et une bourse régionale ne compte qu'une fois attribuée. C'est une estimation : l'ambassade ou le consulat décide.",
+  "feesmap.title": "Les frais sur la carte",
+  "feesmap.label": "Carte de l'Italie avec les frais annuels des universités vérifiées",
+  "feesmap.low": "Jusqu'à 1 000 € par an",
+  "feesmap.mid": "De 1 001 € à 5 000 € par an",
+  "feesmap.high": "Plus de 5 000 € par an",
+  "feesmap.note": "Chaque point montre l'université la moins chère que nous avons vérifiée dans cette ville, selon le montant maximal payé par un étudiant international dont la famille a ses revenus à l'étranger. Touchez un point pour voir l'université plus bas."
 }

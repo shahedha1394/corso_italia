@@ -322,5 +322,11 @@
   "visacalc.flight": "Add about {amount} for the return flight (asked by the Consulate in Jerusalem, for example)",
   "visacalc.ok": "Enough: you have {have}, and {need} is needed.",
   "visacalc.gap": "You are missing {gap}: you have {have}, and {need} is needed.",
-  "visacalc.note": "Only money from legal and traceable sources counts, and a regional scholarship counts only once it has been awarded. This is an estimate: the embassy or consulate decides."
+  "visacalc.note": "Only money from legal and traceable sources counts, and a regional scholarship counts only once it has been awarded. This is an estimate: the embassy or consulate decides.",
+  "feesmap.title": "Fees on the map",
+  "feesmap.label": "Map of Italy with the yearly fees of the universities we checked",
+  "feesmap.low": "Up to €1,000 a year",
+  "feesmap.mid": "€1,001 to €5,000 a year",
+  "feesmap.high": "More than €5,000 a year",
+  "feesmap.note": "Each dot shows the cheapest university we checked in that city, by the most an international student with family income abroad pays there. Tap a dot to see the university below."
 }
