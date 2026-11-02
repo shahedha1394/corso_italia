@@ -36,6 +36,11 @@ const items = await getActiveOpportunities();
       <p>{t('opportunities.refugees.text')}</p>
       <p>{t('opportunities.refugees.link')} {arrow(lang)}</p>
     </a>
+    <a class="card" href={path(lang, '/living/support-and-help/')}>
+      <h2>{t('opportunities.support.title')}</h2>
+      <p>{t('opportunities.support.text')}</p>
+      <p>{t('opportunities.support.link')} {arrow(lang)}</p>
+    </a>
   </section>
 
   <section class="container section">
