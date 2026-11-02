@@ -308,5 +308,10 @@
   "schol.card.support": "Free help: legal, health and food",
   "schol.card.support.text": "Organisations in Italy that help for free, and notes for before you leave.",
   "schol.card.visa": "Money for the study visa",
-  "schol.card.visa.text": "You must show €10,179.85 a year. Check that your scholarship or savings are enough."
+  "schol.card.visa.text": "You must show €10,179.85 a year. Check that your scholarship or savings are enough.",
+  "calendar.year.title": "The next 12 months",
+  "calendar.year.intro": "Each dot is a deadline. Tap a month to see its deadlines.",
+  "calendar.year.count": "{n} deadlines",
+  "calendar.year.countOne": "1 deadline",
+  "calendar.year.none": "no deadlines"
 }
