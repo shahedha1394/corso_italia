@@ -264,5 +264,8 @@
   "opportunities.palestine.link": "Lire le guide",
   "opportunities.refugees.title": "Bourses pour réfugiés et étudiants venant de zones de conflit",
   "opportunities.refugees.text": "Bourses pour réfugiés, personnes protégées, étudiants de pays en conflit et chercheurs en danger.",
-  "opportunities.refugees.link": "Lire le guide"
+  "opportunities.refugees.link": "Lire le guide",
+  "map.filter.summary": "{n} universités dans {cities} villes. Touchez une ville pour les voir.",
+  "map.filter.summaryOne": "1 université. Touchez la ville pour la voir.",
+  "map.filter.none": "Aucune université de notre annuaire ne correspond à ces filtres."
 }

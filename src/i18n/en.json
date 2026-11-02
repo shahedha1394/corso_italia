@@ -264,5 +264,8 @@
   "opportunities.palestine.link": "Read the guide",
   "opportunities.refugees.title": "Scholarships for refugees and students from conflict areas",
   "opportunities.refugees.text": "Scholarships for refugees, people with protection, students from countries in conflict and researchers at risk.",
-  "opportunities.refugees.link": "Read the guide"
+  "opportunities.refugees.link": "Read the guide",
+  "map.filter.summary": "{n} universities in {cities} cities. Tap a city to see them.",
+  "map.filter.summaryOne": "1 university. Tap the city to see it.",
+  "map.filter.none": "No university in our directory matches these filters."
 }

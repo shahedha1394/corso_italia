@@ -264,5 +264,8 @@
   "opportunities.palestine.link": "اقرأ الدليل",
   "opportunities.refugees.title": "منح للاجئين والقادمين من مناطق النزاع",
   "opportunities.refugees.text": "منح للاجئين ولمن لديه حماية، وللطلاب من دول فيها نزاع، وللباحثين المعرّضين للخطر.",
-  "opportunities.refugees.link": "اقرأ الدليل"
+  "opportunities.refugees.link": "اقرأ الدليل",
+  "map.filter.summary": "{n} جامعة في {cities} مدينة. اضغط على مدينة لتراها.",
+  "map.filter.summaryOne": "جامعة واحدة. اضغط على المدينة لتراها.",
+  "map.filter.none": "لا توجد جامعة في دليلنا تطابق هذه الاختيارات."
 }
