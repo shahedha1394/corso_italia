@@ -6,7 +6,7 @@ import ItalyMap from '../../components/ItalyMap.astro';
 import ChannelCard from '../../components/ChannelCard.astro';
 import VideoEmbed from '../../components/VideoEmbed.astro';
 import { getVideos } from '../../lib/content';
-import { getStaticLangPaths, path, useTranslations, type Lang } from '../../i18n';
+import { arrow, getStaticLangPaths, path, useTranslations, type Lang } from '../../i18n';
 import type { IconName } from '../../lib/icons';
 
 export const getStaticPaths = getStaticLangPaths;
@@ -45,6 +45,15 @@ const sections: { href: string; title: string; text: string; icon: IconName }[] 
     <div class="home-hero__map">
       <ItalyMap lang={lang} linkCities filters note={t('map.explore')} />
     </div>
+  </section>
+
+  <section class="container section">
+    <a class="card card--icon beginner-card" href={path(lang, '/study/start-here/')}>
+      <span class="card__icon"><Icon name="heart" size={22} /></span>
+      <h2>{t('beginner.title')}</h2>
+      <p>{t('beginner.text')}</p>
+      <p class="beginner-card__link">{t('beginner.link')} {arrow(lang)}</p>
+    </a>
   </section>
 
   <section class="container section">
