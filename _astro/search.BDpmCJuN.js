@@ -1,0 +1,1 @@
+function e(e){return e.toLowerCase().normalize(`NFKD`).replace(/[̀-ًͯ-ٰٟـ]/g,``).replace(/[إأآٱ]/g,`ا`).replace(/ى/g,`ي`).replace(/ة/g,`ه`)}export{e as t};
