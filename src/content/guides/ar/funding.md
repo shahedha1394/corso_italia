@@ -4,7 +4,7 @@ description: "منح DSU الإقليمية، ومنح الحكومة الإيط
 section: study
 order: 20
 draft: false
-lastChecked: 2026-10-29
+lastChecked: 2026-11-06
 sources:
   - label: "Study in Italy (وزارة الخارجية الإيطالية)"
     url: https://studyinitaly.esteri.it
@@ -14,6 +14,22 @@ sources:
     url: https://www.mur.gov.it/it/aree-tematiche/universita/studenti-diritto-allo-studio-e-residenze/diritto-allo-studio
   - label: "السفارة الإيطالية في أبوجا: منح الحكومة الإيطالية 2026/2027"
     url: https://ambabuja.esteri.it/en/news/dall_ambasciata/2026/03/borse-di-studio-per-la-a-2026-2027-offerte-dal-governo-italiano-a-studenti-stranieri/
+  - label: "إعلان منح الحكومة الإيطالية ⁦MAECI⁩ 2026/2027 (نسخة المعهد الثقافي الإيطالي في مدريد)"
+    url: https://iicmadrid.esteri.it/wp-content/uploads/2026/03/BANDO-BORSE-2026-2027.pdf
+  - label: "⁦DiSCo⁩ لاتسيو: إعلان الحق في الدراسة 2026/2027 (المادة 9، الدفع)"
+    url: https://laziodisco.it/wp-content/uploads/2026/07/BANDO-DIRITTO-ALLO-STUDIO-26-27-con-EC.pdf
+  - label: "⁦ER.GO⁩: إعلان منح ⁦DSU⁩ 2026/2027 (المادة 3، الدفع)"
+    url: https://www.er-go.it/cosa-fare-per/bandi-di-concorso/leggi-il-bando/bando-di-concorso-benefici-dsu-a-a-2026_2027.pdf/@@display-file/file/bando-di-concorso-benefici-dsu-a-a-2026_2027.pdf
+  - label: "⁦EDISU⁩ بيدمونت: خطوات طلاب السنة الأولى 2026/2027"
+    url: https://www.edisu.piemonte.it/sites/default/files/schede-informative-borse-e-contributi-documenti/bando-20262027/Step_by_step_Primi_anni_2026_27.pdf
+  - label: "⁦Aliseo⁩ ليغوريا: الأسئلة الشائعة عن المنحة"
+    url: https://www.aliseo.liguria.it/benefici-economici-universitari/borsa-di-studio-universitaria/faq/
+  - label: "⁦DSU⁩ توسكانا: الأسئلة الشائعة 2026/2027"
+    url: https://www.dsu.toscana.it/documents/d/ardsu/faq_2026_2027
+  - label: "جامعة بريشيا: استمارة استلام منحة الدكتوراه"
+    url: https://www.unibs.it/sites/default/files/2022-10/FORM%20TO%20RECEIVE%20THE%20PHD%20SCHOLARSHIP%20ENG%2038.pdf
+  - label: "مجلس المدفوعات الأوروبي: قائمة دول منطقة ⁦SEPA⁩"
+    url: https://aade.gr/sites/default/files/2026-06/EPC409-09%20EPC%20List%20of%20SEPA%20Scheme%20Countries%20v8.0.pdf
 ---
 
 ## باختصار
@@ -21,6 +37,7 @@ sources:
 - أكبر مساعدة لمعظم الطلاب هي **منحة ⁦DSU⁩ الإقليمية**: مبلغ مالي، وأحياناً غرفة ووجبات.
 - تعتمد على **دخل عائلتك**، بحدود تختلف من منطقة إلى أخرى. الطلاب الدوليون يحتاجون عادةً إلى **⁦ISEE parificato⁩**، أو إلى شهادة من السفارة الإيطالية إذا كانوا من دولة شديدة الفقر.
 - **الحكومة الإيطالية (⁦MAECI⁩)** تقدّم أيضاً منحاً عبر بوابة ⁦Study in Italy⁩. أُغلق إعلان 2026/2027 في آذار/مارس 2026.
+- لتستلم المال تحتاج **حساباً بنكياً باسمك**، في إيطاليا غالباً (انظر القسم 6).
 - الإعلانات تُغلق مبكراً، غالباً **قبل بدء الدروس**. تحقّق من المواعيد فور اختيار جامعتك.
 
 ## 1. منح ⁦DSU⁩ الإقليمية
@@ -47,5 +64,24 @@ sources:
 ## 5. تمويل آخر
 
 بعض الحكومات والمؤسسات والمنظمات الدولية تموّل الدراسة في الخارج. اسأل في بلدك أيضاً.
+
+## 6. استلام المال: تحتاج حساباً بنكياً
+
+كل منحة تُصرف مالاً تُحوَّل إلى حساب بنكي باسمك. ومكان هذا الحساب يختلف حسب المنحة:
+
+| المنحة | الحساب المطلوب لاستلام المال |
+|---|---|
+| الحكومة الإيطالية (⁦MAECI⁩) | حساب في بنك إيطالي باسمك، ومعه ⁦codice fiscale⁩ إيطالي |
+| ⁦DSU⁩ في ليغوريا (⁦Aliseo⁩) | حساب مفتوح في إيطاليا، باسمك أو مشترك |
+| ⁦DSU⁩ في لاتسيو (⁦DiSCo⁩) | حساب في إيطاليا أو في دولة من منطقة ⁦SEPA⁩، باسمك أو مشترك |
+| ⁦DSU⁩ في إميليا رومانيا (⁦ER.GO⁩) | حساب باسمك، أو بطاقة مسبقة الدفع لها ⁦IBAN⁩ باسمك. لا يُقبل ⁦IBAN⁩ من خارج منطقة ⁦SEPA⁩ |
+| ⁦DSU⁩ في بيدمونت (⁦EDISU⁩) | ⁦IBAN⁩ من منطقة ⁦SEPA⁩، باسمك أو مشترك |
+| ⁦DSU⁩ في توسكانا | حساب باسمك |
+| منحة الدكتوراه | حسابك البنكي. جامعة بريشيا تقبل حساباً في دولة أوروبية |
+| السكن والوجبات والإعفاء من الرسوم | لا تحتاج حساباً، فهي خدمات وليست مالاً |
+
+- منطقة ⁦SEPA⁩ تشمل دول الاتحاد الأوروبي وبعض الدول الأوروبية الأخرى (مثل سويسرا وبريطانيا والنرويج وصربيا)، ولا تشمل أي دولة عربية. لذلك لن ينفع حسابك في بلدك: خطّط لفتح حساب في إيطاليا بعد وصولك.
+- دون بياناتك البنكية لا تستطيع الجهة أن تدفع لك المنحة (تقول ذلك ⁦EDISU⁩ صراحةً).
+- القواعد تتغير كل سنة: اقرأ إعلان (⁦bando⁩) منطقتك أو جامعتك.
 
 تجد القائمة الكاملة في [قائمة المنح](../scholarships/)، وطريقة حساب الرسوم في [كم تكلّف الدراسة](../costs/).
