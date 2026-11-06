@@ -1,0 +1,31 @@
+# Temporary: builds the site and pushes dist/ to the branch tmp/site-snapshot-dist,
+# so the explainer video can be made from real pages. Both branches are deleted afterwards.
+name: Temporary site snapshot
+
+on:
+  push:
+    branches: [tmp/site-snapshot]
+
+permissions:
+  contents: write
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Push dist to tmp/site-snapshot-dist
+        run: |
+          cd dist
+          git init -q -b tmp/site-snapshot-dist
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Site snapshot"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" tmp/site-snapshot-dist
