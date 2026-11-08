@@ -4,7 +4,7 @@ description: "Regional DSU scholarships, Italian government scholarships, univer
 section: study
 order: 20
 draft: false
-lastChecked: 2026-11-06
+lastChecked: 2026-11-08
 sources:
   - label: "Study in Italy (Ministry of Foreign Affairs)"
     url: https://studyinitaly.esteri.it
@@ -30,6 +30,12 @@ sources:
     url: https://www.unibs.it/sites/default/files/2022-10/FORM%20TO%20RECEIVE%20THE%20PHD%20SCHOLARSHIP%20ENG%2038.pdf
   - label: "European Payments Council: list of SEPA countries"
     url: https://aade.gr/sites/default/files/2026-06/EPC409-09%20EPC%20List%20of%20SEPA%20Scheme%20Countries%20v8.0.pdf
+  - label: "MAECI call 2026/2027, art. 2: who can apply"
+    url: https://iicmadrid.esteri.it/wp-content/uploads/2026/03/BANDO-BORSE-2026-2027.pdf
+  - label: "Invest Your Talent in Italy: call 2026/2027"
+    url: https://investyourtalent.esteri.it/SitoIYT/EN/pdf/CALL_IYT_ENGLISH_2026.pdf
+  - label: "University of Pisa: DSU scholarship (any nationality; not with a degree of the same level)"
+    url: https://www.unipi.it/didattica/iscrizioni/immatricolazioni-e-iscrizioni/iscrizioni-per-studenti-internazionali/borsa-di-studio-del-dsu/
 ---
 
 ## In short
@@ -47,7 +53,7 @@ Each region funds scholarships for students enrolled in its universities, includ
 - Family **ISEE up to €26,306.25** and **ISPE up to €43,125.94**.
 - For students who live away from their family: **€8,246 per year** for the lowest incomes, **€7,171.11** in the middle band, and gradually less (down to **€3,585.50**) near the income limit.
 
-You also need to pass a minimum number of credits each year to keep the scholarship. Read your region's call carefully.
+You also need to pass a minimum number of credits each year to keep the scholarship. In Tuscany, Lazio and Emilia-Romagna, for example, you cannot get it if you already hold a degree of the same level (a second master's, say). Read your region's call carefully.
 
 ## 2. The ISEE parificato
 
@@ -55,7 +61,16 @@ If your family's income and property are abroad, you need an **ISEE parificato**
 
 ## 3. Italian government scholarships (MAECI)
 
-The Ministry of Foreign Affairs offers scholarships to foreign students from the countries on its list. You apply only through [Study in Italy](https://studyinitaly.esteri.it). The 2026/2027 call closed on **26 March 2026**, so check the portal early for the next one.
+The Ministry of Foreign Affairs offers scholarships to foreign students, selected by citizenship. You apply only through [Study in Italy](https://studyinitaly.esteri.it). The 2026/2027 call closed on **26 March 2026**, so check the portal early for the next one.
+
+Who can apply, according to the 2026/2027 call:
+
+- **Not if you study or have studied in Italy**: at a secondary school, a university or AFAM institution, or a foreign university based in Italy. Living in Italy is not excluded by itself.
+- **Age at the deadline:** up to 28 for master's and AFAM courses, 30 for a PhD, 40 for research.
+- **Language:** B2 in Italian or English, depending on the course. Not needed for a PhD or research.
+- University **bachelor's degrees are not covered**.
+
+The ministry also runs **Invest Your Talent in Italy**, for citizens of 23 countries (including Egypt and Tunisia) who live there permanently, born in 2000 or later: €10,800 for 9 months. It is not for people already studying at an Italian university or who hold an Italian degree. See the [scholarships directory](../scholarships/).
 
 ## 4. University scholarships and fee waivers
 
@@ -72,6 +87,7 @@ Every scholarship paid in money goes to a bank account in your name. Where that 
 | Scholarship | Account needed to receive the money |
 |---|---|
 | Italian government (MAECI) | An account at an Italian bank in your name, plus an Italian codice fiscale |
+| Invest Your Talent in Italy | An Italian bank account |
 | DSU in Liguria (Aliseo) | An account opened in Italy, in your name or joint |
 | DSU in Lazio (DiSCo) | An account in Italy or in a SEPA country, in your name or joint |
 | DSU in Emilia-Romagna (ER.GO) | An account, or a named prepaid card with an IBAN, in your name. IBANs outside SEPA are not accepted |

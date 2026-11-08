@@ -4,7 +4,7 @@ description: "Scholarships in Italy for refugees, people with international or t
 section: study
 order: 56
 draft: false
-lastChecked: 2026-11-02
+lastChecked: 2026-11-08
 sources:
   - label: "Ministry of University and Research: 300 scholarships for AFAM students with international or temporary protection"
     url: https://www.mur.gov.it/it/news/giovedi-26032026/diritto-allo-studio-dal-mur-225-milioni-300-borse-di-studio-studenti-afam-con
@@ -34,6 +34,8 @@ sources:
     url: https://www.uniroma1.it/en/pagina/bando-di-solidarieta-la-ricerca-e-la-didattica
   - label: "Italian Government (MAECI) scholarships 2026/27: call"
     url: https://www.esteri.it/wp-content/uploads/2026/03/Bando-26-27-ENG.pdf
+  - label: "University of Chieti-Pescara: UNICORE 8.0 call (art. 3, who can apply)"
+    url: https://www.unich.it/sites/default/files/2026-03/Bando%20UNICORE%208.0.pdf
 ---
 
 **Important.** Most of the calls on this page are closed, but most of them come back every year. Use the dates below to know when to look, and always read the current call on the university's site. Many of these scholarships are only for students who are already in Italy or already enrolled: check the residence conditions in each call. For scholarships for Palestinian students, see our guide on [Palestinian students](../palestinian-students/).
@@ -56,6 +58,7 @@ The **European Qualifications Passport for Refugees** (EQPR) assesses your studi
 **UNICORE** (University Corridors for Refugees) brings refugees to Italian universities for a master's degree, with UNHCR.
 
 - **UNICORE 8.0 (2026/27):** 78 scholarships at 41 universities, for refugees living in 13 countries in Africa and South Asia (for example Ethiopia, Kenya, Nigeria, Uganda and India). It covers travel, accommodation and university fees.
+- **Who can apply** (for example the University of Chieti-Pescara's call): refugee status recognised with the involvement of UNHCR, a bachelor's degree obtained in 2020 or later, and an average of at least 24/30. You cannot hold a MAECI scholarship at the same time.
 - Applications were open from 2 March to 17 April 2026, on [universitycorridors.unhcr.it](https://universitycorridors.unhcr.it/). Watch the portal for the next call and its list of countries.
 
 See also our guide on [volunteering and other ways to come to Italy](../volunteering-and-pathways/).

@@ -4,7 +4,7 @@ description: "Who can apply for a PhD (dottorato di ricerca) in Italy, how much 
 section: study
 order: 45
 draft: false
-lastChecked: 2026-11-02
+lastChecked: 2026-11-08
 sources:
   - label: "University of Tuscia: PhD call, 42nd cycle (2026/27), used as the main example"
     url: https://www.unitus.it/wp-content/uploads/2026/07/Bando-dottorati-42-ciclo-versione-ITA-2026-signed-prot.pdf
@@ -24,9 +24,11 @@ sources:
     url: https://www.unifi.it/sites/default/files/2026-07/all.1_bando_pegaso_42_ita.pdf
   - label: "Ministry of University and Research: database of PhD calls"
     url: https://bandi.mur.gov.it/doctorate.php/public/cercaFellowship
+  - label: "University of Parma: PhD call, 42nd cycle (scholarship increase)"
+    url: https://www.unipr.it/sites/default/files/2026-07/DR%201064%20del%2015.07.2026%20Modifica%20e%20integrazione%20Bando%2042%C2%B0%20ciclo.pdf
 ---
 
-**In short.** A PhD in Italy (*dottorato di ricerca*) lasts at least three years, full time. Most places come with a scholarship of at least **€16,243 gross a year**, and there are no tuition fees. Each university publishes its own call (*bando*) once or several times a year, usually between January and September. To see when each university's call closed last year, how much it paid and whether the interview could be online, see [PhD calls by university](../phd/).
+**In short.** A PhD in Italy (*dottorato di ricerca*) lasts at least three years, full time. Places with a scholarship pay at least **€16,243 gross a year**, and there are no tuition fees. Each university publishes its own call (*bando*) once or several times a year, usually between January and September. To see when each university's call closed last year, how much it paid and whether the interview could be online, see [PhD calls by university](../phd/).
 
 We use the 2026/27 call of the University of Tuscia as the main example. Other universities follow the same national rules, but details (dates, documents, fees) change: always read the call of the university you choose.
 
@@ -46,14 +48,14 @@ We use the 2026/27 call of the University of Tuscia as the main example. Other u
 
 ## 3. Types of places
 
-- **With a scholarship** (*con borsa*): most places.
+- **With a scholarship** (*con borsa*).
 - **Without a scholarship** (*senza borsa*): you study without being paid, but you don't pay tuition fees.
 - **Reserved places:** for employees of companies or public bodies, and sometimes for holders of foreign degrees or of a scholarship from their own government.
 - Some scholarships are tied to a set topic (*tematica vincolata*): your research must be on that topic.
 
 ## 4. The scholarship
 
-- **Minimum:** €16,243 gross a year (ministerial decree 247/2022), paid monthly. Social security contributions (INPS) are deducted, so the net amount is lower. The scholarship is exempt from income tax.
+- **Minimum:** €16,243 gross a year (ministerial decree 247/2022), paid monthly. Some universities pay more: Parma, for example, €56,256 for the three years from the 42nd cycle. Social security contributions (INPS) are deducted, so the net amount is lower. The scholarship is exempt from income tax.
 - **Some universities pay more.** In the 42nd cycle, for example: Brescia €18,432.84, Politecnico di Torino €18,854.52, Humanitas €21,000, the Free University of Bozen-Bolzano €28,000.
 - **Abroad:** the scholarship goes up by 50% during authorised research periods abroad, for up to 12 months (18 months with joint supervision, *co-tutela*).
 - **Research budget:** at least 10% of the scholarship each year, also for students without a scholarship.

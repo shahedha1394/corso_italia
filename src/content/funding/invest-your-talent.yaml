@@ -5,17 +5,19 @@ name:
 provider: "Italian Ministry of Foreign Affairs and partners"
 type: government
 description:
-  en: "Scholarship programme of the Italian Ministry of Foreign Affairs for students from selected countries who enrol in master's and postgraduate courses taught in English (engineering and technology, architecture and design, economics and management) at participating Italian universities. The 2026/27 call closed on 11 May 2026."
-  ar: "برنامج منح من وزارة الخارجية الإيطالية لطلاب من دول محددة يلتحقون ببرامج ماجستير ودراسات عليا تُدرَّس بالإنجليزية (الهندسة والتكنولوجيا، والعمارة والتصميم، والاقتصاد والإدارة) في جامعات إيطالية مشاركة. أُغلق إعلان 2026/27 في 11 أيار/مايو 2026."
-  fr: "Programme de bourses du ministère italien des Affaires étrangères pour les étudiants de certains pays qui s'inscrivent en master ou en formation de troisième cycle enseignés en anglais (ingénierie et technologies, architecture et design, économie et gestion) dans les universités italiennes participantes. L'appel 2026/27 s'est clôturé le 11 mai 2026."
+  en: "Scholarship programme of the Italian Ministry of Foreign Affairs for master's and postgraduate courses at participating Italian universities, each with an internship in an Italian company. €10,800 a year for 9 months, paid into an Italian bank account; travel, accommodation and health insurance are not covered. The 2026/27 call closed on 11 May 2026."
+  ar: "برنامج منح من وزارة الخارجية الإيطالية لبرامج الماجستير والدراسات العليا في جامعات إيطالية مشاركة، وفي كل برنامج تدريب في شركة إيطالية. 10,800 يورو في السنة لمدة 9 أشهر، تُدفع في حساب بنكي إيطالي، ولا تشمل السفر والسكن والتأمين الصحي. أُغلق إعلان 2026/27 في 11 أيار 2026."
+  fr: "Programme de bourses du ministère italien des Affaires étrangères pour des masters et des formations post-diplôme dans des universités italiennes partenaires, chacun avec un stage dans une entreprise italienne. 10 800 € par an pendant 9 mois, versés sur un compte bancaire italien ; le voyage, le logement et l'assurance maladie ne sont pas couverts. L'appel 2026/27 a été clôturé le 11 mai 2026."
 eligibility:
-  en: "Students from the countries listed in the current call. Check the call for the nationality or residence and age conditions."
-  ar: "الطلاب من الدول المدرجة في الإعلان الحالي. راجع الإعلان لمعرفة شروط الجنسية أو الإقامة والعمر."
-  fr: "Les étudiants des pays indiqués dans l'appel en cours. Consultez l'appel pour les conditions de nationalité ou de résidence et d'âge."
+  en: "Citizens of the listed countries who live there permanently. 2026/27: Argentina, Armenia, Azerbaijan, Bangladesh, Brazil, Chile, China, Colombia, Egypt, Ethiopia, Ghana, India, Indonesia, Iran, Kazakhstan, Mexico, Mongolia, Paraguay, Peru, Tunisia, Turkey, Uruguay and Vietnam. Born on or after 1 January 2000. English at B2 or higher. Not for students already studying at an Italian university or who hold an Italian university degree, nor for students who have not graduated yet."
+  ar: "مواطنو الدول المذكورة في الإعلان المقيمون فيها بشكل دائم. في 2026/27: الأرجنتين، أرمينيا، أذربيجان، بنغلاديش، البرازيل، تشيلي، الصين، كولومبيا، مصر، إثيوبيا، غانا، الهند، إندونيسيا، إيران، كازاخستان، المكسيك، منغوليا، باراغواي، البيرو، تونس، تركيا، الأوروغواي وفيتنام. مولود في 1 كانون الثاني 2000 أو بعده. لغة إنجليزية بمستوى ⁦B2⁩ على الأقل. لا يحق التقديم لمن يدرس حالياً في جامعة إيطالية أو يحمل شهادة جامعية إيطالية، ولا لمن لم يتخرج بعد."
+  fr: "Les citoyens des pays de la liste qui y résident de façon permanente. 2026/27 : Argentine, Arménie, Azerbaïdjan, Bangladesh, Brésil, Chili, Chine, Colombie, Égypte, Éthiopie, Ghana, Inde, Indonésie, Iran, Kazakhstan, Mexique, Mongolie, Paraguay, Pérou, Tunisie, Turquie, Uruguay et Vietnam. Nés le 1er janvier 2000 ou après. Anglais niveau B2 ou plus. Pas pour les étudiants qui étudient déjà dans une université italienne ou qui ont un diplôme universitaire italien, ni pour ceux qui ne sont pas encore diplômés."
 url: https://www.esteri.it/en/servizi-opportunita/opportunita/borse-di-studio/per-cittadini-stranieri/progetti-speciali/invest-your-talent-in-italy/
 sources:
   - label: "Invest Your Talent in Italy: programme site"
     url: https://investyourtalentapplication.esteri.it/SitoIYT/EN/invest-your-talent-in-italy
   - label: "University of Milano-Bicocca: participating university (example)"
     url: https://en.unimib.it/node/4096
-last_checked: 2026-10-29
+  - label: "Invest Your Talent in Italy: call 2026/27 (English)"
+    url: https://investyourtalent.esteri.it/SitoIYT/EN/pdf/CALL_IYT_ENGLISH_2026.pdf
+last_checked: 2026-11-08
