@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../../../layouts/Base.astro';
+import DeadlineYear from '../../../../components/DeadlineYear.astro';
 import { dateLocale, getStaticLangPaths, path, useTranslations, type Lang } from '../../../../i18n';
 import { getUpcomingDeadlines } from '../../../../lib/content';
 import { deadlineTypes } from '../../../../lib/taxonomy';
@@ -15,6 +16,7 @@ const locale = dateLocale(lang);
 const formatDate = (d: Date) => d.toLocaleDateString(locale, { dateStyle: 'long' });
 const monthKey = (d: Date) => `${d.getFullYear()}-${d.getMonth()}`;
 const months = [...new Map(deadlines.map((d) => [monthKey(d.data.date), d.data.date])).entries()].map(([key, date]) => ({
+  key,
   label: date.toLocaleDateString(locale, { month: 'long', year: 'numeric' }),
   items: deadlines.filter((d) => monthKey(d.data.date) === key),
 }));
@@ -27,13 +29,17 @@ const months = [...new Map(deadlines.map((d) => [monthKey(d.data.date), d.data.d
     <p>{t('calendar.intro')}</p>
   </header>
 
+  <div class="container section">
+    <DeadlineYear lang={lang} />
+  </div>
+
   {months.length === 0 ? (
     <section class="container section">
       <p class="card">{t('calendar.empty')}</p>
     </section>
   ) : (
     months.map((m) => (
-      <section class="container section">
+      <section class="container section" id={`m-${m.key}`}>
         <h2>{m.label}</h2>
         <div class="grid">
           {m.items.map((d) => {

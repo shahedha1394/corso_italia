@@ -10,11 +10,13 @@ description:
   ar: "منحة إقليمية لحق الدراسة (DSU). تُمنح حسب الوضع المادي وقد تشمل مبلغًا ماليًا وسكنًا في السكن الجامعي ووجبات. يحتاج الطلاب الدوليون عادةً إلى شهادة ISEE parificato. راجع الإعلان السنوي لمعرفة المبالغ والمواعيد."
   fr: "Bourse régionale du droit aux études (DSU). Elle est attribuée sur critères sociaux et peut comprendre une somme d'argent, une place en résidence et les repas. Les étudiants internationaux ont généralement besoin d'un ISEE parificato. Consultez l'appel annuel pour les montants et les dates limites."
 eligibility:
-  en: "Students enrolled at a university in the region who meet the income and merit requirements of the call."
-  ar: "الطلاب المسجلون في جامعة داخل الإقليم ممن يستوفون شروط الدخل والتحصيل الدراسي في الإعلان."
-  fr: "Les étudiants inscrits dans une université de la région qui remplissent les conditions de revenus et de mérite de l'appel."
+  en: "Students of any nationality who are enrolled, or will enrol, at a university, academy or conservatory in Tuscany, and meet the income and merit requirements of the call. Not for students who already hold a degree of the same level. 2026/27 deadline: 7 September 2026 (PhD students: 16 November 2026)."
+  ar: "الطلاب من أي جنسية المسجلون، أو الذين سيسجلون، في جامعة أو أكاديمية أو كونسرفتوار في توسكانا، ويستوفون شروط الدخل والتحصيل في الإعلان. لا يحق لمن يحمل شهادة من نفس المستوى. آخر موعد في 2026/27: 7 أيلول 2026 (لطلاب الدكتوراه: 16 تشرين الثاني 2026)."
+  fr: "Les étudiants de toute nationalité inscrits, ou qui vont s'inscrire, dans une université, une académie ou un conservatoire de Toscane, et qui remplissent les conditions de revenus et de mérite de l'appel. Pas pour ceux qui ont déjà un diplôme du même niveau. Date limite 2026/27 : 7 septembre 2026 (doctorants : 16 novembre 2026)."
 url: https://www.dsu.toscana.it/borsa-di-studio
 sources:
   - label: "University of Pisa: DSU scholarship for international students"
     url: https://www.unipi.it/didattica/iscrizioni/immatricolazioni-e-iscrizioni/iscrizioni-per-studenti-internazionali/borsa-di-studio-del-dsu/
-last_checked: 2026-10-28
+  - label: "Regione Toscana: DSU call 2026/27"
+    url: https://www.regione.toscana.it/it/-/universit%C3%A0-anno-accademico-2026-2027-il-bando-per-borse-di-studio-e-posto-alloggio
+last_checked: 2026-11-08

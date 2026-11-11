@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../../../layouts/Base.astro';
+import ScholarshipFinder from '../../../../components/ScholarshipFinder.astro';
 import { arrow, getStaticLangPaths, path, useTranslations, type Lang } from '../../../../i18n';
 import { fundingTypes, regions } from '../../../../lib/taxonomy';
 
@@ -25,6 +26,10 @@ const groups = (Object.keys(fundingTypes) as (keyof typeof fundingTypes)[])
     <p>{t('dir.funding.intro')}</p>
     <p><a href={path(lang, '/study/funding/')}>{t('dir.funding.guide')} {arrow(lang)}</a></p>
   </header>
+
+  <div class="container">
+    <ScholarshipFinder lang={lang} />
+  </div>
 
   {groups.map((g) => (
     <section class="container section">

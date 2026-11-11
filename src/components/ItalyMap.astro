@@ -4,7 +4,7 @@
 import { getCollection } from 'astro:content';
 import map from '../data/italy-map.json';
 import { fill, path, useTranslations, type Lang } from '../i18n';
-import { cities } from '../lib/taxonomy';
+import { areas, cities, universityTypes } from '../lib/taxonomy';
 
 interface Props {
   lang: Lang;
@@ -14,10 +14,12 @@ interface Props {
   linkCities?: boolean;
   /** Short hint shown under the map, above the data credit. */
   note?: string;
+  /** Show filters (study area, university type) that shrink the dots to the matching universities. Needs linkCities. */
+  filters?: boolean;
   class?: string;
 }
 
-const { lang, highlight, linkCities = false, note, class: className } = Astro.props;
+const { lang, highlight, linkCities = false, note, filters = false, class: className } = Astro.props;
 const t = useTranslations(lang);
 
 const universities = await getCollection('universities');
@@ -36,6 +38,17 @@ const dots = [...counts.entries()]
   // Bigger dots first, so small dots stay visible on top.
   .sort((a, b) => b.r - a.r);
 
+// For the filters: the type and study areas of every university, city by city.
+const byCity: Record<string, { t: string; a: string[] }[]> = {};
+for (const u of universities) (byCity[u.data.city] ??= []).push({ t: u.data.type, a: u.data.areas });
+const usedAreas = (Object.keys(areas) as (keyof typeof areas)[])
+  .filter((k) => universities.some((u) => u.data.areas.includes(k)))
+  .sort((a, b) => areas[a][lang].localeCompare(areas[b][lang], lang));
+const usedTypes = (Object.keys(universityTypes) as (keyof typeof universityTypes)[]).filter((k) =>
+  universities.some((u) => u.data.type === k),
+);
+const showFilters = filters && linkCities;
+
 const label = (key: CityKey, n: number) => fill(t(n === 1 ? 'map.cityCountOne' : 'map.cityCount'), { city: cities[key][lang], n });
 const marked = highlight && highlight in positions ? { key: highlight as CityKey, x: positions[highlight][0], y: positions[highlight][1] } : null;
 // Put the name on the side of the dot that has more room.
@@ -43,7 +56,36 @@ const labelAnchor = marked && marked.x > map.width * 0.6 ? 'end' : 'start';
 const labelOffset = labelAnchor === 'end' ? -30 : 30;
 ---
 
-<figure class:list={['italy-map', className]}>
+<figure
+  class:list={['italy-map', className, { 'has-filters': showFilters }]}
+  data-cities-path={path(lang, '/study/cities/')}
+  data-unis-path={path(lang, '/study/universities/')}
+  data-count={t('map.cityCount')}
+  data-count-one={t('map.cityCountOne')}
+  data-summary={t('map.filter.summary')}
+  data-summary-one={t('map.filter.summaryOne')}
+  data-none={t('map.filter.none')}
+>
+  {showFilters && (
+    <form class="italy-map__filters" onsubmit="return false">
+      <label>
+        <span>{t('dir.universities.filter.area')}</span>
+        <select name="area">
+          <option value="">{t('dir.universities.filter.all')}</option>
+          {usedAreas.map((k) => <option value={k}>{areas[k][lang]}</option>)}
+        </select>
+      </label>
+      <label>
+        <span>{t('dir.universities.filter.type')}</span>
+        <select name="type">
+          <option value="">{t('dir.universities.filter.all')}</option>
+          {usedTypes.map((k) => <option value={k}>{universityTypes[k][lang]}</option>)}
+        </select>
+      </label>
+      <p class="italy-map__summary" aria-live="polite"></p>
+    </form>
+  )}
+  {showFilters && <script is:inline type="application/json" class="italy-map__data" set:html={JSON.stringify(byCity)} />}
   <svg viewBox={`0 0 ${map.width} ${map.height}`} role={linkCities ? 'group' : 'img'} aria-label={t('map.label')}>
     <g class="italy-map__regions">
       {Object.entries(map.regions).map(([key, d]) => (
@@ -53,7 +95,7 @@ const labelOffset = labelAnchor === 'end' ? -30 : 30;
     <g class="italy-map__dots">
       {dots.map((dot) =>
         linkCities ? (
-          <a href={`${path(lang, '/study/cities/')}#${dot.key}`} aria-label={label(dot.key, dot.n)}>
+          <a href={`${path(lang, '/study/cities/')}#${dot.key}`} aria-label={label(dot.key, dot.n)} data-city={dot.key} data-name={cities[dot.key][lang]}>
             <circle class="italy-map__dot" cx={dot.x} cy={dot.y} r={dot.r}>
               <title>{label(dot.key, dot.n)}</title>
             </circle>
@@ -78,3 +120,57 @@ const labelOffset = labelAnchor === 'end' ? -30 : 30;
     <span class="italy-map__credit">{t('map.credit')}</span>
   </figcaption>
 </figure>
+
+<script>
+  // Filters on the home page map: dots shrink to the universities that match, and link to them.
+  for (const fig of document.querySelectorAll<HTMLElement>('.italy-map.has-filters')) {
+    const form = fig.querySelector<HTMLFormElement>('.italy-map__filters');
+    const dataEl = fig.querySelector('.italy-map__data');
+    if (!form || !dataEl) continue;
+    const byCity = JSON.parse(dataEl.textContent || '{}') as Record<string, { t: string; a: string[] }[]>;
+    const summary = fig.querySelector<HTMLElement>('.italy-map__summary')!;
+    const d = fig.dataset;
+    const fill = (tpl: string, v: Record<string, string | number>) => tpl.replace(/\{(\w+)\}/g, (_, k) => String(v[k] ?? ''));
+
+    const update = () => {
+      const area = (form.elements.namedItem('area') as HTMLSelectElement).value;
+      const type = (form.elements.namedItem('type') as HTMLSelectElement).value;
+      const active = Boolean(area || type);
+      let total = 0;
+      let cityCount = 0;
+      for (const link of fig.querySelectorAll<SVGAElement>('a[data-city]')) {
+        const city = link.dataset.city!;
+        const n = (byCity[city] ?? []).filter((u) => (!area || u.a.includes(area)) && (!type || u.t === type)).length;
+        const circle = link.querySelector('circle')!;
+        const title = circle.querySelector('title');
+        const text = fill(n === 1 ? d.countOne! : d.count!, { city: link.dataset.name!, n });
+        if (n > 0) {
+          total += n;
+          cityCount++;
+          circle.setAttribute('r', String(3.5 + 2 * Math.sqrt(n)));
+          circle.classList.remove('is-muted');
+          link.removeAttribute('tabindex');
+          link.removeAttribute('aria-hidden');
+          const query = new URLSearchParams({ city });
+          if (area) query.set('area', area);
+          if (type) query.set('type', type);
+          link.setAttribute('href', active ? `${d.unisPath}?${query}` : `${d.citiesPath}#${city}`);
+        } else {
+          circle.setAttribute('r', '3');
+          circle.classList.add('is-muted');
+          link.setAttribute('tabindex', '-1');
+          link.setAttribute('aria-hidden', 'true');
+        }
+        link.setAttribute('aria-label', text);
+        if (title) title.textContent = text;
+      }
+      summary.textContent = !active
+        ? ''
+        : total === 0
+          ? d.none!
+          : fill(total === 1 ? d.summaryOne! : d.summary!, { n: total, cities: cityCount });
+    };
+    form.addEventListener('change', update);
+    update();
+  }
+</script>

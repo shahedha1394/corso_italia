@@ -1,0 +1,59 @@
+---
+// Search field that opens the search page (/<lang>/search/?q=...). Used on the home page and on the search page.
+import Icon from './Icon.astro';
+import { path, useTranslations, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+  id: string;
+  autofocus?: boolean;
+}
+
+const { lang, id, autofocus = false } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<form class="search-box" role="search" action={path(lang, '/search/')} method="get">
+  <label class="visually-hidden" for={id}>{t('search.label')}</label>
+  <span class="search-box__field">
+    <Icon name="search" size={20} />
+    <input id={id} type="search" name="q" autocomplete="off" enterkeyhint="search" placeholder={t('search.placeholder')} autofocus={autofocus} />
+  </span>
+  <button class="button" type="submit">{t('search.submit')}</button>
+</form>
+
+<style>
+  .search-box {
+    display: flex;
+    gap: 0.5rem;
+    max-inline-size: 36rem;
+  }
+  .search-box__field {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding-inline: 0.75rem;
+    color: var(--color-muted);
+  }
+  .search-box__field:focus-within {
+    border-color: var(--color-primary);
+    outline: 2px solid var(--color-primary-soft);
+  }
+  .search-box input {
+    flex: 1;
+    min-inline-size: 0;
+    border: 0;
+    background: transparent;
+    padding-block: 0.65rem;
+    font: inherit;
+    color: var(--color-text);
+    outline: none;
+  }
+  .search-box .button {
+    flex-shrink: 0;
+  }
+</style>

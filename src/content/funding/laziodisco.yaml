@@ -10,8 +10,11 @@ description:
   ar: "منحة إقليمية لحق الدراسة (DSU). تُمنح حسب الوضع المادي وقد تشمل مبلغًا ماليًا وسكنًا في السكن الجامعي ووجبات. يحتاج الطلاب الدوليون عادةً إلى شهادة ISEE parificato. راجع الإعلان السنوي لمعرفة المبالغ والمواعيد."
   fr: "Bourse régionale du droit aux études (DSU). Elle est attribuée sur critères sociaux et peut comprendre une somme d'argent, une place en résidence et les repas. Les étudiants internationaux ont généralement besoin d'un ISEE parificato. Consultez l'appel annuel pour les montants et les dates limites."
 eligibility:
-  en: "Students enrolled at a university in the region who meet the income and merit requirements of the call."
-  ar: "الطلاب المسجلون في جامعة داخل الإقليم ممن يستوفون شروط الدخل والتحصيل الدراسي في الإعلان."
-  fr: "Les étudiants inscrits dans une université de la région qui remplissent les conditions de revenus et de mérite de l'appel."
+  en: "Students enrolled by 10 February 2027 at a university based in Lazio, including international students, within the income limits (2026/27: ISEE up to €28,339.88 and ISPE up to €61,608.48) and the merit requirements of the call. Not for students who already hold a degree of the same level, even one obtained abroad."
+  ar: "الطلاب المسجلون حتى 10 شباط 2027 في جامعة مقرها لاتسيو، ومنهم الطلاب الدوليون، ضمن حدود الدخل (في 2026/27: ⁦ISEE⁩ حتى 28,339.88 يورو و⁦ISPE⁩ حتى 61,608.48 يورو) وشروط التحصيل في الإعلان. لا يحق لمن يحمل شهادة من نفس المستوى، حتى لو حصل عليها في الخارج."
+  fr: "Les étudiants inscrits au plus tard le 10 février 2027 dans une université située dans le Latium, y compris les étudiants internationaux, dans les limites de revenus (2026/27 : ISEE jusqu'à 28 339,88 € et ISPE jusqu'à 61 608,48 €) et selon les conditions de mérite de l'appel. Pas pour ceux qui ont déjà un diplôme du même niveau, même obtenu à l'étranger."
 url: https://laziodisco.it
-last_checked: 2026-10-28
+sources:
+  - label: "DiSCo Lazio: right-to-study call 2026/27 (arts. 4, 11 and 12)"
+    url: https://laziodisco.it/wp-content/uploads/2026/07/BANDO-DIRITTO-ALLO-STUDIO-26-27-con-EC.pdf
+last_checked: 2026-11-08

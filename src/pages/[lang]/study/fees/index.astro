@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../../../layouts/Base.astro';
+import FeesMap from '../../../../components/FeesMap.astro';
 import { arrow, dateLocale, getStaticLangPaths, path, useTranslations, type Lang } from '../../../../i18n';
 import { cities, feeBases } from '../../../../lib/taxonomy';
 
@@ -61,6 +62,11 @@ const sections = [
     <p><a href={path(lang, '/study/costs/')}>{t('fees.costsGuide')} {arrow(lang)}</a></p>
   </section>
 
+  <section class="container section">
+    <h2>{t('feesmap.title')}</h2>
+    <FeesMap lang={lang} />
+  </section>
+
   {sections.map((s) => (
     <section class="container section" id={s.id}>
       <h2>{s.title}</h2>
@@ -70,7 +76,7 @@ const sections = [
           const f = u.data.fees!;
           const note = tax(f);
           return (
-            <li class="card fee-card">
+            <li class="card fee-card" id={u.id}>
               <div class="fee-card__head">
                 <h3><a href={path(lang, `/study/universities/${u.id}/`)}>{u.data.name[lang]}</a></h3>
                 <span class="meta">{cities[u.data.city][lang]}</span>
@@ -130,6 +136,12 @@ const sections = [
     font-size: 0.9rem;
     font-weight: 400;
     color: var(--color-muted);
+  }
+  .fee-card {
+    scroll-margin-block-start: 5rem;
+  }
+  .fee-card:target {
+    outline: 3px solid var(--color-accent);
   }
   .fee-card .meta {
     margin-block: 0.15rem;
