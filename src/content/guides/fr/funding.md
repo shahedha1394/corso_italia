@@ -4,7 +4,7 @@ description: "Bourses régionales DSU, bourses du gouvernement italien, exonéra
 section: study
 order: 20
 draft: false
-lastChecked: 2026-11-06
+lastChecked: 2026-11-08
 sources:
   - label: "Study in Italy (ministère des Affaires étrangères)"
     url: https://studyinitaly.esteri.it
@@ -30,6 +30,12 @@ sources:
     url: https://www.unibs.it/sites/default/files/2022-10/FORM%20TO%20RECEIVE%20THE%20PHD%20SCHOLARSHIP%20ENG%2038.pdf
   - label: "Conseil européen des paiements : liste des pays SEPA"
     url: https://aade.gr/sites/default/files/2026-06/EPC409-09%20EPC%20List%20of%20SEPA%20Scheme%20Countries%20v8.0.pdf
+  - label: "Appel MAECI 2026/2027, art. 2 : qui peut postuler"
+    url: https://iicmadrid.esteri.it/wp-content/uploads/2026/03/BANDO-BORSE-2026-2027.pdf
+  - label: "Invest Your Talent in Italy : appel 2026/2027"
+    url: https://investyourtalent.esteri.it/SitoIYT/EN/pdf/CALL_IYT_ENGLISH_2026.pdf
+  - label: "Université de Pise : bourse DSU (toute nationalité ; pas avec un diplôme du même niveau)"
+    url: https://www.unipi.it/didattica/iscrizioni/immatricolazioni-e-iscrizioni/iscrizioni-per-studenti-internazionali/borsa-di-studio-del-dsu/
 ---
 
 ## En bref
@@ -47,7 +53,7 @@ Chaque région finance des bourses pour les étudiants inscrits dans ses univers
 - **ISEE familial jusqu'à 26 306,25 €** et **ISPE jusqu'à 43 125,94 €**.
 - Pour les étudiants qui vivent loin de leur famille : **8 246 € par an** pour les revenus les plus bas, **7 171,11 €** pour la tranche intermédiaire, puis un montant qui diminue progressivement (jusqu'à **3 585,50 €**) près du plafond de revenus.
 
-Il faut aussi valider un nombre minimum de crédits chaque année pour garder la bourse. Lisez attentivement l'appel de votre région.
+Il faut aussi valider un nombre minimum de crédits chaque année pour garder la bourse. En Toscane, dans le Latium et en Émilie-Romagne, par exemple, on ne peut pas l'obtenir si l'on a déjà un diplôme du même niveau (un second master, par exemple). Lisez attentivement l'appel de votre région.
 
 ## 2. L'ISEE parificato
 
@@ -55,7 +61,16 @@ Si les revenus et le patrimoine de votre famille sont à l'étranger, il vous fa
 
 ## 3. Les bourses du gouvernement italien (MAECI)
 
-Le ministère des Affaires étrangères propose des bourses aux étudiants étrangers des pays figurant sur sa liste. La candidature se fait uniquement sur [Study in Italy](https://studyinitaly.esteri.it). L'appel 2026/2027 s'est clôturé le **26 mars 2026** ; consultez le portail tôt pour le prochain.
+Le ministère des Affaires étrangères propose des bourses aux étudiants étrangers, sélectionnés selon leur nationalité. La candidature se fait uniquement sur [Study in Italy](https://studyinitaly.esteri.it). L'appel 2026/2027 s'est clôturé le **26 mars 2026** ; consultez le portail tôt pour le prochain.
+
+Qui peut postuler, selon l'appel 2026/2027 :
+
+- **Pas si vous étudiez ou avez étudié en Italie** : dans un lycée, une université ou un établissement AFAM, ou une université étrangère installée en Italie. Vivre en Italie n'est pas exclu en soi.
+- **Âge à la date limite :** jusqu'à 28 ans pour le master et l'AFAM, 30 ans pour le doctorat, 40 ans pour la recherche.
+- **Langue :** B2 en italien ou en anglais selon le cours. Pas exigé pour le doctorat ni la recherche.
+- La **licence universitaire n'est pas couverte**.
+
+Le ministère gère aussi **Invest Your Talent in Italy**, pour les citoyens de 23 pays (dont l'Égypte et la Tunisie) qui y résident de façon permanente, nés en 2000 ou après : 10 800 € pour 9 mois. Pas pour ceux qui étudient déjà dans une université italienne ou qui ont un diplôme italien. Voir le [répertoire des bourses](../scholarships/).
 
 ## 4. Bourses des universités et exonérations
 
@@ -72,6 +87,7 @@ Toute bourse versée en argent est payée sur un compte bancaire à votre nom. L
 | Bourse | Compte nécessaire pour recevoir l'argent |
 |---|---|
 | Gouvernement italien (MAECI) | Un compte dans une banque italienne à votre nom, et un codice fiscale italien |
+| Invest Your Talent in Italy | Un compte bancaire italien |
 | DSU en Ligurie (Aliseo) | Un compte ouvert en Italie, à votre nom ou joint |
 | DSU dans le Latium (DiSCo) | Un compte en Italie ou dans un pays SEPA, à votre nom ou joint |
 | DSU en Émilie-Romagne (ER.GO) | Un compte, ou une carte prépayée nominative avec IBAN, à votre nom. Les IBAN hors SEPA ne sont pas acceptés |

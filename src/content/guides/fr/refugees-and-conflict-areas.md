@@ -4,7 +4,7 @@ description: "Les bourses en Italie pour les réfugiés, les personnes sous prot
 section: study
 order: 56
 draft: false
-lastChecked: 2026-11-02
+lastChecked: 2026-11-08
 sources:
   - label: "Ministère de l'Université et de la Recherche : 300 bourses pour étudiants AFAM sous protection internationale ou temporaire"
     url: https://www.mur.gov.it/it/news/giovedi-26032026/diritto-allo-studio-dal-mur-225-milioni-300-borse-di-studio-studenti-afam-con
@@ -34,6 +34,8 @@ sources:
     url: https://www.uniroma1.it/en/pagina/bando-di-solidarieta-la-ricerca-e-la-didattica
   - label: "Bourses du gouvernement italien (MAECI) 2026/27 : appel"
     url: https://www.esteri.it/wp-content/uploads/2026/03/Bando-26-27-ENG.pdf
+  - label: "Université de Chieti-Pescara : appel UNICORE 8.0 (art. 3, qui peut postuler)"
+    url: https://www.unich.it/sites/default/files/2026-03/Bando%20UNICORE%208.0.pdf
 ---
 
 **Important.** La plupart des appels de cette page sont fermés, mais la plupart reviennent chaque année. Utilisez les dates ci-dessous pour savoir quand chercher, et lisez toujours l'appel en cours sur le site de l'université. Beaucoup de ces bourses sont réservées aux étudiants déjà en Italie ou déjà inscrits : vérifiez les conditions de résidence de chaque appel. Pour les bourses destinées aux étudiants palestiniens, voir notre guide [Étudiants palestiniens](../palestinian-students/).
@@ -56,6 +58,7 @@ Le **passeport européen des qualifications des réfugiés** (EQPR) évalue vos 
 **UNICORE** (couloirs universitaires pour les réfugiés) permet à des réfugiés de venir faire un master dans une université italienne, avec le HCR.
 
 - **UNICORE 8.0 (2026/27) :** 78 bourses dans 41 universités, pour des réfugiés vivant dans 13 pays d'Afrique et d'Asie du Sud (par exemple l'Éthiopie, le Kenya, le Nigeria, l'Ouganda et l'Inde). Elle couvre le voyage, le logement et les frais universitaires.
+- **Qui peut postuler** (par exemple l'appel de l'université de Chieti-Pescara) : un statut de réfugié reconnu avec l'intervention du HCR, une licence obtenue en 2020 ou après, et une moyenne d'au moins 24/30. On ne peut pas la cumuler avec une bourse MAECI.
 - Les candidatures étaient ouvertes du 2 mars au 17 avril 2026, sur [universitycorridors.unhcr.it](https://universitycorridors.unhcr.it/). Surveillez le portail pour le prochain appel et sa liste de pays.
 
 Voir aussi notre guide [Volontariat et autres voies pour venir en Italie](../volunteering-and-pathways/).

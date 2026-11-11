@@ -4,7 +4,7 @@ description: "Qui peut postuler à un doctorat (dottorato di ricerca) en Italie,
 section: study
 order: 45
 draft: false
-lastChecked: 2026-11-02
+lastChecked: 2026-11-08
 sources:
   - label: "Université de la Tuscia : appel de doctorat, 42e cycle (2026/27), utilisé comme exemple principal"
     url: https://www.unitus.it/wp-content/uploads/2026/07/Bando-dottorati-42-ciclo-versione-ITA-2026-signed-prot.pdf
@@ -24,9 +24,11 @@ sources:
     url: https://www.unifi.it/sites/default/files/2026-07/all.1_bando_pegaso_42_ita.pdf
   - label: "Ministère de l'Université et de la Recherche : base de données des appels de doctorat"
     url: https://bandi.mur.gov.it/doctorate.php/public/cercaFellowship
+  - label: "Université de Parme : appel de doctorat, 42e cycle (hausse de la bourse)"
+    url: https://www.unipr.it/sites/default/files/2026-07/DR%201064%20del%2015.07.2026%20Modifica%20e%20integrazione%20Bando%2042%C2%B0%20ciclo.pdf
 ---
 
-**En bref.** Un doctorat en Italie (*dottorato di ricerca*) dure au moins trois ans, à plein temps. La plupart des places ont une bourse d'au moins **16 243 € brut par an**, et il n'y a pas de frais de scolarité. Chaque université publie son propre appel (*bando*) une ou plusieurs fois par an, en général entre janvier et septembre. Pour voir quand l'appel de chaque université a fermé l'année dernière, combien il payait et si l'entretien pouvait se faire en ligne, consultez [Appels de doctorat par université](../phd/).
+**En bref.** Un doctorat en Italie (*dottorato di ricerca*) dure au moins trois ans, à plein temps. Les places avec bourse versent au moins **16 243 € brut par an**, et il n'y a pas de frais de scolarité. Chaque université publie son propre appel (*bando*) une ou plusieurs fois par an, en général entre janvier et septembre. Pour voir quand l'appel de chaque université a fermé l'année dernière, combien il payait et si l'entretien pouvait se faire en ligne, consultez [Appels de doctorat par université](../phd/).
 
 Nous prenons comme exemple principal l'appel 2026/27 de l'Université de la Tuscia. Les autres universités suivent les mêmes règles nationales, mais les détails (dates, documents, frais) changent : lisez toujours l'appel de l'université que vous choisissez.
 
@@ -46,14 +48,14 @@ Nous prenons comme exemple principal l'appel 2026/27 de l'Université de la Tusc
 
 ## 3. Les types de places
 
-- **Avec bourse** (*con borsa*) : la plupart des places.
+- **Avec bourse** (*con borsa*).
 - **Sans bourse** (*senza borsa*) : vous étudiez sans être payé, mais vous ne payez pas de frais de scolarité.
 - **Places réservées :** aux salariés d'entreprises ou d'organismes publics, et parfois aux titulaires d'un diplôme étranger ou d'une bourse de leur gouvernement.
 - Certaines bourses sont liées à un sujet précis (*tematica vincolata*) : votre recherche doit porter sur ce sujet.
 
 ## 4. La bourse
 
-- **Minimum :** 16 243 € brut par an (décret ministériel 247/2022), versés chaque mois. Les cotisations sociales (INPS) sont déduites, donc le montant net est plus bas. La bourse est exonérée d'impôt sur le revenu.
+- **Minimum :** 16 243 € brut par an (décret ministériel 247/2022), versés chaque mois. Certaines universités paient plus : Parme, par exemple, 56 256 € pour les trois ans à partir du 42e cycle. Les cotisations sociales (INPS) sont déduites, donc le montant net est plus bas. La bourse est exonérée d'impôt sur le revenu.
 - **Certaines universités paient plus.** Au 42e cycle, par exemple : Brescia 18 432,84 €, Politecnico di Torino 18 854,52 €, Humanitas 21 000 €, l'Université libre de Bozen-Bolzano 28 000 €.
 - **À l'étranger :** la bourse augmente de 50 % pendant les périodes de recherche autorisées à l'étranger, jusqu'à 12 mois (18 mois en cotutelle, *co-tutela*).
 - **Budget de recherche :** au moins 10 % de la bourse chaque année, aussi pour les doctorants sans bourse.

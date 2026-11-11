@@ -9,11 +9,13 @@ description:
   ar: "منح من وزارة الخارجية الإيطالية للطلاب الأجانب الذين يدرسون في إيطاليا. يتم التقديم فقط عبر بوابة Study in Italy. أُغلق باب التقديم لعام 2026/27 في 26 مارس 2026."
   fr: "Bourses du ministère italien des Affaires étrangères pour les étudiants étrangers qui étudient en Italie. Les candidatures se font uniquement sur le portail Study in Italy. L'appel 2026/27 a été clôturé le 26 mars 2026."
 eligibility:
-  en: "Citizens of the countries on the eligible-countries list published on the portal."
-  ar: "مواطنو الدول المدرجة في قائمة الدول المؤهلة المنشورة على البوابة."
-  fr: "Les citoyens des pays figurant sur la liste des pays éligibles publiée sur le portail."
+  en: "Foreign citizens, selected by citizenship (you apply for one country only). Not for people who study or have studied in Italy: at a secondary school, a university or AFAM institution, or a foreign university based in Italy (renewals excepted). Age at the deadline: up to 28 for master's and AFAM courses, 30 for a PhD, 40 for research. Language: B2 in Italian or English, depending on the course (not needed for a PhD or research). University bachelor's degrees are not covered."
+  ar: "المواطنون الأجانب، والاختيار حسب الجنسية (تقدّم لبلد واحد فقط). لا يحق التقديم لمن يدرس أو درس في إيطاليا: في مدرسة ثانوية، أو جامعة أو معهد ⁦AFAM⁩، أو جامعة أجنبية لها فرع في إيطاليا (إلا لتجديد المنحة). العمر عند آخر موعد للتقديم: حتى 28 سنة للماجستير و⁦AFAM⁩، و30 للدكتوراه، و40 للبحث. اللغة: مستوى ⁦B2⁩ بالإيطالية أو الإنجليزية حسب البرنامج (لا تُطلب للدكتوراه والبحث). لا تشمل بكالوريوس الجامعات."
+  fr: "Les citoyens étrangers, sélectionnés selon leur nationalité (on postule pour un seul pays). Pas pour les personnes qui étudient ou ont étudié en Italie : dans un lycée, une université ou un établissement AFAM, ou une université étrangère installée en Italie (sauf renouvellement). Âge à la date limite : jusqu'à 28 ans pour le master et l'AFAM, 30 ans pour le doctorat, 40 ans pour la recherche. Langue : B2 en italien ou en anglais selon le cours (pas exigé pour le doctorat ni la recherche). La licence universitaire n'est pas couverte."
 url: https://studyinitaly.esteri.it
 sources:
   - label: "Embassy of Italy in Abuja: 2026/27 call"
     url: https://ambabuja.esteri.it/en/news/dall_ambasciata/2026/03/borse-di-studio-per-la-a-2026-2027-offerte-dal-governo-italiano-a-studenti-stranieri/
-last_checked: 2026-10-29
+  - label: "MAECI call 2026/27, art. 2 (copy published by the Italian Cultural Institute in Madrid)"
+    url: https://iicmadrid.esteri.it/wp-content/uploads/2026/03/BANDO-BORSE-2026-2027.pdf
+last_checked: 2026-11-08
