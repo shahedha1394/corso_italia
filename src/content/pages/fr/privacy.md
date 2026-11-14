@@ -2,7 +2,7 @@
 title: "Confidentialité"
 ---
 
-Ce site n'utilise pas de cookies de suivi et ne vous demande pas de données personnelles.
+Ce site ne vous demande pas de données personnelles et ne dépose aucun cookie de suivi sans votre consentement.
 
 **Responsable.** Corso Italy est géré par Shahed Hammal. Pour toute question sur vos données, écrivez à [shahedhammal@corsoitaly.com](mailto:shahedhammal@corsoitaly.com).
 

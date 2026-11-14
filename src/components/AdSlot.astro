@@ -1,0 +1,28 @@
+---
+// One display ad, clearly labelled. Renders nothing while AdSense is off or no ad unit is set.
+import { adsense } from '../config/site';
+import { useTranslations, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const show = Boolean(adsense.client && adsense.slot);
+---
+
+{show && (
+  <aside class="ad-slot" aria-label={t('ads.label')}>
+    <p class="ad-label">{t('ads.label')}</p>
+    <ins
+      class="adsbygoogle"
+      style="display:block"
+      data-ad-client={adsense.client}
+      data-ad-slot={adsense.slot}
+      data-ad-format="auto"
+      data-full-width-responsive="true"
+    ></ins>
+    <script is:inline>(window.adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </aside>
+)}

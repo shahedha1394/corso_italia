@@ -2,7 +2,7 @@
 title: "Privacy"
 ---
 
-This website does not use tracking cookies and does not ask you for personal data.
+This website does not ask you for personal data, and it sets no tracking cookie without your consent.
 
 **Who is responsible.** Corso Italy is run by Shahed Hammal. For any question about your data, write to [shahedhammal@corsoitaly.com](mailto:shahedhammal@corsoitaly.com).
 

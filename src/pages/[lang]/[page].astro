@@ -3,6 +3,8 @@ import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import VideoEmbed from '../../components/VideoEmbed.astro';
 import { getVideos, splitId } from '../../lib/content';
+import { adsense } from '../../config/site';
+import { useTranslations } from '../../i18n';
 
 export async function getStaticPaths() {
   const pages = await getCollection('pages');
@@ -16,6 +18,9 @@ const { page } = Astro.props;
 const { lang, slug } = splitId(page.id);
 const videos = (await getVideos()).filter((v) => v.data.page === slug);
 const { Content } = await render(page);
+const t = useTranslations(lang);
+// The advertising part of the privacy notice appears only while AdSense is turned on.
+const adsNotice = slug === 'privacy' && Boolean(adsense.client);
 ---
 
 <Base lang={lang} title={page.data.title} description={page.data.description}>
@@ -26,5 +31,13 @@ const { Content } = await render(page);
     {videos.map((v) => <VideoEmbed id={v.data.youtube} title={v.data.title[lang]} lang={lang} />)}
 
     <Content />
+
+    {adsNotice && (
+      <section>
+        <h2>{t('privacy.ads.title')}</h2>
+        <p>{t('privacy.ads.text')}</p>
+        <p><a href="https://policies.google.com/technologies/partner-sites" rel="noopener" target="_blank">{t('privacy.ads.link')}</a></p>
+      </section>
+    )}
   </article>
 </Base>
