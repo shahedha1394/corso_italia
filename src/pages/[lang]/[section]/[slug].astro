@@ -6,7 +6,8 @@ import VideoEmbed from '../../../components/VideoEmbed.astro';
 import TestFinder from '../../../components/TestFinder.astro';
 import ScholarshipFinder from '../../../components/ScholarshipFinder.astro';
 import VisaMoneyCalculator from '../../../components/VisaMoneyCalculator.astro';
-import { social } from '../../../config/site';
+import AdSlot from '../../../components/AdSlot.astro';
+import { noAdsGuides, social } from '../../../config/site';
 import { getVideos, splitId } from '../../../lib/content';
 
 export async function getStaticPaths() {
@@ -22,6 +23,7 @@ const lang = Astro.params.lang as Lang;
 const t = useTranslations(lang);
 const { Content } = await render(guide);
 const videos = await getVideos(splitId(guide.id).slug);
+const showAds = !guide.data.draft && !noAdsGuides.includes(splitId(guide.id).slug);
 const sectionTitle = guide.data.section === 'study' ? t('nav.study') : t('nav.living');
 const lastChecked = guide.data.lastChecked?.toLocaleDateString(dateLocale(lang), {
   year: 'numeric',
@@ -30,7 +32,7 @@ const lastChecked = guide.data.lastChecked?.toLocaleDateString(dateLocale(lang),
 });
 ---
 
-<Base lang={lang} title={guide.data.title} description={guide.data.description}>
+<Base lang={lang} title={guide.data.title} description={guide.data.description} ads={showAds}>
   <article class="container prose">
     <header class="page-header">
       <p class="meta"><a href={path(lang, `/${guide.data.section}/`)}>{sectionTitle}</a></p>
@@ -53,6 +55,8 @@ const lastChecked = guide.data.lastChecked?.toLocaleDateString(dateLocale(lang),
     {['visa', 'costs'].includes(splitId(guide.id).slug) && <VisaMoneyCalculator lang={lang} />}
 
     <Content />
+
+    {showAds && <AdSlot lang={lang} />}
 
     {guide.data.sources.length > 0 && (
       <section class="sources">

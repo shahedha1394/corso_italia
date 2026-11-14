@@ -345,5 +345,9 @@
   "feesmap.low": "Up to €1,000 a year",
   "feesmap.mid": "€1,001 to €5,000 a year",
   "feesmap.high": "More than €5,000 a year",
-  "feesmap.note": "Each dot shows the cheapest university we checked in that city, by the most an international student with family income abroad pays there. Tap a dot to see the university below."
+  "feesmap.note": "Each dot shows the cheapest university we checked in that city, by the most an international student with family income abroad pays there. Tap a dot to see the university below.",
+  "ads.label": "Advertisement",
+  "privacy.ads.title": "Advertising",
+  "privacy.ads.text": "Some guide pages show ads from Google AdSense, which help keep Corso Italy free. Pages about refugees, conflict areas and support never show ads. If you are in the European Economic Area, the United Kingdom or Switzerland, a consent message from Google asks you first: Google and its partners use cookies for ads, or to personalise them, only if you agree. You can change your choice at any time from Google's privacy and cookie settings button on the page. If you do not agree, you may see limited, non-personalised ads, or none. Google decides which ads appear; Corso Italy does not endorse them.",
+  "privacy.ads.link": "How Google uses information from sites that use its services"
 }

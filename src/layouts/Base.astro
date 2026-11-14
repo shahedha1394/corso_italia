@@ -2,16 +2,18 @@
 import '../styles/global.css';
 import { languages, langs, useTranslations, path, switchLangPath, type Lang } from '../i18n';
 import Icon from '../components/Icon.astro';
-import { goatcounter, social } from '../config/site';
+import { adsense, goatcounter, social } from '../config/site';
 import { getVideos } from '../lib/content';
 
 interface Props {
   lang: Lang;
   title?: string;
   description?: string;
+  /** Load AdSense on this page (only has an effect when AdSense is turned on in src/config/site.ts). */
+  ads?: boolean;
 }
 
-const { lang, title, description } = Astro.props;
+const { lang, title, description, ads = false } = Astro.props;
 const t = useTranslations(lang);
 const dir = languages[lang].dir;
 const pageTitle = title ? `${title} · ${t('site.name')}` : `${t('site.name')} · ${t('site.tagline')}`;
@@ -24,6 +26,7 @@ const otherLang = (l: Lang) => (isNotFound ? path(l) : switchLangPath(Astro.url.
 const pageDescription = description ?? t('site.description');
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const ogImage = new URL(`${base}/og-image.jpg`, Astro.site).href;
+const adsAllowed = ads && Boolean(adsense.client) && !isNotFound;
 const ogLocale = { en: 'en_GB', ar: 'ar_AR', fr: 'fr_FR' }[lang];
 
 const nav = [
@@ -62,6 +65,10 @@ if ((await getVideos()).length > 0) nav.splice(4, 0, { href: path(lang, '/videos
     <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
     <link rel="apple-touch-icon" href={`${base}/apple-touch-icon.png`} />
     <link rel="stylesheet" href={`${base}/fonts/fonts.css`} />
+    {adsense.client && <meta name="google-adsense-account" content={adsense.client} />}
+    {adsAllowed && (
+      <script is:inline async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsense.client}`} crossorigin="anonymous"></script>
+    )}
   </head>
   <body>
     <a class="skip" href="#main">{t('common.skip')}</a>
