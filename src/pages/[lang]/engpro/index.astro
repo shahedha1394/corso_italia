@@ -14,7 +14,7 @@ const lang = Astro.params.lang as Lang;
 const t = useTranslations(lang);
 const resources = (await getCollection('engpro-resources')).sort((a, b) => a.data.title.localeCompare(b.data.title));
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const how = (['level', 'groups', 'sessions', 'duration', 'plan'] as const).map((k) => ({
+const how = (['level', 'groups', 'sessions', 'plan'] as const).map((k) => ({
   title: t(`engpro.how.${k}.title`),
   text: t(`engpro.how.${k}.text`),
 }));
