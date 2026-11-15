@@ -5,6 +5,7 @@ import DeadlineYear from '../../../../components/DeadlineYear.astro';
 import { dateLocale, getStaticLangPaths, path, useTranslations, type Lang } from '../../../../i18n';
 import { getUpcomingDeadlines } from '../../../../lib/content';
 import { deadlineTypes } from '../../../../lib/taxonomy';
+import { googleCalendarLink } from '../../../../lib/ics';
 
 export const getStaticPaths = getStaticLangPaths;
 
@@ -20,6 +21,11 @@ const months = [...new Map(deadlines.map((d) => [monthKey(d.data.date), d.data.d
   label: date.toLocaleDateString(locale, { month: 'long', year: 'numeric' }),
   items: deadlines.filter((d) => monthKey(d.data.date) === key),
 }));
+// Subscription feed (src/pages/[lang]/calendar.ics.ts) and one .ics file per deadline.
+const feed = new URL(path(lang, '/calendar.ics').replace(/\/$/, ''), Astro.site);
+const webcal = feed.href.replace(/^https?:/, 'webcal:');
+const googleSubscribe = `https://calendar.google.com/calendar/r?cid=${encodeURIComponent(webcal)}`;
+const icsFile = (id: string) => path(lang, `/calendar/${id}.ics`).replace(/\/$/, '');
 ---
 
 <Base lang={lang} title={t('calendar.title')} description={t('calendar.intro')}>
@@ -28,6 +34,23 @@ const months = [...new Map(deadlines.map((d) => [monthKey(d.data.date), d.data.d
     <h1>{t('calendar.title')}</h1>
     <p>{t('calendar.intro')}</p>
   </header>
+
+  <section class="container section">
+    <div class="card subscribe">
+      <h2>{t('calendar.subscribe.title')}</h2>
+      <p>{t('calendar.subscribe.text')}</p>
+      <p class="subscribe__buttons">
+        <a class="button" href={webcal}>{t('calendar.subscribe.apple')}</a>
+        <a class="button" href={googleSubscribe} rel="noopener" target="_blank">{t('calendar.subscribe.google')}</a>
+      </p>
+      <label class="subscribe__label" for="feed-url">{t('calendar.subscribe.linkLabel')}</label>
+      <div class="subscribe__copy">
+        <input id="feed-url" type="text" readonly value={feed.href} dir="ltr" />
+        <button type="button" class="button" data-copy="feed-url" data-copied={t('calendar.subscribe.copied')}>{t('calendar.subscribe.copy')}</button>
+      </div>
+      <p class="meta">{t('calendar.subscribe.note')}</p>
+    </div>
+  </section>
 
   <div class="container section">
     <DeadlineYear lang={lang} />
@@ -63,6 +86,11 @@ const months = [...new Map(deadlines.map((d) => [monthKey(d.data.date), d.data.d
                 </dl>
                 {d.data.note && <p>{d.data.note[lang]}</p>}
                 <p><a href={d.data.url} rel="noopener" target="_blank">{t('calendar.official')}</a></p>
+                <p class="add-to-cal">
+                  <span class="meta">{t('calendar.add')}:</span>
+                  <a href={googleCalendarLink(d, lang, t('calendar.official'))} rel="noopener" target="_blank">{t('calendar.add.google')}</a>
+                  <a href={icsFile(d.id)} download={`${d.id}.ics`}>{t('calendar.add.other')}</a>
+                </p>
               </div>
             );
           })}
@@ -75,3 +103,61 @@ const months = [...new Map(deadlines.map((d) => [monthKey(d.data.date), d.data.d
     <p class="notice">{t('common.disclaimer')}</p>
   </section>
 </Base>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('[data-copy]').forEach((button) => {
+    button.addEventListener('click', async () => {
+      const input = document.getElementById(button.dataset.copy ?? '') as HTMLInputElement | null;
+      if (!input) return;
+      const label = button.textContent;
+      try {
+        await navigator.clipboard.writeText(input.value);
+      } catch {
+        input.select();
+        document.execCommand('copy');
+      }
+      button.textContent = button.dataset.copied ?? label;
+      setTimeout(() => (button.textContent = label), 2000);
+    });
+  });
+</script>
+
+<style>
+  .subscribe h2 {
+    margin-block-start: 0;
+  }
+  .subscribe__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  .subscribe__label {
+    display: block;
+    font-size: 0.9rem;
+    margin-block-end: 0.25rem;
+  }
+  .subscribe__copy {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .subscribe__copy input {
+    flex: 1 1 14rem;
+    min-inline-size: 0;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    background: var(--color-bg);
+    color: var(--color-text);
+    font: inherit;
+  }
+  .add-to-cal {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.25rem 0.9rem;
+    margin-block-start: 0.75rem;
+    padding-block-start: 0.75rem;
+    border-block-start: 1px solid var(--color-border);
+  }
+</style>

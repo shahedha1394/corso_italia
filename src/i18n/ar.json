@@ -358,5 +358,18 @@
   "engpro.how.sessions.title": "جلسة أسبوعية",
   "engpro.how.sessions.text": "جلسة مدّتها ساعتان كل أسبوع. يتّفق المعلّم والمتعلّمون معاً على اليوم والوقت.",
   "engpro.how.plan.title": "متابعة شهرية",
-  "engpro.how.plan.text": "نعقد كل شهر جلسات تقييم واجتماعات مع الأساتذة لمتابعة تقدّم المتعلّمين."
+  "engpro.how.plan.text": "نعقد كل شهر جلسات تقييم واجتماعات مع الأساتذة لمتابعة تقدّم المتعلّمين.",
+  "calendar.subscribe.title": "كل المواعيد على هاتفك",
+  "calendar.subscribe.text": "اشترك مرة واحدة، وستظهر المواعيد الجديدة في تقويم هاتفك وحدها. الاشتراك مجاني ولا نطلب بريدك الإلكتروني.",
+  "calendar.subscribe.apple": "آيفون أو ماك أو Outlook",
+  "calendar.subscribe.google": "تقويم Google",
+  "calendar.subscribe.linkLabel": "رابط التقويم، للتطبيقات الأخرى",
+  "calendar.subscribe.copy": "نسخ",
+  "calendar.subscribe.copied": "تم النسخ",
+  "calendar.subscribe.note": "قد يستغرق ظهور المواعيد الجديدة حتى يوم واحد. في تقويم Google، فعّل التذكيرات لهذا التقويم من الإعدادات (الإعدادات ← اسم التقويم ← إشعارات الأحداث).",
+  "calendar.add": "أضف إلى تقويمي",
+  "calendar.add.google": "Google",
+  "calendar.add.other": "آيفون / Outlook",
+  "calendar.ics.inAWeek": "بعد أسبوع",
+  "calendar.ics.tomorrow": "غداً"
 }
