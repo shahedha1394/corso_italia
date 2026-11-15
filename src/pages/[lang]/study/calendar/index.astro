@@ -25,6 +25,7 @@ const months = [...new Map(deadlines.map((d) => [monthKey(d.data.date), d.data.d
 const feed = new URL(path(lang, '/calendar.ics').replace(/\/$/, ''), Astro.site);
 const webcal = feed.href.replace(/^https?:/, 'webcal:');
 const googleSubscribe = `https://calendar.google.com/calendar/r?cid=${encodeURIComponent(webcal)}`;
+const today = new Date(new Date().setHours(0, 0, 0, 0));
 const icsFile = (id: string) => path(lang, `/calendar/${id}.ics`).replace(/\/$/, '');
 ---
 
@@ -90,6 +91,9 @@ const icsFile = (id: string) => path(lang, `/calendar/${id}.ics`).replace(/\/$/,
                   <span class="meta">{t('calendar.add')}:</span>
                   <a href={googleCalendarLink(d, lang, t('calendar.official'))} rel="noopener" target="_blank">{t('calendar.add.google')}</a>
                   <a href={icsFile(d.id)} download={`${d.id}.ics`}>{t('calendar.add.other')}</a>
+                  {d.data.opens && d.data.opens >= today && (
+                    <a href={googleCalendarLink(d, lang, t('calendar.official'), t('calendar.ics.opens'))} rel="noopener" target="_blank">{t('calendar.add.googleOpens')}</a>
+                  )}
                 </p>
               </div>
             );

@@ -360,7 +360,7 @@
   "engpro.how.plan.title": "Monthly reviews",
   "engpro.how.plan.text": "Each month we hold review sessions and meetings with the teachers to follow the learners' progress.",
   "calendar.subscribe.title": "Get every deadline on your phone",
-  "calendar.subscribe.text": "Subscribe once and new deadlines appear in your calendar app by themselves. It is free and we do not ask for your email.",
+  "calendar.subscribe.text": "Subscribe once and new deadlines appear in your calendar app by themselves, with a reminder a month before applications open and a week and a day before each deadline. It is free and we do not ask for your email.",
   "calendar.subscribe.apple": "iPhone, Mac or Outlook",
   "calendar.subscribe.google": "Google Calendar",
   "calendar.subscribe.linkLabel": "Calendar link, for other apps",
@@ -371,5 +371,8 @@
   "calendar.add.google": "Google",
   "calendar.add.other": "iPhone / Outlook",
   "calendar.ics.inAWeek": "In one week",
-  "calendar.ics.tomorrow": "Tomorrow"
+  "calendar.ics.tomorrow": "Tomorrow",
+  "calendar.ics.inAMonth": "In one month",
+  "calendar.ics.opens": "Applications open",
+  "calendar.add.googleOpens": "Google: opening date"
 }

@@ -17,7 +17,12 @@ export const GET: APIRoute = ({ params, props }) => {
   const body = buildCalendar([deadline], lang, {
     name: t('site.name'),
     officialLabel: t('calendar.official'),
-    reminders: { week: t('calendar.ics.inAWeek'), day: t('calendar.ics.tomorrow') },
+    reminders: {
+      week: t('calendar.ics.inAWeek'),
+      day: t('calendar.ics.tomorrow'),
+      month: t('calendar.ics.inAMonth'),
+      opens: t('calendar.ics.opens'),
+    },
   });
   return new Response(body, { headers: { 'Content-Type': 'text/calendar; charset=utf-8' } });
 };

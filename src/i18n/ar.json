@@ -360,7 +360,7 @@
   "engpro.how.plan.title": "متابعة شهرية",
   "engpro.how.plan.text": "نعقد كل شهر جلسات تقييم واجتماعات مع الأساتذة لمتابعة تقدّم المتعلّمين.",
   "calendar.subscribe.title": "كل المواعيد على هاتفك",
-  "calendar.subscribe.text": "اشترك مرة واحدة، وستظهر المواعيد الجديدة في تقويم هاتفك وحدها. الاشتراك مجاني ولا نطلب بريدك الإلكتروني.",
+  "calendar.subscribe.text": "اشترك مرة واحدة، وستظهر المواعيد الجديدة في تقويم هاتفك وحدها، مع تذكير قبل فتح التقديم بشهر، وقبل كل موعد نهائي بأسبوع وبيوم. الاشتراك مجاني ولا نطلب بريدك الإلكتروني.",
   "calendar.subscribe.apple": "آيفون أو ماك أو Outlook",
   "calendar.subscribe.google": "تقويم Google",
   "calendar.subscribe.linkLabel": "رابط التقويم، للتطبيقات الأخرى",
@@ -371,5 +371,8 @@
   "calendar.add.google": "Google",
   "calendar.add.other": "آيفون / Outlook",
   "calendar.ics.inAWeek": "بعد أسبوع",
-  "calendar.ics.tomorrow": "غداً"
+  "calendar.ics.tomorrow": "غداً",
+  "calendar.ics.inAMonth": "بعد شهر",
+  "calendar.ics.opens": "يفتح التقديم",
+  "calendar.add.googleOpens": "Google: موعد الفتح"
 }

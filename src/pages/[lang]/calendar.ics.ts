@@ -13,7 +13,12 @@ export const GET: APIRoute = async ({ params }) => {
   const body = buildCalendar(await getUpcomingDeadlines(), lang, {
     name: `${t('site.name')} · ${t('calendar.title')}`,
     officialLabel: t('calendar.official'),
-    reminders: { week: t('calendar.ics.inAWeek'), day: t('calendar.ics.tomorrow') },
+    reminders: {
+      week: t('calendar.ics.inAWeek'),
+      day: t('calendar.ics.tomorrow'),
+      month: t('calendar.ics.inAMonth'),
+      opens: t('calendar.ics.opens'),
+    },
   });
   return new Response(body, { headers: { 'Content-Type': 'text/calendar; charset=utf-8' } });
 };
