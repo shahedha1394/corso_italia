@@ -14,6 +14,10 @@ const lang = Astro.params.lang as Lang;
 const t = useTranslations(lang);
 const resources = (await getCollection('engpro-resources')).sort((a, b) => a.data.title.localeCompare(b.data.title));
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const how = (['level', 'groups', 'sessions', 'plan'] as const).map((k) => ({
+  title: t(`engpro.how.${k}.title`),
+  text: t(`engpro.how.${k}.text`),
+}));
 const levelRange = (levels: string[]) => (levels.length > 1 ? `${levels[0]}–${levels[levels.length - 1]}` : levels[0]);
 ---
 
@@ -29,6 +33,29 @@ const levelRange = (levels: string[]) => (levels.length > 1 ? `${levels[0]}–${
       <p><a class="hero-link" href={path(lang, '/engpro-code-of-conduct/')}>{t('engpro.conduct')}</a></p>
     </div>
   </header>
+
+  <section class="container section about">
+    <div class="about__col">
+      <h2>{t('engpro.about.title')}</h2>
+      <p>{t('engpro.about.text')}</p>
+    </div>
+    <div class="about__col">
+      <h2>{t('engpro.mission.title')}</h2>
+      <p>{t('engpro.mission.text')}</p>
+    </div>
+  </section>
+
+  <section class="container section">
+    <h2>{t('engpro.how.title')}</h2>
+    <ol class="how">
+      {how.map((item) => (
+        <li>
+          <h3>{item.title}</h3>
+          <p>{item.text}</p>
+        </li>
+      ))}
+    </ol>
+  </section>
 
   <section class="container section">
     <div class="grid">
@@ -114,6 +141,37 @@ const levelRange = (levels: string[]) => (levels.length > 1 ? `${levels[0]}–${
   .hero-link {
     color: #fff;
   }
+  .about {
+    display: grid;
+    gap: 1.5rem 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  }
+  .about h2 {
+    margin-block-start: 0;
+    color: #005f54;
+  }
+  .how {
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+  }
+  .how li {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-block-start: 4px solid #00b39a;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+  }
+  .how h3 {
+    margin: 0 0 0.4rem;
+    font-size: 1.1rem;
+  }
+  .how p {
+    margin: 0;
+  }
   .thanks {
     background: #e6f4f1;
     border-radius: var(--radius);
@@ -158,7 +216,8 @@ const levelRange = (levels: string[]) => (levels.length > 1 ? `${levels[0]}–${
     .thanks {
       background: #13302b;
     }
-    .thanks h2 {
+    .thanks h2,
+    .about h2 {
       color: #7fd8c6;
     }
   }

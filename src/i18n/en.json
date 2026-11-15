@@ -345,5 +345,18 @@
   "feesmap.low": "Up to €1,000 a year",
   "feesmap.mid": "€1,001 to €5,000 a year",
   "feesmap.high": "More than €5,000 a year",
-  "feesmap.note": "Each dot shows the cheapest university we checked in that city, by the most an international student with family income abroad pays there. Tap a dot to see the university below."
+  "feesmap.note": "Each dot shows the cheapest university we checked in that city, by the most an international student with family income abroad pays there. Tap a dot to see the university below.",
+  "engpro.about.title": "Why EngPro",
+  "engpro.about.text": "EngPro is a fully voluntary and independent initiative. It was launched for Syrian young people after more than 14 years of war, because the support that reached them was limited and international sanctions made it very hard for them to access online learning. We later decided to extend the initiative to students from other Arab countries.",
+  "engpro.mission.title": "Our mission",
+  "engpro.mission.text": "We believe education is a human right, and that a language is a tool for building the future. Our focus is speaking: helping B1 and B2 learners overcome their fear of speaking English. We hope to add lower levels soon.",
+  "engpro.how.title": "How it works",
+  "engpro.how.level.title": "For B1 and B2 learners",
+  "engpro.how.level.text": "Before starting, every learner takes a placement test on an online website to confirm their level.",
+  "engpro.how.groups.title": "Small groups",
+  "engpro.how.groups.text": "Up to 5 learners per group, all at the same level, so everyone has time to speak.",
+  "engpro.how.sessions.title": "One session a week",
+  "engpro.how.sessions.text": "A two-hour session every week. The teacher and the learners agree on the day and time together.",
+  "engpro.how.plan.title": "Monthly reviews",
+  "engpro.how.plan.text": "Each month we hold review sessions and meetings with the teachers to follow the learners' progress."
 }

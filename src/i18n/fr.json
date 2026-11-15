@@ -345,5 +345,18 @@
   "feesmap.low": "Jusqu'à 1 000 € par an",
   "feesmap.mid": "De 1 001 € à 5 000 € par an",
   "feesmap.high": "Plus de 5 000 € par an",
-  "feesmap.note": "Chaque point montre l'université la moins chère que nous avons vérifiée dans cette ville, selon le montant maximal payé par un étudiant international dont la famille a ses revenus à l'étranger. Touchez un point pour voir l'université plus bas."
+  "feesmap.note": "Chaque point montre l'université la moins chère que nous avons vérifiée dans cette ville, selon le montant maximal payé par un étudiant international dont la famille a ses revenus à l'étranger. Touchez un point pour voir l'université plus bas.",
+  "engpro.about.title": "Pourquoi EngPro",
+  "engpro.about.text": "EngPro est une initiative entièrement bénévole et indépendante. Elle a été lancée pour les jeunes Syriens après plus de 14 ans de guerre, car le soutien qui leur parvenait était limité et les sanctions internationales leur rendaient très difficile l'accès à l'apprentissage en ligne. Nous avons ensuite décidé d'ouvrir l'initiative aux étudiants d'autres pays arabes.",
+  "engpro.mission.title": "Notre mission",
+  "engpro.mission.text": "Nous croyons que l'éducation est un droit humain, et qu'une langue est un outil pour construire l'avenir. Nous misons sur l'oral : aider les apprenants de niveau B1 et B2 à surmonter leur peur de parler anglais. Nous espérons ajouter bientôt des niveaux plus bas.",
+  "engpro.how.title": "Comment ça marche",
+  "engpro.how.level.title": "Pour les niveaux B1 et B2",
+  "engpro.how.level.text": "Avant de commencer, chaque apprenant passe un test de niveau sur un site en ligne pour confirmer son niveau.",
+  "engpro.how.groups.title": "Petits groupes",
+  "engpro.how.groups.text": "5 apprenants au maximum par groupe, tous du même niveau, pour que chacun ait le temps de parler.",
+  "engpro.how.sessions.title": "Une séance par semaine",
+  "engpro.how.sessions.text": "Une séance de deux heures chaque semaine. L'enseignant et les apprenants choisissent ensemble le jour et l'heure.",
+  "engpro.how.plan.title": "Suivi mensuel",
+  "engpro.how.plan.text": "Chaque mois, nous organisons des séances d'évaluation et des réunions avec les enseignants pour suivre les progrès des apprenants."
 }
