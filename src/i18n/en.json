@@ -358,5 +358,21 @@
   "engpro.how.sessions.title": "One session a week",
   "engpro.how.sessions.text": "A two-hour session every week. The teacher and the learners agree on the day and time together.",
   "engpro.how.plan.title": "Monthly reviews",
-  "engpro.how.plan.text": "Each month we hold review sessions and meetings with the teachers to follow the learners' progress."
+  "engpro.how.plan.text": "Each month we hold review sessions and meetings with the teachers to follow the learners' progress.",
+  "calendar.subscribe.title": "Get every deadline on your phone",
+  "calendar.subscribe.text": "Subscribe once and new deadlines appear in your calendar app by themselves, with a reminder a month before applications open and a week and a day before each deadline. It is free and we do not ask for your email.",
+  "calendar.subscribe.apple": "iPhone, Mac or Outlook",
+  "calendar.subscribe.google": "Google Calendar",
+  "calendar.subscribe.linkLabel": "Calendar link, for other apps",
+  "calendar.subscribe.copy": "Copy",
+  "calendar.subscribe.copied": "Copied",
+  "calendar.subscribe.note": "New deadlines can take up to a day to appear. On Google Calendar, set reminders for this calendar in its settings (Settings → the calendar → Event notifications).",
+  "calendar.add": "Add to my calendar",
+  "calendar.add.google": "Google",
+  "calendar.add.other": "iPhone / Outlook",
+  "calendar.ics.inAWeek": "In one week",
+  "calendar.ics.tomorrow": "Tomorrow",
+  "calendar.ics.inAMonth": "In one month",
+  "calendar.ics.opens": "Applications open",
+  "calendar.add.googleOpens": "Google: opening date"
 }

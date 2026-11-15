@@ -358,5 +358,21 @@
   "engpro.how.sessions.title": "Une séance par semaine",
   "engpro.how.sessions.text": "Une séance de deux heures chaque semaine. L'enseignant et les apprenants choisissent ensemble le jour et l'heure.",
   "engpro.how.plan.title": "Suivi mensuel",
-  "engpro.how.plan.text": "Chaque mois, nous organisons des séances d'évaluation et des réunions avec les enseignants pour suivre les progrès des apprenants."
+  "engpro.how.plan.text": "Chaque mois, nous organisons des séances d'évaluation et des réunions avec les enseignants pour suivre les progrès des apprenants.",
+  "calendar.subscribe.title": "Toutes les échéances sur votre téléphone",
+  "calendar.subscribe.text": "Abonnez-vous une fois : les nouvelles échéances apparaissent toutes seules dans votre agenda, avec un rappel un mois avant l'ouverture des candidatures, puis une semaine et un jour avant chaque date limite. C'est gratuit et nous ne demandons pas votre e-mail.",
+  "calendar.subscribe.apple": "iPhone, Mac ou Outlook",
+  "calendar.subscribe.google": "Google Agenda",
+  "calendar.subscribe.linkLabel": "Lien de l'agenda, pour d'autres applications",
+  "calendar.subscribe.copy": "Copier",
+  "calendar.subscribe.copied": "Copié",
+  "calendar.subscribe.note": "Les nouvelles échéances peuvent mettre jusqu'à un jour à apparaître. Dans Google Agenda, activez les rappels de cet agenda dans ses paramètres (Paramètres → l'agenda → Notifications d'événements).",
+  "calendar.add": "Ajouter à mon agenda",
+  "calendar.add.google": "Google",
+  "calendar.add.other": "iPhone / Outlook",
+  "calendar.ics.inAWeek": "Dans une semaine",
+  "calendar.ics.tomorrow": "Demain",
+  "calendar.ics.inAMonth": "Dans un mois",
+  "calendar.ics.opens": "Ouverture des candidatures",
+  "calendar.add.googleOpens": "Google : date d'ouverture"
 }
