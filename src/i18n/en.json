@@ -345,5 +345,20 @@
   "feesmap.low": "Up to €1,000 a year",
   "feesmap.mid": "€1,001 to €5,000 a year",
   "feesmap.high": "More than €5,000 a year",
-  "feesmap.note": "Each dot shows the cheapest university we checked in that city, by the most an international student with family income abroad pays there. Tap a dot to see the university below."
+  "feesmap.note": "Each dot shows the cheapest university we checked in that city, by the most an international student with family income abroad pays there. Tap a dot to see the university below.",
+  "engpro.about.title": "Why EngPro",
+  "engpro.about.text": "EngPro is a fully voluntary and independent initiative. It was created for Syrian young people who, after more than 14 years of war, have faced severe humanitarian and economic hardship and have had far fewer chances than their peers elsewhere to learn languages. Some initiatives have tried to help, but their reach has been limited, and international sanctions make it very hard to access online learning content.",
+  "engpro.mission.title": "Our mission",
+  "engpro.mission.text": "We believe education is a fundamental human right, and that a language is more than a way to communicate: it is a tool for building a future. EngPro is a bridge between young people and knowledge and opportunities, so they can keep growing despite the challenges they face. Our focus is speaking: helping B1 and B2 learners overcome their fear of speaking English.",
+  "engpro.how.title": "How it works",
+  "engpro.how.level.title": "For B1 and B2 learners",
+  "engpro.how.level.text": "Before starting, every learner takes a short online placement test to confirm their real level.",
+  "engpro.how.groups.title": "Small groups",
+  "engpro.how.groups.text": "Up to 5 learners per group, all at the same level, so everyone has time to speak.",
+  "engpro.how.sessions.title": "One session a week",
+  "engpro.how.sessions.text": "Two hours each week, with a 10–15 minute break. The teacher and the learners agree on the day and time together.",
+  "engpro.how.duration.title": "About three months",
+  "engpro.how.duration.text": "The sessions run for about three months, between February and May.",
+  "engpro.how.plan.title": "A clear plan",
+  "engpro.how.plan.text": "The topics for each month are planned in advance, attendance is recorded, and each month we review every learner's participation and commitment."
 }
