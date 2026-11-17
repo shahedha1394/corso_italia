@@ -10,4 +10,5 @@ export const engproTeachers: { name: string; country: { en: string; ar: string; 
   { name: 'Zahra Omrani', country: { en: 'Iran', ar: 'إيران', fr: 'Iran' } },
   { name: 'Felicitas Jung', country: { en: 'Germany', ar: 'ألمانيا', fr: 'Allemagne' } },
   { name: 'Agnese Ottaviani', country: { en: 'Italy', ar: 'إيطاليا', fr: 'Italie' } },
+  { name: 'Rebecca Sunderland', country: { en: 'Canada', ar: 'كندا', fr: 'Canada' } },
 ];
