@@ -7,6 +7,8 @@ name: Link check
 # Links to https://corsoitaly.com itself (canonical and language tags) are skipped:
 # our own pages are checked as files in dist/, and new pages are not online until merged.
 on:
+  push:
+    branches: ['tmp/link-report']
   pull_request:
     paths:
       - 'src/**'
@@ -15,6 +17,9 @@ on:
   schedule:
     - cron: '0 6 * * 1'
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   links:
@@ -50,3 +55,10 @@ jobs:
         with:
           name: link-report
           path: link-report.md
+      - name: Save report to branch
+        if: always()
+        run: |
+          git config user.name report-bot
+          git config user.email report-bot@users.noreply.github.com
+          mkdir -p tmp-report && cp link-report.md tmp-report/
+          git add tmp-report && git commit -m "link report" && git push
