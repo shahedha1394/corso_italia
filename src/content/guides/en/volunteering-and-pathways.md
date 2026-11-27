@@ -46,6 +46,8 @@ The European Solidarity Corps is the European Union's volunteering programme. Vo
 2. Search for opportunities in Italy and open each one: the page shows which countries it accepts.
 3. Contact an accredited organisation in your own country. [SALTO EuroMed](https://www.salto-youth.net/rc/euromed/esc) has information for the South Mediterranean countries.
 
+Italian organisations that have hosted volunteers from Arab countries, and the places open now: [Volunteering organisations in Italy](../volunteering-organisations/).
+
 Official pages: [portal](https://youth.europa.eu/solidarity) · [countries covered](https://youth.europa.eu/solidarity/countries-covered_no) · [programme guide 2026](https://youth.europa.eu/sites/default/files/inline-files/european_solidarity_corps_guide_2026_IT.pdf)
 
 ## 2. Italy's civil service (Servizio Civile Universale)

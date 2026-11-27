@@ -46,6 +46,8 @@ Le Corps européen de solidarité est le programme de volontariat de l'Union eur
 2. Cherchez les offres en Italie et ouvrez chacune d'elles : la page indique les pays acceptés.
 3. Contactez une organisation accréditée dans votre pays. [SALTO EuroMed](https://www.salto-youth.net/rc/euromed/esc) donne des informations pour les pays de la Méditerranée du Sud.
 
+Des organisations italiennes qui ont accueilli des volontaires de pays arabes, et les places ouvertes : [Organisations de volontariat en Italie](../volunteering-organisations/).
+
 Pages officielles : [portail](https://youth.europa.eu/solidarity) · [pays couverts](https://youth.europa.eu/solidarity/countries-covered_no) · [guide du programme 2026](https://youth.europa.eu/sites/default/files/inline-files/european_solidarity_corps_guide_2026_IT.pdf)
 
 ## 2. Le service civil italien (Servizio Civile Universale)
