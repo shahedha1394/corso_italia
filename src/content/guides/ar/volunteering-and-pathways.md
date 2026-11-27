@@ -46,6 +46,8 @@ sources:
 2. ابحث عن الفرص في إيطاليا وافتح كل واحدة منها: الصفحة تذكر البلدان التي تقبلها.
 3. تواصل مع منظمة معتمدة في بلدك. وفي موقع [⁦SALTO EuroMed⁩](https://www.salto-youth.net/rc/euromed/esc) معلومات خاصة بدول جنوب المتوسط.
 
+منظمات إيطالية استضافت متطوعين من الدول العربية، والفرص المفتوحة الآن: [منظمات التطوع في إيطاليا](../volunteering-organisations/).
+
 الصفحات الرسمية: [البوابة](https://youth.europa.eu/solidarity) · [البلدان المشمولة](https://youth.europa.eu/solidarity/countries-covered_no) · [دليل البرنامج 2026](https://youth.europa.eu/sites/default/files/inline-files/european_solidarity_corps_guide_2026_IT.pdf)
 
 ## 2. الخدمة المدنية الإيطالية (⁦Servizio Civile Universale⁩)

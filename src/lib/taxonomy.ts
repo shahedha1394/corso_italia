@@ -132,6 +132,7 @@ export const opportunityTypes = {
   workshop: { en: 'Workshop', ar: 'ورشة عمل', fr: 'Atelier' },
   teaching_session: { en: 'Teaching session', ar: 'جلسة تعليمية', fr: 'Séance de cours' },
   scholarship_call: { en: 'Scholarship call', ar: 'إعلان منحة', fr: 'Appel à bourses' },
+  volunteering: { en: 'Volunteering', ar: 'تطوع', fr: 'Volontariat' },
   other: { en: 'Other', ar: 'أخرى', fr: 'Autre' },
 } satisfies Labels;
 
